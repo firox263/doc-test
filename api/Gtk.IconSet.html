@@ -1,0 +1,649 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct IconSet
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct IconSet
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gtk.IconSet">
+  
+  
+  <h1 id="Gtk_IconSet" data-uid="Gtk.IconSet" class="text-break">Struct IconSet
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.ValueType.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ValueType.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.ValueType.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gtk.html">Gtk</a></h6>
+  <h6><strong>Assembly</strong>: Gtk3.dll</h6>
+  <h5 id="Gtk_IconSet_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct IconSet</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Gtk_IconSet_add_source_" data-uid="Gtk.IconSet.add_source*"></a>
+  <h4 id="Gtk_IconSet_add_source_System_IntPtr_System_IntPtr_" data-uid="Gtk.IconSet.add_source(System.IntPtr,System.IntPtr)">add_source(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Icon sets have a list of #GtkIconSource, which they use as base
+icons for rendering icons in different states and sizes. Icons are
+scaled, made to look insensitive, etc. in
+gtk_icon_set_render_icon(), but #GtkIconSet needs base images to
+work with. The base images and when to use them are described by
+a #GtkIconSource.</p>
+<p>This function copies @source, so you can reuse the same source immediately
+without affecting the icon set.</p>
+<p>An example of when you’d use this function: a web browser’s &quot;Back
+to Previous Page&quot; icon might point in a different direction in
+Hebrew and in English; it might look different when insensitive;
+and it might change size depending on toolbar mode (small/large
+icons). So a single icon set would contain all those variants of
+the icon, and you might add a separate source for each one.</p>
+<p>You should nearly always add a “default” icon source with all
+fields wildcarded, which will be used as a fallback if no more
+specific source matches. #GtkIconSet always prefers more specific
+icon sources to more generic icon sources. The order in which you
+add the sources to the icon set does not matter.</p>
+<p>gtk_icon_set_new_from_pixbuf() creates a new icon set with a
+default icon source based on the given pixbuf.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GtkIconTheme instead.&quot;)]
+public static void add_source(IntPtr icon_set, IntPtr source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_set</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconSet_copy_" data-uid="Gtk.IconSet.copy*"></a>
+  <h4 id="Gtk_IconSet_copy_System_IntPtr_" data-uid="Gtk.IconSet.copy(System.IntPtr)">copy(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Copies @icon_set by value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GtkIconTheme instead.&quot;)]
+public static IntPtr copy(IntPtr icon_set)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_set</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconSet_get_sizes_" data-uid="Gtk.IconSet.get_sizes*"></a>
+  <h4 id="Gtk_IconSet_get_sizes_System_IntPtr_System_IntPtr__System_Int32__" data-uid="Gtk.IconSet.get_sizes(System.IntPtr,System.IntPtr@,System.Int32@)">get_sizes(IntPtr, ref IntPtr, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Obtains a list of icon sizes this icon set can render. The returned
+array must be freed with g_free().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GtkIconTheme instead.&quot;)]
+public static void get_sizes(IntPtr icon_set, ref IntPtr sizes, ref int n_sizes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_set</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">sizes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n_sizes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconSet_new_" data-uid="Gtk.IconSet.new*"></a>
+  <h4 id="Gtk_IconSet_new" data-uid="Gtk.IconSet.new">new()</h4>
+  <div class="markdown level1 summary"><p>Creates a new #GtkIconSet. A #GtkIconSet represents a single icon
+in various sizes and widget states. It can provide a #GdkPixbuf
+for a given size and state on request, and automatically caches
+some of the rendered #GdkPixbuf objects.</p>
+<p>Normally you would use gtk_widget_render_icon_pixbuf() instead of
+using #GtkIconSet directly. The one case where you’d use
+#GtkIconSet is to create application-specific icon sets to place in
+a #GtkIconFactory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GtkIconTheme instead.&quot;)]
+public static IntPtr new()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconSet_new_from_pixbuf_" data-uid="Gtk.IconSet.new_from_pixbuf*"></a>
+  <h4 id="Gtk_IconSet_new_from_pixbuf_System_IntPtr_" data-uid="Gtk.IconSet.new_from_pixbuf(System.IntPtr)">new_from_pixbuf(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Creates a new #GtkIconSet with @pixbuf as the default/fallback
+source image. If you don’t add any additional #GtkIconSource to the
+icon set, all variants of the icon will be created from @pixbuf,
+using scaling, pixelation, etc. as required to adjust the icon size
+or make the icon look insensitive/prelighted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GtkIconTheme instead.&quot;)]
+public static IntPtr new_from_pixbuf(IntPtr pixbuf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">pixbuf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconSet_ref_" data-uid="Gtk.IconSet.ref*"></a>
+  <h4 id="Gtk_IconSet_ref_System_IntPtr_" data-uid="Gtk.IconSet.ref(System.IntPtr)">ref(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Increments the reference count on @icon_set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GtkIconTheme instead.&quot;)]
+public static IntPtr ref(IntPtr icon_set)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_set</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconSet_render_icon_" data-uid="Gtk.IconSet.render_icon*"></a>
+  <h4 id="Gtk_IconSet_render_icon_System_IntPtr_System_IntPtr_Gtk_TextDirection_Gtk_StateType_Gtk_IconSize_System_IntPtr_System_String_" data-uid="Gtk.IconSet.render_icon(System.IntPtr,System.IntPtr,Gtk.TextDirection,Gtk.StateType,Gtk.IconSize,System.IntPtr,System.String)">render_icon(IntPtr, IntPtr, TextDirection, StateType, IconSize, IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Renders an icon using gtk_style_render_icon(). In most cases,
+gtk_widget_render_icon() is better, since it automatically provides
+most of the arguments from the current widget settings.  This
+function never returns %NULL; if the icon can’t be rendered
+(perhaps because an image file fails to load), a default &quot;missing
+image&quot; icon will be returned instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use gtk_icon_set_render_icon_pixbuf() instead&quot;)]
+public static IntPtr render_icon(IntPtr icon_set, IntPtr style, TextDirection direction, StateType state, IconSize size, IntPtr widget, string detail)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_set</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">style</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextDirection.html">TextDirection</a></td>
+        <td><span class="parametername">direction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.StateType.html">StateType</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.IconSize.html">IconSize</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">widget</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">detail</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconSet_render_icon_pixbuf_" data-uid="Gtk.IconSet.render_icon_pixbuf*"></a>
+  <h4 id="Gtk_IconSet_render_icon_pixbuf_System_IntPtr_System_IntPtr_Gtk_IconSize_" data-uid="Gtk.IconSet.render_icon_pixbuf(System.IntPtr,System.IntPtr,Gtk.IconSize)">render_icon_pixbuf(IntPtr, IntPtr, IconSize)</h4>
+  <div class="markdown level1 summary"><p>Renders an icon using gtk_render_icon_pixbuf(). In most cases,
+gtk_widget_render_icon_pixbuf() is better, since it automatically provides
+most of the arguments from the current widget settings.  This
+function never returns %NULL; if the icon can’t be rendered
+(perhaps because an image file fails to load), a default &quot;missing
+image&quot; icon will be returned instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GtkIconTheme instead.&quot;)]
+public static IntPtr render_icon_pixbuf(IntPtr icon_set, IntPtr context, IconSize size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_set</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.IconSize.html">IconSize</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconSet_render_icon_surface_" data-uid="Gtk.IconSet.render_icon_surface*"></a>
+  <h4 id="Gtk_IconSet_render_icon_surface_System_IntPtr_System_IntPtr_Gtk_IconSize_System_Int32_System_IntPtr_" data-uid="Gtk.IconSet.render_icon_surface(System.IntPtr,System.IntPtr,Gtk.IconSize,System.Int32,System.IntPtr)">render_icon_surface(IntPtr, IntPtr, IconSize, Int32, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Renders an icon using gtk_render_icon_pixbuf() and converts it to a
+cairo surface.</p>
+<p>This function never returns %NULL; if the icon can’t be rendered
+(perhaps because an image file fails to load), a default &quot;missing
+image&quot; icon will be returned instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GtkIconTheme instead.&quot;)]
+public static IntPtr render_icon_surface(IntPtr icon_set, IntPtr context, IconSize size, int scale, IntPtr for_window)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_set</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.IconSize.html">IconSize</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">for_window</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconSet_unref_" data-uid="Gtk.IconSet.unref*"></a>
+  <h4 id="Gtk_IconSet_unref_System_IntPtr_" data-uid="Gtk.IconSet.unref(System.IntPtr)">unref(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Decrements the reference count on @icon_set, and frees memory
+if the reference count reaches 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GtkIconTheme instead.&quot;)]
+public static void unref(IntPtr icon_set)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_set</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_IconSet.md&amp;value=---%0Auid%3A%20Gtk.IconSet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Structs/IconSet.Generated.cs/#L8" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

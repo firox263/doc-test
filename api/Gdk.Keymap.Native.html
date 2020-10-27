@@ -1,0 +1,853 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Keymap.Native
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Keymap.Native
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gdk.Keymap.Native">
+  
+  
+  <h1 id="Gdk_Keymap_Native" data-uid="Gdk.Keymap.Native" class="text-break">Class Keymap.Native
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Keymap.Native</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gdk.html">Gdk</a></h6>
+  <h6><strong>Assembly</strong>: Gdk3.dll</h6>
+  <h5 id="Gdk_Keymap_Native_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static class Native</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Gdk_Keymap_Native_add_virtual_modifiers_" data-uid="Gdk.Keymap.Native.add_virtual_modifiers*"></a>
+  <h4 id="Gdk_Keymap_Native_add_virtual_modifiers_System_IntPtr_System_IntPtr_" data-uid="Gdk.Keymap.Native.add_virtual_modifiers(System.IntPtr,System.IntPtr)">add_virtual_modifiers(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Maps the non-virtual modifiers (i.e Mod2, Mod3, ...) which are set
+in @state to the virtual modifiers (i.e. Super, Hyper and Meta) and
+set the corresponding bits in @state.</p>
+<p>GDK already does this before delivering key events, but for
+compatibility reasons, it only sets the first virtual modifier
+it finds, whereas this function sets all matching virtual modifiers.</p>
+<p>This function is useful when matching key events against
+accelerators.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void add_virtual_modifiers(IntPtr keymap, IntPtr state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">keymap</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gdk_Keymap_Native_get_caps_lock_state_" data-uid="Gdk.Keymap.Native.get_caps_lock_state*"></a>
+  <h4 id="Gdk_Keymap_Native_get_caps_lock_state_System_IntPtr_" data-uid="Gdk.Keymap.Native.get_caps_lock_state(System.IntPtr)">get_caps_lock_state(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns whether the Caps Lock modifer is locked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool get_caps_lock_state(IntPtr keymap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">keymap</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gdk_Keymap_Native_get_direction_" data-uid="Gdk.Keymap.Native.get_direction*"></a>
+  <h4 id="Gdk_Keymap_Native_get_direction_System_IntPtr_" data-uid="Gdk.Keymap.Native.get_direction(System.IntPtr)">get_direction(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the direction of effective layout of the keymap.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Direction get_direction(IntPtr keymap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">keymap</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pango.Direction.html">Direction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gdk_Keymap_Native_get_entries_for_keycode_" data-uid="Gdk.Keymap.Native.get_entries_for_keycode*"></a>
+  <h4 id="Gdk_Keymap_Native_get_entries_for_keycode_System_IntPtr_System_UInt32_System_IntPtr__System_IntPtr__System_Int32__" data-uid="Gdk.Keymap.Native.get_entries_for_keycode(System.IntPtr,System.UInt32,System.IntPtr@,System.IntPtr@,System.Int32@)">get_entries_for_keycode(IntPtr, UInt32, ref IntPtr, ref IntPtr, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the keyvals bound to @hardware_keycode.
+The Nth #GdkKeymapKey in @keys is bound to the Nth
+keyval in @keyvals. Free the returned arrays with g_free().
+When a keycode is pressed by the user, the keyval from
+this list of entries is selected by considering the effective
+keyboard group and level. See gdk_keymap_translate_keyboard_state().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool get_entries_for_keycode(IntPtr keymap, uint hardware_keycode, ref IntPtr keys, ref IntPtr keyvals, ref int n_entries)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">keymap</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">hardware_keycode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">keys</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">keyvals</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n_entries</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gdk_Keymap_Native_get_entries_for_keyval_" data-uid="Gdk.Keymap.Native.get_entries_for_keyval*"></a>
+  <h4 id="Gdk_Keymap_Native_get_entries_for_keyval_System_IntPtr_System_UInt32_System_IntPtr__System_Int32__" data-uid="Gdk.Keymap.Native.get_entries_for_keyval(System.IntPtr,System.UInt32,System.IntPtr@,System.Int32@)">get_entries_for_keyval(IntPtr, UInt32, ref IntPtr, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Obtains a list of keycode/group/level combinations that will
+generate @keyval. Groups and levels are two kinds of keyboard mode;
+in general, the level determines whether the top or bottom symbol
+on a key is used, and the group determines whether the left or
+right symbol is used. On US keyboards, the shift key changes the
+keyboard level, and there are no groups. A group switch key might
+convert a keyboard between Hebrew to English modes, for example.
+#GdkEventKey contains a %group field that indicates the active
+keyboard group. The level is computed from the modifier mask.
+The returned array should be freed
+with g_free().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool get_entries_for_keyval(IntPtr keymap, uint keyval, ref IntPtr keys, ref int n_keys)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">keymap</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">keyval</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">keys</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n_keys</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gdk_Keymap_Native_get_modifier_mask_" data-uid="Gdk.Keymap.Native.get_modifier_mask*"></a>
+  <h4 id="Gdk_Keymap_Native_get_modifier_mask_System_IntPtr_Gdk_ModifierIntent_" data-uid="Gdk.Keymap.Native.get_modifier_mask(System.IntPtr,Gdk.ModifierIntent)">get_modifier_mask(IntPtr, ModifierIntent)</h4>
+  <div class="markdown level1 summary"><p>Returns the modifier mask the @keymap’s windowing system backend
+uses for a particular purpose.</p>
+<p>Note that this function always returns real hardware modifiers, not
+virtual ones (e.g. it will return #GDK_MOD1_MASK rather than
+#GDK_META_MASK if the backend maps MOD1 to META), so there are use
+cases where the return value of this function has to be transformed
+by gdk_keymap_add_virtual_modifiers() in order to contain the
+expected result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ModifierType get_modifier_mask(IntPtr keymap, ModifierIntent intent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">keymap</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gdk.ModifierIntent.html">ModifierIntent</a></td>
+        <td><span class="parametername">intent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gdk.ModifierType.html">ModifierType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gdk_Keymap_Native_get_modifier_state_" data-uid="Gdk.Keymap.Native.get_modifier_state*"></a>
+  <h4 id="Gdk_Keymap_Native_get_modifier_state_System_IntPtr_" data-uid="Gdk.Keymap.Native.get_modifier_state(System.IntPtr)">get_modifier_state(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the current modifier state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint get_modifier_state(IntPtr keymap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">keymap</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gdk_Keymap_Native_get_num_lock_state_" data-uid="Gdk.Keymap.Native.get_num_lock_state*"></a>
+  <h4 id="Gdk_Keymap_Native_get_num_lock_state_System_IntPtr_" data-uid="Gdk.Keymap.Native.get_num_lock_state(System.IntPtr)">get_num_lock_state(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns whether the Num Lock modifer is locked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool get_num_lock_state(IntPtr keymap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">keymap</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gdk_Keymap_Native_get_scroll_lock_state_" data-uid="Gdk.Keymap.Native.get_scroll_lock_state*"></a>
+  <h4 id="Gdk_Keymap_Native_get_scroll_lock_state_System_IntPtr_" data-uid="Gdk.Keymap.Native.get_scroll_lock_state(System.IntPtr)">get_scroll_lock_state(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns whether the Scroll Lock modifer is locked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool get_scroll_lock_state(IntPtr keymap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">keymap</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gdk_Keymap_Native_get_type_" data-uid="Gdk.Keymap.Native.get_type*"></a>
+  <h4 id="Gdk_Keymap_Native_get_type" data-uid="Gdk.Keymap.Native.get_type">get_type()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong get_type()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gdk_Keymap_Native_have_bidi_layouts_" data-uid="Gdk.Keymap.Native.have_bidi_layouts*"></a>
+  <h4 id="Gdk_Keymap_Native_have_bidi_layouts_System_IntPtr_" data-uid="Gdk.Keymap.Native.have_bidi_layouts(System.IntPtr)">have_bidi_layouts(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Determines if keyboard layouts for both right-to-left and left-to-right
+languages are in use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool have_bidi_layouts(IntPtr keymap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">keymap</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gdk_Keymap_Native_lookup_key_" data-uid="Gdk.Keymap.Native.lookup_key*"></a>
+  <h4 id="Gdk_Keymap_Native_lookup_key_System_IntPtr_System_IntPtr_" data-uid="Gdk.Keymap.Native.lookup_key(System.IntPtr,System.IntPtr)">lookup_key(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Looks up the keyval mapped to a keycode/group/level triplet.
+If no keyval is bound to @key, returns 0. For normal user input,
+you want to use gdk_keymap_translate_keyboard_state() instead of
+this function, since the effective group/level may not be
+the same as the current keyboard state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint lookup_key(IntPtr keymap, IntPtr key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">keymap</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gdk_Keymap_Native_map_virtual_modifiers_" data-uid="Gdk.Keymap.Native.map_virtual_modifiers*"></a>
+  <h4 id="Gdk_Keymap_Native_map_virtual_modifiers_System_IntPtr_System_IntPtr_" data-uid="Gdk.Keymap.Native.map_virtual_modifiers(System.IntPtr,System.IntPtr)">map_virtual_modifiers(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Maps the virtual modifiers (i.e. Super, Hyper and Meta) which
+are set in @state to their non-virtual counterparts (i.e. Mod2,
+Mod3,...) and set the corresponding bits in @state.</p>
+<p>This function is useful when matching key events against
+accelerators.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool map_virtual_modifiers(IntPtr keymap, IntPtr state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">keymap</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gdk_Keymap_Native_translate_keyboard_state_" data-uid="Gdk.Keymap.Native.translate_keyboard_state*"></a>
+  <h4 id="Gdk_Keymap_Native_translate_keyboard_state_System_IntPtr_System_UInt32_Gdk_ModifierType_System_Int32_System_UInt32__System_Int32__System_Int32__System_IntPtr_" data-uid="Gdk.Keymap.Native.translate_keyboard_state(System.IntPtr,System.UInt32,Gdk.ModifierType,System.Int32,System.UInt32@,System.Int32@,System.Int32@,System.IntPtr)">translate_keyboard_state(IntPtr, UInt32, ModifierType, Int32, ref UInt32, ref Int32, ref Int32, IntPtr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool translate_keyboard_state(IntPtr keymap, uint hardware_keycode, ModifierType state, int group, ref uint keyval, ref int effective_group, ref int level, IntPtr consumed_modifiers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">keymap</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">hardware_keycode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gdk.ModifierType.html">ModifierType</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">group</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">keyval</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">effective_group</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">level</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">consumed_modifiers</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gdk_Keymap_Native.md&amp;value=---%0Auid%3A%20Gdk.Keymap.Native%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gdk3/Classes/Keymap.Generated.cs/#L96" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

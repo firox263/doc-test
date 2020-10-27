@@ -1,0 +1,506 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CellRenderer
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CellRenderer
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gtk.CellRenderer">
+  
+  
+  <h1 id="Gtk_CellRenderer" data-uid="Gtk.CellRenderer" class="text-break">Class CellRenderer
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="GObject.Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="GObject.InitiallyUnowned.html">InitiallyUnowned</a></div>
+    <div class="level3"><span class="xref">CellRenderer</span></div>
+      <div class="level4"><a class="xref" href="Gtk.CellRendererPixbuf.html">CellRendererPixbuf</a></div>
+      <div class="level4"><a class="xref" href="Gtk.CellRendererProgress.html">CellRendererProgress</a></div>
+      <div class="level4"><a class="xref" href="Gtk.CellRendererSpinner.html">CellRendererSpinner</a></div>
+      <div class="level4"><a class="xref" href="Gtk.CellRendererText.html">CellRendererText</a></div>
+      <div class="level4"><a class="xref" href="Gtk.CellRendererToggle.html">CellRendererToggle</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="GObject.InitiallyUnowned.html#GObject_InitiallyUnowned_Initialize">InitiallyUnowned.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_PropertyChanged">Object.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Handle">Object.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Disposed">Object.Disposed</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RegisterNotifyPropertyChangedEvent_System_String_System_Action_">Object.RegisterNotifyPropertyChangedEvent(String, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RegisterEvent_System_String_GObject_ActionRefValues_System_Boolean_">Object.RegisterEvent(String, ActionRefValues, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RegisterEvent_System_String_System_Action_System_Boolean_">Object.RegisterEvent(String, Action, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_UnregisterEvent_GObject_ActionRefValues_">Object.UnregisterEvent(ActionRefValues)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_UnregisterEvent_System_Action_">Object.UnregisterEvent(Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ThrowIfDisposed">Object.ThrowIfDisposed()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_HandleError_System_IntPtr_">Object.HandleError(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetHandle_GObject_Object_">Object.GetHandle(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnPropertyChanged_System_String_">Object.OnPropertyChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetObject__1_System_IntPtr___0__">Object.GetObject&lt;T&gt;(IntPtr, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_TryWrapPointerAs__1_System_IntPtr___0__">Object.TryWrapPointerAs&lt;T&gt;(IntPtr, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Dispose">Object.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Dispose_System_Boolean_">Object.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Item_GObject_Signal_GObject_Object_NotifySignalArgs__">Object.Item[Signal&lt;Object.NotifySignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifySignal">Object.NotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnNotify">Object.OnNotify</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetProperty__1_GObject_Property___0__">Object.GetProperty&lt;T&gt;(Property&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetProperty__1_GObject_Property___0____0_">Object.SetProperty&lt;T&gt;(Property&lt;T&gt;, T)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gtk.html">Gtk</a></h6>
+  <h6><strong>Assembly</strong>: Gtk3.dll</h6>
+  <h5 id="Gtk_CellRenderer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class CellRenderer : InitiallyUnowned, INotifyPropertyChanged, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_CellRenderer__ctor_GObject_ConstructParameter___.md&amp;value=---%0Auid%3A%20Gtk.CellRenderer.%23ctor(GObject.ConstructParameter%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/CellRenderer.Generated.cs/#L138">View Source</a>
+  </span>
+  <a id="Gtk_CellRenderer__ctor_" data-uid="Gtk.CellRenderer.#ctor*"></a>
+  <h4 id="Gtk_CellRenderer__ctor_GObject_ConstructParameter___" data-uid="Gtk.CellRenderer.#ctor(GObject.ConstructParameter[])">CellRenderer(ConstructParameter[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CellRenderer(params ConstructParameter[] properties)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.ConstructParameter.html">ConstructParameter</a>[]</td>
+        <td><span class="parametername">properties</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_CellRenderer__ctor_System_IntPtr_.md&amp;value=---%0Auid%3A%20Gtk.CellRenderer.%23ctor(System.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/CellRenderer.Generated.cs/#L137">View Source</a>
+  </span>
+  <a id="Gtk_CellRenderer__ctor_" data-uid="Gtk.CellRenderer.#ctor*"></a>
+  <h4 id="Gtk_CellRenderer__ctor_System_IntPtr_" data-uid="Gtk.CellRenderer.#ctor(System.IntPtr)">CellRenderer(IntPtr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CellRenderer(IntPtr ptr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">ptr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_CellRenderer_EditingCanceledSignal.md&amp;value=---%0Auid%3A%20Gtk.CellRenderer.EditingCanceledSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/CellRenderer.Generated.cs/#L28">View Source</a>
+  </span>
+  <h4 id="Gtk_CellRenderer_EditingCanceledSignal" data-uid="Gtk.CellRenderer.EditingCanceledSignal">EditingCanceledSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnEditingCanceled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;SignalArgs&gt; EditingCanceledSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_CellRenderer_EditingStartedSignal.md&amp;value=---%0Auid%3A%20Gtk.CellRenderer.EditingStartedSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/CellRenderer.Generated.cs/#L91">View Source</a>
+  </span>
+  <h4 id="Gtk_CellRenderer_EditingStartedSignal" data-uid="Gtk.CellRenderer.EditingStartedSignal">EditingStartedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnEditingStarted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;CellRenderer.EditingStartedSignalArgs&gt; EditingStartedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.CellRenderer.EditingStartedSignalArgs.html">CellRenderer.EditingStartedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_CellRenderer_Item_GObject_Signal_Gtk_CellRenderer_EditingStartedSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.CellRenderer.Item(GObject.Signal%7BGtk.CellRenderer.EditingStartedSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/CellRenderer.Generated.cs/#L52">View Source</a>
+  </span>
+  <a id="Gtk_CellRenderer_Item_" data-uid="Gtk.CellRenderer.Item*"></a>
+  <h4 id="Gtk_CellRenderer_Item_GObject_Signal_Gtk_CellRenderer_EditingStartedSignalArgs__" data-uid="Gtk.CellRenderer.Item(GObject.Signal{Gtk.CellRenderer.EditingStartedSignalArgs})">Item[Signal&lt;CellRenderer.EditingStartedSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;CellRenderer.EditingStartedSignalArgs&gt; this[Signal&lt;CellRenderer.EditingStartedSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.CellRenderer.EditingStartedSignalArgs.html">CellRenderer.EditingStartedSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.CellRenderer.EditingStartedSignalArgs.html">CellRenderer.EditingStartedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_CellRenderer_OnEditingCanceled.md&amp;value=---%0Auid%3A%20Gtk.CellRenderer.OnEditingCanceled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/CellRenderer.Generated.cs/#L38">View Source</a>
+  </span>
+  <h4 id="Gtk_CellRenderer_OnEditingCanceled" data-uid="Gtk.CellRenderer.OnEditingCanceled">OnEditingCanceled</h4>
+  <div class="markdown level1 summary"><p>This signal gets emitted when the user cancels the process of editing a
+cell.  For example, an editable cell renderer could be written to cancel
+editing when the user presses Escape.</p>
+<p>See also: gtk_cell_renderer_stop_editing().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SignalArgs&gt; OnEditingCanceled</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_CellRenderer_OnEditingStarted.md&amp;value=---%0Auid%3A%20Gtk.CellRenderer.OnEditingStarted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/CellRenderer.Generated.cs/#L125">View Source</a>
+  </span>
+  <h4 id="Gtk_CellRenderer_OnEditingStarted" data-uid="Gtk.CellRenderer.OnEditingStarted">OnEditingStarted</h4>
+  <div class="markdown level1 summary"><p>This signal gets emitted when a cell starts to be edited.
+The intended use of this signal is to do special setup
+on @editable, e.g. adding a #GtkEntryCompletion or setting
+up additional columns in a #GtkComboBox.</p>
+<p>See gtk_cell_editable_start_editing() for information on the lifecycle of
+the @editable and a way to do setup that doesn’t depend on the @renderer.</p>
+<p>Note that GTK+ doesn't guarantee that cell renderers will
+continue to use the same kind of widget for editing in future
+releases, therefore you should check the type of @editable
+before doing any specific setup, as in the following example:
+|[<!-- language="C" -->
+static void
+text_editing_started (GtkCellRenderer *cell,
+GtkCellEditable *editable,
+const gchar     *path,
+gpointer         data)
+{
+if (GTK_IS_ENTRY (editable))
+{
+GtkEntry *entry = GTK_ENTRY (editable);</p>
+<p>// ... create a GtkEntryCompletion</p>
+<p>gtk_entry_set_completion (entry, completion);
+}
+}
+]|</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;CellRenderer.EditingStartedSignalArgs&gt; OnEditingStarted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.CellRenderer.EditingStartedSignalArgs.html">CellRenderer.EditingStartedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_CellRenderer.md&amp;value=---%0Auid%3A%20Gtk.CellRenderer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/CellRenderer.Generated.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

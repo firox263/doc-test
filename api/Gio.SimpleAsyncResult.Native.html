@@ -1,0 +1,1021 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SimpleAsyncResult.Native
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SimpleAsyncResult.Native
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gio.SimpleAsyncResult.Native">
+  
+  
+  <h1 id="Gio_SimpleAsyncResult_Native" data-uid="Gio.SimpleAsyncResult.Native" class="text-break">Class SimpleAsyncResult.Native
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SimpleAsyncResult.Native</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gio.html">Gio</a></h6>
+  <h6><strong>Assembly</strong>: Gio.dll</h6>
+  <h5 id="Gio_SimpleAsyncResult_Native_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static class Native</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Gio_SimpleAsyncResult_Native_complete_" data-uid="Gio.SimpleAsyncResult.Native.complete*"></a>
+  <h4 id="Gio_SimpleAsyncResult_Native_complete_System_IntPtr_" data-uid="Gio.SimpleAsyncResult.Native.complete(System.IntPtr)">complete(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Completes an asynchronous I/O job immediately. Must be called in
+the thread where the asynchronous result was to be delivered, as it
+invokes the callback directly. If you are in a different thread use
+g_simple_async_result_complete_in_idle().</p>
+<p>Calling this function takes a reference to @simple for as long as
+is needed to complete the call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GTask instead.&quot;)]
+public static void complete(IntPtr simple)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">simple</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SimpleAsyncResult_Native_complete_in_idle_" data-uid="Gio.SimpleAsyncResult.Native.complete_in_idle*"></a>
+  <h4 id="Gio_SimpleAsyncResult_Native_complete_in_idle_System_IntPtr_" data-uid="Gio.SimpleAsyncResult.Native.complete_in_idle(System.IntPtr)">complete_in_idle(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Completes an asynchronous function in an idle handler in the
+[thread-default main context][g-main-context-push-thread-default]
+of the thread that @simple was initially created in
+(and re-pushes that context around the invocation of the callback).</p>
+<p>Calling this function takes a reference to @simple for as long as
+is needed to complete the call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GTask instead.&quot;)]
+public static void complete_in_idle(IntPtr simple)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">simple</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SimpleAsyncResult_Native_get_op_res_gboolean_" data-uid="Gio.SimpleAsyncResult.Native.get_op_res_gboolean*"></a>
+  <h4 id="Gio_SimpleAsyncResult_Native_get_op_res_gboolean_System_IntPtr_" data-uid="Gio.SimpleAsyncResult.Native.get_op_res_gboolean(System.IntPtr)">get_op_res_gboolean(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the operation result boolean from within the asynchronous result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GTask and g_task_propagate_boolean() instead.&quot;)]
+public static bool get_op_res_gboolean(IntPtr simple)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">simple</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SimpleAsyncResult_Native_get_op_res_gpointer_" data-uid="Gio.SimpleAsyncResult.Native.get_op_res_gpointer*"></a>
+  <h4 id="Gio_SimpleAsyncResult_Native_get_op_res_gpointer_System_IntPtr_" data-uid="Gio.SimpleAsyncResult.Native.get_op_res_gpointer(System.IntPtr)">get_op_res_gpointer(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets a pointer result as returned by the asynchronous function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GTask and g_task_propagate_pointer() instead.&quot;)]
+public static IntPtr get_op_res_gpointer(IntPtr simple)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">simple</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SimpleAsyncResult_Native_get_op_res_gssize_" data-uid="Gio.SimpleAsyncResult.Native.get_op_res_gssize*"></a>
+  <h4 id="Gio_SimpleAsyncResult_Native_get_op_res_gssize_System_IntPtr_" data-uid="Gio.SimpleAsyncResult.Native.get_op_res_gssize(System.IntPtr)">get_op_res_gssize(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets a gssize from the asynchronous result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GTask and g_task_propagate_int() instead.&quot;)]
+public static long get_op_res_gssize(IntPtr simple)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">simple</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SimpleAsyncResult_Native_get_source_tag_" data-uid="Gio.SimpleAsyncResult.Native.get_source_tag*"></a>
+  <h4 id="Gio_SimpleAsyncResult_Native_get_source_tag_System_IntPtr_" data-uid="Gio.SimpleAsyncResult.Native.get_source_tag(System.IntPtr)">get_source_tag(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the source tag for the #GSimpleAsyncResult.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GTask and g_task_get_source_tag() instead.&quot;)]
+public static IntPtr get_source_tag(IntPtr simple)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">simple</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SimpleAsyncResult_Native_get_type_" data-uid="Gio.SimpleAsyncResult.Native.get_type*"></a>
+  <h4 id="Gio_SimpleAsyncResult_Native_get_type" data-uid="Gio.SimpleAsyncResult.Native.get_type">get_type()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong get_type()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SimpleAsyncResult_Native_new_" data-uid="Gio.SimpleAsyncResult.Native.new*"></a>
+  <h4 id="Gio_SimpleAsyncResult_Native_new_System_IntPtr_Gio_AsyncReadyCallback_System_IntPtr_System_IntPtr_" data-uid="Gio.SimpleAsyncResult.Native.new(System.IntPtr,Gio.AsyncReadyCallback,System.IntPtr,System.IntPtr)">new(IntPtr, AsyncReadyCallback, IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Creates a #GSimpleAsyncResult.</p>
+<p>The common convention is to create the #GSimpleAsyncResult in the
+function that starts the asynchronous operation and use that same
+function as the @source_tag.</p>
+<p>If your operation supports cancellation with #GCancellable (which it
+probably should) then you should provide the user's cancellable to
+g_simple_async_result_set_check_cancellable() immediately after
+this function returns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use g_task_new() instead.&quot;)]
+public static IntPtr new(IntPtr source_object, AsyncReadyCallback callback, IntPtr user_data, IntPtr source_tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">source_object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">source_tag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SimpleAsyncResult_Native_new_from_error_" data-uid="Gio.SimpleAsyncResult.Native.new_from_error*"></a>
+  <h4 id="Gio_SimpleAsyncResult_Native_new_from_error_System_IntPtr_Gio_AsyncReadyCallback_System_IntPtr_System_IntPtr_" data-uid="Gio.SimpleAsyncResult.Native.new_from_error(System.IntPtr,Gio.AsyncReadyCallback,System.IntPtr,System.IntPtr)">new_from_error(IntPtr, AsyncReadyCallback, IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Creates a #GSimpleAsyncResult from an error condition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use g_task_new() and g_task_return_error() instead.&quot;)]
+public static IntPtr new_from_error(IntPtr source_object, AsyncReadyCallback callback, IntPtr user_data, IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">source_object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SimpleAsyncResult_Native_new_take_error_" data-uid="Gio.SimpleAsyncResult.Native.new_take_error*"></a>
+  <h4 id="Gio_SimpleAsyncResult_Native_new_take_error_System_IntPtr_Gio_AsyncReadyCallback_System_IntPtr_System_IntPtr_" data-uid="Gio.SimpleAsyncResult.Native.new_take_error(System.IntPtr,Gio.AsyncReadyCallback,System.IntPtr,System.IntPtr)">new_take_error(IntPtr, AsyncReadyCallback, IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Creates a #GSimpleAsyncResult from an error condition, and takes over the
+caller's ownership of @error, so the caller does not need to free it anymore.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use g_task_new() and g_task_return_error() instead.&quot;)]
+public static IntPtr new_take_error(IntPtr source_object, AsyncReadyCallback callback, IntPtr user_data, IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">source_object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SimpleAsyncResult_Native_propagate_error_" data-uid="Gio.SimpleAsyncResult.Native.propagate_error*"></a>
+  <h4 id="Gio_SimpleAsyncResult_Native_propagate_error_System_IntPtr_System_IntPtr__" data-uid="Gio.SimpleAsyncResult.Native.propagate_error(System.IntPtr,System.IntPtr@)">propagate_error(IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Propagates an error from within the simple asynchronous result to
+a given destination.</p>
+<p>If the #GCancellable given to a prior call to
+g_simple_async_result_set_check_cancellable() is cancelled then this
+function will return %TRUE with @dest set appropriately.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GTask instead.&quot;)]
+public static bool propagate_error(IntPtr simple, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">simple</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SimpleAsyncResult_Native_run_in_thread_" data-uid="Gio.SimpleAsyncResult.Native.run_in_thread*"></a>
+  <h4 id="Gio_SimpleAsyncResult_Native_run_in_thread_System_IntPtr_Gio_SimpleAsyncThreadFunc_System_Int32_System_IntPtr_" data-uid="Gio.SimpleAsyncResult.Native.run_in_thread(System.IntPtr,Gio.SimpleAsyncThreadFunc,System.Int32,System.IntPtr)">run_in_thread(IntPtr, SimpleAsyncThreadFunc, Int32, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Runs the asynchronous job in a separate thread and then calls
+g_simple_async_result_complete_in_idle() on @simple to return
+the result to the appropriate main loop.</p>
+<p>Calling this function takes a reference to @simple for as long as
+is needed to run the job and report its completion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GTask and g_task_run_in_thread() instead.&quot;)]
+public static void run_in_thread(IntPtr simple, SimpleAsyncThreadFunc func, int io_priority, IntPtr cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">simple</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.SimpleAsyncThreadFunc.html">SimpleAsyncThreadFunc</a></td>
+        <td><span class="parametername">func</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">io_priority</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SimpleAsyncResult_Native_set_check_cancellable_" data-uid="Gio.SimpleAsyncResult.Native.set_check_cancellable*"></a>
+  <h4 id="Gio_SimpleAsyncResult_Native_set_check_cancellable_System_IntPtr_System_IntPtr_" data-uid="Gio.SimpleAsyncResult.Native.set_check_cancellable(System.IntPtr,System.IntPtr)">set_check_cancellable(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets a #GCancellable to check before dispatching results.</p>
+<p>This function has one very specific purpose: the provided cancellable
+is checked at the time of g_simple_async_result_propagate_error() If
+it is cancelled, these functions will return an &quot;Operation was
+cancelled&quot; error (%G_IO_ERROR_CANCELLED).</p>
+<p>Implementors of cancellable asynchronous functions should use this in
+order to provide a guarantee to their callers that cancelling an
+async operation will reliably result in an error being returned for
+that operation (even if a positive result for the operation has
+already been sent as an idle to the main context to be dispatched).</p>
+<p>The checking described above is done regardless of any call to the
+unrelated g_simple_async_result_set_handle_cancellation() function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GTask instead.&quot;)]
+public static void set_check_cancellable(IntPtr simple, IntPtr check_cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">simple</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">check_cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SimpleAsyncResult_Native_set_error_va_" data-uid="Gio.SimpleAsyncResult.Native.set_error_va*"></a>
+  <h4 id="Gio_SimpleAsyncResult_Native_set_error_va_System_IntPtr_System_UInt32_System_Int32_System_String_System_IntPtr_" data-uid="Gio.SimpleAsyncResult.Native.set_error_va(System.IntPtr,System.UInt32,System.Int32,System.String,System.IntPtr)">set_error_va(IntPtr, UInt32, Int32, String, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets an error within the asynchronous result without a #GError.
+Unless writing a binding, see g_simple_async_result_set_error().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GTask and g_task_return_error() instead.&quot;)]
+public static void set_error_va(IntPtr simple, uint domain, int code, string format, IntPtr args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">simple</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">domain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SimpleAsyncResult_Native_set_from_error_" data-uid="Gio.SimpleAsyncResult.Native.set_from_error*"></a>
+  <h4 id="Gio_SimpleAsyncResult_Native_set_from_error_System_IntPtr_System_IntPtr_" data-uid="Gio.SimpleAsyncResult.Native.set_from_error(System.IntPtr,System.IntPtr)">set_from_error(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets the result from a #GError.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GTask and g_task_return_error() instead.&quot;)]
+public static void set_from_error(IntPtr simple, IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">simple</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SimpleAsyncResult_Native_set_handle_cancellation_" data-uid="Gio.SimpleAsyncResult.Native.set_handle_cancellation*"></a>
+  <h4 id="Gio_SimpleAsyncResult_Native_set_handle_cancellation_System_IntPtr_System_Boolean_" data-uid="Gio.SimpleAsyncResult.Native.set_handle_cancellation(System.IntPtr,System.Boolean)">set_handle_cancellation(IntPtr, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets whether to handle cancellation within the asynchronous operation.</p>
+<p>This function has nothing to do with
+g_simple_async_result_set_check_cancellable().  It only refers to the
+#GCancellable passed to g_simple_async_result_run_in_thread().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;&quot;)]
+public static void set_handle_cancellation(IntPtr simple, bool handle_cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">simple</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">handle_cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SimpleAsyncResult_Native_set_op_res_gboolean_" data-uid="Gio.SimpleAsyncResult.Native.set_op_res_gboolean*"></a>
+  <h4 id="Gio_SimpleAsyncResult_Native_set_op_res_gboolean_System_IntPtr_System_Boolean_" data-uid="Gio.SimpleAsyncResult.Native.set_op_res_gboolean(System.IntPtr,System.Boolean)">set_op_res_gboolean(IntPtr, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets the operation result to a boolean within the asynchronous result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GTask and g_task_return_boolean() instead.&quot;)]
+public static void set_op_res_gboolean(IntPtr simple, bool op_res)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">simple</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">op_res</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SimpleAsyncResult_Native_set_op_res_gpointer_" data-uid="Gio.SimpleAsyncResult.Native.set_op_res_gpointer*"></a>
+  <h4 id="Gio_SimpleAsyncResult_Native_set_op_res_gpointer_System_IntPtr_System_IntPtr_GLib_DestroyNotify_" data-uid="Gio.SimpleAsyncResult.Native.set_op_res_gpointer(System.IntPtr,System.IntPtr,GLib.DestroyNotify)">set_op_res_gpointer(IntPtr, IntPtr, DestroyNotify)</h4>
+  <div class="markdown level1 summary"><p>Sets the operation result within the asynchronous result to a pointer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GTask and g_task_return_pointer() instead.&quot;)]
+public static void set_op_res_gpointer(IntPtr simple, IntPtr op_res, DestroyNotify destroy_op_res)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">simple</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">op_res</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.DestroyNotify.html">DestroyNotify</a></td>
+        <td><span class="parametername">destroy_op_res</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SimpleAsyncResult_Native_set_op_res_gssize_" data-uid="Gio.SimpleAsyncResult.Native.set_op_res_gssize*"></a>
+  <h4 id="Gio_SimpleAsyncResult_Native_set_op_res_gssize_System_IntPtr_System_Int64_" data-uid="Gio.SimpleAsyncResult.Native.set_op_res_gssize(System.IntPtr,System.Int64)">set_op_res_gssize(IntPtr, Int64)</h4>
+  <div class="markdown level1 summary"><p>Sets the operation result within the asynchronous result to
+the given @op_res.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GTask and g_task_return_int() instead.&quot;)]
+public static void set_op_res_gssize(IntPtr simple, long op_res)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">simple</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">op_res</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SimpleAsyncResult_Native_take_error_" data-uid="Gio.SimpleAsyncResult.Native.take_error*"></a>
+  <h4 id="Gio_SimpleAsyncResult_Native_take_error_System_IntPtr_System_IntPtr_" data-uid="Gio.SimpleAsyncResult.Native.take_error(System.IntPtr,System.IntPtr)">take_error(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets the result from @error, and takes over the caller's ownership
+of @error, so the caller does not need to free it any more.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GTask and g_task_return_error() instead.&quot;)]
+public static void take_error(IntPtr simple, IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">simple</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_SimpleAsyncResult_Native.md&amp;value=---%0Auid%3A%20Gio.SimpleAsyncResult.Native%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/SimpleAsyncResult.Generated.cs/#L32" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

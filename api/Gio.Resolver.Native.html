@@ -1,0 +1,1138 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Resolver.Native
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Resolver.Native
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gio.Resolver.Native">
+  
+  
+  <h1 id="Gio_Resolver_Native" data-uid="Gio.Resolver.Native" class="text-break">Class Resolver.Native
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Resolver.Native</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gio.html">Gio</a></h6>
+  <h6><strong>Assembly</strong>: Gio.dll</h6>
+  <h5 id="Gio_Resolver_Native_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static class Native</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Gio_Resolver_Native_get_type_" data-uid="Gio.Resolver.Native.get_type*"></a>
+  <h4 id="Gio_Resolver_Native_get_type" data-uid="Gio.Resolver.Native.get_type">get_type()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong get_type()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Resolver_Native_lookup_by_address_" data-uid="Gio.Resolver.Native.lookup_by_address*"></a>
+  <h4 id="Gio_Resolver_Native_lookup_by_address_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr__" data-uid="Gio.Resolver.Native.lookup_by_address(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr@)">lookup_by_address(IntPtr, IntPtr, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Synchronously reverse-resolves @address to determine its
+associated hostname.</p>
+<p>If the DNS resolution fails, @error (if non-%NULL) will be set to
+a value from #GResolverError.</p>
+<p>If @cancellable is non-%NULL, it can be used to cancel the
+operation, in which case @error (if non-%NULL) will be set to
+%G_IO_ERROR_CANCELLED.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr lookup_by_address(IntPtr resolver, IntPtr address, IntPtr cancellable, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">resolver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">address</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Resolver_Native_lookup_by_address_async_" data-uid="Gio.Resolver.Native.lookup_by_address_async*"></a>
+  <h4 id="Gio_Resolver_Native_lookup_by_address_async_System_IntPtr_System_IntPtr_System_IntPtr_Gio_AsyncReadyCallback_System_IntPtr_" data-uid="Gio.Resolver.Native.lookup_by_address_async(System.IntPtr,System.IntPtr,System.IntPtr,Gio.AsyncReadyCallback,System.IntPtr)">lookup_by_address_async(IntPtr, IntPtr, IntPtr, AsyncReadyCallback, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Begins asynchronously reverse-resolving @address to determine its
+associated hostname, and eventually calls @callback, which must
+call g_resolver_lookup_by_address_finish() to get the final result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void lookup_by_address_async(IntPtr resolver, IntPtr address, IntPtr cancellable, AsyncReadyCallback callback, IntPtr user_data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">resolver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">address</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Resolver_Native_lookup_by_address_finish_" data-uid="Gio.Resolver.Native.lookup_by_address_finish*"></a>
+  <h4 id="Gio_Resolver_Native_lookup_by_address_finish_System_IntPtr_System_IntPtr_System_IntPtr__" data-uid="Gio.Resolver.Native.lookup_by_address_finish(System.IntPtr,System.IntPtr,System.IntPtr@)">lookup_by_address_finish(IntPtr, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the result of a previous call to
+g_resolver_lookup_by_address_async().</p>
+<p>If the DNS resolution failed, @error (if non-%NULL) will be set to
+a value from #GResolverError. If the operation was cancelled,
+@error will be set to %G_IO_ERROR_CANCELLED.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr lookup_by_address_finish(IntPtr resolver, IntPtr result, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">resolver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Resolver_Native_lookup_by_name_" data-uid="Gio.Resolver.Native.lookup_by_name*"></a>
+  <h4 id="Gio_Resolver_Native_lookup_by_name_System_IntPtr_System_String_System_IntPtr_System_IntPtr__" data-uid="Gio.Resolver.Native.lookup_by_name(System.IntPtr,System.String,System.IntPtr,System.IntPtr@)">lookup_by_name(IntPtr, String, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Synchronously resolves @hostname to determine its associated IP
+address(es). @hostname may be an ASCII-only or UTF-8 hostname, or
+the textual form of an IP address (in which case this just becomes
+a wrapper around g_inet_address_new_from_string()).</p>
+<p>On success, g_resolver_lookup_by_name() will return a non-empty #GList of
+#GInetAddress, sorted in order of preference and guaranteed to not
+contain duplicates. That is, if using the result to connect to
+@hostname, you should attempt to connect to the first address
+first, then the second if the first fails, etc. If you are using
+the result to listen on a socket, it is appropriate to add each
+result using e.g. g_socket_listener_add_address().</p>
+<p>If the DNS resolution fails, @error (if non-%NULL) will be set to a
+value from #GResolverError and %NULL will be returned.</p>
+<p>If @cancellable is non-%NULL, it can be used to cancel the
+operation, in which case @error (if non-%NULL) will be set to
+%G_IO_ERROR_CANCELLED.</p>
+<p>If you are planning to connect to a socket on the resolved IP
+address, it may be easier to create a #GNetworkAddress and use its
+#GSocketConnectable interface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr lookup_by_name(IntPtr resolver, string hostname, IntPtr cancellable, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">resolver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">hostname</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Resolver_Native_lookup_by_name_async_" data-uid="Gio.Resolver.Native.lookup_by_name_async*"></a>
+  <h4 id="Gio_Resolver_Native_lookup_by_name_async_System_IntPtr_System_String_System_IntPtr_Gio_AsyncReadyCallback_System_IntPtr_" data-uid="Gio.Resolver.Native.lookup_by_name_async(System.IntPtr,System.String,System.IntPtr,Gio.AsyncReadyCallback,System.IntPtr)">lookup_by_name_async(IntPtr, String, IntPtr, AsyncReadyCallback, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Begins asynchronously resolving @hostname to determine its
+associated IP address(es), and eventually calls @callback, which
+must call g_resolver_lookup_by_name_finish() to get the result.
+See g_resolver_lookup_by_name() for more details.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void lookup_by_name_async(IntPtr resolver, string hostname, IntPtr cancellable, AsyncReadyCallback callback, IntPtr user_data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">resolver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">hostname</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Resolver_Native_lookup_by_name_finish_" data-uid="Gio.Resolver.Native.lookup_by_name_finish*"></a>
+  <h4 id="Gio_Resolver_Native_lookup_by_name_finish_System_IntPtr_System_IntPtr_System_IntPtr__" data-uid="Gio.Resolver.Native.lookup_by_name_finish(System.IntPtr,System.IntPtr,System.IntPtr@)">lookup_by_name_finish(IntPtr, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the result of a call to
+g_resolver_lookup_by_name_async().</p>
+<p>If the DNS resolution failed, @error (if non-%NULL) will be set to
+a value from #GResolverError. If the operation was cancelled,
+@error will be set to %G_IO_ERROR_CANCELLED.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr lookup_by_name_finish(IntPtr resolver, IntPtr result, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">resolver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Resolver_Native_lookup_by_name_with_flags_" data-uid="Gio.Resolver.Native.lookup_by_name_with_flags*"></a>
+  <h4 id="Gio_Resolver_Native_lookup_by_name_with_flags_System_IntPtr_System_String_Gio_ResolverNameLookupFlags_System_IntPtr_System_IntPtr__" data-uid="Gio.Resolver.Native.lookup_by_name_with_flags(System.IntPtr,System.String,Gio.ResolverNameLookupFlags,System.IntPtr,System.IntPtr@)">lookup_by_name_with_flags(IntPtr, String, ResolverNameLookupFlags, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>This differs from g_resolver_lookup_by_name() in that you can modify
+the lookup behavior with @flags. For example this can be used to limit
+results with #G_RESOLVER_NAME_LOOKUP_FLAGS_IPV4_ONLY.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr lookup_by_name_with_flags(IntPtr resolver, string hostname, ResolverNameLookupFlags flags, IntPtr cancellable, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">resolver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">hostname</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.ResolverNameLookupFlags.html">ResolverNameLookupFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Resolver_Native_lookup_by_name_with_flags_async_" data-uid="Gio.Resolver.Native.lookup_by_name_with_flags_async*"></a>
+  <h4 id="Gio_Resolver_Native_lookup_by_name_with_flags_async_System_IntPtr_System_String_Gio_ResolverNameLookupFlags_System_IntPtr_Gio_AsyncReadyCallback_System_IntPtr_" data-uid="Gio.Resolver.Native.lookup_by_name_with_flags_async(System.IntPtr,System.String,Gio.ResolverNameLookupFlags,System.IntPtr,Gio.AsyncReadyCallback,System.IntPtr)">lookup_by_name_with_flags_async(IntPtr, String, ResolverNameLookupFlags, IntPtr, AsyncReadyCallback, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Begins asynchronously resolving @hostname to determine its
+associated IP address(es), and eventually calls @callback, which
+must call g_resolver_lookup_by_name_with_flags_finish() to get the result.
+See g_resolver_lookup_by_name() for more details.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void lookup_by_name_with_flags_async(IntPtr resolver, string hostname, ResolverNameLookupFlags flags, IntPtr cancellable, AsyncReadyCallback callback, IntPtr user_data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">resolver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">hostname</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.ResolverNameLookupFlags.html">ResolverNameLookupFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Resolver_Native_lookup_by_name_with_flags_finish_" data-uid="Gio.Resolver.Native.lookup_by_name_with_flags_finish*"></a>
+  <h4 id="Gio_Resolver_Native_lookup_by_name_with_flags_finish_System_IntPtr_System_IntPtr_System_IntPtr__" data-uid="Gio.Resolver.Native.lookup_by_name_with_flags_finish(System.IntPtr,System.IntPtr,System.IntPtr@)">lookup_by_name_with_flags_finish(IntPtr, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the result of a call to
+g_resolver_lookup_by_name_with_flags_async().</p>
+<p>If the DNS resolution failed, @error (if non-%NULL) will be set to
+a value from #GResolverError. If the operation was cancelled,
+@error will be set to %G_IO_ERROR_CANCELLED.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr lookup_by_name_with_flags_finish(IntPtr resolver, IntPtr result, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">resolver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Resolver_Native_lookup_records_" data-uid="Gio.Resolver.Native.lookup_records*"></a>
+  <h4 id="Gio_Resolver_Native_lookup_records_System_IntPtr_System_String_Gio_ResolverRecordType_System_IntPtr_System_IntPtr__" data-uid="Gio.Resolver.Native.lookup_records(System.IntPtr,System.String,Gio.ResolverRecordType,System.IntPtr,System.IntPtr@)">lookup_records(IntPtr, String, ResolverRecordType, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Synchronously performs a DNS record lookup for the given @rrname and returns
+a list of records as #GVariant tuples. See #GResolverRecordType for
+information on what the records contain for each @record_type.</p>
+<p>If the DNS resolution fails, @error (if non-%NULL) will be set to
+a value from #GResolverError and %NULL will be returned.</p>
+<p>If @cancellable is non-%NULL, it can be used to cancel the
+operation, in which case @error (if non-%NULL) will be set to
+%G_IO_ERROR_CANCELLED.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr lookup_records(IntPtr resolver, string rrname, ResolverRecordType record_type, IntPtr cancellable, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">resolver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">rrname</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.ResolverRecordType.html">ResolverRecordType</a></td>
+        <td><span class="parametername">record_type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Resolver_Native_lookup_records_async_" data-uid="Gio.Resolver.Native.lookup_records_async*"></a>
+  <h4 id="Gio_Resolver_Native_lookup_records_async_System_IntPtr_System_String_Gio_ResolverRecordType_System_IntPtr_Gio_AsyncReadyCallback_System_IntPtr_" data-uid="Gio.Resolver.Native.lookup_records_async(System.IntPtr,System.String,Gio.ResolverRecordType,System.IntPtr,Gio.AsyncReadyCallback,System.IntPtr)">lookup_records_async(IntPtr, String, ResolverRecordType, IntPtr, AsyncReadyCallback, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Begins asynchronously performing a DNS lookup for the given
+@rrname, and eventually calls @callback, which must call
+g_resolver_lookup_records_finish() to get the final result. See
+g_resolver_lookup_records() for more details.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void lookup_records_async(IntPtr resolver, string rrname, ResolverRecordType record_type, IntPtr cancellable, AsyncReadyCallback callback, IntPtr user_data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">resolver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">rrname</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.ResolverRecordType.html">ResolverRecordType</a></td>
+        <td><span class="parametername">record_type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Resolver_Native_lookup_records_finish_" data-uid="Gio.Resolver.Native.lookup_records_finish*"></a>
+  <h4 id="Gio_Resolver_Native_lookup_records_finish_System_IntPtr_System_IntPtr_System_IntPtr__" data-uid="Gio.Resolver.Native.lookup_records_finish(System.IntPtr,System.IntPtr,System.IntPtr@)">lookup_records_finish(IntPtr, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the result of a previous call to
+g_resolver_lookup_records_async(). Returns a non-empty list of records as
+#GVariant tuples. See #GResolverRecordType for information on what the
+records contain.</p>
+<p>If the DNS resolution failed, @error (if non-%NULL) will be set to
+a value from #GResolverError. If the operation was cancelled,
+@error will be set to %G_IO_ERROR_CANCELLED.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr lookup_records_finish(IntPtr resolver, IntPtr result, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">resolver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Resolver_Native_lookup_service_" data-uid="Gio.Resolver.Native.lookup_service*"></a>
+  <h4 id="Gio_Resolver_Native_lookup_service_System_IntPtr_System_String_System_String_System_String_System_IntPtr_System_IntPtr__" data-uid="Gio.Resolver.Native.lookup_service(System.IntPtr,System.String,System.String,System.String,System.IntPtr,System.IntPtr@)">lookup_service(IntPtr, String, String, String, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Synchronously performs a DNS SRV lookup for the given @service and
+@protocol in the given @domain and returns an array of #GSrvTarget.
+@domain may be an ASCII-only or UTF-8 hostname. Note also that the
+@service and @protocol arguments do not include the leading underscore
+that appears in the actual DNS entry.</p>
+<p>On success, g_resolver_lookup_service() will return a non-empty #GList of
+#GSrvTarget, sorted in order of preference. (That is, you should
+attempt to connect to the first target first, then the second if
+the first fails, etc.)</p>
+<p>If the DNS resolution fails, @error (if non-%NULL) will be set to
+a value from #GResolverError and %NULL will be returned.</p>
+<p>If @cancellable is non-%NULL, it can be used to cancel the
+operation, in which case @error (if non-%NULL) will be set to
+%G_IO_ERROR_CANCELLED.</p>
+<p>If you are planning to connect to the service, it is usually easier
+to create a #GNetworkService and use its #GSocketConnectable
+interface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr lookup_service(IntPtr resolver, string service, string protocol, string domain, IntPtr cancellable, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">resolver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">protocol</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">domain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Resolver_Native_lookup_service_async_" data-uid="Gio.Resolver.Native.lookup_service_async*"></a>
+  <h4 id="Gio_Resolver_Native_lookup_service_async_System_IntPtr_System_String_System_String_System_String_System_IntPtr_Gio_AsyncReadyCallback_System_IntPtr_" data-uid="Gio.Resolver.Native.lookup_service_async(System.IntPtr,System.String,System.String,System.String,System.IntPtr,Gio.AsyncReadyCallback,System.IntPtr)">lookup_service_async(IntPtr, String, String, String, IntPtr, AsyncReadyCallback, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Begins asynchronously performing a DNS SRV lookup for the given
+@service and @protocol in the given @domain, and eventually calls
+@callback, which must call g_resolver_lookup_service_finish() to
+get the final result. See g_resolver_lookup_service() for more
+details.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void lookup_service_async(IntPtr resolver, string service, string protocol, string domain, IntPtr cancellable, AsyncReadyCallback callback, IntPtr user_data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">resolver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">protocol</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">domain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Resolver_Native_lookup_service_finish_" data-uid="Gio.Resolver.Native.lookup_service_finish*"></a>
+  <h4 id="Gio_Resolver_Native_lookup_service_finish_System_IntPtr_System_IntPtr_System_IntPtr__" data-uid="Gio.Resolver.Native.lookup_service_finish(System.IntPtr,System.IntPtr,System.IntPtr@)">lookup_service_finish(IntPtr, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the result of a previous call to
+g_resolver_lookup_service_async().</p>
+<p>If the DNS resolution failed, @error (if non-%NULL) will be set to
+a value from #GResolverError. If the operation was cancelled,
+@error will be set to %G_IO_ERROR_CANCELLED.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr lookup_service_finish(IntPtr resolver, IntPtr result, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">resolver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Resolver_Native_set_default_" data-uid="Gio.Resolver.Native.set_default*"></a>
+  <h4 id="Gio_Resolver_Native_set_default_System_IntPtr_" data-uid="Gio.Resolver.Native.set_default(System.IntPtr)">set_default(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets @resolver to be the application's default resolver (reffing
+@resolver, and unreffing the previous default resolver, if any).
+Future calls to g_resolver_get_default() will return this resolver.</p>
+<p>This can be used if an application wants to perform any sort of DNS
+caching or &quot;pinning&quot;; it can implement its own #GResolver that
+calls the original default resolver for DNS operations, and
+implements its own cache policies on top of that, and then set
+itself as the default resolver for all later code to use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_default(IntPtr resolver)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">resolver</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_Resolver_Native.md&amp;value=---%0Auid%3A%20Gio.Resolver.Native%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/Resolver.Generated.cs/#L53" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

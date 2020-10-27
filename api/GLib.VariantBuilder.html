@@ -1,0 +1,539 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class VariantBuilder
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class VariantBuilder
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GLib.VariantBuilder">
+  
+  
+  <h1 id="GLib_VariantBuilder" data-uid="GLib.VariantBuilder" class="text-break">Class VariantBuilder
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">VariantBuilder</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GLib.html">GLib</a></h6>
+  <h6><strong>Assembly</strong>: GLib.dll</h6>
+  <h5 id="GLib_VariantBuilder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VariantBuilder</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="GLib_VariantBuilder_add_value_" data-uid="GLib.VariantBuilder.add_value*"></a>
+  <h4 id="GLib_VariantBuilder_add_value_System_IntPtr_System_IntPtr_" data-uid="GLib.VariantBuilder.add_value(System.IntPtr,System.IntPtr)">add_value(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Adds @value to @builder.</p>
+<p>It is an error to call this function in any way that would create an
+inconsistent value to be constructed.  Some examples of this are
+putting different types of items into an array, putting the wrong
+types or number of items in a tuple, putting more than one value into
+a variant, etc.</p>
+<p>If @value is a floating reference (see g_variant_ref_sink()),
+the @builder instance takes ownership of @value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void add_value(IntPtr builder, IntPtr value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_VariantBuilder_clear_" data-uid="GLib.VariantBuilder.clear*"></a>
+  <h4 id="GLib_VariantBuilder_clear_System_IntPtr_" data-uid="GLib.VariantBuilder.clear(System.IntPtr)">clear(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Releases all memory associated with a #GVariantBuilder without
+freeing the #GVariantBuilder structure itself.</p>
+<p>It typically only makes sense to do this on a stack-allocated
+#GVariantBuilder if you want to abort building the value part-way
+through.  This function need not be called if you call
+g_variant_builder_end() and it also doesn't need to be called on
+builders allocated with g_variant_builder_new() (see
+g_variant_builder_unref() for that).</p>
+<p>This function leaves the #GVariantBuilder structure set to all-zeros.
+It is valid to call this function on either an initialised
+#GVariantBuilder or one that is set to all-zeros but it is not valid
+to call this function on uninitialised memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void clear(IntPtr builder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_VariantBuilder_close_" data-uid="GLib.VariantBuilder.close*"></a>
+  <h4 id="GLib_VariantBuilder_close_System_IntPtr_" data-uid="GLib.VariantBuilder.close(System.IntPtr)">close(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Closes the subcontainer inside the given @builder that was opened by
+the most recent call to g_variant_builder_open().</p>
+<p>It is an error to call this function in any way that would create an
+inconsistent value to be constructed (ie: too few values added to the
+subcontainer).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void close(IntPtr builder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_VariantBuilder_end_" data-uid="GLib.VariantBuilder.end*"></a>
+  <h4 id="GLib_VariantBuilder_end_System_IntPtr_" data-uid="GLib.VariantBuilder.end(System.IntPtr)">end(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Ends the builder process and returns the constructed value.</p>
+<p>It is not permissible to use @builder in any way after this call
+except for reference counting operations (in the case of a
+heap-allocated #GVariantBuilder) or by reinitialising it with
+g_variant_builder_init() (in the case of stack-allocated). This
+means that for the stack-allocated builders there is no need to
+call g_variant_builder_clear() after the call to
+g_variant_builder_end().</p>
+<p>It is an error to call this function in any way that would create an
+inconsistent value to be constructed (ie: insufficient number of
+items added to a container with a specific number of children
+required).  It is also an error to call this function if the builder
+was created with an indefinite array or maybe type and no children
+have been added; in this case it is impossible to infer the type of
+the empty array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr end(IntPtr builder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_VariantBuilder_init_" data-uid="GLib.VariantBuilder.init*"></a>
+  <h4 id="GLib_VariantBuilder_init_System_IntPtr_System_IntPtr_" data-uid="GLib.VariantBuilder.init(System.IntPtr,System.IntPtr)">init(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Initialises a #GVariantBuilder structure.</p>
+<p>@type must be non-%NULL.  It specifies the type of container to
+construct.  It can be an indefinite type such as
+%G_VARIANT_TYPE_ARRAY or a definite type such as &quot;as&quot; or &quot;(ii)&quot;.
+Maybe, array, tuple, dictionary entry and variant-typed values may be
+constructed.</p>
+<p>After the builder is initialised, values are added using
+g_variant_builder_add_value() or g_variant_builder_add().</p>
+<p>After all the child values are added, g_variant_builder_end() frees
+the memory associated with the builder and returns the #GVariant that
+was created.</p>
+<p>This function completely ignores the previous contents of @builder.
+On one hand this means that it is valid to pass in completely
+uninitialised memory.  On the other hand, this means that if you are
+initialising over top of an existing #GVariantBuilder you need to
+first call g_variant_builder_clear() in order to avoid leaking
+memory.</p>
+<p>You must not call g_variant_builder_ref() or
+g_variant_builder_unref() on a #GVariantBuilder that was initialised
+with this function.  If you ever pass a reference to a
+#GVariantBuilder outside of the control of your own code then you
+should assume that the person receiving that reference may try to use
+reference counting; you should use g_variant_builder_new() instead of
+this function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void init(IntPtr builder, IntPtr type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_VariantBuilder_new_" data-uid="GLib.VariantBuilder.new*"></a>
+  <h4 id="GLib_VariantBuilder_new_System_IntPtr_" data-uid="GLib.VariantBuilder.new(System.IntPtr)">new(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Allocates and initialises a new #GVariantBuilder.</p>
+<p>You should call g_variant_builder_unref() on the return value when it
+is no longer needed.  The memory will not be automatically freed by
+any other call.</p>
+<p>In most cases it is easier to place a #GVariantBuilder directly on
+the stack of the calling function and initialise it with
+g_variant_builder_init().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr new(IntPtr type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_VariantBuilder_open_" data-uid="GLib.VariantBuilder.open*"></a>
+  <h4 id="GLib_VariantBuilder_open_System_IntPtr_System_IntPtr_" data-uid="GLib.VariantBuilder.open(System.IntPtr,System.IntPtr)">open(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void open(IntPtr builder, IntPtr type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_VariantBuilder_ref_" data-uid="GLib.VariantBuilder.ref*"></a>
+  <h4 id="GLib_VariantBuilder_ref_System_IntPtr_" data-uid="GLib.VariantBuilder.ref(System.IntPtr)">ref(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Increases the reference count on @builder.</p>
+<p>Don't call this on stack-allocated #GVariantBuilder instances or bad
+things will happen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr ref(IntPtr builder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_VariantBuilder_unref_" data-uid="GLib.VariantBuilder.unref*"></a>
+  <h4 id="GLib_VariantBuilder_unref_System_IntPtr_" data-uid="GLib.VariantBuilder.unref(System.IntPtr)">unref(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Decreases the reference count on @builder.</p>
+<p>In the event that there are no more references, releases all memory
+associated with the #GVariantBuilder.</p>
+<p>Don't call this on stack-allocated #GVariantBuilder instances or bad
+things will happen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void unref(IntPtr builder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GLib_VariantBuilder.md&amp;value=---%0Auid%3A%20GLib.VariantBuilder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GLib/Classes/VariantBuilder.Generated.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

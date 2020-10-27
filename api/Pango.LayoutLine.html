@@ -1,0 +1,656 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct LayoutLine
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct LayoutLine
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Pango.LayoutLine">
+  
+  
+  <h1 id="Pango_LayoutLine" data-uid="Pango.LayoutLine" class="text-break">Struct LayoutLine
+  </h1>
+  <div class="markdown level0 summary"><p>The #PangoLayoutLine structure represents one of the lines resulting
+from laying out a paragraph via #PangoLayout. #PangoLayoutLine
+structures are obtained by calling pango_layout_get_line() and
+are only valid until the text, attributes, or settings of the
+parent #PangoLayout are modified.</p>
+<p>Routines for rendering PangoLayout objects are provided in
+code specific to each rendering system.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.ValueType.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ValueType.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.ValueType.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Pango.html">Pango</a></h6>
+  <h6><strong>Assembly</strong>: Pango.dll</h6>
+  <h5 id="Pango_LayoutLine_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct LayoutLine</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Pango_LayoutLine_is_paragraph_start.md&amp;value=---%0Auid%3A%20Pango.LayoutLine.is_paragraph_start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Pango/Structs/LayoutLine.Generated.cs/#L67">View Source</a>
+  </span>
+  <h4 id="Pango_LayoutLine_is_paragraph_start" data-uid="Pango.LayoutLine.is_paragraph_start">is_paragraph_start</h4>
+  <div class="markdown level1 summary"><p>#TRUE if this is the first line of the paragraph</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint is_paragraph_start</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Pango_LayoutLine_layout.md&amp;value=---%0Auid%3A%20Pango.LayoutLine.layout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Pango/Structs/LayoutLine.Generated.cs/#L30">View Source</a>
+  </span>
+  <h4 id="Pango_LayoutLine_layout" data-uid="Pango.LayoutLine.layout">layout</h4>
+  <div class="markdown level1 summary"><p>the layout this line belongs to, might be %NULL</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntPtr layout</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Pango_LayoutLine_length.md&amp;value=---%0Auid%3A%20Pango.LayoutLine.length%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Pango/Structs/LayoutLine.Generated.cs/#L48">View Source</a>
+  </span>
+  <h4 id="Pango_LayoutLine_length" data-uid="Pango.LayoutLine.length">length</h4>
+  <div class="markdown level1 summary"><p>length of line in bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int length</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Pango_LayoutLine_resolved_dir.md&amp;value=---%0Auid%3A%20Pango.LayoutLine.resolved_dir%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Pango/Structs/LayoutLine.Generated.cs/#L76">View Source</a>
+  </span>
+  <h4 id="Pango_LayoutLine_resolved_dir" data-uid="Pango.LayoutLine.resolved_dir">resolved_dir</h4>
+  <div class="markdown level1 summary"><p>#Resolved PangoDirection of line</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint resolved_dir</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Pango_LayoutLine_runs.md&amp;value=---%0Auid%3A%20Pango.LayoutLine.runs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Pango/Structs/LayoutLine.Generated.cs/#L58">View Source</a>
+  </span>
+  <h4 id="Pango_LayoutLine_runs" data-uid="Pango.LayoutLine.runs">runs</h4>
+  <div class="markdown level1 summary"><p>list of runs in the
+line, from left to right</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntPtr runs</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Pango_LayoutLine_start_index.md&amp;value=---%0Auid%3A%20Pango.LayoutLine.start_index%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Pango/Structs/LayoutLine.Generated.cs/#L39">View Source</a>
+  </span>
+  <h4 id="Pango_LayoutLine_start_index" data-uid="Pango.LayoutLine.start_index">start_index</h4>
+  <div class="markdown level1 summary"><p>start of line as byte index into layout-&gt;text</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int start_index</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Pango_LayoutLine_get_extents_" data-uid="Pango.LayoutLine.get_extents*"></a>
+  <h4 id="Pango_LayoutLine_get_extents_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="Pango.LayoutLine.get_extents(System.IntPtr,System.IntPtr,System.IntPtr)">get_extents(IntPtr, IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Computes the logical and ink extents of a layout line. See
+pango_font_get_glyph_extents() for details about the interpretation
+of the rectangles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void get_extents(IntPtr line, IntPtr ink_rect, IntPtr logical_rect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">line</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">ink_rect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">logical_rect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_LayoutLine_get_pixel_extents_" data-uid="Pango.LayoutLine.get_pixel_extents*"></a>
+  <h4 id="Pango_LayoutLine_get_pixel_extents_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="Pango.LayoutLine.get_pixel_extents(System.IntPtr,System.IntPtr,System.IntPtr)">get_pixel_extents(IntPtr, IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Computes the logical and ink extents of @layout_line in device units.
+This function just calls pango_layout_line_get_extents() followed by
+two pango_extents_to_pixels() calls, rounding @ink_rect and @logical_rect
+such that the rounded rectangles fully contain the unrounded one (that is,
+passes them as first argument to pango_extents_to_pixels()).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void get_pixel_extents(IntPtr layout_line, IntPtr ink_rect, IntPtr logical_rect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout_line</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">ink_rect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">logical_rect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_LayoutLine_get_x_ranges_" data-uid="Pango.LayoutLine.get_x_ranges*"></a>
+  <h4 id="Pango_LayoutLine_get_x_ranges_System_IntPtr_System_Int32_System_Int32_System_IntPtr__System_Int32__" data-uid="Pango.LayoutLine.get_x_ranges(System.IntPtr,System.Int32,System.Int32,System.IntPtr@,System.Int32@)">get_x_ranges(IntPtr, Int32, Int32, ref IntPtr, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a list of visual ranges corresponding to a given logical range.
+This list is not necessarily minimal - there may be consecutive
+ranges which are adjacent. The ranges will be sorted from left to
+right. The ranges are with respect to the left edge of the entire
+layout, not with respect to the line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void get_x_ranges(IntPtr line, int start_index, int end_index, ref IntPtr ranges, ref int n_ranges)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">line</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">start_index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">end_index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">ranges</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n_ranges</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_LayoutLine_index_to_x_" data-uid="Pango.LayoutLine.index_to_x*"></a>
+  <h4 id="Pango_LayoutLine_index_to_x_System_IntPtr_System_Int32_System_Boolean_System_Int32__" data-uid="Pango.LayoutLine.index_to_x(System.IntPtr,System.Int32,System.Boolean,System.Int32@)">index_to_x(IntPtr, Int32, Boolean, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Converts an index within a line to a X position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void index_to_x(IntPtr line, int index_, bool trailing, ref int x_pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">line</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index_</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">trailing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x_pos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_LayoutLine_ref_" data-uid="Pango.LayoutLine.ref*"></a>
+  <h4 id="Pango_LayoutLine_ref_System_IntPtr_" data-uid="Pango.LayoutLine.ref(System.IntPtr)">ref(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Increase the reference count of a #PangoLayoutLine by one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr ref(IntPtr line)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">line</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_LayoutLine_unref_" data-uid="Pango.LayoutLine.unref*"></a>
+  <h4 id="Pango_LayoutLine_unref_System_IntPtr_" data-uid="Pango.LayoutLine.unref(System.IntPtr)">unref(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Decrease the reference count of a #PangoLayoutLine by one.
+If the result is zero, the line and all associated memory
+will be freed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void unref(IntPtr line)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">line</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_LayoutLine_x_to_index_" data-uid="Pango.LayoutLine.x_to_index*"></a>
+  <h4 id="Pango_LayoutLine_x_to_index_System_IntPtr_System_Int32_System_Int32__System_Int32__" data-uid="Pango.LayoutLine.x_to_index(System.IntPtr,System.Int32,System.Int32@,System.Int32@)">x_to_index(IntPtr, Int32, ref Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Converts from x offset to the byte index of the corresponding
+character within the text of the layout. If @x_pos is outside the line,
+@index_ and @trailing will point to the very first or very last position
+in the line. This determination is based on the resolved direction
+of the paragraph; for example, if the resolved direction is
+right-to-left, then an X position to the right of the line (after it)
+results in 0 being stored in @index_ and @trailing. An X position to the
+left of the line results in @index_ pointing to the (logical) last
+grapheme in the line and @trailing being set to the number of characters
+in that grapheme. The reverse is true for a left-to-right line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool x_to_index(IntPtr line, int x_pos, ref int index_, ref int trailing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">line</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x_pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index_</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">trailing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Pango_LayoutLine.md&amp;value=---%0Auid%3A%20Pango.LayoutLine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Pango/Structs/LayoutLine.Generated.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

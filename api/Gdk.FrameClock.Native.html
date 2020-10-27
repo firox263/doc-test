@@ -1,0 +1,566 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FrameClock.Native
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FrameClock.Native
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gdk.FrameClock.Native">
+  
+  
+  <h1 id="Gdk_FrameClock_Native" data-uid="Gdk.FrameClock.Native" class="text-break">Class FrameClock.Native
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">FrameClock.Native</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gdk.html">Gdk</a></h6>
+  <h6><strong>Assembly</strong>: Gdk3.dll</h6>
+  <h5 id="Gdk_FrameClock_Native_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static class Native</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Gdk_FrameClock_Native_begin_updating_" data-uid="Gdk.FrameClock.Native.begin_updating*"></a>
+  <h4 id="Gdk_FrameClock_Native_begin_updating_System_IntPtr_" data-uid="Gdk.FrameClock.Native.begin_updating(System.IntPtr)">begin_updating(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Starts updates for an animation. Until a matching call to
+gdk_frame_clock_end_updating() is made, the frame clock will continually
+request a new frame with the %GDK_FRAME_CLOCK_PHASE_UPDATE phase.
+This function may be called multiple times and frames will be
+requested until gdk_frame_clock_end_updating() is called the same
+number of times.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void begin_updating(IntPtr frame_clock)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">frame_clock</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gdk_FrameClock_Native_end_updating_" data-uid="Gdk.FrameClock.Native.end_updating*"></a>
+  <h4 id="Gdk_FrameClock_Native_end_updating_System_IntPtr_" data-uid="Gdk.FrameClock.Native.end_updating(System.IntPtr)">end_updating(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Stops updates for an animation. See the documentation for
+gdk_frame_clock_begin_updating().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void end_updating(IntPtr frame_clock)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">frame_clock</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gdk_FrameClock_Native_get_current_timings_" data-uid="Gdk.FrameClock.Native.get_current_timings*"></a>
+  <h4 id="Gdk_FrameClock_Native_get_current_timings_System_IntPtr_" data-uid="Gdk.FrameClock.Native.get_current_timings(System.IntPtr)">get_current_timings(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the frame timings for the current frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_current_timings(IntPtr frame_clock)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">frame_clock</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gdk_FrameClock_Native_get_frame_counter_" data-uid="Gdk.FrameClock.Native.get_frame_counter*"></a>
+  <h4 id="Gdk_FrameClock_Native_get_frame_counter_System_IntPtr_" data-uid="Gdk.FrameClock.Native.get_frame_counter(System.IntPtr)">get_frame_counter(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>A #GdkFrameClock maintains a 64-bit counter that increments for
+each frame drawn.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long get_frame_counter(IntPtr frame_clock)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">frame_clock</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gdk_FrameClock_Native_get_frame_time_" data-uid="Gdk.FrameClock.Native.get_frame_time*"></a>
+  <h4 id="Gdk_FrameClock_Native_get_frame_time_System_IntPtr_" data-uid="Gdk.FrameClock.Native.get_frame_time(System.IntPtr)">get_frame_time(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the time that should currently be used for animations.  Inside
+the processing of a frame, it’s the time used to compute the
+animation position of everything in a frame. Outside of a frame, it's
+the time of the conceptual “previous frame,” which may be either
+the actual previous frame time, or if that’s too old, an updated
+time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long get_frame_time(IntPtr frame_clock)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">frame_clock</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gdk_FrameClock_Native_get_history_start_" data-uid="Gdk.FrameClock.Native.get_history_start*"></a>
+  <h4 id="Gdk_FrameClock_Native_get_history_start_System_IntPtr_" data-uid="Gdk.FrameClock.Native.get_history_start(System.IntPtr)">get_history_start(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>#GdkFrameClock internally keeps a history of #GdkFrameTimings
+objects for recent frames that can be retrieved with
+gdk_frame_clock_get_timings(). The set of stored frames
+is the set from the counter values given by
+gdk_frame_clock_get_history_start() and
+gdk_frame_clock_get_frame_counter(), inclusive.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long get_history_start(IntPtr frame_clock)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">frame_clock</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gdk_FrameClock_Native_get_refresh_info_" data-uid="Gdk.FrameClock.Native.get_refresh_info*"></a>
+  <h4 id="Gdk_FrameClock_Native_get_refresh_info_System_IntPtr_System_Int64_System_Int64__System_Int64__" data-uid="Gdk.FrameClock.Native.get_refresh_info(System.IntPtr,System.Int64,System.Int64@,System.Int64@)">get_refresh_info(IntPtr, Int64, ref Int64, ref Int64)</h4>
+  <div class="markdown level1 summary"><p>Using the frame history stored in the frame clock, finds the last
+known presentation time and refresh interval, and assuming that
+presentation times are separated by the refresh interval,
+predicts a presentation time that is a multiple of the refresh
+interval after the last presentation time, and later than @base_time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void get_refresh_info(IntPtr frame_clock, long base_time, ref long refresh_interval_return, ref long presentation_time_return)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">frame_clock</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">base_time</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">refresh_interval_return</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">presentation_time_return</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gdk_FrameClock_Native_get_timings_" data-uid="Gdk.FrameClock.Native.get_timings*"></a>
+  <h4 id="Gdk_FrameClock_Native_get_timings_System_IntPtr_System_Int64_" data-uid="Gdk.FrameClock.Native.get_timings(System.IntPtr,System.Int64)">get_timings(IntPtr, Int64)</h4>
+  <div class="markdown level1 summary"><p>Retrieves a #GdkFrameTimings object holding timing information
+for the current frame or a recent frame. The #GdkFrameTimings
+object may not yet be complete: see gdk_frame_timings_get_complete().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_timings(IntPtr frame_clock, long frame_counter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">frame_clock</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">frame_counter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gdk_FrameClock_Native_get_type_" data-uid="Gdk.FrameClock.Native.get_type*"></a>
+  <h4 id="Gdk_FrameClock_Native_get_type" data-uid="Gdk.FrameClock.Native.get_type">get_type()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong get_type()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gdk_FrameClock_Native_request_phase_" data-uid="Gdk.FrameClock.Native.request_phase*"></a>
+  <h4 id="Gdk_FrameClock_Native_request_phase_System_IntPtr_Gdk_FrameClockPhase_" data-uid="Gdk.FrameClock.Native.request_phase(System.IntPtr,Gdk.FrameClockPhase)">request_phase(IntPtr, FrameClockPhase)</h4>
+  <div class="markdown level1 summary"><p>Asks the frame clock to run a particular phase. The signal
+corresponding the requested phase will be emitted the next
+time the frame clock processes. Multiple calls to
+gdk_frame_clock_request_phase() will be combined together
+and only one frame processed. If you are displaying animated
+content and want to continually request the
+%GDK_FRAME_CLOCK_PHASE_UPDATE phase for a period of time,
+you should use gdk_frame_clock_begin_updating() instead, since
+this allows GTK+ to adjust system parameters to get maximally
+smooth animations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void request_phase(IntPtr frame_clock, FrameClockPhase phase)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">frame_clock</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gdk.FrameClockPhase.html">FrameClockPhase</a></td>
+        <td><span class="parametername">phase</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gdk_FrameClock_Native.md&amp;value=---%0Auid%3A%20Gdk.FrameClock.Native%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gdk3/Classes/FrameClock.Generated.cs/#L190" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

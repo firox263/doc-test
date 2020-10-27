@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IconFactory.Native
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IconFactory.Native
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gtk.IconFactory.Native">
+  
+  
+  <h1 id="Gtk_IconFactory_Native" data-uid="Gtk.IconFactory.Native" class="text-break">Class IconFactory.Native
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">IconFactory.Native</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gtk.html">Gtk</a></h6>
+  <h6><strong>Assembly</strong>: Gtk3.dll</h6>
+  <h5 id="Gtk_IconFactory_Native_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static class Native</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Gtk_IconFactory_Native_add_" data-uid="Gtk.IconFactory.Native.add*"></a>
+  <h4 id="Gtk_IconFactory_Native_add_System_IntPtr_System_String_System_IntPtr_" data-uid="Gtk.IconFactory.Native.add(System.IntPtr,System.String,System.IntPtr)">add(IntPtr, String, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Adds the given @icon_set to the icon factory, under the name
+@stock_id.  @stock_id should be namespaced for your application,
+e.g. “myapp-whatever-icon”.  Normally applications create a
+#GtkIconFactory, then add it to the list of default factories with
+gtk_icon_factory_add_default(). Then they pass the @stock_id to
+widgets such as #GtkImage to display the icon. Themes can provide
+an icon with the same name (such as &quot;myapp-whatever-icon&quot;) to
+override your application’s default icons. If an icon already
+existed in @factory for @stock_id, it is unreferenced and replaced
+with the new @icon_set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GtkIconTheme instead.&quot;)]
+public static void add(IntPtr factory, string stock_id, IntPtr icon_set)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">factory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">stock_id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_set</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconFactory_Native_add_default_" data-uid="Gtk.IconFactory.Native.add_default*"></a>
+  <h4 id="Gtk_IconFactory_Native_add_default_System_IntPtr_" data-uid="Gtk.IconFactory.Native.add_default(System.IntPtr)">add_default(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Adds an icon factory to the list of icon factories searched by
+gtk_style_lookup_icon_set(). This means that, for example,
+gtk_image_new_from_stock() will be able to find icons in @factory.
+There will normally be an icon factory added for each library or
+application that comes with icons. The default icon factories
+can be overridden by themes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GtkIconTheme instead.&quot;)]
+public static void add_default(IntPtr factory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">factory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconFactory_Native_get_type_" data-uid="Gtk.IconFactory.Native.get_type*"></a>
+  <h4 id="Gtk_IconFactory_Native_get_type" data-uid="Gtk.IconFactory.Native.get_type">get_type()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong get_type()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconFactory_Native_lookup_" data-uid="Gtk.IconFactory.Native.lookup*"></a>
+  <h4 id="Gtk_IconFactory_Native_lookup_System_IntPtr_System_String_" data-uid="Gtk.IconFactory.Native.lookup(System.IntPtr,System.String)">lookup(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Looks up @stock_id in the icon factory, returning an icon set
+if found, otherwise %NULL. For display to the user, you should
+use gtk_style_lookup_icon_set() on the #GtkStyle for the
+widget that will display the icon, instead of using this
+function directly, so that themes are taken into account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GtkIconTheme instead.&quot;)]
+public static IntPtr lookup(IntPtr factory, string stock_id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">factory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">stock_id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconFactory_Native_new_" data-uid="Gtk.IconFactory.Native.new*"></a>
+  <h4 id="Gtk_IconFactory_Native_new" data-uid="Gtk.IconFactory.Native.new">new()</h4>
+  <div class="markdown level1 summary"><p>Creates a new #GtkIconFactory. An icon factory manages a collection
+of #GtkIconSets; a #GtkIconSet manages a set of variants of a
+particular icon (i.e. a #GtkIconSet contains variants for different
+sizes and widget states). Icons in an icon factory are named by a
+stock ID, which is a simple string identifying the icon. Each
+#GtkStyle has a list of #GtkIconFactorys derived from the current
+theme; those icon factories are consulted first when searching for
+an icon. If the theme doesn’t set a particular icon, GTK+ looks for
+the icon in a list of default icon factories, maintained by
+gtk_icon_factory_add_default() and
+gtk_icon_factory_remove_default(). Applications with icons should
+add a default icon factory with their icons, which will allow
+themes to override the icons for the application.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GtkIconTheme instead.&quot;)]
+public static IntPtr new()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconFactory_Native_remove_default_" data-uid="Gtk.IconFactory.Native.remove_default*"></a>
+  <h4 id="Gtk_IconFactory_Native_remove_default_System_IntPtr_" data-uid="Gtk.IconFactory.Native.remove_default(System.IntPtr)">remove_default(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Removes an icon factory from the list of default icon
+factories. Not normally used; you might use it for a library that
+can be unloaded or shut down.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use #GtkIconTheme instead.&quot;)]
+public static void remove_default(IntPtr factory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">factory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_IconFactory_Native.md&amp;value=---%0Auid%3A%20Gtk.IconFactory.Native%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/IconFactory.Generated.cs/#L32" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,813 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EntryCompletion
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EntryCompletion
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gtk.EntryCompletion">
+  
+  
+  <h1 id="Gtk_EntryCompletion" data-uid="Gtk.EntryCompletion" class="text-break">Class EntryCompletion
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="GObject.Object.html">Object</a></div>
+    <div class="level2"><span class="xref">EntryCompletion</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_PropertyChanged">Object.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Handle">Object.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Disposed">Object.Disposed</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Initialize">Object.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RegisterNotifyPropertyChangedEvent_System_String_System_Action_">Object.RegisterNotifyPropertyChangedEvent(String, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RegisterEvent_System_String_GObject_ActionRefValues_System_Boolean_">Object.RegisterEvent(String, ActionRefValues, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RegisterEvent_System_String_System_Action_System_Boolean_">Object.RegisterEvent(String, Action, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_UnregisterEvent_GObject_ActionRefValues_">Object.UnregisterEvent(ActionRefValues)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_UnregisterEvent_System_Action_">Object.UnregisterEvent(Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ThrowIfDisposed">Object.ThrowIfDisposed()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_HandleError_System_IntPtr_">Object.HandleError(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetHandle_GObject_Object_">Object.GetHandle(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnPropertyChanged_System_String_">Object.OnPropertyChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetObject__1_System_IntPtr___0__">Object.GetObject&lt;T&gt;(IntPtr, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_TryWrapPointerAs__1_System_IntPtr___0__">Object.TryWrapPointerAs&lt;T&gt;(IntPtr, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Dispose">Object.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Dispose_System_Boolean_">Object.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Item_GObject_Signal_GObject_Object_NotifySignalArgs__">Object.Item[Signal&lt;Object.NotifySignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifySignal">Object.NotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnNotify">Object.OnNotify</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetProperty__1_GObject_Property___0__">Object.GetProperty&lt;T&gt;(Property&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetProperty__1_GObject_Property___0____0_">Object.SetProperty&lt;T&gt;(Property&lt;T&gt;, T)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gtk.html">Gtk</a></h6>
+  <h6><strong>Assembly</strong>: Gtk3.dll</h6>
+  <h5 id="Gtk_EntryCompletion_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EntryCompletion : Object, INotifyPropertyChanged, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_EntryCompletion__ctor_GObject_ConstructParameter___.md&amp;value=---%0Auid%3A%20Gtk.EntryCompletion.%23ctor(GObject.ConstructParameter%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/EntryCompletion.Generated.cs/#L291">View Source</a>
+  </span>
+  <a id="Gtk_EntryCompletion__ctor_" data-uid="Gtk.EntryCompletion.#ctor*"></a>
+  <h4 id="Gtk_EntryCompletion__ctor_GObject_ConstructParameter___" data-uid="Gtk.EntryCompletion.#ctor(GObject.ConstructParameter[])">EntryCompletion(ConstructParameter[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected EntryCompletion(params ConstructParameter[] properties)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.ConstructParameter.html">ConstructParameter</a>[]</td>
+        <td><span class="parametername">properties</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_EntryCompletion__ctor_System_IntPtr_.md&amp;value=---%0Auid%3A%20Gtk.EntryCompletion.%23ctor(System.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/EntryCompletion.Generated.cs/#L290">View Source</a>
+  </span>
+  <a id="Gtk_EntryCompletion__ctor_" data-uid="Gtk.EntryCompletion.#ctor*"></a>
+  <h4 id="Gtk_EntryCompletion__ctor_System_IntPtr_" data-uid="Gtk.EntryCompletion.#ctor(System.IntPtr)">EntryCompletion(IntPtr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected EntryCompletion(IntPtr ptr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">ptr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_EntryCompletion_ActionActivatedSignal.md&amp;value=---%0Auid%3A%20Gtk.EntryCompletion.ActionActivatedSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/EntryCompletion.Generated.cs/#L60">View Source</a>
+  </span>
+  <h4 id="Gtk_EntryCompletion_ActionActivatedSignal" data-uid="Gtk.EntryCompletion.ActionActivatedSignal">ActionActivatedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnActionActivated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;EntryCompletion.ActionActivatedSignalArgs&gt; ActionActivatedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.EntryCompletion.ActionActivatedSignalArgs.html">EntryCompletion.ActionActivatedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_EntryCompletion_CursorOnMatchSignal.md&amp;value=---%0Auid%3A%20Gtk.EntryCompletion.CursorOnMatchSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/EntryCompletion.Generated.cs/#L119">View Source</a>
+  </span>
+  <h4 id="Gtk_EntryCompletion_CursorOnMatchSignal" data-uid="Gtk.EntryCompletion.CursorOnMatchSignal">CursorOnMatchSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnCursorOnMatch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;EntryCompletion.CursorOnMatchSignalArgs&gt; CursorOnMatchSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.EntryCompletion.CursorOnMatchSignalArgs.html">EntryCompletion.CursorOnMatchSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_EntryCompletion_InsertPrefixSignal.md&amp;value=---%0Auid%3A%20Gtk.EntryCompletion.InsertPrefixSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/EntryCompletion.Generated.cs/#L177">View Source</a>
+  </span>
+  <h4 id="Gtk_EntryCompletion_InsertPrefixSignal" data-uid="Gtk.EntryCompletion.InsertPrefixSignal">InsertPrefixSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnInsertPrefix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;EntryCompletion.InsertPrefixSignalArgs&gt; InsertPrefixSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.EntryCompletion.InsertPrefixSignalArgs.html">EntryCompletion.InsertPrefixSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_EntryCompletion_MatchSelectedSignal.md&amp;value=---%0Auid%3A%20Gtk.EntryCompletion.MatchSelectedSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/EntryCompletion.Generated.cs/#L243">View Source</a>
+  </span>
+  <h4 id="Gtk_EntryCompletion_MatchSelectedSignal" data-uid="Gtk.EntryCompletion.MatchSelectedSignal">MatchSelectedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnMatchSelected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;EntryCompletion.MatchSelectedSignalArgs&gt; MatchSelectedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.EntryCompletion.MatchSelectedSignalArgs.html">EntryCompletion.MatchSelectedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_EntryCompletion_NoMatchesSignal.md&amp;value=---%0Auid%3A%20Gtk.EntryCompletion.NoMatchesSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/EntryCompletion.Generated.cs/#L269">View Source</a>
+  </span>
+  <h4 id="Gtk_EntryCompletion_NoMatchesSignal" data-uid="Gtk.EntryCompletion.NoMatchesSignal">NoMatchesSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnNoMatches.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;SignalArgs&gt; NoMatchesSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_EntryCompletion_Item_GObject_Signal_Gtk_EntryCompletion_ActionActivatedSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.EntryCompletion.Item(GObject.Signal%7BGtk.EntryCompletion.ActionActivatedSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/EntryCompletion.Generated.cs/#L28">View Source</a>
+  </span>
+  <a id="Gtk_EntryCompletion_Item_" data-uid="Gtk.EntryCompletion.Item*"></a>
+  <h4 id="Gtk_EntryCompletion_Item_GObject_Signal_Gtk_EntryCompletion_ActionActivatedSignalArgs__" data-uid="Gtk.EntryCompletion.Item(GObject.Signal{Gtk.EntryCompletion.ActionActivatedSignalArgs})">Item[Signal&lt;EntryCompletion.ActionActivatedSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;EntryCompletion.ActionActivatedSignalArgs&gt; this[Signal&lt;EntryCompletion.ActionActivatedSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.EntryCompletion.ActionActivatedSignalArgs.html">EntryCompletion.ActionActivatedSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.EntryCompletion.ActionActivatedSignalArgs.html">EntryCompletion.ActionActivatedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_EntryCompletion_Item_GObject_Signal_Gtk_EntryCompletion_CursorOnMatchSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.EntryCompletion.Item(GObject.Signal%7BGtk.EntryCompletion.CursorOnMatchSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/EntryCompletion.Generated.cs/#L80">View Source</a>
+  </span>
+  <a id="Gtk_EntryCompletion_Item_" data-uid="Gtk.EntryCompletion.Item*"></a>
+  <h4 id="Gtk_EntryCompletion_Item_GObject_Signal_Gtk_EntryCompletion_CursorOnMatchSignalArgs__" data-uid="Gtk.EntryCompletion.Item(GObject.Signal{Gtk.EntryCompletion.CursorOnMatchSignalArgs})">Item[Signal&lt;EntryCompletion.CursorOnMatchSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;EntryCompletion.CursorOnMatchSignalArgs&gt; this[Signal&lt;EntryCompletion.CursorOnMatchSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.EntryCompletion.CursorOnMatchSignalArgs.html">EntryCompletion.CursorOnMatchSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.EntryCompletion.CursorOnMatchSignalArgs.html">EntryCompletion.CursorOnMatchSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_EntryCompletion_Item_GObject_Signal_Gtk_EntryCompletion_InsertPrefixSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.EntryCompletion.Item(GObject.Signal%7BGtk.EntryCompletion.InsertPrefixSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/EntryCompletion.Generated.cs/#L145">View Source</a>
+  </span>
+  <a id="Gtk_EntryCompletion_Item_" data-uid="Gtk.EntryCompletion.Item*"></a>
+  <h4 id="Gtk_EntryCompletion_Item_GObject_Signal_Gtk_EntryCompletion_InsertPrefixSignalArgs__" data-uid="Gtk.EntryCompletion.Item(GObject.Signal{Gtk.EntryCompletion.InsertPrefixSignalArgs})">Item[Signal&lt;EntryCompletion.InsertPrefixSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;EntryCompletion.InsertPrefixSignalArgs&gt; this[Signal&lt;EntryCompletion.InsertPrefixSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.EntryCompletion.InsertPrefixSignalArgs.html">EntryCompletion.InsertPrefixSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.EntryCompletion.InsertPrefixSignalArgs.html">EntryCompletion.InsertPrefixSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_EntryCompletion_Item_GObject_Signal_Gtk_EntryCompletion_MatchSelectedSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.EntryCompletion.Item(GObject.Signal%7BGtk.EntryCompletion.MatchSelectedSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/EntryCompletion.Generated.cs/#L204">View Source</a>
+  </span>
+  <a id="Gtk_EntryCompletion_Item_" data-uid="Gtk.EntryCompletion.Item*"></a>
+  <h4 id="Gtk_EntryCompletion_Item_GObject_Signal_Gtk_EntryCompletion_MatchSelectedSignalArgs__" data-uid="Gtk.EntryCompletion.Item(GObject.Signal{Gtk.EntryCompletion.MatchSelectedSignalArgs})">Item[Signal&lt;EntryCompletion.MatchSelectedSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;EntryCompletion.MatchSelectedSignalArgs&gt; this[Signal&lt;EntryCompletion.MatchSelectedSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.EntryCompletion.MatchSelectedSignalArgs.html">EntryCompletion.MatchSelectedSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.EntryCompletion.MatchSelectedSignalArgs.html">EntryCompletion.MatchSelectedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_EntryCompletion_OnActionActivated.md&amp;value=---%0Auid%3A%20Gtk.EntryCompletion.OnActionActivated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/EntryCompletion.Generated.cs/#L66">View Source</a>
+  </span>
+  <h4 id="Gtk_EntryCompletion_OnActionActivated" data-uid="Gtk.EntryCompletion.OnActionActivated">OnActionActivated</h4>
+  <div class="markdown level1 summary"><p>Gets emitted when an action is activated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;EntryCompletion.ActionActivatedSignalArgs&gt; OnActionActivated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.EntryCompletion.ActionActivatedSignalArgs.html">EntryCompletion.ActionActivatedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_EntryCompletion_OnCursorOnMatch.md&amp;value=---%0Auid%3A%20Gtk.EntryCompletion.OnCursorOnMatch%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/EntryCompletion.Generated.cs/#L131">View Source</a>
+  </span>
+  <h4 id="Gtk_EntryCompletion_OnCursorOnMatch" data-uid="Gtk.EntryCompletion.OnCursorOnMatch">OnCursorOnMatch</h4>
+  <div class="markdown level1 summary"><p>Gets emitted when a match from the cursor is on a match
+of the list. The default behaviour is to replace the contents
+of the entry with the contents of the text column in the row
+pointed to by @iter.</p>
+<p>Note that @model is the model that was passed to
+gtk_entry_completion_set_model().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;EntryCompletion.CursorOnMatchSignalArgs&gt; OnCursorOnMatch</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.EntryCompletion.CursorOnMatchSignalArgs.html">EntryCompletion.CursorOnMatchSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_EntryCompletion_OnInsertPrefix.md&amp;value=---%0Auid%3A%20Gtk.EntryCompletion.OnInsertPrefix%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/EntryCompletion.Generated.cs/#L190">View Source</a>
+  </span>
+  <h4 id="Gtk_EntryCompletion_OnInsertPrefix" data-uid="Gtk.EntryCompletion.OnInsertPrefix">OnInsertPrefix</h4>
+  <div class="markdown level1 summary"><p>Gets emitted when the inline autocompletion is triggered.
+The default behaviour is to make the entry display the
+whole prefix and select the newly inserted part.</p>
+<p>Applications may connect to this signal in order to insert only a
+smaller part of the @prefix into the entry - e.g. the entry used in
+the #GtkFileChooser inserts only the part of the prefix up to the
+next '/'.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;EntryCompletion.InsertPrefixSignalArgs&gt; OnInsertPrefix</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.EntryCompletion.InsertPrefixSignalArgs.html">EntryCompletion.InsertPrefixSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_EntryCompletion_OnMatchSelected.md&amp;value=---%0Auid%3A%20Gtk.EntryCompletion.OnMatchSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/EntryCompletion.Generated.cs/#L255">View Source</a>
+  </span>
+  <h4 id="Gtk_EntryCompletion_OnMatchSelected" data-uid="Gtk.EntryCompletion.OnMatchSelected">OnMatchSelected</h4>
+  <div class="markdown level1 summary"><p>Gets emitted when a match from the list is selected.
+The default behaviour is to replace the contents of the
+entry with the contents of the text column in the row
+pointed to by @iter.</p>
+<p>Note that @model is the model that was passed to
+gtk_entry_completion_set_model().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;EntryCompletion.MatchSelectedSignalArgs&gt; OnMatchSelected</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.EntryCompletion.MatchSelectedSignalArgs.html">EntryCompletion.MatchSelectedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_EntryCompletion_OnNoMatches.md&amp;value=---%0Auid%3A%20Gtk.EntryCompletion.OnNoMatches%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/EntryCompletion.Generated.cs/#L278">View Source</a>
+  </span>
+  <h4 id="Gtk_EntryCompletion_OnNoMatches" data-uid="Gtk.EntryCompletion.OnNoMatches">OnNoMatches</h4>
+  <div class="markdown level1 summary"><p>Gets emitted when the filter model has zero
+number of rows in completion_complete method.
+(In other words when GtkEntryCompletion is out of
+suggestions)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SignalArgs&gt; OnNoMatches</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_EntryCompletion.md&amp;value=---%0Auid%3A%20Gtk.EntryCompletion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/EntryCompletion.Generated.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

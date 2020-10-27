@@ -1,0 +1,2223 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TreeView
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TreeView
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gtk.TreeView">
+  
+  
+  <h1 id="Gtk_TreeView" data-uid="Gtk.TreeView" class="text-break">Class TreeView
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="GObject.Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="GObject.InitiallyUnowned.html">InitiallyUnowned</a></div>
+    <div class="level3"><a class="xref" href="Gtk.Widget.html">Widget</a></div>
+    <div class="level4"><a class="xref" href="Gtk.Container.html">Container</a></div>
+    <div class="level5"><span class="xref">TreeView</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_ChildProperty">Container.ChildProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_Child">Container.Child</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_Item_GObject_Signal_Gtk_Container_AddSignalArgs__">Container.Item[Signal&lt;Container.AddSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_AddSignal">Container.AddSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_OnAdd">Container.OnAdd</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_CheckResizeSignal">Container.CheckResizeSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_OnCheckResize">Container.OnCheckResize</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_Item_GObject_Signal_Gtk_Container_RemoveSignalArgs__">Container.Item[Signal&lt;Container.RemoveSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_RemoveSignal">Container.RemoveSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_OnRemove">Container.OnRemove</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_Item_GObject_Signal_Gtk_Container_SetFocusChildSignalArgs__">Container.Item[Signal&lt;Container.SetFocusChildSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_SetFocusChildSignal">Container.SetFocusChildSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_OnSetFocusChild">Container.OnSetFocusChild</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ShowAll">Widget.ShowAll()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_AccelClosuresChangedSignal">Widget.AccelClosuresChangedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnAccelClosuresChanged">Widget.OnAccelClosuresChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_ButtonPressEventSignalArgs__">Widget.Item[Signal&lt;Widget.ButtonPressEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ButtonPressEventSignal">Widget.ButtonPressEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnButtonPressEvent">Widget.OnButtonPressEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_ButtonReleaseEventSignalArgs__">Widget.Item[Signal&lt;Widget.ButtonReleaseEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ButtonReleaseEventSignal">Widget.ButtonReleaseEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnButtonReleaseEvent">Widget.OnButtonReleaseEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_CanActivateAccelSignalArgs__">Widget.Item[Signal&lt;Widget.CanActivateAccelSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CanActivateAccelSignal">Widget.CanActivateAccelSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnCanActivateAccel">Widget.OnCanActivateAccel</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_ChildNotifySignalArgs__">Widget.Item[Signal&lt;Widget.ChildNotifySignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ChildNotifySignal">Widget.ChildNotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnChildNotify">Widget.OnChildNotify</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CompositedChangedSignal">Widget.CompositedChangedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnCompositedChanged">Widget.OnCompositedChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_ConfigureEventSignalArgs__">Widget.Item[Signal&lt;Widget.ConfigureEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ConfigureEventSignal">Widget.ConfigureEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnConfigureEvent">Widget.OnConfigureEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DamageEventSignalArgs__">Widget.Item[Signal&lt;Widget.DamageEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DamageEventSignal">Widget.DamageEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDamageEvent">Widget.OnDamageEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DeleteEventSignalArgs__">Widget.Item[Signal&lt;Widget.DeleteEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DeleteEventSignal">Widget.DeleteEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDeleteEvent">Widget.OnDeleteEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DestroySignal">Widget.DestroySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDestroy">Widget.OnDestroy</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DestroyEventSignalArgs__">Widget.Item[Signal&lt;Widget.DestroyEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DestroyEventSignal">Widget.DestroyEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDestroyEvent">Widget.OnDestroyEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DirectionChangedSignalArgs__">Widget.Item[Signal&lt;Widget.DirectionChangedSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DirectionChangedSignal">Widget.DirectionChangedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDirectionChanged">Widget.OnDirectionChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DragBeginSignalArgs__">Widget.Item[Signal&lt;Widget.DragBeginSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DragBeginSignal">Widget.DragBeginSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDragBegin">Widget.OnDragBegin</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DragDataDeleteSignalArgs__">Widget.Item[Signal&lt;Widget.DragDataDeleteSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DragDataDeleteSignal">Widget.DragDataDeleteSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDragDataDelete">Widget.OnDragDataDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DragDataGetSignalArgs__">Widget.Item[Signal&lt;Widget.DragDataGetSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DragDataGetSignal">Widget.DragDataGetSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDragDataGet">Widget.OnDragDataGet</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DragDataReceivedSignalArgs__">Widget.Item[Signal&lt;Widget.DragDataReceivedSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DragDataReceivedSignal">Widget.DragDataReceivedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDragDataReceived">Widget.OnDragDataReceived</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DragDropSignalArgs__">Widget.Item[Signal&lt;Widget.DragDropSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DragDropSignal">Widget.DragDropSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDragDrop">Widget.OnDragDrop</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DragEndSignalArgs__">Widget.Item[Signal&lt;Widget.DragEndSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DragEndSignal">Widget.DragEndSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDragEnd">Widget.OnDragEnd</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DragFailedSignalArgs__">Widget.Item[Signal&lt;Widget.DragFailedSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DragFailedSignal">Widget.DragFailedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDragFailed">Widget.OnDragFailed</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DragLeaveSignalArgs__">Widget.Item[Signal&lt;Widget.DragLeaveSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DragLeaveSignal">Widget.DragLeaveSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDragLeave">Widget.OnDragLeave</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DragMotionSignalArgs__">Widget.Item[Signal&lt;Widget.DragMotionSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DragMotionSignal">Widget.DragMotionSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDragMotion">Widget.OnDragMotion</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DrawSignalArgs__">Widget.Item[Signal&lt;Widget.DrawSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DrawSignal">Widget.DrawSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDraw">Widget.OnDraw</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_EnterNotifyEventSignalArgs__">Widget.Item[Signal&lt;Widget.EnterNotifyEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_EnterNotifyEventSignal">Widget.EnterNotifyEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnEnterNotifyEvent">Widget.OnEnterNotifyEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_EventSignalArgs__">Widget.Item[Signal&lt;Widget.EventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_EventSignal">Widget.EventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnEvent">Widget.OnEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_EventAfterSignalArgs__">Widget.Item[Signal&lt;Widget.EventAfterSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_EventAfterSignal">Widget.EventAfterSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnEventAfter">Widget.OnEventAfter</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_FocusSignalArgs__">Widget.Item[Signal&lt;Widget.FocusSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_FocusSignal">Widget.FocusSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnFocus">Widget.OnFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_FocusInEventSignalArgs__">Widget.Item[Signal&lt;Widget.FocusInEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_FocusInEventSignal">Widget.FocusInEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnFocusInEvent">Widget.OnFocusInEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_FocusOutEventSignalArgs__">Widget.Item[Signal&lt;Widget.FocusOutEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_FocusOutEventSignal">Widget.FocusOutEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnFocusOutEvent">Widget.OnFocusOutEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_GrabBrokenEventSignalArgs__">Widget.Item[Signal&lt;Widget.GrabBrokenEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GrabBrokenEventSignal">Widget.GrabBrokenEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnGrabBrokenEvent">Widget.OnGrabBrokenEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GrabFocusSignal">Widget.GrabFocusSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnGrabFocus">Widget.OnGrabFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_GrabNotifySignalArgs__">Widget.Item[Signal&lt;Widget.GrabNotifySignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GrabNotifySignal">Widget.GrabNotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnGrabNotify">Widget.OnGrabNotify</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HideSignal">Widget.HideSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnHide">Widget.OnHide</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_HierarchyChangedSignalArgs__">Widget.Item[Signal&lt;Widget.HierarchyChangedSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HierarchyChangedSignal">Widget.HierarchyChangedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnHierarchyChanged">Widget.OnHierarchyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_KeyPressEventSignalArgs__">Widget.Item[Signal&lt;Widget.KeyPressEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_KeyPressEventSignal">Widget.KeyPressEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnKeyPressEvent">Widget.OnKeyPressEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_KeyReleaseEventSignalArgs__">Widget.Item[Signal&lt;Widget.KeyReleaseEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_KeyReleaseEventSignal">Widget.KeyReleaseEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnKeyReleaseEvent">Widget.OnKeyReleaseEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_KeynavFailedSignalArgs__">Widget.Item[Signal&lt;Widget.KeynavFailedSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_KeynavFailedSignal">Widget.KeynavFailedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnKeynavFailed">Widget.OnKeynavFailed</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_LeaveNotifyEventSignalArgs__">Widget.Item[Signal&lt;Widget.LeaveNotifyEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_LeaveNotifyEventSignal">Widget.LeaveNotifyEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnLeaveNotifyEvent">Widget.OnLeaveNotifyEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MapSignal">Widget.MapSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnMap">Widget.OnMap</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_MapEventSignalArgs__">Widget.Item[Signal&lt;Widget.MapEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MapEventSignal">Widget.MapEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnMapEvent">Widget.OnMapEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_MnemonicActivateSignalArgs__">Widget.Item[Signal&lt;Widget.MnemonicActivateSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MnemonicActivateSignal">Widget.MnemonicActivateSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnMnemonicActivate">Widget.OnMnemonicActivate</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_MotionNotifyEventSignalArgs__">Widget.Item[Signal&lt;Widget.MotionNotifyEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MotionNotifyEventSignal">Widget.MotionNotifyEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnMotionNotifyEvent">Widget.OnMotionNotifyEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_MoveFocusSignalArgs__">Widget.Item[Signal&lt;Widget.MoveFocusSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MoveFocusSignal">Widget.MoveFocusSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnMoveFocus">Widget.OnMoveFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_ParentSetSignalArgs__">Widget.Item[Signal&lt;Widget.ParentSetSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ParentSetSignal">Widget.ParentSetSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnParentSet">Widget.OnParentSet</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_PopupMenuSignal">Widget.PopupMenuSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnPopupMenu">Widget.OnPopupMenu</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_PropertyNotifyEventSignalArgs__">Widget.Item[Signal&lt;Widget.PropertyNotifyEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_PropertyNotifyEventSignal">Widget.PropertyNotifyEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnPropertyNotifyEvent">Widget.OnPropertyNotifyEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_ProximityInEventSignalArgs__">Widget.Item[Signal&lt;Widget.ProximityInEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ProximityInEventSignal">Widget.ProximityInEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnProximityInEvent">Widget.OnProximityInEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_ProximityOutEventSignalArgs__">Widget.Item[Signal&lt;Widget.ProximityOutEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ProximityOutEventSignal">Widget.ProximityOutEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnProximityOutEvent">Widget.OnProximityOutEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_QueryTooltipSignalArgs__">Widget.Item[Signal&lt;Widget.QueryTooltipSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_QueryTooltipSignal">Widget.QueryTooltipSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnQueryTooltip">Widget.OnQueryTooltip</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_RealizeSignal">Widget.RealizeSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnRealize">Widget.OnRealize</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_ScreenChangedSignalArgs__">Widget.Item[Signal&lt;Widget.ScreenChangedSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ScreenChangedSignal">Widget.ScreenChangedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnScreenChanged">Widget.OnScreenChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_ScrollEventSignalArgs__">Widget.Item[Signal&lt;Widget.ScrollEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ScrollEventSignal">Widget.ScrollEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnScrollEvent">Widget.OnScrollEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_SelectionClearEventSignalArgs__">Widget.Item[Signal&lt;Widget.SelectionClearEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SelectionClearEventSignal">Widget.SelectionClearEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnSelectionClearEvent">Widget.OnSelectionClearEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_SelectionGetSignalArgs__">Widget.Item[Signal&lt;Widget.SelectionGetSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SelectionGetSignal">Widget.SelectionGetSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnSelectionGet">Widget.OnSelectionGet</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_SelectionNotifyEventSignalArgs__">Widget.Item[Signal&lt;Widget.SelectionNotifyEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SelectionNotifyEventSignal">Widget.SelectionNotifyEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnSelectionNotifyEvent">Widget.OnSelectionNotifyEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_SelectionReceivedSignalArgs__">Widget.Item[Signal&lt;Widget.SelectionReceivedSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SelectionReceivedSignal">Widget.SelectionReceivedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnSelectionReceived">Widget.OnSelectionReceived</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_SelectionRequestEventSignalArgs__">Widget.Item[Signal&lt;Widget.SelectionRequestEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SelectionRequestEventSignal">Widget.SelectionRequestEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnSelectionRequestEvent">Widget.OnSelectionRequestEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ShowSignal">Widget.ShowSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnShow">Widget.OnShow</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_ShowHelpSignalArgs__">Widget.Item[Signal&lt;Widget.ShowHelpSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ShowHelpSignal">Widget.ShowHelpSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnShowHelp">Widget.OnShowHelp</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_SizeAllocateSignalArgs__">Widget.Item[Signal&lt;Widget.SizeAllocateSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SizeAllocateSignal">Widget.SizeAllocateSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnSizeAllocate">Widget.OnSizeAllocate</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_StateChangedSignalArgs__">Widget.Item[Signal&lt;Widget.StateChangedSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_StateChangedSignal">Widget.StateChangedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnStateChanged">Widget.OnStateChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_StateFlagsChangedSignalArgs__">Widget.Item[Signal&lt;Widget.StateFlagsChangedSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_StateFlagsChangedSignal">Widget.StateFlagsChangedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnStateFlagsChanged">Widget.OnStateFlagsChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_StyleSetSignalArgs__">Widget.Item[Signal&lt;Widget.StyleSetSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_StyleSetSignal">Widget.StyleSetSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnStyleSet">Widget.OnStyleSet</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_StyleUpdatedSignal">Widget.StyleUpdatedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnStyleUpdated">Widget.OnStyleUpdated</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_TouchEventSignalArgs__">Widget.Item[Signal&lt;Widget.TouchEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_TouchEventSignal">Widget.TouchEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnTouchEvent">Widget.OnTouchEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_UnmapSignal">Widget.UnmapSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnUnmap">Widget.OnUnmap</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_UnmapEventSignalArgs__">Widget.Item[Signal&lt;Widget.UnmapEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_UnmapEventSignal">Widget.UnmapEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnUnmapEvent">Widget.OnUnmapEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_UnrealizeSignal">Widget.UnrealizeSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnUnrealize">Widget.OnUnrealize</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_VisibilityNotifyEventSignalArgs__">Widget.Item[Signal&lt;Widget.VisibilityNotifyEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_VisibilityNotifyEventSignal">Widget.VisibilityNotifyEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnVisibilityNotifyEvent">Widget.OnVisibilityNotifyEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_WindowStateEventSignalArgs__">Widget.Item[Signal&lt;Widget.WindowStateEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_WindowStateEventSignal">Widget.WindowStateEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnWindowStateEvent">Widget.OnWindowStateEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.InitiallyUnowned.html#GObject_InitiallyUnowned_Initialize">InitiallyUnowned.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_PropertyChanged">Object.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Handle">Object.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Disposed">Object.Disposed</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RegisterNotifyPropertyChangedEvent_System_String_System_Action_">Object.RegisterNotifyPropertyChangedEvent(String, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RegisterEvent_System_String_GObject_ActionRefValues_System_Boolean_">Object.RegisterEvent(String, ActionRefValues, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RegisterEvent_System_String_System_Action_System_Boolean_">Object.RegisterEvent(String, Action, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_UnregisterEvent_GObject_ActionRefValues_">Object.UnregisterEvent(ActionRefValues)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_UnregisterEvent_System_Action_">Object.UnregisterEvent(Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ThrowIfDisposed">Object.ThrowIfDisposed()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_HandleError_System_IntPtr_">Object.HandleError(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetHandle_GObject_Object_">Object.GetHandle(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnPropertyChanged_System_String_">Object.OnPropertyChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetObject__1_System_IntPtr___0__">Object.GetObject&lt;T&gt;(IntPtr, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_TryWrapPointerAs__1_System_IntPtr___0__">Object.TryWrapPointerAs&lt;T&gt;(IntPtr, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Dispose">Object.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Dispose_System_Boolean_">Object.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Item_GObject_Signal_GObject_Object_NotifySignalArgs__">Object.Item[Signal&lt;Object.NotifySignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifySignal">Object.NotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnNotify">Object.OnNotify</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetProperty__1_GObject_Property___0__">Object.GetProperty&lt;T&gt;(Property&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetProperty__1_GObject_Property___0____0_">Object.SetProperty&lt;T&gt;(Property&lt;T&gt;, T)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gtk.html">Gtk</a></h6>
+  <h6><strong>Assembly</strong>: Gtk3.dll</h6>
+  <h5 id="Gtk_TreeView_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TreeView : Container, INotifyPropertyChanged, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView__ctor_GObject_ConstructParameter___.md&amp;value=---%0Auid%3A%20Gtk.TreeView.%23ctor(GObject.ConstructParameter%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L633">View Source</a>
+  </span>
+  <a id="Gtk_TreeView__ctor_" data-uid="Gtk.TreeView.#ctor*"></a>
+  <h4 id="Gtk_TreeView__ctor_GObject_ConstructParameter___" data-uid="Gtk.TreeView.#ctor(GObject.ConstructParameter[])">TreeView(ConstructParameter[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TreeView(params ConstructParameter[] properties)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.ConstructParameter.html">ConstructParameter</a>[]</td>
+        <td><span class="parametername">properties</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView__ctor_System_IntPtr_.md&amp;value=---%0Auid%3A%20Gtk.TreeView.%23ctor(System.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L632">View Source</a>
+  </span>
+  <a id="Gtk_TreeView__ctor_" data-uid="Gtk.TreeView.#ctor*"></a>
+  <h4 id="Gtk_TreeView__ctor_System_IntPtr_" data-uid="Gtk.TreeView.#ctor(System.IntPtr)">TreeView(IntPtr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TreeView(IntPtr ptr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">ptr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_ColumnsChangedSignal.md&amp;value=---%0Auid%3A%20Gtk.TreeView.ColumnsChangedSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L28">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_ColumnsChangedSignal" data-uid="Gtk.TreeView.ColumnsChangedSignal">ColumnsChangedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnColumnsChanged.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;SignalArgs&gt; ColumnsChangedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_CursorChangedSignal.md&amp;value=---%0Auid%3A%20Gtk.TreeView.CursorChangedSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L48">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_CursorChangedSignal" data-uid="Gtk.TreeView.CursorChangedSignal">CursorChangedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnCursorChanged.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;SignalArgs&gt; CursorChangedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_ExpandCollapseCursorRowSignal.md&amp;value=---%0Auid%3A%20Gtk.TreeView.ExpandCollapseCursorRowSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L105">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_ExpandCollapseCursorRowSignal" data-uid="Gtk.TreeView.ExpandCollapseCursorRowSignal">ExpandCollapseCursorRowSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnExpandCollapseCursorRow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TreeView.ExpandCollapseCursorRowSignalArgs&gt; ExpandCollapseCursorRowSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.TreeView.ExpandCollapseCursorRowSignalArgs.html">TreeView.ExpandCollapseCursorRowSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_MoveCursorSignal.md&amp;value=---%0Auid%3A%20Gtk.TreeView.MoveCursorSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L168">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_MoveCursorSignal" data-uid="Gtk.TreeView.MoveCursorSignal">MoveCursorSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnMoveCursor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TreeView.MoveCursorSignalArgs&gt; MoveCursorSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.TreeView.MoveCursorSignalArgs.html">TreeView.MoveCursorSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_RowActivatedSignal.md&amp;value=---%0Auid%3A%20Gtk.TreeView.RowActivatedSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L235">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_RowActivatedSignal" data-uid="Gtk.TreeView.RowActivatedSignal">RowActivatedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnRowActivated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TreeView.RowActivatedSignalArgs&gt; RowActivatedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.TreeView.RowActivatedSignalArgs.html">TreeView.RowActivatedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_RowCollapsedSignal.md&amp;value=---%0Auid%3A%20Gtk.TreeView.RowCollapsedSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L304">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_RowCollapsedSignal" data-uid="Gtk.TreeView.RowCollapsedSignal">RowCollapsedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnRowCollapsed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TreeView.RowCollapsedSignalArgs&gt; RowCollapsedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.TreeView.RowCollapsedSignalArgs.html">TreeView.RowCollapsedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_RowExpandedSignal.md&amp;value=---%0Auid%3A%20Gtk.TreeView.RowExpandedSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L363">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_RowExpandedSignal" data-uid="Gtk.TreeView.RowExpandedSignal">RowExpandedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnRowExpanded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TreeView.RowExpandedSignalArgs&gt; RowExpandedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.TreeView.RowExpandedSignalArgs.html">TreeView.RowExpandedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_SelectAllSignal.md&amp;value=---%0Auid%3A%20Gtk.TreeView.SelectAllSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L383">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_SelectAllSignal" data-uid="Gtk.TreeView.SelectAllSignal">SelectAllSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnSelectAll.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;SignalArgs&gt; SelectAllSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_SelectCursorParentSignal.md&amp;value=---%0Auid%3A%20Gtk.TreeView.SelectCursorParentSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L400">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_SelectCursorParentSignal" data-uid="Gtk.TreeView.SelectCursorParentSignal">SelectCursorParentSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnSelectCursorParent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;SignalArgs&gt; SelectCursorParentSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_SelectCursorRowSignal.md&amp;value=---%0Auid%3A%20Gtk.TreeView.SelectCursorRowSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L446">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_SelectCursorRowSignal" data-uid="Gtk.TreeView.SelectCursorRowSignal">SelectCursorRowSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnSelectCursorRow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TreeView.SelectCursorRowSignalArgs&gt; SelectCursorRowSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.TreeView.SelectCursorRowSignalArgs.html">TreeView.SelectCursorRowSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_StartInteractiveSearchSignal.md&amp;value=---%0Auid%3A%20Gtk.TreeView.StartInteractiveSearchSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L463">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_StartInteractiveSearchSignal" data-uid="Gtk.TreeView.StartInteractiveSearchSignal">StartInteractiveSearchSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnStartInteractiveSearch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;SignalArgs&gt; StartInteractiveSearchSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_TestCollapseRowSignal.md&amp;value=---%0Auid%3A%20Gtk.TreeView.TestCollapseRowSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L519">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_TestCollapseRowSignal" data-uid="Gtk.TreeView.TestCollapseRowSignal">TestCollapseRowSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnTestCollapseRow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TreeView.TestCollapseRowSignalArgs&gt; TestCollapseRowSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.TreeView.TestCollapseRowSignalArgs.html">TreeView.TestCollapseRowSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_TestExpandRowSignal.md&amp;value=---%0Auid%3A%20Gtk.TreeView.TestExpandRowSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L579">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_TestExpandRowSignal" data-uid="Gtk.TreeView.TestExpandRowSignal">TestExpandRowSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnTestExpandRow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TreeView.TestExpandRowSignalArgs&gt; TestExpandRowSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.TreeView.TestExpandRowSignalArgs.html">TreeView.TestExpandRowSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_ToggleCursorRowSignal.md&amp;value=---%0Auid%3A%20Gtk.TreeView.ToggleCursorRowSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L600">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_ToggleCursorRowSignal" data-uid="Gtk.TreeView.ToggleCursorRowSignal">ToggleCursorRowSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnToggleCursorRow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;SignalArgs&gt; ToggleCursorRowSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_UnselectAllSignal.md&amp;value=---%0Auid%3A%20Gtk.TreeView.UnselectAllSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L617">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_UnselectAllSignal" data-uid="Gtk.TreeView.UnselectAllSignal">UnselectAllSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnUnselectAll.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;SignalArgs&gt; UnselectAllSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_Item_GObject_Signal_Gtk_TreeView_ExpandCollapseCursorRowSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.TreeView.Item(GObject.Signal%7BGtk.TreeView.ExpandCollapseCursorRowSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L68">View Source</a>
+  </span>
+  <a id="Gtk_TreeView_Item_" data-uid="Gtk.TreeView.Item*"></a>
+  <h4 id="Gtk_TreeView_Item_GObject_Signal_Gtk_TreeView_ExpandCollapseCursorRowSignalArgs__" data-uid="Gtk.TreeView.Item(GObject.Signal{Gtk.TreeView.ExpandCollapseCursorRowSignalArgs})">Item[Signal&lt;TreeView.ExpandCollapseCursorRowSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;TreeView.ExpandCollapseCursorRowSignalArgs&gt; this[Signal&lt;TreeView.ExpandCollapseCursorRowSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.TreeView.ExpandCollapseCursorRowSignalArgs.html">TreeView.ExpandCollapseCursorRowSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.TreeView.ExpandCollapseCursorRowSignalArgs.html">TreeView.ExpandCollapseCursorRowSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_Item_GObject_Signal_Gtk_TreeView_MoveCursorSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.TreeView.Item(GObject.Signal%7BGtk.TreeView.MoveCursorSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L122">View Source</a>
+  </span>
+  <a id="Gtk_TreeView_Item_" data-uid="Gtk.TreeView.Item*"></a>
+  <h4 id="Gtk_TreeView_Item_GObject_Signal_Gtk_TreeView_MoveCursorSignalArgs__" data-uid="Gtk.TreeView.Item(GObject.Signal{Gtk.TreeView.MoveCursorSignalArgs})">Item[Signal&lt;TreeView.MoveCursorSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;TreeView.MoveCursorSignalArgs&gt; this[Signal&lt;TreeView.MoveCursorSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.TreeView.MoveCursorSignalArgs.html">TreeView.MoveCursorSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.TreeView.MoveCursorSignalArgs.html">TreeView.MoveCursorSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_Item_GObject_Signal_Gtk_TreeView_RowActivatedSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.TreeView.Item(GObject.Signal%7BGtk.TreeView.RowActivatedSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L196">View Source</a>
+  </span>
+  <a id="Gtk_TreeView_Item_" data-uid="Gtk.TreeView.Item*"></a>
+  <h4 id="Gtk_TreeView_Item_GObject_Signal_Gtk_TreeView_RowActivatedSignalArgs__" data-uid="Gtk.TreeView.Item(GObject.Signal{Gtk.TreeView.RowActivatedSignalArgs})">Item[Signal&lt;TreeView.RowActivatedSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;TreeView.RowActivatedSignalArgs&gt; this[Signal&lt;TreeView.RowActivatedSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.TreeView.RowActivatedSignalArgs.html">TreeView.RowActivatedSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.TreeView.RowActivatedSignalArgs.html">TreeView.RowActivatedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_Item_GObject_Signal_Gtk_TreeView_RowCollapsedSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.TreeView.Item(GObject.Signal%7BGtk.TreeView.RowCollapsedSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L265">View Source</a>
+  </span>
+  <a id="Gtk_TreeView_Item_" data-uid="Gtk.TreeView.Item*"></a>
+  <h4 id="Gtk_TreeView_Item_GObject_Signal_Gtk_TreeView_RowCollapsedSignalArgs__" data-uid="Gtk.TreeView.Item(GObject.Signal{Gtk.TreeView.RowCollapsedSignalArgs})">Item[Signal&lt;TreeView.RowCollapsedSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;TreeView.RowCollapsedSignalArgs&gt; this[Signal&lt;TreeView.RowCollapsedSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.TreeView.RowCollapsedSignalArgs.html">TreeView.RowCollapsedSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.TreeView.RowCollapsedSignalArgs.html">TreeView.RowCollapsedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_Item_GObject_Signal_Gtk_TreeView_RowExpandedSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.TreeView.Item(GObject.Signal%7BGtk.TreeView.RowExpandedSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L324">View Source</a>
+  </span>
+  <a id="Gtk_TreeView_Item_" data-uid="Gtk.TreeView.Item*"></a>
+  <h4 id="Gtk_TreeView_Item_GObject_Signal_Gtk_TreeView_RowExpandedSignalArgs__" data-uid="Gtk.TreeView.Item(GObject.Signal{Gtk.TreeView.RowExpandedSignalArgs})">Item[Signal&lt;TreeView.RowExpandedSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;TreeView.RowExpandedSignalArgs&gt; this[Signal&lt;TreeView.RowExpandedSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.TreeView.RowExpandedSignalArgs.html">TreeView.RowExpandedSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.TreeView.RowExpandedSignalArgs.html">TreeView.RowExpandedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_Item_GObject_Signal_Gtk_TreeView_SelectCursorRowSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.TreeView.Item(GObject.Signal%7BGtk.TreeView.SelectCursorRowSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L417">View Source</a>
+  </span>
+  <a id="Gtk_TreeView_Item_" data-uid="Gtk.TreeView.Item*"></a>
+  <h4 id="Gtk_TreeView_Item_GObject_Signal_Gtk_TreeView_SelectCursorRowSignalArgs__" data-uid="Gtk.TreeView.Item(GObject.Signal{Gtk.TreeView.SelectCursorRowSignalArgs})">Item[Signal&lt;TreeView.SelectCursorRowSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;TreeView.SelectCursorRowSignalArgs&gt; this[Signal&lt;TreeView.SelectCursorRowSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.TreeView.SelectCursorRowSignalArgs.html">TreeView.SelectCursorRowSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.TreeView.SelectCursorRowSignalArgs.html">TreeView.SelectCursorRowSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_Item_GObject_Signal_Gtk_TreeView_TestCollapseRowSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.TreeView.Item(GObject.Signal%7BGtk.TreeView.TestCollapseRowSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L480">View Source</a>
+  </span>
+  <a id="Gtk_TreeView_Item_" data-uid="Gtk.TreeView.Item*"></a>
+  <h4 id="Gtk_TreeView_Item_GObject_Signal_Gtk_TreeView_TestCollapseRowSignalArgs__" data-uid="Gtk.TreeView.Item(GObject.Signal{Gtk.TreeView.TestCollapseRowSignalArgs})">Item[Signal&lt;TreeView.TestCollapseRowSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;TreeView.TestCollapseRowSignalArgs&gt; this[Signal&lt;TreeView.TestCollapseRowSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.TreeView.TestCollapseRowSignalArgs.html">TreeView.TestCollapseRowSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.TreeView.TestCollapseRowSignalArgs.html">TreeView.TestCollapseRowSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_Item_GObject_Signal_Gtk_TreeView_TestExpandRowSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.TreeView.Item(GObject.Signal%7BGtk.TreeView.TestExpandRowSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L540">View Source</a>
+  </span>
+  <a id="Gtk_TreeView_Item_" data-uid="Gtk.TreeView.Item*"></a>
+  <h4 id="Gtk_TreeView_Item_GObject_Signal_Gtk_TreeView_TestExpandRowSignalArgs__" data-uid="Gtk.TreeView.Item(GObject.Signal{Gtk.TreeView.TestExpandRowSignalArgs})">Item[Signal&lt;TreeView.TestExpandRowSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;TreeView.TestExpandRowSignalArgs&gt; this[Signal&lt;TreeView.TestExpandRowSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.TreeView.TestExpandRowSignalArgs.html">TreeView.TestExpandRowSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.TreeView.TestExpandRowSignalArgs.html">TreeView.TestExpandRowSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_OnColumnsChanged.md&amp;value=---%0Auid%3A%20Gtk.TreeView.OnColumnsChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L34">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_OnColumnsChanged" data-uid="Gtk.TreeView.OnColumnsChanged">OnColumnsChanged</h4>
+  <div class="markdown level1 summary"><p>The number of columns of the treeview has changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SignalArgs&gt; OnColumnsChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_OnCursorChanged.md&amp;value=---%0Auid%3A%20Gtk.TreeView.OnCursorChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L54">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_OnCursorChanged" data-uid="Gtk.TreeView.OnCursorChanged">OnCursorChanged</h4>
+  <div class="markdown level1 summary"><p>The position of the cursor (focused cell) has changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SignalArgs&gt; OnCursorChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_OnExpandCollapseCursorRow.md&amp;value=---%0Auid%3A%20Gtk.TreeView.OnExpandCollapseCursorRow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L108">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_OnExpandCollapseCursorRow" data-uid="Gtk.TreeView.OnExpandCollapseCursorRow">OnExpandCollapseCursorRow</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;TreeView.ExpandCollapseCursorRowSignalArgs&gt; OnExpandCollapseCursorRow</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.TreeView.ExpandCollapseCursorRowSignalArgs.html">TreeView.ExpandCollapseCursorRowSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_OnMoveCursor.md&amp;value=---%0Auid%3A%20Gtk.TreeView.OnMoveCursor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L182">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_OnMoveCursor" data-uid="Gtk.TreeView.OnMoveCursor">OnMoveCursor</h4>
+  <div class="markdown level1 summary"><p>The #GtkTreeView::move-cursor signal is a [keybinding
+signal][GtkBindingSignal] which gets emitted when the user
+presses one of the cursor keys.</p>
+<p>Applications should not connect to it, but may emit it with
+g_signal_emit_by_name() if they need to control the cursor
+programmatically. In contrast to gtk_tree_view_set_cursor() and
+gtk_tree_view_set_cursor_on_cell() when moving horizontally
+#GtkTreeView::move-cursor does not reset the current selection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;TreeView.MoveCursorSignalArgs&gt; OnMoveCursor</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.TreeView.MoveCursorSignalArgs.html">TreeView.MoveCursorSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_OnRowActivated.md&amp;value=---%0Auid%3A%20Gtk.TreeView.OnRowActivated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L251">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_OnRowActivated" data-uid="Gtk.TreeView.OnRowActivated">OnRowActivated</h4>
+  <div class="markdown level1 summary"><p>The &quot;row-activated&quot; signal is emitted when the method
+gtk_tree_view_row_activated() is called, when the user double
+clicks a treeview row with the &quot;activate-on-single-click&quot;
+property set to %FALSE, or when the user single clicks a row when
+the &quot;activate-on-single-click&quot; property set to %TRUE. It is also
+emitted when a non-editable row is selected and one of the keys:
+Space, Shift+Space, Return or Enter is pressed.</p>
+<p>For selection handling refer to the
+[tree widget conceptual overview][TreeWidget]
+as well as #GtkTreeSelection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;TreeView.RowActivatedSignalArgs&gt; OnRowActivated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.TreeView.RowActivatedSignalArgs.html">TreeView.RowActivatedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_OnRowCollapsed.md&amp;value=---%0Auid%3A%20Gtk.TreeView.OnRowCollapsed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L310">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_OnRowCollapsed" data-uid="Gtk.TreeView.OnRowCollapsed">OnRowCollapsed</h4>
+  <div class="markdown level1 summary"><p>The given row has been collapsed (child nodes are hidden).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;TreeView.RowCollapsedSignalArgs&gt; OnRowCollapsed</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.TreeView.RowCollapsedSignalArgs.html">TreeView.RowCollapsedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_OnRowExpanded.md&amp;value=---%0Auid%3A%20Gtk.TreeView.OnRowExpanded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L369">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_OnRowExpanded" data-uid="Gtk.TreeView.OnRowExpanded">OnRowExpanded</h4>
+  <div class="markdown level1 summary"><p>The given row has been expanded (child nodes are shown).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;TreeView.RowExpandedSignalArgs&gt; OnRowExpanded</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.TreeView.RowExpandedSignalArgs.html">TreeView.RowExpandedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_OnSelectAll.md&amp;value=---%0Auid%3A%20Gtk.TreeView.OnSelectAll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L386">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_OnSelectAll" data-uid="Gtk.TreeView.OnSelectAll">OnSelectAll</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SignalArgs&gt; OnSelectAll</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_OnSelectCursorParent.md&amp;value=---%0Auid%3A%20Gtk.TreeView.OnSelectCursorParent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L403">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_OnSelectCursorParent" data-uid="Gtk.TreeView.OnSelectCursorParent">OnSelectCursorParent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SignalArgs&gt; OnSelectCursorParent</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_OnSelectCursorRow.md&amp;value=---%0Auid%3A%20Gtk.TreeView.OnSelectCursorRow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L449">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_OnSelectCursorRow" data-uid="Gtk.TreeView.OnSelectCursorRow">OnSelectCursorRow</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;TreeView.SelectCursorRowSignalArgs&gt; OnSelectCursorRow</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.TreeView.SelectCursorRowSignalArgs.html">TreeView.SelectCursorRowSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_OnStartInteractiveSearch.md&amp;value=---%0Auid%3A%20Gtk.TreeView.OnStartInteractiveSearch%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L466">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_OnStartInteractiveSearch" data-uid="Gtk.TreeView.OnStartInteractiveSearch">OnStartInteractiveSearch</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SignalArgs&gt; OnStartInteractiveSearch</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_OnTestCollapseRow.md&amp;value=---%0Auid%3A%20Gtk.TreeView.OnTestCollapseRow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L526">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_OnTestCollapseRow" data-uid="Gtk.TreeView.OnTestCollapseRow">OnTestCollapseRow</h4>
+  <div class="markdown level1 summary"><p>The given row is about to be collapsed (hide its children nodes). Use this
+signal if you need to control the collapsibility of individual rows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;TreeView.TestCollapseRowSignalArgs&gt; OnTestCollapseRow</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.TreeView.TestCollapseRowSignalArgs.html">TreeView.TestCollapseRowSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_OnTestExpandRow.md&amp;value=---%0Auid%3A%20Gtk.TreeView.OnTestExpandRow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L586">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_OnTestExpandRow" data-uid="Gtk.TreeView.OnTestExpandRow">OnTestExpandRow</h4>
+  <div class="markdown level1 summary"><p>The given row is about to be expanded (show its children nodes). Use this
+signal if you need to control the expandability of individual rows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;TreeView.TestExpandRowSignalArgs&gt; OnTestExpandRow</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.TreeView.TestExpandRowSignalArgs.html">TreeView.TestExpandRowSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_OnToggleCursorRow.md&amp;value=---%0Auid%3A%20Gtk.TreeView.OnToggleCursorRow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L603">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_OnToggleCursorRow" data-uid="Gtk.TreeView.OnToggleCursorRow">OnToggleCursorRow</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SignalArgs&gt; OnToggleCursorRow</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView_OnUnselectAll.md&amp;value=---%0Auid%3A%20Gtk.TreeView.OnUnselectAll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L620">View Source</a>
+  </span>
+  <h4 id="Gtk_TreeView_OnUnselectAll" data-uid="Gtk.TreeView.OnUnselectAll">OnUnselectAll</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SignalArgs&gt; OnUnselectAll</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_TreeView.md&amp;value=---%0Auid%3A%20Gtk.TreeView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/TreeView.Generated.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

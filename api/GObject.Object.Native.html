@@ -1,0 +1,2284 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Object.Native
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Object.Native
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GObject.Object.Native">
+  
+  
+  <h1 id="GObject_Object_Native" data-uid="GObject.Object.Native" class="text-break">Class Object.Native
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Object.Native</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GObject.html">GObject</a></h6>
+  <h6><strong>Assembly</strong>: GObject.dll</h6>
+  <h5 id="GObject_Object_Native_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static class Native</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="GObject_Object_Native_add_toggle_ref_" data-uid="GObject.Object.Native.add_toggle_ref*"></a>
+  <h4 id="GObject_Object_Native_add_toggle_ref_System_IntPtr_GObject_ToggleNotify_System_IntPtr_" data-uid="GObject.Object.Native.add_toggle_ref(System.IntPtr,GObject.ToggleNotify,System.IntPtr)">add_toggle_ref(IntPtr, ToggleNotify, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Increases the reference count of the object by one and sets a
+callback to be called when all other references to the object are
+dropped, or when this is already the last reference to the object
+and another reference is established.</p>
+<p>This functionality is intended for binding @object to a proxy
+object managed by another memory manager. This is done with two
+paired references: the strong reference added by
+g_object_add_toggle_ref() and a reverse reference to the proxy
+object which is either a strong reference or weak reference.</p>
+<p>The setup is that when there are no other references to @object,
+only a weak reference is held in the reverse direction from @object
+to the proxy object, but when there are other references held to
+@object, a strong reference is held. The @notify callback is called
+when the reference from @object to the proxy object should be
+&quot;toggled&quot; from strong to weak (@is_last_ref true) or weak to strong
+(@is_last_ref false).</p>
+<p>Since a (normal) reference must be held to the object before
+calling g_object_add_toggle_ref(), the initial state of the reverse
+link is always strong.</p>
+<p>Multiple toggle references may be added to the same gobject,
+however if there are multiple toggle references to an object, none
+of them will ever be notified until all but one are removed.  For
+this reason, you should only ever use a toggle reference if there
+is important state in the proxy object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void add_toggle_ref(IntPtr object, ToggleNotify notify, IntPtr data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.ToggleNotify.html">ToggleNotify</a></td>
+        <td><span class="parametername">notify</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_add_weak_pointer_" data-uid="GObject.Object.Native.add_weak_pointer*"></a>
+  <h4 id="GObject_Object_Native_add_weak_pointer_System_IntPtr_System_IntPtr__" data-uid="GObject.Object.Native.add_weak_pointer(System.IntPtr,System.IntPtr@)">add_weak_pointer(IntPtr, ref IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Adds a weak reference from weak_pointer to @object to indicate that
+the pointer located at @weak_pointer_location is only valid during
+the lifetime of @object. When the @object is finalized,
+@weak_pointer will be set to %NULL.</p>
+<p>Note that as with g_object_weak_ref(), the weak references created by
+this method are not thread-safe: they cannot safely be used in one
+thread if the object's last g_object_unref() might happen in another
+thread. Use #GWeakRef if thread-safety is required.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void add_weak_pointer(IntPtr object, ref IntPtr weak_pointer_location)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">weak_pointer_location</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_bind_property_" data-uid="GObject.Object.Native.bind_property*"></a>
+  <h4 id="GObject_Object_Native_bind_property_System_IntPtr_System_String_System_IntPtr_System_String_GObject_BindingFlags_" data-uid="GObject.Object.Native.bind_property(System.IntPtr,System.String,System.IntPtr,System.String,GObject.BindingFlags)">bind_property(IntPtr, String, IntPtr, String, BindingFlags)</h4>
+  <div class="markdown level1 summary"><p>Creates a binding between @source_property on @source and @target_property
+on @target. Whenever the @source_property is changed the @target_property is
+updated using the same value. For instance:</p>
+<p>|[
+g_object_bind_property (action, &quot;active&quot;, widget, &quot;sensitive&quot;, 0);
+]|</p>
+<p>Will result in the &quot;sensitive&quot; property of the widget #GObject instance to be
+updated with the same value of the &quot;active&quot; property of the action #GObject
+instance.</p>
+<p>If @flags contains %G_BINDING_BIDIRECTIONAL then the binding will be mutual:
+if @target_property on @target changes then the @source_property on @source
+will be updated as well.</p>
+<p>The binding will automatically be removed when either the @source or the
+@target instances are finalized. To remove the binding without affecting the
+@source and the @target you can just call g_object_unref() on the returned
+#GBinding instance.</p>
+<p>A #GObject can have multiple bindings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr bind_property(IntPtr source, string source_property, IntPtr target, string target_property, BindingFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">source_property</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">target_property</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.BindingFlags.html">BindingFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_bind_property_full_" data-uid="GObject.Object.Native.bind_property_full*"></a>
+  <h4 id="GObject_Object_Native_bind_property_full_System_IntPtr_System_String_System_IntPtr_System_String_GObject_BindingFlags_GObject_BindingTransformFunc_GObject_BindingTransformFunc_System_IntPtr_GLib_DestroyNotify_" data-uid="GObject.Object.Native.bind_property_full(System.IntPtr,System.String,System.IntPtr,System.String,GObject.BindingFlags,GObject.BindingTransformFunc,GObject.BindingTransformFunc,System.IntPtr,GLib.DestroyNotify)">bind_property_full(IntPtr, String, IntPtr, String, BindingFlags, BindingTransformFunc, BindingTransformFunc, IntPtr, DestroyNotify)</h4>
+  <div class="markdown level1 summary"><p>Complete version of g_object_bind_property().</p>
+<p>Creates a binding between @source_property on @source and @target_property
+on @target, allowing you to set the transformation functions to be used by
+the binding.</p>
+<p>If @flags contains %G_BINDING_BIDIRECTIONAL then the binding will be mutual:
+if @target_property on @target changes then the @source_property on @source
+will be updated as well. The @transform_from function is only used in case
+of bidirectional bindings, otherwise it will be ignored</p>
+<p>The binding will automatically be removed when either the @source or the
+@target instances are finalized. This will release the reference that is
+being held on the #GBinding instance; if you want to hold on to the
+#GBinding instance, you will need to hold a reference to it.</p>
+<p>To remove the binding, call g_binding_unbind().</p>
+<p>A #GObject can have multiple bindings.</p>
+<p>The same @user_data parameter will be used for both @transform_to
+and @transform_from transformation functions; the @notify function will
+be called once, when the binding is removed. If you need different data
+for each transformation function, please use
+g_object_bind_property_with_closures() instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr bind_property_full(IntPtr source, string source_property, IntPtr target, string target_property, BindingFlags flags, BindingTransformFunc transform_to, BindingTransformFunc transform_from, IntPtr user_data, DestroyNotify notify)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">source_property</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">target_property</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.BindingFlags.html">BindingFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.BindingTransformFunc.html">BindingTransformFunc</a></td>
+        <td><span class="parametername">transform_to</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.BindingTransformFunc.html">BindingTransformFunc</a></td>
+        <td><span class="parametername">transform_from</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.DestroyNotify.html">DestroyNotify</a></td>
+        <td><span class="parametername">notify</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_bind_property_with_closures_" data-uid="GObject.Object.Native.bind_property_with_closures*"></a>
+  <h4 id="GObject_Object_Native_bind_property_with_closures_System_IntPtr_System_String_System_IntPtr_System_String_GObject_BindingFlags_System_IntPtr_System_IntPtr_" data-uid="GObject.Object.Native.bind_property_with_closures(System.IntPtr,System.String,System.IntPtr,System.String,GObject.BindingFlags,System.IntPtr,System.IntPtr)">bind_property_with_closures(IntPtr, String, IntPtr, String, BindingFlags, IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Creates a binding between @source_property on @source and @target_property
+on @target, allowing you to set the transformation functions to be used by
+the binding.</p>
+<p>This function is the language bindings friendly version of
+g_object_bind_property_full(), using #GClosures instead of
+function pointers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr bind_property_with_closures(IntPtr source, string source_property, IntPtr target, string target_property, BindingFlags flags, IntPtr transform_to, IntPtr transform_from)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">source_property</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">target_property</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.BindingFlags.html">BindingFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">transform_to</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">transform_from</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_dup_data_" data-uid="GObject.Object.Native.dup_data*"></a>
+  <h4 id="GObject_Object_Native_dup_data_System_IntPtr_System_String_GLib_DuplicateFunc_System_IntPtr_" data-uid="GObject.Object.Native.dup_data(System.IntPtr,System.String,GLib.DuplicateFunc,System.IntPtr)">dup_data(IntPtr, String, DuplicateFunc, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>This is a variant of g_object_get_data() which returns
+a 'duplicate' of the value. @dup_func defines the
+meaning of 'duplicate' in this context, it could e.g.
+take a reference on a ref-counted object.</p>
+<p>If the @key is not set on the object then @dup_func
+will be called with a %NULL argument.</p>
+<p>Note that @dup_func is called while user data of @object
+is locked.</p>
+<p>This function can be useful to avoid races when multiple
+threads are using object data on the same key on the same
+object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr dup_data(IntPtr object, string key, DuplicateFunc dup_func, IntPtr user_data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.DuplicateFunc.html">DuplicateFunc</a></td>
+        <td><span class="parametername">dup_func</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_dup_qdata_" data-uid="GObject.Object.Native.dup_qdata*"></a>
+  <h4 id="GObject_Object_Native_dup_qdata_System_IntPtr_System_UInt32_GLib_DuplicateFunc_System_IntPtr_" data-uid="GObject.Object.Native.dup_qdata(System.IntPtr,System.UInt32,GLib.DuplicateFunc,System.IntPtr)">dup_qdata(IntPtr, UInt32, DuplicateFunc, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>This is a variant of g_object_get_qdata() which returns
+a 'duplicate' of the value. @dup_func defines the
+meaning of 'duplicate' in this context, it could e.g.
+take a reference on a ref-counted object.</p>
+<p>If the @quark is not set on the object then @dup_func
+will be called with a %NULL argument.</p>
+<p>Note that @dup_func is called while user data of @object
+is locked.</p>
+<p>This function can be useful to avoid races when multiple
+threads are using object data on the same key on the same
+object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr dup_qdata(IntPtr object, uint quark, DuplicateFunc dup_func, IntPtr user_data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">quark</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.DuplicateFunc.html">DuplicateFunc</a></td>
+        <td><span class="parametername">dup_func</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_force_floating_" data-uid="GObject.Object.Native.force_floating*"></a>
+  <h4 id="GObject_Object_Native_force_floating_System_IntPtr_" data-uid="GObject.Object.Native.force_floating(System.IntPtr)">force_floating(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>This function is intended for #GObject implementations to re-enforce
+a [floating][floating-ref] object reference. Doing this is seldom
+required: all #GInitiallyUnowneds are created with a floating reference
+which usually just needs to be sunken by calling g_object_ref_sink().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void force_floating(IntPtr object)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_freeze_notify_" data-uid="GObject.Object.Native.freeze_notify*"></a>
+  <h4 id="GObject_Object_Native_freeze_notify_System_IntPtr_" data-uid="GObject.Object.Native.freeze_notify(System.IntPtr)">freeze_notify(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Increases the freeze count on @object. If the freeze count is
+non-zero, the emission of &quot;notify&quot; signals on @object is
+stopped. The signals are queued until the freeze count is decreased
+to zero. Duplicate notifications are squashed so that at most one
+#GObject::notify signal is emitted for each property modified while the
+object is frozen.</p>
+<p>This is necessary for accessors that modify multiple properties to prevent
+premature notification while the object is still being modified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void freeze_notify(IntPtr object)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_get_data_" data-uid="GObject.Object.Native.get_data*"></a>
+  <h4 id="GObject_Object_Native_get_data_System_IntPtr_System_String_" data-uid="GObject.Object.Native.get_data(System.IntPtr,System.String)">get_data(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Gets a named field from the objects table of associations (see g_object_set_data()).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_data(IntPtr object, string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_get_property_" data-uid="GObject.Object.Native.get_property*"></a>
+  <h4 id="GObject_Object_Native_get_property_System_IntPtr_System_String_GObject_Value__" data-uid="GObject.Object.Native.get_property(System.IntPtr,System.String,GObject.Value@)">get_property(IntPtr, String, ref Value)</h4>
+  <div class="markdown level1 summary"><p>Gets a property of an object.</p>
+<p>The @value can be:</p>
+<ul>
+<li>an empty #GValue initialized by %G_VALUE_INIT, which will be
+automatically initialized with the expected type of the property
+(since GLib 2.60)</li>
+<li>a #GValue initialized with the expected type of the property</li>
+<li>a #GValue initialized with a type to which the expected type
+of the property can be transformed</li>
+</ul>
+<p>In general, a copy is made of the property contents and the caller is
+responsible for freeing the memory by calling g_value_unset().</p>
+<p>Note that g_object_get_property() is really intended for language
+bindings, g_object_get() is much more convenient for C programming.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void get_property(IntPtr object, string property_name, ref Value value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">property_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Value.html">Value</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_get_qdata_" data-uid="GObject.Object.Native.get_qdata*"></a>
+  <h4 id="GObject_Object_Native_get_qdata_System_IntPtr_System_UInt32_" data-uid="GObject.Object.Native.get_qdata(System.IntPtr,System.UInt32)">get_qdata(IntPtr, UInt32)</h4>
+  <div class="markdown level1 summary"><p>This function gets back user data pointers stored via
+g_object_set_qdata().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_qdata(IntPtr object, uint quark)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">quark</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_get_type_" data-uid="GObject.Object.Native.get_type*"></a>
+  <h4 id="GObject_Object_Native_get_type" data-uid="GObject.Object.Native.get_type">get_type()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong get_type()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_get_valist_" data-uid="GObject.Object.Native.get_valist*"></a>
+  <h4 id="GObject_Object_Native_get_valist_System_IntPtr_System_String_System_IntPtr_" data-uid="GObject.Object.Native.get_valist(System.IntPtr,System.String,System.IntPtr)">get_valist(IntPtr, String, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets properties of an object.</p>
+<p>In general, a copy is made of the property contents and the caller
+is responsible for freeing the memory in the appropriate manner for
+the type, for instance by calling g_free() or g_object_unref().</p>
+<p>See g_object_get().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void get_valist(IntPtr object, string first_property_name, IntPtr var_args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">first_property_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">var_args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_getv_" data-uid="GObject.Object.Native.getv*"></a>
+  <h4 id="GObject_Object_Native_getv_System_IntPtr_System_UInt32_System_IntPtr__GObject_Value___" data-uid="GObject.Object.Native.getv(System.IntPtr,System.UInt32,System.IntPtr@,GObject.Value[])">getv(IntPtr, UInt32, ref IntPtr, Value[])</h4>
+  <div class="markdown level1 summary"><p>Gets @n_properties properties for an @object.
+Obtained properties will be set to @values. All properties must be valid.
+Warnings will be emitted and undefined behaviour may result if invalid
+properties are passed in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void getv(IntPtr object, uint n_properties, ref IntPtr names, Value[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">n_properties</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">names</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Value.html">Value</a>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_is_floating_" data-uid="GObject.Object.Native.is_floating*"></a>
+  <h4 id="GObject_Object_Native_is_floating_System_IntPtr_" data-uid="GObject.Object.Native.is_floating(System.IntPtr)">is_floating(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Checks whether @object has a [floating][floating-ref] reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool is_floating(IntPtr object)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_new_valist_" data-uid="GObject.Object.Native.new_valist*"></a>
+  <h4 id="GObject_Object_Native_new_valist_System_UInt64_System_String_System_IntPtr_" data-uid="GObject.Object.Native.new_valist(System.UInt64,System.String,System.IntPtr)">new_valist(UInt64, String, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance of a #GObject subtype and sets its properties.</p>
+<p>Construction parameters (see #G_PARAM_CONSTRUCT, #G_PARAM_CONSTRUCT_ONLY)
+which are not explicitly specified are set to their default values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr new_valist(ulong object_type, string first_property_name, IntPtr var_args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">object_type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">first_property_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">var_args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_new_with_properties_" data-uid="GObject.Object.Native.new_with_properties*"></a>
+  <h4 id="GObject_Object_Native_new_with_properties_System_UInt64_System_UInt32_System_IntPtr__GObject_Value___" data-uid="GObject.Object.Native.new_with_properties(System.UInt64,System.UInt32,System.IntPtr@,GObject.Value[])">new_with_properties(UInt64, UInt32, ref IntPtr, Value[])</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance of a #GObject subtype and sets its properties using
+the provided arrays. Both arrays must have exactly @n_properties elements,
+and the names and values correspond by index.</p>
+<p>Construction parameters (see %G_PARAM_CONSTRUCT, %G_PARAM_CONSTRUCT_ONLY)
+which are not explicitly specified are set to their default values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr new_with_properties(ulong object_type, uint n_properties, ref IntPtr names, Value[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">object_type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">n_properties</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">names</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Value.html">Value</a>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_newv_" data-uid="GObject.Object.Native.newv*"></a>
+  <h4 id="GObject_Object_Native_newv_System_UInt64_System_UInt32_System_IntPtr___" data-uid="GObject.Object.Native.newv(System.UInt64,System.UInt32,System.IntPtr[])">newv(UInt64, UInt32, IntPtr[])</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance of a #GObject subtype and sets its properties.</p>
+<p>Construction parameters (see #G_PARAM_CONSTRUCT, #G_PARAM_CONSTRUCT_ONLY)
+which are not explicitly specified are set to their default values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use g_object_new_with_properties() instead.deprecated. See #GParameter for more information.&quot;)]
+public static IntPtr newv(ulong object_type, uint n_parameters, IntPtr[] parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">object_type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">n_parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span>[]</td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_notify_" data-uid="GObject.Object.Native.notify*"></a>
+  <h4 id="GObject_Object_Native_notify_System_IntPtr_System_String_" data-uid="GObject.Object.Native.notify(System.IntPtr,System.String)">notify(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Emits a &quot;notify&quot; signal for the property @property_name on @object.</p>
+<p>When possible, eg. when signaling a property change from within the class
+that registered the property, you should use g_object_notify_by_pspec()
+instead.</p>
+<p>Note that emission of the notify signal may be blocked with
+g_object_freeze_notify(). In this case, the signal emissions are queued
+and will be emitted (in reverse order) when g_object_thaw_notify() is
+called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void notify(IntPtr object, string property_name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">property_name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_notify_by_pspec_" data-uid="GObject.Object.Native.notify_by_pspec*"></a>
+  <h4 id="GObject_Object_Native_notify_by_pspec_System_IntPtr_System_IntPtr_" data-uid="GObject.Object.Native.notify_by_pspec(System.IntPtr,System.IntPtr)">notify_by_pspec(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Emits a &quot;notify&quot; signal for the property specified by @pspec on @object.</p>
+<p>This function omits the property name lookup, hence it is faster than
+g_object_notify().</p>
+<p>One way to avoid using g_object_notify() from within the
+class that registered the properties, and using g_object_notify_by_pspec()
+instead, is to store the GParamSpec used with
+g_object_class_install_property() inside a static array, e.g.:</p>
+<p>|[<!-- language="C" -->
+enum
+{
+PROP_0,
+PROP_FOO,
+PROP_LAST
+};</p>
+<p>static GParamSpec *properties[PROP_LAST];</p>
+<p>static void
+my_object_class_init (MyObjectClass *klass)
+{
+properties[PROP_FOO] = g_param_spec_int (&quot;foo&quot;, &quot;Foo&quot;, &quot;The foo&quot;,
+0, 100,
+50,
+G_PARAM_READWRITE);
+g_object_class_install_property (gobject_class,
+PROP_FOO,
+properties[PROP_FOO]);
+}
+]|</p>
+<p>and then notify a change on the &quot;foo&quot; property with:</p>
+<p>|[<!-- language="C" -->
+g_object_notify_by_pspec (self, properties[PROP_FOO]);
+]|</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void notify_by_pspec(IntPtr object, IntPtr pspec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">pspec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_ref_" data-uid="GObject.Object.Native.ref*"></a>
+  <h4 id="GObject_Object_Native_ref_System_IntPtr_" data-uid="GObject.Object.Native.ref(System.IntPtr)">ref(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Increases the reference count of @object.</p>
+<p>Since GLib 2.56, if <code>GLIB_VERSION_MAX_ALLOWED</code> is 2.56 or greater, the type
+of @object will be propagated to the return type (using the GCC typeof()
+extension), so any casting the caller needs to do on the return type must be
+explicit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr ref(IntPtr object)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_ref_sink_" data-uid="GObject.Object.Native.ref_sink*"></a>
+  <h4 id="GObject_Object_Native_ref_sink_System_IntPtr_" data-uid="GObject.Object.Native.ref_sink(System.IntPtr)">ref_sink(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Increase the reference count of @object, and possibly remove the
+[floating][floating-ref] reference, if @object has a floating reference.</p>
+<p>In other words, if the object is floating, then this call &quot;assumes
+ownership&quot; of the floating reference, converting it to a normal
+reference by clearing the floating flag while leaving the reference
+count unchanged.  If the object is not floating, then this call
+adds a new normal reference increasing the reference count by one.</p>
+<p>Since GLib 2.56, the type of @object will be propagated to the return type
+under the same conditions as for g_object_ref().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr ref_sink(IntPtr object)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_remove_toggle_ref_" data-uid="GObject.Object.Native.remove_toggle_ref*"></a>
+  <h4 id="GObject_Object_Native_remove_toggle_ref_System_IntPtr_GObject_ToggleNotify_System_IntPtr_" data-uid="GObject.Object.Native.remove_toggle_ref(System.IntPtr,GObject.ToggleNotify,System.IntPtr)">remove_toggle_ref(IntPtr, ToggleNotify, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Removes a reference added with g_object_add_toggle_ref(). The
+reference count of the object is decreased by one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void remove_toggle_ref(IntPtr object, ToggleNotify notify, IntPtr data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.ToggleNotify.html">ToggleNotify</a></td>
+        <td><span class="parametername">notify</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_remove_weak_pointer_" data-uid="GObject.Object.Native.remove_weak_pointer*"></a>
+  <h4 id="GObject_Object_Native_remove_weak_pointer_System_IntPtr_System_IntPtr__" data-uid="GObject.Object.Native.remove_weak_pointer(System.IntPtr,System.IntPtr@)">remove_weak_pointer(IntPtr, ref IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Removes a weak reference from @object that was previously added
+using g_object_add_weak_pointer(). The @weak_pointer_location has
+to match the one used with g_object_add_weak_pointer().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void remove_weak_pointer(IntPtr object, ref IntPtr weak_pointer_location)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">weak_pointer_location</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_replace_data_" data-uid="GObject.Object.Native.replace_data*"></a>
+  <h4 id="GObject_Object_Native_replace_data_System_IntPtr_System_String_System_IntPtr_System_IntPtr_GLib_DestroyNotify_System_IntPtr_" data-uid="GObject.Object.Native.replace_data(System.IntPtr,System.String,System.IntPtr,System.IntPtr,GLib.DestroyNotify,System.IntPtr)">replace_data(IntPtr, String, IntPtr, IntPtr, DestroyNotify, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Compares the user data for the key @key on @object with
+@oldval, and if they are the same, replaces @oldval with
+@newval.</p>
+<p>This is like a typical atomic compare-and-exchange
+operation, for user data on an object.</p>
+<p>If the previous value was replaced then ownership of the
+old value (@oldval) is passed to the caller, including
+the registered destroy notify for it (passed out in @old_destroy).
+It’s up to the caller to free this as needed, which may
+or may not include using @old_destroy as sometimes replacement
+should not destroy the object in the normal way.</p>
+<p>See g_object_set_data() for guidance on using a small, bounded set of values
+for @key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool replace_data(IntPtr object, string key, IntPtr oldval, IntPtr newval, DestroyNotify destroy, IntPtr old_destroy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">oldval</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">newval</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.DestroyNotify.html">DestroyNotify</a></td>
+        <td><span class="parametername">destroy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">old_destroy</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_replace_qdata_" data-uid="GObject.Object.Native.replace_qdata*"></a>
+  <h4 id="GObject_Object_Native_replace_qdata_System_IntPtr_System_UInt32_System_IntPtr_System_IntPtr_GLib_DestroyNotify_System_IntPtr_" data-uid="GObject.Object.Native.replace_qdata(System.IntPtr,System.UInt32,System.IntPtr,System.IntPtr,GLib.DestroyNotify,System.IntPtr)">replace_qdata(IntPtr, UInt32, IntPtr, IntPtr, DestroyNotify, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Compares the user data for the key @quark on @object with
+@oldval, and if they are the same, replaces @oldval with
+@newval.</p>
+<p>This is like a typical atomic compare-and-exchange
+operation, for user data on an object.</p>
+<p>If the previous value was replaced then ownership of the
+old value (@oldval) is passed to the caller, including
+the registered destroy notify for it (passed out in @old_destroy).
+It’s up to the caller to free this as needed, which may
+or may not include using @old_destroy as sometimes replacement
+should not destroy the object in the normal way.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool replace_qdata(IntPtr object, uint quark, IntPtr oldval, IntPtr newval, DestroyNotify destroy, IntPtr old_destroy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">quark</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">oldval</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">newval</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.DestroyNotify.html">DestroyNotify</a></td>
+        <td><span class="parametername">destroy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">old_destroy</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_run_dispose_" data-uid="GObject.Object.Native.run_dispose*"></a>
+  <h4 id="GObject_Object_Native_run_dispose_System_IntPtr_" data-uid="GObject.Object.Native.run_dispose(System.IntPtr)">run_dispose(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Releases all references to other objects. This can be used to break
+reference cycles.</p>
+<p>This function should only be called from object system implementations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void run_dispose(IntPtr object)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_set_data_" data-uid="GObject.Object.Native.set_data*"></a>
+  <h4 id="GObject_Object_Native_set_data_System_IntPtr_System_String_System_IntPtr_" data-uid="GObject.Object.Native.set_data(System.IntPtr,System.String,System.IntPtr)">set_data(IntPtr, String, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Each object carries around a table of associations from
+strings to pointers.  This function lets you set an association.</p>
+<p>If the object already had an association with that name,
+the old association will be destroyed.</p>
+<p>Internally, the @key is converted to a #GQuark using g_quark_from_string().
+This means a copy of @key is kept permanently (even after @object has been
+finalized) — so it is recommended to only use a small, bounded set of values
+for @key in your program, to avoid the #GQuark storage growing unbounded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_data(IntPtr object, string key, IntPtr data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_set_data_full_" data-uid="GObject.Object.Native.set_data_full*"></a>
+  <h4 id="GObject_Object_Native_set_data_full_System_IntPtr_System_String_System_IntPtr_GLib_DestroyNotify_" data-uid="GObject.Object.Native.set_data_full(System.IntPtr,System.String,System.IntPtr,GLib.DestroyNotify)">set_data_full(IntPtr, String, IntPtr, DestroyNotify)</h4>
+  <div class="markdown level1 summary"><p>Like g_object_set_data() except it adds notification
+for when the association is destroyed, either by setting it
+to a different value or when the object is destroyed.</p>
+<p>Note that the @destroy callback is not called if @data is %NULL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_data_full(IntPtr object, string key, IntPtr data, DestroyNotify destroy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.DestroyNotify.html">DestroyNotify</a></td>
+        <td><span class="parametername">destroy</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_set_property_" data-uid="GObject.Object.Native.set_property*"></a>
+  <h4 id="GObject_Object_Native_set_property_System_IntPtr_System_String_GObject_Value__" data-uid="GObject.Object.Native.set_property(System.IntPtr,System.String,GObject.Value@)">set_property(IntPtr, String, ref Value)</h4>
+  <div class="markdown level1 summary"><p>Sets a property on an object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_property(IntPtr object, string property_name, ref Value value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">property_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Value.html">Value</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_set_qdata_" data-uid="GObject.Object.Native.set_qdata*"></a>
+  <h4 id="GObject_Object_Native_set_qdata_System_IntPtr_System_UInt32_System_IntPtr_" data-uid="GObject.Object.Native.set_qdata(System.IntPtr,System.UInt32,System.IntPtr)">set_qdata(IntPtr, UInt32, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>This sets an opaque, named pointer on an object.
+The name is specified through a #GQuark (retrived e.g. via
+g_quark_from_static_string()), and the pointer
+can be gotten back from the @object with g_object_get_qdata()
+until the @object is finalized.
+Setting a previously set user data pointer, overrides (frees)
+the old pointer set, using #NULL as pointer essentially
+removes the data stored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_qdata(IntPtr object, uint quark, IntPtr data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">quark</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_set_qdata_full_" data-uid="GObject.Object.Native.set_qdata_full*"></a>
+  <h4 id="GObject_Object_Native_set_qdata_full_System_IntPtr_System_UInt32_System_IntPtr_GLib_DestroyNotify_" data-uid="GObject.Object.Native.set_qdata_full(System.IntPtr,System.UInt32,System.IntPtr,GLib.DestroyNotify)">set_qdata_full(IntPtr, UInt32, IntPtr, DestroyNotify)</h4>
+  <div class="markdown level1 summary"><p>This function works like g_object_set_qdata(), but in addition,
+a void (*destroy) (gpointer) function may be specified which is
+called with @data as argument when the @object is finalized, or
+the data is being overwritten by a call to g_object_set_qdata()
+with the same @quark.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_qdata_full(IntPtr object, uint quark, IntPtr data, DestroyNotify destroy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">quark</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.DestroyNotify.html">DestroyNotify</a></td>
+        <td><span class="parametername">destroy</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_set_valist_" data-uid="GObject.Object.Native.set_valist*"></a>
+  <h4 id="GObject_Object_Native_set_valist_System_IntPtr_System_String_System_IntPtr_" data-uid="GObject.Object.Native.set_valist(System.IntPtr,System.String,System.IntPtr)">set_valist(IntPtr, String, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets properties on an object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_valist(IntPtr object, string first_property_name, IntPtr var_args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">first_property_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">var_args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_setv_" data-uid="GObject.Object.Native.setv*"></a>
+  <h4 id="GObject_Object_Native_setv_System_IntPtr_System_UInt32_System_IntPtr__GObject_Value___" data-uid="GObject.Object.Native.setv(System.IntPtr,System.UInt32,System.IntPtr@,GObject.Value[])">setv(IntPtr, UInt32, ref IntPtr, Value[])</h4>
+  <div class="markdown level1 summary"><p>Sets @n_properties properties for an @object.
+Properties to be set will be taken from @values. All properties must be
+valid. Warnings will be emitted and undefined behaviour may result if invalid
+properties are passed in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void setv(IntPtr object, uint n_properties, ref IntPtr names, Value[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">n_properties</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">names</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Value.html">Value</a>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_steal_data_" data-uid="GObject.Object.Native.steal_data*"></a>
+  <h4 id="GObject_Object_Native_steal_data_System_IntPtr_System_String_" data-uid="GObject.Object.Native.steal_data(System.IntPtr,System.String)">steal_data(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Remove a specified datum from the object's data associations,
+without invoking the association's destroy handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr steal_data(IntPtr object, string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_steal_qdata_" data-uid="GObject.Object.Native.steal_qdata*"></a>
+  <h4 id="GObject_Object_Native_steal_qdata_System_IntPtr_System_UInt32_" data-uid="GObject.Object.Native.steal_qdata(System.IntPtr,System.UInt32)">steal_qdata(IntPtr, UInt32)</h4>
+  <div class="markdown level1 summary"><p>This function gets back user data pointers stored via
+g_object_set_qdata() and removes the @data from object
+without invoking its destroy() function (if any was
+set).
+Usually, calling this function is only required to update
+user data pointers with a destroy notifier, for example:
+|[<!-- language="C" -->
+void
+object_add_to_user_list (GObject     *object,
+const gchar *new_string)
+{
+// the quark, naming the object data
+GQuark quark_string_list = g_quark_from_static_string (&quot;my-string-list&quot;);
+// retrive the old string list
+GList *list = g_object_steal_qdata (object, quark_string_list);</p>
+<p>// prepend new string
+list = g_list_prepend (list, g_strdup (new_string));
+// this changed 'list', so we need to set it again
+g_object_set_qdata_full (object, quark_string_list, list, free_string_list);
+}
+static void
+free_string_list (gpointer data)
+{
+GList *node, *list = data;</p>
+<p>for (node = list; node; node = node-&gt;next)
+g_free (node-&gt;data);
+g_list_free (list);
+}
+]|
+Using g_object_get_qdata() in the above example, instead of
+g_object_steal_qdata() would have left the destroy function set,
+and thus the partial string list would have been freed upon
+g_object_set_qdata_full().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr steal_qdata(IntPtr object, uint quark)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">quark</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_thaw_notify_" data-uid="GObject.Object.Native.thaw_notify*"></a>
+  <h4 id="GObject_Object_Native_thaw_notify_System_IntPtr_" data-uid="GObject.Object.Native.thaw_notify(System.IntPtr)">thaw_notify(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Reverts the effect of a previous call to
+g_object_freeze_notify(). The freeze count is decreased on @object
+and when it reaches zero, queued &quot;notify&quot; signals are emitted.</p>
+<p>Duplicate notifications for each property are squashed so that at most one
+#GObject::notify signal is emitted for each property, in the reverse order
+in which they have been queued.</p>
+<p>It is an error to call this function when the freeze count is zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void thaw_notify(IntPtr object)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_unref_" data-uid="GObject.Object.Native.unref*"></a>
+  <h4 id="GObject_Object_Native_unref_System_IntPtr_" data-uid="GObject.Object.Native.unref(System.IntPtr)">unref(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Decreases the reference count of @object. When its reference count
+drops to 0, the object is finalized (i.e. its memory is freed).</p>
+<p>If the pointer to the #GObject may be reused in future (for example, if it is
+an instance variable of another object), it is recommended to clear the
+pointer to %NULL rather than retain a dangling pointer to a potentially
+invalid #GObject instance. Use g_clear_object() for this.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void unref(IntPtr object)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_watch_closure_" data-uid="GObject.Object.Native.watch_closure*"></a>
+  <h4 id="GObject_Object_Native_watch_closure_System_IntPtr_System_IntPtr_" data-uid="GObject.Object.Native.watch_closure(System.IntPtr,System.IntPtr)">watch_closure(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>This function essentially limits the life time of the @closure to
+the life time of the object. That is, when the object is finalized,
+the @closure is invalidated by calling g_closure_invalidate() on
+it, in order to prevent invocations of the closure with a finalized
+(nonexisting) object. Also, g_object_ref() and g_object_unref() are
+added as marshal guards to the @closure, to ensure that an extra
+reference count is held on @object during invocation of the
+@closure.  Usually, this function will be called on closures that
+use this @object as closure data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void watch_closure(IntPtr object, IntPtr closure)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_weak_ref_" data-uid="GObject.Object.Native.weak_ref*"></a>
+  <h4 id="GObject_Object_Native_weak_ref_System_IntPtr_GObject_WeakNotify_System_IntPtr_" data-uid="GObject.Object.Native.weak_ref(System.IntPtr,GObject.WeakNotify,System.IntPtr)">weak_ref(IntPtr, WeakNotify, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Adds a weak reference callback to an object. Weak references are
+used for notification when an object is finalized. They are called
+&quot;weak references&quot; because they allow you to safely hold a pointer
+to an object without calling g_object_ref() (g_object_ref() adds a
+strong reference, that is, forces the object to stay alive).</p>
+<p>Note that the weak references created by this method are not
+thread-safe: they cannot safely be used in one thread if the
+object's last g_object_unref() might happen in another thread.
+Use #GWeakRef if thread-safety is required.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void weak_ref(IntPtr object, WeakNotify notify, IntPtr data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.WeakNotify.html">WeakNotify</a></td>
+        <td><span class="parametername">notify</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Object_Native_weak_unref_" data-uid="GObject.Object.Native.weak_unref*"></a>
+  <h4 id="GObject_Object_Native_weak_unref_System_IntPtr_GObject_WeakNotify_System_IntPtr_" data-uid="GObject.Object.Native.weak_unref(System.IntPtr,GObject.WeakNotify,System.IntPtr)">weak_unref(IntPtr, WeakNotify, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Removes a weak reference callback to an object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void weak_unref(IntPtr object, WeakNotify notify, IntPtr data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.WeakNotify.html">WeakNotify</a></td>
+        <td><span class="parametername">notify</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GObject_Object_Native.md&amp;value=---%0Auid%3A%20GObject.Object.Native%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GObject/Classes/Object.Generated.cs/#L101" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

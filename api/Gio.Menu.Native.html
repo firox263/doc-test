@@ -1,0 +1,802 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Menu.Native
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Menu.Native
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gio.Menu.Native">
+  
+  
+  <h1 id="Gio_Menu_Native" data-uid="Gio.Menu.Native" class="text-break">Class Menu.Native
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Menu.Native</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gio.html">Gio</a></h6>
+  <h6><strong>Assembly</strong>: Gio.dll</h6>
+  <h5 id="Gio_Menu_Native_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static class Native</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Gio_Menu_Native_append_" data-uid="Gio.Menu.Native.append*"></a>
+  <h4 id="Gio_Menu_Native_append_System_IntPtr_System_String_System_String_" data-uid="Gio.Menu.Native.append(System.IntPtr,System.String,System.String)">append(IntPtr, String, String)</h4>
+  <div class="markdown level1 summary"><p>Convenience function for appending a normal menu item to the end of
+@menu.  Combine g_menu_item_new() and g_menu_insert_item() for a more
+flexible alternative.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void append(IntPtr menu, string label, string detailed_action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">detailed_action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Menu_Native_append_item_" data-uid="Gio.Menu.Native.append_item*"></a>
+  <h4 id="Gio_Menu_Native_append_item_System_IntPtr_System_IntPtr_" data-uid="Gio.Menu.Native.append_item(System.IntPtr,System.IntPtr)">append_item(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Appends @item to the end of @menu.</p>
+<p>See g_menu_insert_item() for more information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void append_item(IntPtr menu, IntPtr item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Menu_Native_append_section_" data-uid="Gio.Menu.Native.append_section*"></a>
+  <h4 id="Gio_Menu_Native_append_section_System_IntPtr_System_String_System_IntPtr_" data-uid="Gio.Menu.Native.append_section(System.IntPtr,System.String,System.IntPtr)">append_section(IntPtr, String, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Convenience function for appending a section menu item to the end of
+@menu.  Combine g_menu_item_new_section() and g_menu_insert_item() for a
+more flexible alternative.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void append_section(IntPtr menu, string label, IntPtr section)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">section</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Menu_Native_append_submenu_" data-uid="Gio.Menu.Native.append_submenu*"></a>
+  <h4 id="Gio_Menu_Native_append_submenu_System_IntPtr_System_String_System_IntPtr_" data-uid="Gio.Menu.Native.append_submenu(System.IntPtr,System.String,System.IntPtr)">append_submenu(IntPtr, String, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Convenience function for appending a submenu menu item to the end of
+@menu.  Combine g_menu_item_new_submenu() and g_menu_insert_item() for a
+more flexible alternative.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void append_submenu(IntPtr menu, string label, IntPtr submenu)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">submenu</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Menu_Native_freeze_" data-uid="Gio.Menu.Native.freeze*"></a>
+  <h4 id="Gio_Menu_Native_freeze_System_IntPtr_" data-uid="Gio.Menu.Native.freeze(System.IntPtr)">freeze(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Marks @menu as frozen.</p>
+<p>After the menu is frozen, it is an error to attempt to make any
+changes to it.  In effect this means that the #GMenu API must no
+longer be used.</p>
+<p>This function causes g_menu_model_is_mutable() to begin returning
+%FALSE, which has some positive performance implications.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void freeze(IntPtr menu)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Menu_Native_get_type_" data-uid="Gio.Menu.Native.get_type*"></a>
+  <h4 id="Gio_Menu_Native_get_type" data-uid="Gio.Menu.Native.get_type">get_type()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong get_type()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Menu_Native_insert_" data-uid="Gio.Menu.Native.insert*"></a>
+  <h4 id="Gio_Menu_Native_insert_System_IntPtr_System_Int32_System_String_System_String_" data-uid="Gio.Menu.Native.insert(System.IntPtr,System.Int32,System.String,System.String)">insert(IntPtr, Int32, String, String)</h4>
+  <div class="markdown level1 summary"><p>Convenience function for inserting a normal menu item into @menu.
+Combine g_menu_item_new() and g_menu_insert_item() for a more flexible
+alternative.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void insert(IntPtr menu, int position, string label, string detailed_action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">detailed_action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Menu_Native_insert_item_" data-uid="Gio.Menu.Native.insert_item*"></a>
+  <h4 id="Gio_Menu_Native_insert_item_System_IntPtr_System_Int32_System_IntPtr_" data-uid="Gio.Menu.Native.insert_item(System.IntPtr,System.Int32,System.IntPtr)">insert_item(IntPtr, Int32, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Inserts @item into @menu.</p>
+<p>The &quot;insertion&quot; is actually done by copying all of the attribute and
+link values of @item and using them to form a new item within @menu.
+As such, @item itself is not really inserted, but rather, a menu item
+that is exactly the same as the one presently described by @item.</p>
+<p>This means that @item is essentially useless after the insertion
+occurs.  Any changes you make to it are ignored unless it is inserted
+again (at which point its updated values will be copied).</p>
+<p>You should probably just free @item once you're done.</p>
+<p>There are many convenience functions to take care of common cases.
+See g_menu_insert(), g_menu_insert_section() and
+g_menu_insert_submenu() as well as &quot;prepend&quot; and &quot;append&quot; variants of
+each of these functions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void insert_item(IntPtr menu, int position, IntPtr item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Menu_Native_insert_section_" data-uid="Gio.Menu.Native.insert_section*"></a>
+  <h4 id="Gio_Menu_Native_insert_section_System_IntPtr_System_Int32_System_String_System_IntPtr_" data-uid="Gio.Menu.Native.insert_section(System.IntPtr,System.Int32,System.String,System.IntPtr)">insert_section(IntPtr, Int32, String, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Convenience function for inserting a section menu item into @menu.
+Combine g_menu_item_new_section() and g_menu_insert_item() for a more
+flexible alternative.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void insert_section(IntPtr menu, int position, string label, IntPtr section)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">section</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Menu_Native_insert_submenu_" data-uid="Gio.Menu.Native.insert_submenu*"></a>
+  <h4 id="Gio_Menu_Native_insert_submenu_System_IntPtr_System_Int32_System_String_System_IntPtr_" data-uid="Gio.Menu.Native.insert_submenu(System.IntPtr,System.Int32,System.String,System.IntPtr)">insert_submenu(IntPtr, Int32, String, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Convenience function for inserting a submenu menu item into @menu.
+Combine g_menu_item_new_submenu() and g_menu_insert_item() for a more
+flexible alternative.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void insert_submenu(IntPtr menu, int position, string label, IntPtr submenu)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">submenu</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Menu_Native_new_" data-uid="Gio.Menu.Native.new*"></a>
+  <h4 id="Gio_Menu_Native_new" data-uid="Gio.Menu.Native.new">new()</h4>
+  <div class="markdown level1 summary"><p>Creates a new #GMenu.</p>
+<p>The new menu has no items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr new()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Menu_Native_prepend_" data-uid="Gio.Menu.Native.prepend*"></a>
+  <h4 id="Gio_Menu_Native_prepend_System_IntPtr_System_String_System_String_" data-uid="Gio.Menu.Native.prepend(System.IntPtr,System.String,System.String)">prepend(IntPtr, String, String)</h4>
+  <div class="markdown level1 summary"><p>Convenience function for prepending a normal menu item to the start
+of @menu.  Combine g_menu_item_new() and g_menu_insert_item() for a more
+flexible alternative.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void prepend(IntPtr menu, string label, string detailed_action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">detailed_action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Menu_Native_prepend_item_" data-uid="Gio.Menu.Native.prepend_item*"></a>
+  <h4 id="Gio_Menu_Native_prepend_item_System_IntPtr_System_IntPtr_" data-uid="Gio.Menu.Native.prepend_item(System.IntPtr,System.IntPtr)">prepend_item(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Prepends @item to the start of @menu.</p>
+<p>See g_menu_insert_item() for more information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void prepend_item(IntPtr menu, IntPtr item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Menu_Native_prepend_section_" data-uid="Gio.Menu.Native.prepend_section*"></a>
+  <h4 id="Gio_Menu_Native_prepend_section_System_IntPtr_System_String_System_IntPtr_" data-uid="Gio.Menu.Native.prepend_section(System.IntPtr,System.String,System.IntPtr)">prepend_section(IntPtr, String, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Convenience function for prepending a section menu item to the start
+of @menu.  Combine g_menu_item_new_section() and g_menu_insert_item() for
+a more flexible alternative.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void prepend_section(IntPtr menu, string label, IntPtr section)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">section</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Menu_Native_prepend_submenu_" data-uid="Gio.Menu.Native.prepend_submenu*"></a>
+  <h4 id="Gio_Menu_Native_prepend_submenu_System_IntPtr_System_String_System_IntPtr_" data-uid="Gio.Menu.Native.prepend_submenu(System.IntPtr,System.String,System.IntPtr)">prepend_submenu(IntPtr, String, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Convenience function for prepending a submenu menu item to the start
+of @menu.  Combine g_menu_item_new_submenu() and g_menu_insert_item() for
+a more flexible alternative.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void prepend_submenu(IntPtr menu, string label, IntPtr submenu)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">submenu</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Menu_Native_remove_" data-uid="Gio.Menu.Native.remove*"></a>
+  <h4 id="Gio_Menu_Native_remove_System_IntPtr_System_Int32_" data-uid="Gio.Menu.Native.remove(System.IntPtr,System.Int32)">remove(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes an item from the menu.</p>
+<p>@position gives the index of the item to remove.</p>
+<p>It is an error if position is not in range the range from 0 to one
+less than the number of items in the menu.</p>
+<p>It is not possible to remove items by identity since items are added
+to the menu simply by copying their links and attributes (ie:
+identity of the item itself is not preserved).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void remove(IntPtr menu, int position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Menu_Native_remove_all_" data-uid="Gio.Menu.Native.remove_all*"></a>
+  <h4 id="Gio_Menu_Native_remove_all_System_IntPtr_" data-uid="Gio.Menu.Native.remove_all(System.IntPtr)">remove_all(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Removes all items in the menu.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void remove_all(IntPtr menu)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_Menu_Native.md&amp;value=---%0Auid%3A%20Gio.Menu.Native%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/Menu.Generated.cs/#L32" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

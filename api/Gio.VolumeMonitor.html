@@ -1,0 +1,1593 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class VolumeMonitor
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class VolumeMonitor
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gio.VolumeMonitor">
+  
+  
+  <h1 id="Gio_VolumeMonitor" data-uid="Gio.VolumeMonitor" class="text-break">Class VolumeMonitor
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="GObject.Object.html">Object</a></div>
+    <div class="level2"><span class="xref">VolumeMonitor</span></div>
+      <div class="level3"><a class="xref" href="Gio.NativeVolumeMonitor.html">NativeVolumeMonitor</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_PropertyChanged">Object.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Handle">Object.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Disposed">Object.Disposed</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Initialize">Object.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RegisterNotifyPropertyChangedEvent_System_String_System_Action_">Object.RegisterNotifyPropertyChangedEvent(String, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RegisterEvent_System_String_GObject_ActionRefValues_System_Boolean_">Object.RegisterEvent(String, ActionRefValues, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RegisterEvent_System_String_System_Action_System_Boolean_">Object.RegisterEvent(String, Action, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_UnregisterEvent_GObject_ActionRefValues_">Object.UnregisterEvent(ActionRefValues)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_UnregisterEvent_System_Action_">Object.UnregisterEvent(Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ThrowIfDisposed">Object.ThrowIfDisposed()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_HandleError_System_IntPtr_">Object.HandleError(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetHandle_GObject_Object_">Object.GetHandle(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnPropertyChanged_System_String_">Object.OnPropertyChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetObject__1_System_IntPtr___0__">Object.GetObject&lt;T&gt;(IntPtr, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_TryWrapPointerAs__1_System_IntPtr___0__">Object.TryWrapPointerAs&lt;T&gt;(IntPtr, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Dispose">Object.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Dispose_System_Boolean_">Object.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Item_GObject_Signal_GObject_Object_NotifySignalArgs__">Object.Item[Signal&lt;Object.NotifySignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifySignal">Object.NotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnNotify">Object.OnNotify</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetProperty__1_GObject_Property___0__">Object.GetProperty&lt;T&gt;(Property&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetProperty__1_GObject_Property___0____0_">Object.SetProperty&lt;T&gt;(Property&lt;T&gt;, T)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gio.html">Gio</a></h6>
+  <h6><strong>Assembly</strong>: Gio.dll</h6>
+  <h5 id="Gio_VolumeMonitor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VolumeMonitor : Object, INotifyPropertyChanged, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor__ctor_GObject_ConstructParameter___.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.%23ctor(GObject.ConstructParameter%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L654">View Source</a>
+  </span>
+  <a id="Gio_VolumeMonitor__ctor_" data-uid="Gio.VolumeMonitor.#ctor*"></a>
+  <h4 id="Gio_VolumeMonitor__ctor_GObject_ConstructParameter___" data-uid="Gio.VolumeMonitor.#ctor(GObject.ConstructParameter[])">VolumeMonitor(ConstructParameter[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected VolumeMonitor(params ConstructParameter[] properties)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.ConstructParameter.html">ConstructParameter</a>[]</td>
+        <td><span class="parametername">properties</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor__ctor_System_IntPtr_.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.%23ctor(System.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L653">View Source</a>
+  </span>
+  <a id="Gio_VolumeMonitor__ctor_" data-uid="Gio.VolumeMonitor.#ctor*"></a>
+  <h4 id="Gio_VolumeMonitor__ctor_System_IntPtr_" data-uid="Gio.VolumeMonitor.#ctor(System.IntPtr)">VolumeMonitor(IntPtr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected VolumeMonitor(IntPtr ptr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">ptr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_DriveChangedSignal.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.DriveChangedSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L60">View Source</a>
+  </span>
+  <h4 id="Gio_VolumeMonitor_DriveChangedSignal" data-uid="Gio.VolumeMonitor.DriveChangedSignal">DriveChangedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnDriveChanged.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;VolumeMonitor.DriveChangedSignalArgs&gt; DriveChangedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gio.VolumeMonitor.DriveChangedSignalArgs.html">VolumeMonitor.DriveChangedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_DriveConnectedSignal.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.DriveConnectedSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L112">View Source</a>
+  </span>
+  <h4 id="Gio_VolumeMonitor_DriveConnectedSignal" data-uid="Gio.VolumeMonitor.DriveConnectedSignal">DriveConnectedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnDriveConnected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;VolumeMonitor.DriveConnectedSignalArgs&gt; DriveConnectedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gio.VolumeMonitor.DriveConnectedSignalArgs.html">VolumeMonitor.DriveConnectedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_DriveDisconnectedSignal.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.DriveDisconnectedSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L164">View Source</a>
+  </span>
+  <h4 id="Gio_VolumeMonitor_DriveDisconnectedSignal" data-uid="Gio.VolumeMonitor.DriveDisconnectedSignal">DriveDisconnectedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnDriveDisconnected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;VolumeMonitor.DriveDisconnectedSignalArgs&gt; DriveDisconnectedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gio.VolumeMonitor.DriveDisconnectedSignalArgs.html">VolumeMonitor.DriveDisconnectedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_DriveEjectButtonSignal.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.DriveEjectButtonSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L216">View Source</a>
+  </span>
+  <h4 id="Gio_VolumeMonitor_DriveEjectButtonSignal" data-uid="Gio.VolumeMonitor.DriveEjectButtonSignal">DriveEjectButtonSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnDriveEjectButton.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;VolumeMonitor.DriveEjectButtonSignalArgs&gt; DriveEjectButtonSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gio.VolumeMonitor.DriveEjectButtonSignalArgs.html">VolumeMonitor.DriveEjectButtonSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_DriveStopButtonSignal.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.DriveStopButtonSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L268">View Source</a>
+  </span>
+  <h4 id="Gio_VolumeMonitor_DriveStopButtonSignal" data-uid="Gio.VolumeMonitor.DriveStopButtonSignal">DriveStopButtonSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnDriveStopButton.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;VolumeMonitor.DriveStopButtonSignalArgs&gt; DriveStopButtonSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gio.VolumeMonitor.DriveStopButtonSignalArgs.html">VolumeMonitor.DriveStopButtonSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_MountAddedSignal.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.MountAddedSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L320">View Source</a>
+  </span>
+  <h4 id="Gio_VolumeMonitor_MountAddedSignal" data-uid="Gio.VolumeMonitor.MountAddedSignal">MountAddedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnMountAdded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;VolumeMonitor.MountAddedSignalArgs&gt; MountAddedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gio.VolumeMonitor.MountAddedSignalArgs.html">VolumeMonitor.MountAddedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_MountChangedSignal.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.MountChangedSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L372">View Source</a>
+  </span>
+  <h4 id="Gio_VolumeMonitor_MountChangedSignal" data-uid="Gio.VolumeMonitor.MountChangedSignal">MountChangedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnMountChanged.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;VolumeMonitor.MountChangedSignalArgs&gt; MountChangedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gio.VolumeMonitor.MountChangedSignalArgs.html">VolumeMonitor.MountChangedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_MountPreUnmountSignal.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.MountPreUnmountSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L424">View Source</a>
+  </span>
+  <h4 id="Gio_VolumeMonitor_MountPreUnmountSignal" data-uid="Gio.VolumeMonitor.MountPreUnmountSignal">MountPreUnmountSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnMountPreUnmount.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;VolumeMonitor.MountPreUnmountSignalArgs&gt; MountPreUnmountSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gio.VolumeMonitor.MountPreUnmountSignalArgs.html">VolumeMonitor.MountPreUnmountSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_MountRemovedSignal.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.MountRemovedSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L479">View Source</a>
+  </span>
+  <h4 id="Gio_VolumeMonitor_MountRemovedSignal" data-uid="Gio.VolumeMonitor.MountRemovedSignal">MountRemovedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnMountRemoved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;VolumeMonitor.MountRemovedSignalArgs&gt; MountRemovedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gio.VolumeMonitor.MountRemovedSignalArgs.html">VolumeMonitor.MountRemovedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_VolumeAddedSignal.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.VolumeAddedSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L531">View Source</a>
+  </span>
+  <h4 id="Gio_VolumeMonitor_VolumeAddedSignal" data-uid="Gio.VolumeMonitor.VolumeAddedSignal">VolumeAddedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnVolumeAdded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;VolumeMonitor.VolumeAddedSignalArgs&gt; VolumeAddedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gio.VolumeMonitor.VolumeAddedSignalArgs.html">VolumeMonitor.VolumeAddedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_VolumeChangedSignal.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.VolumeChangedSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L583">View Source</a>
+  </span>
+  <h4 id="Gio_VolumeMonitor_VolumeChangedSignal" data-uid="Gio.VolumeMonitor.VolumeChangedSignal">VolumeChangedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnVolumeChanged.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;VolumeMonitor.VolumeChangedSignalArgs&gt; VolumeChangedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gio.VolumeMonitor.VolumeChangedSignalArgs.html">VolumeMonitor.VolumeChangedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_VolumeRemovedSignal.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.VolumeRemovedSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L635">View Source</a>
+  </span>
+  <h4 id="Gio_VolumeMonitor_VolumeRemovedSignal" data-uid="Gio.VolumeMonitor.VolumeRemovedSignal">VolumeRemovedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnVolumeRemoved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;VolumeMonitor.VolumeRemovedSignalArgs&gt; VolumeRemovedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gio.VolumeMonitor.VolumeRemovedSignalArgs.html">VolumeMonitor.VolumeRemovedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_Item_GObject_Signal_Gio_VolumeMonitor_DriveChangedSignalArgs__.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.Item(GObject.Signal%7BGio.VolumeMonitor.DriveChangedSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L28">View Source</a>
+  </span>
+  <a id="Gio_VolumeMonitor_Item_" data-uid="Gio.VolumeMonitor.Item*"></a>
+  <h4 id="Gio_VolumeMonitor_Item_GObject_Signal_Gio_VolumeMonitor_DriveChangedSignalArgs__" data-uid="Gio.VolumeMonitor.Item(GObject.Signal{Gio.VolumeMonitor.DriveChangedSignalArgs})">Item[Signal&lt;VolumeMonitor.DriveChangedSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;VolumeMonitor.DriveChangedSignalArgs&gt; this[Signal&lt;VolumeMonitor.DriveChangedSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gio.VolumeMonitor.DriveChangedSignalArgs.html">VolumeMonitor.DriveChangedSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gio.VolumeMonitor.DriveChangedSignalArgs.html">VolumeMonitor.DriveChangedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_Item_GObject_Signal_Gio_VolumeMonitor_DriveConnectedSignalArgs__.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.Item(GObject.Signal%7BGio.VolumeMonitor.DriveConnectedSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L80">View Source</a>
+  </span>
+  <a id="Gio_VolumeMonitor_Item_" data-uid="Gio.VolumeMonitor.Item*"></a>
+  <h4 id="Gio_VolumeMonitor_Item_GObject_Signal_Gio_VolumeMonitor_DriveConnectedSignalArgs__" data-uid="Gio.VolumeMonitor.Item(GObject.Signal{Gio.VolumeMonitor.DriveConnectedSignalArgs})">Item[Signal&lt;VolumeMonitor.DriveConnectedSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;VolumeMonitor.DriveConnectedSignalArgs&gt; this[Signal&lt;VolumeMonitor.DriveConnectedSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gio.VolumeMonitor.DriveConnectedSignalArgs.html">VolumeMonitor.DriveConnectedSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gio.VolumeMonitor.DriveConnectedSignalArgs.html">VolumeMonitor.DriveConnectedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_Item_GObject_Signal_Gio_VolumeMonitor_DriveDisconnectedSignalArgs__.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.Item(GObject.Signal%7BGio.VolumeMonitor.DriveDisconnectedSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L132">View Source</a>
+  </span>
+  <a id="Gio_VolumeMonitor_Item_" data-uid="Gio.VolumeMonitor.Item*"></a>
+  <h4 id="Gio_VolumeMonitor_Item_GObject_Signal_Gio_VolumeMonitor_DriveDisconnectedSignalArgs__" data-uid="Gio.VolumeMonitor.Item(GObject.Signal{Gio.VolumeMonitor.DriveDisconnectedSignalArgs})">Item[Signal&lt;VolumeMonitor.DriveDisconnectedSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;VolumeMonitor.DriveDisconnectedSignalArgs&gt; this[Signal&lt;VolumeMonitor.DriveDisconnectedSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gio.VolumeMonitor.DriveDisconnectedSignalArgs.html">VolumeMonitor.DriveDisconnectedSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gio.VolumeMonitor.DriveDisconnectedSignalArgs.html">VolumeMonitor.DriveDisconnectedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_Item_GObject_Signal_Gio_VolumeMonitor_DriveEjectButtonSignalArgs__.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.Item(GObject.Signal%7BGio.VolumeMonitor.DriveEjectButtonSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L184">View Source</a>
+  </span>
+  <a id="Gio_VolumeMonitor_Item_" data-uid="Gio.VolumeMonitor.Item*"></a>
+  <h4 id="Gio_VolumeMonitor_Item_GObject_Signal_Gio_VolumeMonitor_DriveEjectButtonSignalArgs__" data-uid="Gio.VolumeMonitor.Item(GObject.Signal{Gio.VolumeMonitor.DriveEjectButtonSignalArgs})">Item[Signal&lt;VolumeMonitor.DriveEjectButtonSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;VolumeMonitor.DriveEjectButtonSignalArgs&gt; this[Signal&lt;VolumeMonitor.DriveEjectButtonSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gio.VolumeMonitor.DriveEjectButtonSignalArgs.html">VolumeMonitor.DriveEjectButtonSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gio.VolumeMonitor.DriveEjectButtonSignalArgs.html">VolumeMonitor.DriveEjectButtonSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_Item_GObject_Signal_Gio_VolumeMonitor_DriveStopButtonSignalArgs__.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.Item(GObject.Signal%7BGio.VolumeMonitor.DriveStopButtonSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L236">View Source</a>
+  </span>
+  <a id="Gio_VolumeMonitor_Item_" data-uid="Gio.VolumeMonitor.Item*"></a>
+  <h4 id="Gio_VolumeMonitor_Item_GObject_Signal_Gio_VolumeMonitor_DriveStopButtonSignalArgs__" data-uid="Gio.VolumeMonitor.Item(GObject.Signal{Gio.VolumeMonitor.DriveStopButtonSignalArgs})">Item[Signal&lt;VolumeMonitor.DriveStopButtonSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;VolumeMonitor.DriveStopButtonSignalArgs&gt; this[Signal&lt;VolumeMonitor.DriveStopButtonSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gio.VolumeMonitor.DriveStopButtonSignalArgs.html">VolumeMonitor.DriveStopButtonSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gio.VolumeMonitor.DriveStopButtonSignalArgs.html">VolumeMonitor.DriveStopButtonSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_Item_GObject_Signal_Gio_VolumeMonitor_MountAddedSignalArgs__.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.Item(GObject.Signal%7BGio.VolumeMonitor.MountAddedSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L288">View Source</a>
+  </span>
+  <a id="Gio_VolumeMonitor_Item_" data-uid="Gio.VolumeMonitor.Item*"></a>
+  <h4 id="Gio_VolumeMonitor_Item_GObject_Signal_Gio_VolumeMonitor_MountAddedSignalArgs__" data-uid="Gio.VolumeMonitor.Item(GObject.Signal{Gio.VolumeMonitor.MountAddedSignalArgs})">Item[Signal&lt;VolumeMonitor.MountAddedSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;VolumeMonitor.MountAddedSignalArgs&gt; this[Signal&lt;VolumeMonitor.MountAddedSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gio.VolumeMonitor.MountAddedSignalArgs.html">VolumeMonitor.MountAddedSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gio.VolumeMonitor.MountAddedSignalArgs.html">VolumeMonitor.MountAddedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_Item_GObject_Signal_Gio_VolumeMonitor_MountChangedSignalArgs__.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.Item(GObject.Signal%7BGio.VolumeMonitor.MountChangedSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L340">View Source</a>
+  </span>
+  <a id="Gio_VolumeMonitor_Item_" data-uid="Gio.VolumeMonitor.Item*"></a>
+  <h4 id="Gio_VolumeMonitor_Item_GObject_Signal_Gio_VolumeMonitor_MountChangedSignalArgs__" data-uid="Gio.VolumeMonitor.Item(GObject.Signal{Gio.VolumeMonitor.MountChangedSignalArgs})">Item[Signal&lt;VolumeMonitor.MountChangedSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;VolumeMonitor.MountChangedSignalArgs&gt; this[Signal&lt;VolumeMonitor.MountChangedSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gio.VolumeMonitor.MountChangedSignalArgs.html">VolumeMonitor.MountChangedSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gio.VolumeMonitor.MountChangedSignalArgs.html">VolumeMonitor.MountChangedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_Item_GObject_Signal_Gio_VolumeMonitor_MountPreUnmountSignalArgs__.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.Item(GObject.Signal%7BGio.VolumeMonitor.MountPreUnmountSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L392">View Source</a>
+  </span>
+  <a id="Gio_VolumeMonitor_Item_" data-uid="Gio.VolumeMonitor.Item*"></a>
+  <h4 id="Gio_VolumeMonitor_Item_GObject_Signal_Gio_VolumeMonitor_MountPreUnmountSignalArgs__" data-uid="Gio.VolumeMonitor.Item(GObject.Signal{Gio.VolumeMonitor.MountPreUnmountSignalArgs})">Item[Signal&lt;VolumeMonitor.MountPreUnmountSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;VolumeMonitor.MountPreUnmountSignalArgs&gt; this[Signal&lt;VolumeMonitor.MountPreUnmountSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gio.VolumeMonitor.MountPreUnmountSignalArgs.html">VolumeMonitor.MountPreUnmountSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gio.VolumeMonitor.MountPreUnmountSignalArgs.html">VolumeMonitor.MountPreUnmountSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_Item_GObject_Signal_Gio_VolumeMonitor_MountRemovedSignalArgs__.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.Item(GObject.Signal%7BGio.VolumeMonitor.MountRemovedSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L447">View Source</a>
+  </span>
+  <a id="Gio_VolumeMonitor_Item_" data-uid="Gio.VolumeMonitor.Item*"></a>
+  <h4 id="Gio_VolumeMonitor_Item_GObject_Signal_Gio_VolumeMonitor_MountRemovedSignalArgs__" data-uid="Gio.VolumeMonitor.Item(GObject.Signal{Gio.VolumeMonitor.MountRemovedSignalArgs})">Item[Signal&lt;VolumeMonitor.MountRemovedSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;VolumeMonitor.MountRemovedSignalArgs&gt; this[Signal&lt;VolumeMonitor.MountRemovedSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gio.VolumeMonitor.MountRemovedSignalArgs.html">VolumeMonitor.MountRemovedSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gio.VolumeMonitor.MountRemovedSignalArgs.html">VolumeMonitor.MountRemovedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_Item_GObject_Signal_Gio_VolumeMonitor_VolumeAddedSignalArgs__.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.Item(GObject.Signal%7BGio.VolumeMonitor.VolumeAddedSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L499">View Source</a>
+  </span>
+  <a id="Gio_VolumeMonitor_Item_" data-uid="Gio.VolumeMonitor.Item*"></a>
+  <h4 id="Gio_VolumeMonitor_Item_GObject_Signal_Gio_VolumeMonitor_VolumeAddedSignalArgs__" data-uid="Gio.VolumeMonitor.Item(GObject.Signal{Gio.VolumeMonitor.VolumeAddedSignalArgs})">Item[Signal&lt;VolumeMonitor.VolumeAddedSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;VolumeMonitor.VolumeAddedSignalArgs&gt; this[Signal&lt;VolumeMonitor.VolumeAddedSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gio.VolumeMonitor.VolumeAddedSignalArgs.html">VolumeMonitor.VolumeAddedSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gio.VolumeMonitor.VolumeAddedSignalArgs.html">VolumeMonitor.VolumeAddedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_Item_GObject_Signal_Gio_VolumeMonitor_VolumeChangedSignalArgs__.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.Item(GObject.Signal%7BGio.VolumeMonitor.VolumeChangedSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L551">View Source</a>
+  </span>
+  <a id="Gio_VolumeMonitor_Item_" data-uid="Gio.VolumeMonitor.Item*"></a>
+  <h4 id="Gio_VolumeMonitor_Item_GObject_Signal_Gio_VolumeMonitor_VolumeChangedSignalArgs__" data-uid="Gio.VolumeMonitor.Item(GObject.Signal{Gio.VolumeMonitor.VolumeChangedSignalArgs})">Item[Signal&lt;VolumeMonitor.VolumeChangedSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;VolumeMonitor.VolumeChangedSignalArgs&gt; this[Signal&lt;VolumeMonitor.VolumeChangedSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gio.VolumeMonitor.VolumeChangedSignalArgs.html">VolumeMonitor.VolumeChangedSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gio.VolumeMonitor.VolumeChangedSignalArgs.html">VolumeMonitor.VolumeChangedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_Item_GObject_Signal_Gio_VolumeMonitor_VolumeRemovedSignalArgs__.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.Item(GObject.Signal%7BGio.VolumeMonitor.VolumeRemovedSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L603">View Source</a>
+  </span>
+  <a id="Gio_VolumeMonitor_Item_" data-uid="Gio.VolumeMonitor.Item*"></a>
+  <h4 id="Gio_VolumeMonitor_Item_GObject_Signal_Gio_VolumeMonitor_VolumeRemovedSignalArgs__" data-uid="Gio.VolumeMonitor.Item(GObject.Signal{Gio.VolumeMonitor.VolumeRemovedSignalArgs})">Item[Signal&lt;VolumeMonitor.VolumeRemovedSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;VolumeMonitor.VolumeRemovedSignalArgs&gt; this[Signal&lt;VolumeMonitor.VolumeRemovedSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gio.VolumeMonitor.VolumeRemovedSignalArgs.html">VolumeMonitor.VolumeRemovedSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gio.VolumeMonitor.VolumeRemovedSignalArgs.html">VolumeMonitor.VolumeRemovedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_OnDriveChanged.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.OnDriveChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L66">View Source</a>
+  </span>
+  <h4 id="Gio_VolumeMonitor_OnDriveChanged" data-uid="Gio.VolumeMonitor.OnDriveChanged">OnDriveChanged</h4>
+  <div class="markdown level1 summary"><p>Emitted when a drive changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;VolumeMonitor.DriveChangedSignalArgs&gt; OnDriveChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gio.VolumeMonitor.DriveChangedSignalArgs.html">VolumeMonitor.DriveChangedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_OnDriveConnected.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.OnDriveConnected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L118">View Source</a>
+  </span>
+  <h4 id="Gio_VolumeMonitor_OnDriveConnected" data-uid="Gio.VolumeMonitor.OnDriveConnected">OnDriveConnected</h4>
+  <div class="markdown level1 summary"><p>Emitted when a drive is connected to the system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;VolumeMonitor.DriveConnectedSignalArgs&gt; OnDriveConnected</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gio.VolumeMonitor.DriveConnectedSignalArgs.html">VolumeMonitor.DriveConnectedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_OnDriveDisconnected.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.OnDriveDisconnected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L170">View Source</a>
+  </span>
+  <h4 id="Gio_VolumeMonitor_OnDriveDisconnected" data-uid="Gio.VolumeMonitor.OnDriveDisconnected">OnDriveDisconnected</h4>
+  <div class="markdown level1 summary"><p>Emitted when a drive is disconnected from the system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;VolumeMonitor.DriveDisconnectedSignalArgs&gt; OnDriveDisconnected</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gio.VolumeMonitor.DriveDisconnectedSignalArgs.html">VolumeMonitor.DriveDisconnectedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_OnDriveEjectButton.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.OnDriveEjectButton%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L222">View Source</a>
+  </span>
+  <h4 id="Gio_VolumeMonitor_OnDriveEjectButton" data-uid="Gio.VolumeMonitor.OnDriveEjectButton">OnDriveEjectButton</h4>
+  <div class="markdown level1 summary"><p>Emitted when the eject button is pressed on @drive.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;VolumeMonitor.DriveEjectButtonSignalArgs&gt; OnDriveEjectButton</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gio.VolumeMonitor.DriveEjectButtonSignalArgs.html">VolumeMonitor.DriveEjectButtonSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_OnDriveStopButton.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.OnDriveStopButton%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L274">View Source</a>
+  </span>
+  <h4 id="Gio_VolumeMonitor_OnDriveStopButton" data-uid="Gio.VolumeMonitor.OnDriveStopButton">OnDriveStopButton</h4>
+  <div class="markdown level1 summary"><p>Emitted when the stop button is pressed on @drive.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;VolumeMonitor.DriveStopButtonSignalArgs&gt; OnDriveStopButton</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gio.VolumeMonitor.DriveStopButtonSignalArgs.html">VolumeMonitor.DriveStopButtonSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_OnMountAdded.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.OnMountAdded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L326">View Source</a>
+  </span>
+  <h4 id="Gio_VolumeMonitor_OnMountAdded" data-uid="Gio.VolumeMonitor.OnMountAdded">OnMountAdded</h4>
+  <div class="markdown level1 summary"><p>Emitted when a mount is added.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;VolumeMonitor.MountAddedSignalArgs&gt; OnMountAdded</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gio.VolumeMonitor.MountAddedSignalArgs.html">VolumeMonitor.MountAddedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_OnMountChanged.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.OnMountChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L378">View Source</a>
+  </span>
+  <h4 id="Gio_VolumeMonitor_OnMountChanged" data-uid="Gio.VolumeMonitor.OnMountChanged">OnMountChanged</h4>
+  <div class="markdown level1 summary"><p>Emitted when a mount changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;VolumeMonitor.MountChangedSignalArgs&gt; OnMountChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gio.VolumeMonitor.MountChangedSignalArgs.html">VolumeMonitor.MountChangedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_OnMountPreUnmount.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.OnMountPreUnmount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L433">View Source</a>
+  </span>
+  <h4 id="Gio_VolumeMonitor_OnMountPreUnmount" data-uid="Gio.VolumeMonitor.OnMountPreUnmount">OnMountPreUnmount</h4>
+  <div class="markdown level1 summary"><p>May be emitted when a mount is about to be removed.</p>
+<p>This signal depends on the backend and is only emitted if
+GIO was used to unmount.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;VolumeMonitor.MountPreUnmountSignalArgs&gt; OnMountPreUnmount</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gio.VolumeMonitor.MountPreUnmountSignalArgs.html">VolumeMonitor.MountPreUnmountSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_OnMountRemoved.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.OnMountRemoved%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L485">View Source</a>
+  </span>
+  <h4 id="Gio_VolumeMonitor_OnMountRemoved" data-uid="Gio.VolumeMonitor.OnMountRemoved">OnMountRemoved</h4>
+  <div class="markdown level1 summary"><p>Emitted when a mount is removed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;VolumeMonitor.MountRemovedSignalArgs&gt; OnMountRemoved</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gio.VolumeMonitor.MountRemovedSignalArgs.html">VolumeMonitor.MountRemovedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_OnVolumeAdded.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.OnVolumeAdded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L537">View Source</a>
+  </span>
+  <h4 id="Gio_VolumeMonitor_OnVolumeAdded" data-uid="Gio.VolumeMonitor.OnVolumeAdded">OnVolumeAdded</h4>
+  <div class="markdown level1 summary"><p>Emitted when a mountable volume is added to the system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;VolumeMonitor.VolumeAddedSignalArgs&gt; OnVolumeAdded</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gio.VolumeMonitor.VolumeAddedSignalArgs.html">VolumeMonitor.VolumeAddedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_OnVolumeChanged.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.OnVolumeChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L589">View Source</a>
+  </span>
+  <h4 id="Gio_VolumeMonitor_OnVolumeChanged" data-uid="Gio.VolumeMonitor.OnVolumeChanged">OnVolumeChanged</h4>
+  <div class="markdown level1 summary"><p>Emitted when mountable volume is changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;VolumeMonitor.VolumeChangedSignalArgs&gt; OnVolumeChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gio.VolumeMonitor.VolumeChangedSignalArgs.html">VolumeMonitor.VolumeChangedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor_OnVolumeRemoved.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor.OnVolumeRemoved%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L641">View Source</a>
+  </span>
+  <h4 id="Gio_VolumeMonitor_OnVolumeRemoved" data-uid="Gio.VolumeMonitor.OnVolumeRemoved">OnVolumeRemoved</h4>
+  <div class="markdown level1 summary"><p>Emitted when a mountable volume is removed from the system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;VolumeMonitor.VolumeRemovedSignalArgs&gt; OnVolumeRemoved</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gio.VolumeMonitor.VolumeRemovedSignalArgs.html">VolumeMonitor.VolumeRemovedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_VolumeMonitor.md&amp;value=---%0Auid%3A%20Gio.VolumeMonitor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/VolumeMonitor.Generated.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

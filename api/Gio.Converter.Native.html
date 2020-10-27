@@ -1,0 +1,364 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Converter.Native
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Converter.Native
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gio.Converter.Native">
+  
+  
+  <h1 id="Gio_Converter_Native" data-uid="Gio.Converter.Native" class="text-break">Class Converter.Native
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Converter.Native</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gio.html">Gio</a></h6>
+  <h6><strong>Assembly</strong>: Gio.dll</h6>
+  <h5 id="Gio_Converter_Native_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static class Native</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Gio_Converter_Native_convert_" data-uid="Gio.Converter.Native.convert*"></a>
+  <h4 id="Gio_Converter_Native_convert_System_IntPtr_System_IntPtr_System_UInt64_System_IntPtr_System_UInt64_Gio_ConverterFlags_System_UInt64__System_UInt64__System_IntPtr__" data-uid="Gio.Converter.Native.convert(System.IntPtr,System.IntPtr,System.UInt64,System.IntPtr,System.UInt64,Gio.ConverterFlags,System.UInt64@,System.UInt64@,System.IntPtr@)">convert(IntPtr, IntPtr, UInt64, IntPtr, UInt64, ConverterFlags, ref UInt64, ref UInt64, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>This is the main operation used when converting data. It is to be called
+multiple times in a loop, and each time it will do some work, i.e.
+producing some output (in @outbuf) or consuming some input (from @inbuf) or
+both. If its not possible to do any work an error is returned.</p>
+<p>Note that a single call may not consume all input (or any input at all).
+Also a call may produce output even if given no input, due to state stored
+in the converter producing output.</p>
+<p>If any data was either produced or consumed, and then an error happens, then
+only the successful conversion is reported and the error is returned on the
+next call.</p>
+<p>A full conversion loop involves calling this method repeatedly, each time
+giving it new input and space output space. When there is no more input
+data after the data in @inbuf, the flag %G_CONVERTER_INPUT_AT_END must be set.
+The loop will be (unless some error happens) returning %G_CONVERTER_CONVERTED
+each time until all data is consumed and all output is produced, then
+%G_CONVERTER_FINISHED is returned instead. Note, that %G_CONVERTER_FINISHED
+may be returned even if %G_CONVERTER_INPUT_AT_END is not set, for instance
+in a decompression converter where the end of data is detectable from the
+data (and there might even be other data after the end of the compressed data).</p>
+<p>When some data has successfully been converted @bytes_read and is set to
+the number of bytes read from @inbuf, and @bytes_written is set to indicate
+how many bytes was written to @outbuf. If there are more data to output
+or consume (i.e. unless the %G_CONVERTER_INPUT_AT_END is specified) then
+%G_CONVERTER_CONVERTED is returned, and if no more data is to be output
+then %G_CONVERTER_FINISHED is returned.</p>
+<p>On error %G_CONVERTER_ERROR is returned and @error is set accordingly.
+Some errors need special handling:</p>
+<p>%G_IO_ERROR_NO_SPACE is returned if there is not enough space
+to write the resulting converted data, the application should
+call the function again with a larger @outbuf to continue.</p>
+<p>%G_IO_ERROR_PARTIAL_INPUT is returned if there is not enough
+input to fully determine what the conversion should produce,
+and the %G_CONVERTER_INPUT_AT_END flag is not set. This happens for
+example with an incomplete multibyte sequence when converting text,
+or when a regexp matches up to the end of the input (and may match
+further input). It may also happen when @inbuf_size is zero and
+there is no more data to produce.</p>
+<p>When this happens the application should read more input and then
+call the function again. If further input shows that there is no
+more data call the function again with the same data but with
+the %G_CONVERTER_INPUT_AT_END flag set. This may cause the conversion
+to finish as e.g. in the regexp match case (or, to fail again with
+%G_IO_ERROR_PARTIAL_INPUT in e.g. a charset conversion where the
+input is actually partial).</p>
+<p>After g_converter_convert() has returned %G_CONVERTER_FINISHED the
+converter object is in an invalid state where its not allowed
+to call g_converter_convert() anymore. At this time you can only
+free the object or call g_converter_reset() to reset it to the
+initial state.</p>
+<p>If the flag %G_CONVERTER_FLUSH is set then conversion is modified
+to try to write out all internal state to the output. The application
+has to call the function multiple times with the flag set, and when
+the available input has been consumed and all internal state has
+been produced then %G_CONVERTER_FLUSHED (or %G_CONVERTER_FINISHED if
+really at the end) is returned instead of %G_CONVERTER_CONVERTED.
+This is somewhat similar to what happens at the end of the input stream,
+but done in the middle of the data.</p>
+<p>This has different meanings for different conversions. For instance
+in a compression converter it would mean that we flush all the
+compression state into output such that if you uncompress the
+compressed data you get back all the input data. Doing this may
+make the final file larger due to padding though. Another example
+is a regexp conversion, where if you at the end of the flushed data
+have a match, but there is also a potential longer match. In the
+non-flushed case we would ask for more input, but when flushing we
+treat this as the end of input and do the match.</p>
+<p>Flushing is not always possible (like if a charset converter flushes
+at a partial multibyte sequence). Converters are supposed to try
+to produce as much output as possible and then return an error
+(typically %G_IO_ERROR_PARTIAL_INPUT).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ConverterResult convert(IntPtr converter, IntPtr inbuf, ulong inbuf_size, IntPtr outbuf, ulong outbuf_size, ConverterFlags flags, ref ulong bytes_read, ref ulong bytes_written, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">converter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">inbuf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">inbuf_size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">outbuf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">outbuf_size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.ConverterFlags.html">ConverterFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">bytes_read</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">bytes_written</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.ConverterResult.html">ConverterResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Converter_Native_get_type_" data-uid="Gio.Converter.Native.get_type*"></a>
+  <h4 id="Gio_Converter_Native_get_type" data-uid="Gio.Converter.Native.get_type">get_type()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong get_type()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_Converter_Native_reset_" data-uid="Gio.Converter.Native.reset*"></a>
+  <h4 id="Gio_Converter_Native_reset_System_IntPtr_" data-uid="Gio.Converter.Native.reset(System.IntPtr)">reset(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Resets all internal state in the converter, making it behave
+as if it was just created. If the converter has any internal
+state that would produce output then that output is lost.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void reset(IntPtr converter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">converter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_Converter_Native.md&amp;value=---%0Auid%3A%20Gio.Converter.Native%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Interfaces/Converter.Generated.cs/#L27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,489 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PollableOutputStream.Native
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PollableOutputStream.Native
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gio.PollableOutputStream.Native">
+  
+  
+  <h1 id="Gio_PollableOutputStream_Native" data-uid="Gio.PollableOutputStream.Native" class="text-break">Class PollableOutputStream.Native
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PollableOutputStream.Native</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gio.html">Gio</a></h6>
+  <h6><strong>Assembly</strong>: Gio.dll</h6>
+  <h5 id="Gio_PollableOutputStream_Native_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static class Native</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Gio_PollableOutputStream_Native_can_poll_" data-uid="Gio.PollableOutputStream.Native.can_poll*"></a>
+  <h4 id="Gio_PollableOutputStream_Native_can_poll_System_IntPtr_" data-uid="Gio.PollableOutputStream.Native.can_poll(System.IntPtr)">can_poll(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Checks if @stream is actually pollable. Some classes may implement
+#GPollableOutputStream but have only certain instances of that
+class be pollable. If this method returns %FALSE, then the behavior
+of other #GPollableOutputStream methods is undefined.</p>
+<p>For any given stream, the value returned by this method is constant;
+a stream cannot switch from pollable to non-pollable or vice versa.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool can_poll(IntPtr stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_PollableOutputStream_Native_create_source_" data-uid="Gio.PollableOutputStream.Native.create_source*"></a>
+  <h4 id="Gio_PollableOutputStream_Native_create_source_System_IntPtr_System_IntPtr_" data-uid="Gio.PollableOutputStream.Native.create_source(System.IntPtr,System.IntPtr)">create_source(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Creates a #GSource that triggers when @stream can be written, or
+@cancellable is triggered or an error occurs. The callback on the
+source is of the #GPollableSourceFunc type.</p>
+<p>As with g_pollable_output_stream_is_writable(), it is possible that
+the stream may not actually be writable even after the source
+triggers, so you should use g_pollable_output_stream_write_nonblocking()
+rather than g_output_stream_write() from the callback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr create_source(IntPtr stream, IntPtr cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_PollableOutputStream_Native_get_type_" data-uid="Gio.PollableOutputStream.Native.get_type*"></a>
+  <h4 id="Gio_PollableOutputStream_Native_get_type" data-uid="Gio.PollableOutputStream.Native.get_type">get_type()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong get_type()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_PollableOutputStream_Native_is_writable_" data-uid="Gio.PollableOutputStream.Native.is_writable*"></a>
+  <h4 id="Gio_PollableOutputStream_Native_is_writable_System_IntPtr_" data-uid="Gio.PollableOutputStream.Native.is_writable(System.IntPtr)">is_writable(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Checks if @stream can be written.</p>
+<p>Note that some stream types may not be able to implement this 100%
+reliably, and it is possible that a call to g_output_stream_write()
+after this returns %TRUE would still block. To guarantee
+non-blocking behavior, you should always use
+g_pollable_output_stream_write_nonblocking(), which will return a
+%G_IO_ERROR_WOULD_BLOCK error rather than blocking.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool is_writable(IntPtr stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_PollableOutputStream_Native_write_nonblocking_" data-uid="Gio.PollableOutputStream.Native.write_nonblocking*"></a>
+  <h4 id="Gio_PollableOutputStream_Native_write_nonblocking_System_IntPtr_System_IntPtr_System_UInt64_System_IntPtr_System_IntPtr__" data-uid="Gio.PollableOutputStream.Native.write_nonblocking(System.IntPtr,System.IntPtr,System.UInt64,System.IntPtr,System.IntPtr@)">write_nonblocking(IntPtr, IntPtr, UInt64, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Attempts to write up to @count bytes from @buffer to @stream, as
+with g_output_stream_write(). If @stream is not currently writable,
+this will immediately return %G_IO_ERROR_WOULD_BLOCK, and you can
+use g_pollable_output_stream_create_source() to create a #GSource
+that will be triggered when @stream is writable.</p>
+<p>Note that since this method never blocks, you cannot actually
+use @cancellable to cancel it. However, it will return an error
+if @cancellable has already been cancelled when you call, which
+may happen if you call this method after a source triggers due
+to having been cancelled.</p>
+<p>Also note that if %G_IO_ERROR_WOULD_BLOCK is returned some underlying
+transports like D/TLS require that you re-send the same @buffer and
+@count in the next write call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long write_nonblocking(IntPtr stream, IntPtr buffer, ulong count, IntPtr cancellable, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_PollableOutputStream_Native_writev_nonblocking_" data-uid="Gio.PollableOutputStream.Native.writev_nonblocking*"></a>
+  <h4 id="Gio_PollableOutputStream_Native_writev_nonblocking_System_IntPtr_System_IntPtr___System_UInt64_System_UInt64__System_IntPtr_System_IntPtr__" data-uid="Gio.PollableOutputStream.Native.writev_nonblocking(System.IntPtr,System.IntPtr[],System.UInt64,System.UInt64@,System.IntPtr,System.IntPtr@)">writev_nonblocking(IntPtr, IntPtr[], UInt64, ref UInt64, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Attempts to write the bytes contained in the @n_vectors @vectors to @stream,
+as with g_output_stream_writev(). If @stream is not currently writable,
+this will immediately return %@G_POLLABLE_RETURN_WOULD_BLOCK, and you can
+use g_pollable_output_stream_create_source() to create a #GSource
+that will be triggered when @stream is writable. @error will <em>not</em> be
+set in that case.</p>
+<p>Note that since this method never blocks, you cannot actually
+use @cancellable to cancel it. However, it will return an error
+if @cancellable has already been cancelled when you call, which
+may happen if you call this method after a source triggers due
+to having been cancelled.</p>
+<p>Also note that if %G_POLLABLE_RETURN_WOULD_BLOCK is returned some underlying
+transports like D/TLS require that you re-send the same @vectors and
+@n_vectors in the next write call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PollableReturn writev_nonblocking(IntPtr stream, IntPtr[] vectors, ulong n_vectors, ref ulong bytes_written, IntPtr cancellable, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span>[]</td>
+        <td><span class="parametername">vectors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">n_vectors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">bytes_written</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.PollableReturn.html">PollableReturn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_PollableOutputStream_Native.md&amp;value=---%0Auid%3A%20Gio.PollableOutputStream.Native%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Interfaces/PollableOutputStream.Generated.cs/#L27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

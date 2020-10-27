@@ -1,0 +1,1509 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct FontDescription
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct FontDescription
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Pango.FontDescription">
+  
+  
+  <h1 id="Pango_FontDescription" data-uid="Pango.FontDescription" class="text-break">Struct FontDescription
+  </h1>
+  <div class="markdown level0 summary"><p>The #PangoFontDescription structure represents the description
+of an ideal font. These structures are used both to list
+what fonts are available on the system and also for specifying
+the characteristics of a font to load.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.ValueType.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ValueType.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.ValueType.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Pango.html">Pango</a></h6>
+  <h6><strong>Assembly</strong>: Pango.dll</h6>
+  <h5 id="Pango_FontDescription_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct FontDescription</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Pango_FontDescription_better_match_" data-uid="Pango.FontDescription.better_match*"></a>
+  <h4 id="Pango_FontDescription_better_match_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="Pango.FontDescription.better_match(System.IntPtr,System.IntPtr,System.IntPtr)">better_match(IntPtr, IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Determines if the style attributes of @new_match are a closer match
+for @desc than those of @old_match are, or if @old_match is %NULL,
+determines if @new_match is a match at all.
+Approximate matching is done for
+weight and style; other style attributes must match exactly.
+Style attributes are all attributes other than family and size-related
+attributes.  Approximate matching for style considers PANGO_STYLE_OBLIQUE
+and PANGO_STYLE_ITALIC as matches, but not as good a match as when the
+styles are equal.</p>
+<p>Note that @old_match must match @desc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool better_match(IntPtr desc, IntPtr old_match, IntPtr new_match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">old_match</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">new_match</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_copy_" data-uid="Pango.FontDescription.copy*"></a>
+  <h4 id="Pango_FontDescription_copy_System_IntPtr_" data-uid="Pango.FontDescription.copy(System.IntPtr)">copy(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Make a copy of a #PangoFontDescription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr copy(IntPtr desc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_copy_static_" data-uid="Pango.FontDescription.copy_static*"></a>
+  <h4 id="Pango_FontDescription_copy_static_System_IntPtr_" data-uid="Pango.FontDescription.copy_static(System.IntPtr)">copy_static(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Like pango_font_description_copy(), but only a shallow copy is made
+of the family name and other allocated fields. The result can only
+be used until @desc is modified or freed. This is meant to be used
+when the copy is only needed temporarily.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr copy_static(IntPtr desc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_equal_" data-uid="Pango.FontDescription.equal*"></a>
+  <h4 id="Pango_FontDescription_equal_System_IntPtr_System_IntPtr_" data-uid="Pango.FontDescription.equal(System.IntPtr,System.IntPtr)">equal(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Compares two font descriptions for equality. Two font descriptions
+are considered equal if the fonts they describe are provably identical.
+This means that their masks do not have to match, as long as other fields
+are all the same. (Two font descriptions may result in identical fonts
+being loaded, but still compare %FALSE.)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool equal(IntPtr desc1, IntPtr desc2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_free_" data-uid="Pango.FontDescription.free*"></a>
+  <h4 id="Pango_FontDescription_free_System_IntPtr_" data-uid="Pango.FontDescription.free(System.IntPtr)">free(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Frees a font description.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void free(IntPtr desc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_get_family_" data-uid="Pango.FontDescription.get_family*"></a>
+  <h4 id="Pango_FontDescription_get_family_System_IntPtr_" data-uid="Pango.FontDescription.get_family(System.IntPtr)">get_family(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the family name field of a font description. See
+pango_font_description_set_family().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_family(IntPtr desc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_get_gravity_" data-uid="Pango.FontDescription.get_gravity*"></a>
+  <h4 id="Pango_FontDescription_get_gravity_System_IntPtr_" data-uid="Pango.FontDescription.get_gravity(System.IntPtr)">get_gravity(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the gravity field of a font description. See
+pango_font_description_set_gravity().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Gravity get_gravity(IntPtr desc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pango.Gravity.html">Gravity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_get_set_fields_" data-uid="Pango.FontDescription.get_set_fields*"></a>
+  <h4 id="Pango_FontDescription_get_set_fields_System_IntPtr_" data-uid="Pango.FontDescription.get_set_fields(System.IntPtr)">get_set_fields(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Determines which fields in a font description have been set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FontMask get_set_fields(IntPtr desc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pango.FontMask.html">FontMask</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_get_size_" data-uid="Pango.FontDescription.get_size*"></a>
+  <h4 id="Pango_FontDescription_get_size_System_IntPtr_" data-uid="Pango.FontDescription.get_size(System.IntPtr)">get_size(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the size field of a font description.
+See pango_font_description_set_size().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int get_size(IntPtr desc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_get_size_is_absolute_" data-uid="Pango.FontDescription.get_size_is_absolute*"></a>
+  <h4 id="Pango_FontDescription_get_size_is_absolute_System_IntPtr_" data-uid="Pango.FontDescription.get_size_is_absolute(System.IntPtr)">get_size_is_absolute(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the size of the font is in points (not absolute) or device units (absolute).
+See pango_font_description_set_size() and pango_font_description_set_absolute_size().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool get_size_is_absolute(IntPtr desc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_get_stretch_" data-uid="Pango.FontDescription.get_stretch*"></a>
+  <h4 id="Pango_FontDescription_get_stretch_System_IntPtr_" data-uid="Pango.FontDescription.get_stretch(System.IntPtr)">get_stretch(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the stretch field of a font description.
+See pango_font_description_set_stretch().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Stretch get_stretch(IntPtr desc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pango.Stretch.html">Stretch</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_get_style_" data-uid="Pango.FontDescription.get_style*"></a>
+  <h4 id="Pango_FontDescription_get_style_System_IntPtr_" data-uid="Pango.FontDescription.get_style(System.IntPtr)">get_style(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the style field of a #PangoFontDescription. See
+pango_font_description_set_style().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Style get_style(IntPtr desc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pango.Style.html">Style</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_get_variant_" data-uid="Pango.FontDescription.get_variant*"></a>
+  <h4 id="Pango_FontDescription_get_variant_System_IntPtr_" data-uid="Pango.FontDescription.get_variant(System.IntPtr)">get_variant(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the variant field of a #PangoFontDescription. See
+pango_font_description_set_variant().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Variant get_variant(IntPtr desc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pango.Variant.html">Variant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_get_variations_" data-uid="Pango.FontDescription.get_variations*"></a>
+  <h4 id="Pango_FontDescription_get_variations_System_IntPtr_" data-uid="Pango.FontDescription.get_variations(System.IntPtr)">get_variations(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the variations field of a font description. See
+pango_font_description_set_variations().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_variations(IntPtr desc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_get_weight_" data-uid="Pango.FontDescription.get_weight*"></a>
+  <h4 id="Pango_FontDescription_get_weight_System_IntPtr_" data-uid="Pango.FontDescription.get_weight(System.IntPtr)">get_weight(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the weight field of a font description. See
+pango_font_description_set_weight().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Weight get_weight(IntPtr desc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pango.Weight.html">Weight</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_hash_" data-uid="Pango.FontDescription.hash*"></a>
+  <h4 id="Pango_FontDescription_hash_System_IntPtr_" data-uid="Pango.FontDescription.hash(System.IntPtr)">hash(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Computes a hash of a #PangoFontDescription structure suitable
+to be used, for example, as an argument to g_hash_table_new().
+The hash value is independent of @desc-&gt;mask.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint hash(IntPtr desc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_merge_" data-uid="Pango.FontDescription.merge*"></a>
+  <h4 id="Pango_FontDescription_merge_System_IntPtr_System_IntPtr_System_Boolean_" data-uid="Pango.FontDescription.merge(System.IntPtr,System.IntPtr,System.Boolean)">merge(IntPtr, IntPtr, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Merges the fields that are set in @desc_to_merge into the fields in
+@desc.  If @replace_existing is %FALSE, only fields in @desc that
+are not already set are affected. If %TRUE, then fields that are
+already set will be replaced as well.</p>
+<p>If @desc_to_merge is %NULL, this function performs nothing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void merge(IntPtr desc, IntPtr desc_to_merge, bool replace_existing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc_to_merge</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">replace_existing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_merge_static_" data-uid="Pango.FontDescription.merge_static*"></a>
+  <h4 id="Pango_FontDescription_merge_static_System_IntPtr_System_IntPtr_System_Boolean_" data-uid="Pango.FontDescription.merge_static(System.IntPtr,System.IntPtr,System.Boolean)">merge_static(IntPtr, IntPtr, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Like pango_font_description_merge(), but only a shallow copy is made
+of the family name and other allocated fields. @desc can only be
+used until @desc_to_merge is modified or freed. This is meant
+to be used when the merged font description is only needed temporarily.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void merge_static(IntPtr desc, IntPtr desc_to_merge, bool replace_existing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc_to_merge</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">replace_existing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_new_" data-uid="Pango.FontDescription.new*"></a>
+  <h4 id="Pango_FontDescription_new" data-uid="Pango.FontDescription.new">new()</h4>
+  <div class="markdown level1 summary"><p>Creates a new font description structure with all fields unset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr new()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_set_absolute_size_" data-uid="Pango.FontDescription.set_absolute_size*"></a>
+  <h4 id="Pango_FontDescription_set_absolute_size_System_IntPtr_System_Double_" data-uid="Pango.FontDescription.set_absolute_size(System.IntPtr,System.Double)">set_absolute_size(IntPtr, Double)</h4>
+  <div class="markdown level1 summary"><p>Sets the size field of a font description, in device units. This is mutually
+exclusive with pango_font_description_set_size() which sets the font size
+in points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_absolute_size(IntPtr desc, double size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_set_family_" data-uid="Pango.FontDescription.set_family*"></a>
+  <h4 id="Pango_FontDescription_set_family_System_IntPtr_System_String_" data-uid="Pango.FontDescription.set_family(System.IntPtr,System.String)">set_family(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Sets the family name field of a font description. The family
+name represents a family of related font styles, and will
+resolve to a particular #PangoFontFamily. In some uses of
+#PangoFontDescription, it is also possible to use a comma
+separated list of family names for this field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_family(IntPtr desc, string family)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">family</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_set_family_static_" data-uid="Pango.FontDescription.set_family_static*"></a>
+  <h4 id="Pango_FontDescription_set_family_static_System_IntPtr_System_String_" data-uid="Pango.FontDescription.set_family_static(System.IntPtr,System.String)">set_family_static(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Like pango_font_description_set_family(), except that no
+copy of @family is made. The caller must make sure that the
+string passed in stays around until @desc has been freed
+or the name is set again. This function can be used if
+@family is a static string such as a C string literal, or
+if @desc is only needed temporarily.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_family_static(IntPtr desc, string family)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">family</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_set_gravity_" data-uid="Pango.FontDescription.set_gravity*"></a>
+  <h4 id="Pango_FontDescription_set_gravity_System_IntPtr_Pango_Gravity_" data-uid="Pango.FontDescription.set_gravity(System.IntPtr,Pango.Gravity)">set_gravity(IntPtr, Gravity)</h4>
+  <div class="markdown level1 summary"><p>Sets the gravity field of a font description. The gravity field
+specifies how the glyphs should be rotated.  If @gravity is
+%PANGO_GRAVITY_AUTO, this actually unsets the gravity mask on
+the font description.</p>
+<p>This function is seldom useful to the user.  Gravity should normally
+be set on a #PangoContext.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_gravity(IntPtr desc, Gravity gravity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pango.Gravity.html">Gravity</a></td>
+        <td><span class="parametername">gravity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_set_size_" data-uid="Pango.FontDescription.set_size*"></a>
+  <h4 id="Pango_FontDescription_set_size_System_IntPtr_System_Int32_" data-uid="Pango.FontDescription.set_size(System.IntPtr,System.Int32)">set_size(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the size field of a font description in fractional points. This is mutually
+exclusive with pango_font_description_set_absolute_size().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_size(IntPtr desc, int size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_set_stretch_" data-uid="Pango.FontDescription.set_stretch*"></a>
+  <h4 id="Pango_FontDescription_set_stretch_System_IntPtr_Pango_Stretch_" data-uid="Pango.FontDescription.set_stretch(System.IntPtr,Pango.Stretch)">set_stretch(IntPtr, Stretch)</h4>
+  <div class="markdown level1 summary"><p>Sets the stretch field of a font description. The stretch field
+specifies how narrow or wide the font should be.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_stretch(IntPtr desc, Stretch stretch)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pango.Stretch.html">Stretch</a></td>
+        <td><span class="parametername">stretch</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_set_style_" data-uid="Pango.FontDescription.set_style*"></a>
+  <h4 id="Pango_FontDescription_set_style_System_IntPtr_Pango_Style_" data-uid="Pango.FontDescription.set_style(System.IntPtr,Pango.Style)">set_style(IntPtr, Style)</h4>
+  <div class="markdown level1 summary"><p>Sets the style field of a #PangoFontDescription. The
+#PangoStyle enumeration describes whether the font is slanted and
+the manner in which it is slanted; it can be either
+#PANGO_STYLE_NORMAL, #PANGO_STYLE_ITALIC, or #PANGO_STYLE_OBLIQUE.
+Most fonts will either have a italic style or an oblique
+style, but not both, and font matching in Pango will
+match italic specifications with oblique fonts and vice-versa
+if an exact match is not found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_style(IntPtr desc, Style style)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pango.Style.html">Style</a></td>
+        <td><span class="parametername">style</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_set_variant_" data-uid="Pango.FontDescription.set_variant*"></a>
+  <h4 id="Pango_FontDescription_set_variant_System_IntPtr_Pango_Variant_" data-uid="Pango.FontDescription.set_variant(System.IntPtr,Pango.Variant)">set_variant(IntPtr, Variant)</h4>
+  <div class="markdown level1 summary"><p>Sets the variant field of a font description. The #PangoVariant
+can either be %PANGO_VARIANT_NORMAL or %PANGO_VARIANT_SMALL_CAPS.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_variant(IntPtr desc, Variant variant)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pango.Variant.html">Variant</a></td>
+        <td><span class="parametername">variant</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_set_variations_" data-uid="Pango.FontDescription.set_variations*"></a>
+  <h4 id="Pango_FontDescription_set_variations_System_IntPtr_System_String_" data-uid="Pango.FontDescription.set_variations(System.IntPtr,System.String)">set_variations(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Sets the variations field of a font description. OpenType
+font variations allow to select a font instance by specifying
+values for a number of axes, such as width or weight.</p>
+<p>The format of the variations string is AXIS1=VALUE,AXIS2=VALUE...,
+with each AXIS a 4 character tag that identifies a font axis,
+and each VALUE a floating point number. Unknown axes are ignored,
+and values are clamped to their allowed range.</p>
+<p>Pango does not currently have a way to find supported axes of
+a font. Both harfbuzz or freetype have API for this.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_variations(IntPtr desc, string settings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">settings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_set_variations_static_" data-uid="Pango.FontDescription.set_variations_static*"></a>
+  <h4 id="Pango_FontDescription_set_variations_static_System_IntPtr_System_String_" data-uid="Pango.FontDescription.set_variations_static(System.IntPtr,System.String)">set_variations_static(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Like pango_font_description_set_variations(), except that no
+copy of @variations is made. The caller must make sure that the
+string passed in stays around until @desc has been freed
+or the name is set again. This function can be used if
+@variations is a static string such as a C string literal, or
+if @desc is only needed temporarily.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_variations_static(IntPtr desc, string settings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">settings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_set_weight_" data-uid="Pango.FontDescription.set_weight*"></a>
+  <h4 id="Pango_FontDescription_set_weight_System_IntPtr_Pango_Weight_" data-uid="Pango.FontDescription.set_weight(System.IntPtr,Pango.Weight)">set_weight(IntPtr, Weight)</h4>
+  <div class="markdown level1 summary"><p>Sets the weight field of a font description. The weight field
+specifies how bold or light the font should be. In addition
+to the values of the #PangoWeight enumeration, other intermediate
+numeric values are possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_weight(IntPtr desc, Weight weight)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pango.Weight.html">Weight</a></td>
+        <td><span class="parametername">weight</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_to_filename_" data-uid="Pango.FontDescription.to_filename*"></a>
+  <h4 id="Pango_FontDescription_to_filename_System_IntPtr_" data-uid="Pango.FontDescription.to_filename(System.IntPtr)">to_filename(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Creates a filename representation of a font description. The
+filename is identical to the result from calling
+pango_font_description_to_string(), but with underscores instead of
+characters that are untypical in filenames, and in lower case only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr to_filename(IntPtr desc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_to_string_" data-uid="Pango.FontDescription.to_string*"></a>
+  <h4 id="Pango_FontDescription_to_string_System_IntPtr_" data-uid="Pango.FontDescription.to_string(System.IntPtr)">to_string(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Creates a string representation of a font description. See
+pango_font_description_from_string() for a description of the
+format of the string representation. The family list in the
+string description will only have a terminating comma if the
+last word of the list is a valid style option.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr to_string(IntPtr desc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_FontDescription_unset_fields_" data-uid="Pango.FontDescription.unset_fields*"></a>
+  <h4 id="Pango_FontDescription_unset_fields_System_IntPtr_Pango_FontMask_" data-uid="Pango.FontDescription.unset_fields(System.IntPtr,Pango.FontMask)">unset_fields(IntPtr, FontMask)</h4>
+  <div class="markdown level1 summary"><p>Unsets some of the fields in a #PangoFontDescription.  The unset
+fields will get back to their default values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void unset_fields(IntPtr desc, FontMask to_unset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pango.FontMask.html">FontMask</a></td>
+        <td><span class="parametername">to_unset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Pango_FontDescription.md&amp;value=---%0Auid%3A%20Pango.FontDescription%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Pango/Structs/FontDescription.Generated.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

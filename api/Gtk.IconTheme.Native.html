@@ -1,0 +1,1402 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IconTheme.Native
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IconTheme.Native
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gtk.IconTheme.Native">
+  
+  
+  <h1 id="Gtk_IconTheme_Native" data-uid="Gtk.IconTheme.Native" class="text-break">Class IconTheme.Native
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">IconTheme.Native</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gtk.html">Gtk</a></h6>
+  <h6><strong>Assembly</strong>: Gtk3.dll</h6>
+  <h5 id="Gtk_IconTheme_Native_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static class Native</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Gtk_IconTheme_Native_add_resource_path_" data-uid="Gtk.IconTheme.Native.add_resource_path*"></a>
+  <h4 id="Gtk_IconTheme_Native_add_resource_path_System_IntPtr_System_String_" data-uid="Gtk.IconTheme.Native.add_resource_path(System.IntPtr,System.String)">add_resource_path(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Adds a resource path that will be looked at when looking
+for icons, similar to search paths.</p>
+<p>This function should be used to make application-specific icons
+available as part of the icon theme.</p>
+<p>The resources are considered as part of the hicolor icon theme
+and must be located in subdirectories that are defined in the
+hicolor icon theme, such as <code>@path/16x16/actions/run.png</code>.
+Icons that are directly placed in the resource path instead
+of a subdirectory are also considered as ultimate fallback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void add_resource_path(IntPtr icon_theme, string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_theme</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconTheme_Native_append_search_path_" data-uid="Gtk.IconTheme.Native.append_search_path*"></a>
+  <h4 id="Gtk_IconTheme_Native_append_search_path_System_IntPtr_System_String_" data-uid="Gtk.IconTheme.Native.append_search_path(System.IntPtr,System.String)">append_search_path(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Appends a directory to the search path.
+See gtk_icon_theme_set_search_path().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void append_search_path(IntPtr icon_theme, string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_theme</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconTheme_Native_choose_icon_" data-uid="Gtk.IconTheme.Native.choose_icon*"></a>
+  <h4 id="Gtk_IconTheme_Native_choose_icon_System_IntPtr_System_IntPtr__System_Int32_Gtk_IconLookupFlags_" data-uid="Gtk.IconTheme.Native.choose_icon(System.IntPtr,System.IntPtr@,System.Int32,Gtk.IconLookupFlags)">choose_icon(IntPtr, ref IntPtr, Int32, IconLookupFlags)</h4>
+  <div class="markdown level1 summary"><p>Looks up a named icon and returns a #GtkIconInfo containing
+information such as the filename of the icon. The icon
+can then be rendered into a pixbuf using
+gtk_icon_info_load_icon(). (gtk_icon_theme_load_icon()
+combines these two steps if all you need is the pixbuf.)</p>
+<p>If @icon_names contains more than one name, this function
+tries them all in the given order before falling back to
+inherited icon themes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr choose_icon(IntPtr icon_theme, ref IntPtr icon_names, int size, IconLookupFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_theme</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_names</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.IconLookupFlags.html">IconLookupFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconTheme_Native_choose_icon_for_scale_" data-uid="Gtk.IconTheme.Native.choose_icon_for_scale*"></a>
+  <h4 id="Gtk_IconTheme_Native_choose_icon_for_scale_System_IntPtr_System_IntPtr__System_Int32_System_Int32_Gtk_IconLookupFlags_" data-uid="Gtk.IconTheme.Native.choose_icon_for_scale(System.IntPtr,System.IntPtr@,System.Int32,System.Int32,Gtk.IconLookupFlags)">choose_icon_for_scale(IntPtr, ref IntPtr, Int32, Int32, IconLookupFlags)</h4>
+  <div class="markdown level1 summary"><p>Looks up a named icon for a particular window scale and returns
+a #GtkIconInfo containing information such as the filename of the
+icon. The icon can then be rendered into a pixbuf using
+gtk_icon_info_load_icon(). (gtk_icon_theme_load_icon()
+combines these two steps if all you need is the pixbuf.)</p>
+<p>If @icon_names contains more than one name, this function
+tries them all in the given order before falling back to
+inherited icon themes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr choose_icon_for_scale(IntPtr icon_theme, ref IntPtr icon_names, int size, int scale, IconLookupFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_theme</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_names</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.IconLookupFlags.html">IconLookupFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconTheme_Native_get_example_icon_name_" data-uid="Gtk.IconTheme.Native.get_example_icon_name*"></a>
+  <h4 id="Gtk_IconTheme_Native_get_example_icon_name_System_IntPtr_" data-uid="Gtk.IconTheme.Native.get_example_icon_name(System.IntPtr)">get_example_icon_name(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the name of an icon that is representative of the
+current theme (for instance, to use when presenting
+a list of themes to the user.)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_example_icon_name(IntPtr icon_theme)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_theme</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconTheme_Native_get_icon_sizes_" data-uid="Gtk.IconTheme.Native.get_icon_sizes*"></a>
+  <h4 id="Gtk_IconTheme_Native_get_icon_sizes_System_IntPtr_System_String_" data-uid="Gtk.IconTheme.Native.get_icon_sizes(System.IntPtr,System.String)">get_icon_sizes(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Returns an array of integers describing the sizes at which
+the icon is available without scaling. A size of -1 means
+that the icon is available in a scalable format. The array
+is zero-terminated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_icon_sizes(IntPtr icon_theme, string icon_name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_theme</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">icon_name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconTheme_Native_get_search_path_" data-uid="Gtk.IconTheme.Native.get_search_path*"></a>
+  <h4 id="Gtk_IconTheme_Native_get_search_path_System_IntPtr_System_IntPtr__System_Int32__" data-uid="Gtk.IconTheme.Native.get_search_path(System.IntPtr,System.IntPtr@,System.Int32@)">get_search_path(IntPtr, ref IntPtr, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the current search path. See gtk_icon_theme_set_search_path().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void get_search_path(IntPtr icon_theme, ref IntPtr path, ref int n_elements)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_theme</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n_elements</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconTheme_Native_get_type_" data-uid="Gtk.IconTheme.Native.get_type*"></a>
+  <h4 id="Gtk_IconTheme_Native_get_type" data-uid="Gtk.IconTheme.Native.get_type">get_type()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong get_type()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconTheme_Native_has_icon_" data-uid="Gtk.IconTheme.Native.has_icon*"></a>
+  <h4 id="Gtk_IconTheme_Native_has_icon_System_IntPtr_System_String_" data-uid="Gtk.IconTheme.Native.has_icon(System.IntPtr,System.String)">has_icon(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Checks whether an icon theme includes an icon
+for a particular name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool has_icon(IntPtr icon_theme, string icon_name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_theme</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">icon_name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconTheme_Native_list_contexts_" data-uid="Gtk.IconTheme.Native.list_contexts*"></a>
+  <h4 id="Gtk_IconTheme_Native_list_contexts_System_IntPtr_" data-uid="Gtk.IconTheme.Native.list_contexts(System.IntPtr)">list_contexts(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the list of contexts available within the current
+hierarchy of icon themes.
+See gtk_icon_theme_list_icons() for details about contexts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr list_contexts(IntPtr icon_theme)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_theme</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconTheme_Native_list_icons_" data-uid="Gtk.IconTheme.Native.list_icons*"></a>
+  <h4 id="Gtk_IconTheme_Native_list_icons_System_IntPtr_System_String_" data-uid="Gtk.IconTheme.Native.list_icons(System.IntPtr,System.String)">list_icons(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Lists the icons in the current icon theme. Only a subset
+of the icons can be listed by providing a context string.
+The set of values for the context string is system dependent,
+but will typically include such values as “Applications” and
+“MimeTypes”. Contexts are explained in the
+<a href="http://www.freedesktop.org/wiki/Specifications/icon-theme-spec">Icon Theme Specification</a>.
+The standard contexts are listed in the
+<a href="http://www.freedesktop.org/wiki/Specifications/icon-naming-spec">Icon Naming Specification</a>.
+Also see gtk_icon_theme_list_contexts().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr list_icons(IntPtr icon_theme, string context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_theme</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconTheme_Native_load_icon_" data-uid="Gtk.IconTheme.Native.load_icon*"></a>
+  <h4 id="Gtk_IconTheme_Native_load_icon_System_IntPtr_System_String_System_Int32_Gtk_IconLookupFlags_System_IntPtr__" data-uid="Gtk.IconTheme.Native.load_icon(System.IntPtr,System.String,System.Int32,Gtk.IconLookupFlags,System.IntPtr@)">load_icon(IntPtr, String, Int32, IconLookupFlags, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Looks up an icon in an icon theme, scales it to the given size
+and renders it into a pixbuf. This is a convenience function;
+if more details about the icon are needed, use
+gtk_icon_theme_lookup_icon() followed by gtk_icon_info_load_icon().</p>
+<p>Note that you probably want to listen for icon theme changes and
+update the icon. This is usually done by connecting to the
+GtkWidget::style-set signal. If for some reason you do not want to
+update the icon when the icon theme changes, you should consider
+using gdk_pixbuf_copy() to make a private copy of the pixbuf
+returned by this function. Otherwise GTK+ may need to keep the old
+icon theme loaded, which would be a waste of memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr load_icon(IntPtr icon_theme, string icon_name, int size, IconLookupFlags flags, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_theme</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">icon_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.IconLookupFlags.html">IconLookupFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconTheme_Native_load_icon_for_scale_" data-uid="Gtk.IconTheme.Native.load_icon_for_scale*"></a>
+  <h4 id="Gtk_IconTheme_Native_load_icon_for_scale_System_IntPtr_System_String_System_Int32_System_Int32_Gtk_IconLookupFlags_System_IntPtr__" data-uid="Gtk.IconTheme.Native.load_icon_for_scale(System.IntPtr,System.String,System.Int32,System.Int32,Gtk.IconLookupFlags,System.IntPtr@)">load_icon_for_scale(IntPtr, String, Int32, Int32, IconLookupFlags, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Looks up an icon in an icon theme for a particular window scale,
+scales it to the given size and renders it into a pixbuf. This is a
+convenience function; if more details about the icon are needed,
+use gtk_icon_theme_lookup_icon() followed by
+gtk_icon_info_load_icon().</p>
+<p>Note that you probably want to listen for icon theme changes and
+update the icon. This is usually done by connecting to the
+GtkWidget::style-set signal. If for some reason you do not want to
+update the icon when the icon theme changes, you should consider
+using gdk_pixbuf_copy() to make a private copy of the pixbuf
+returned by this function. Otherwise GTK+ may need to keep the old
+icon theme loaded, which would be a waste of memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr load_icon_for_scale(IntPtr icon_theme, string icon_name, int size, int scale, IconLookupFlags flags, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_theme</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">icon_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.IconLookupFlags.html">IconLookupFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconTheme_Native_load_surface_" data-uid="Gtk.IconTheme.Native.load_surface*"></a>
+  <h4 id="Gtk_IconTheme_Native_load_surface_System_IntPtr_System_String_System_Int32_System_Int32_System_IntPtr_Gtk_IconLookupFlags_System_IntPtr__" data-uid="Gtk.IconTheme.Native.load_surface(System.IntPtr,System.String,System.Int32,System.Int32,System.IntPtr,Gtk.IconLookupFlags,System.IntPtr@)">load_surface(IntPtr, String, Int32, Int32, IntPtr, IconLookupFlags, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Looks up an icon in an icon theme for a particular window scale,
+scales it to the given size and renders it into a cairo surface. This is a
+convenience function; if more details about the icon are needed,
+use gtk_icon_theme_lookup_icon() followed by
+gtk_icon_info_load_surface().</p>
+<p>Note that you probably want to listen for icon theme changes and
+update the icon. This is usually done by connecting to the
+GtkWidget::style-set signal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr load_surface(IntPtr icon_theme, string icon_name, int size, int scale, IntPtr for_window, IconLookupFlags flags, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_theme</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">icon_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">for_window</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.IconLookupFlags.html">IconLookupFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconTheme_Native_lookup_by_gicon_" data-uid="Gtk.IconTheme.Native.lookup_by_gicon*"></a>
+  <h4 id="Gtk_IconTheme_Native_lookup_by_gicon_System_IntPtr_System_IntPtr_System_Int32_Gtk_IconLookupFlags_" data-uid="Gtk.IconTheme.Native.lookup_by_gicon(System.IntPtr,System.IntPtr,System.Int32,Gtk.IconLookupFlags)">lookup_by_gicon(IntPtr, IntPtr, Int32, IconLookupFlags)</h4>
+  <div class="markdown level1 summary"><p>Looks up an icon and returns a #GtkIconInfo containing information
+such as the filename of the icon. The icon can then be rendered
+into a pixbuf using gtk_icon_info_load_icon().</p>
+<p>When rendering on displays with high pixel densities you should not
+use a @size multiplied by the scaling factor returned by functions
+like gdk_window_get_scale_factor(). Instead, you should use
+gtk_icon_theme_lookup_by_gicon_for_scale(), as the assets loaded
+for a given scaling factor may be different.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr lookup_by_gicon(IntPtr icon_theme, IntPtr icon, int size, IconLookupFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_theme</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.IconLookupFlags.html">IconLookupFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconTheme_Native_lookup_by_gicon_for_scale_" data-uid="Gtk.IconTheme.Native.lookup_by_gicon_for_scale*"></a>
+  <h4 id="Gtk_IconTheme_Native_lookup_by_gicon_for_scale_System_IntPtr_System_IntPtr_System_Int32_System_Int32_Gtk_IconLookupFlags_" data-uid="Gtk.IconTheme.Native.lookup_by_gicon_for_scale(System.IntPtr,System.IntPtr,System.Int32,System.Int32,Gtk.IconLookupFlags)">lookup_by_gicon_for_scale(IntPtr, IntPtr, Int32, Int32, IconLookupFlags)</h4>
+  <div class="markdown level1 summary"><p>Looks up an icon and returns a #GtkIconInfo containing information
+such as the filename of the icon. The icon can then be rendered into
+a pixbuf using gtk_icon_info_load_icon().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr lookup_by_gicon_for_scale(IntPtr icon_theme, IntPtr icon, int size, int scale, IconLookupFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_theme</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.IconLookupFlags.html">IconLookupFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconTheme_Native_lookup_icon_" data-uid="Gtk.IconTheme.Native.lookup_icon*"></a>
+  <h4 id="Gtk_IconTheme_Native_lookup_icon_System_IntPtr_System_String_System_Int32_Gtk_IconLookupFlags_" data-uid="Gtk.IconTheme.Native.lookup_icon(System.IntPtr,System.String,System.Int32,Gtk.IconLookupFlags)">lookup_icon(IntPtr, String, Int32, IconLookupFlags)</h4>
+  <div class="markdown level1 summary"><p>Looks up a named icon and returns a #GtkIconInfo containing
+information such as the filename of the icon. The icon
+can then be rendered into a pixbuf using
+gtk_icon_info_load_icon(). (gtk_icon_theme_load_icon()
+combines these two steps if all you need is the pixbuf.)</p>
+<p>When rendering on displays with high pixel densities you should not
+use a @size multiplied by the scaling factor returned by functions
+like gdk_window_get_scale_factor(). Instead, you should use
+gtk_icon_theme_lookup_icon_for_scale(), as the assets loaded
+for a given scaling factor may be different.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr lookup_icon(IntPtr icon_theme, string icon_name, int size, IconLookupFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_theme</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">icon_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.IconLookupFlags.html">IconLookupFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconTheme_Native_lookup_icon_for_scale_" data-uid="Gtk.IconTheme.Native.lookup_icon_for_scale*"></a>
+  <h4 id="Gtk_IconTheme_Native_lookup_icon_for_scale_System_IntPtr_System_String_System_Int32_System_Int32_Gtk_IconLookupFlags_" data-uid="Gtk.IconTheme.Native.lookup_icon_for_scale(System.IntPtr,System.String,System.Int32,System.Int32,Gtk.IconLookupFlags)">lookup_icon_for_scale(IntPtr, String, Int32, Int32, IconLookupFlags)</h4>
+  <div class="markdown level1 summary"><p>Looks up a named icon for a particular window scale and returns a
+#GtkIconInfo containing information such as the filename of the
+icon. The icon can then be rendered into a pixbuf using
+gtk_icon_info_load_icon(). (gtk_icon_theme_load_icon() combines
+these two steps if all you need is the pixbuf.)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr lookup_icon_for_scale(IntPtr icon_theme, string icon_name, int size, int scale, IconLookupFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_theme</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">icon_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.IconLookupFlags.html">IconLookupFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconTheme_Native_new_" data-uid="Gtk.IconTheme.Native.new*"></a>
+  <h4 id="Gtk_IconTheme_Native_new" data-uid="Gtk.IconTheme.Native.new">new()</h4>
+  <div class="markdown level1 summary"><p>Creates a new icon theme object. Icon theme objects are used
+to lookup up an icon by name in a particular icon theme.
+Usually, you’ll want to use gtk_icon_theme_get_default()
+or gtk_icon_theme_get_for_screen() rather than creating
+a new icon theme object for scratch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr new()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconTheme_Native_prepend_search_path_" data-uid="Gtk.IconTheme.Native.prepend_search_path*"></a>
+  <h4 id="Gtk_IconTheme_Native_prepend_search_path_System_IntPtr_System_String_" data-uid="Gtk.IconTheme.Native.prepend_search_path(System.IntPtr,System.String)">prepend_search_path(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Prepends a directory to the search path.
+See gtk_icon_theme_set_search_path().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void prepend_search_path(IntPtr icon_theme, string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_theme</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconTheme_Native_rescan_if_needed_" data-uid="Gtk.IconTheme.Native.rescan_if_needed*"></a>
+  <h4 id="Gtk_IconTheme_Native_rescan_if_needed_System_IntPtr_" data-uid="Gtk.IconTheme.Native.rescan_if_needed(System.IntPtr)">rescan_if_needed(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Checks to see if the icon theme has changed; if it has, any
+currently cached information is discarded and will be reloaded
+next time @icon_theme is accessed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool rescan_if_needed(IntPtr icon_theme)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_theme</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconTheme_Native_set_custom_theme_" data-uid="Gtk.IconTheme.Native.set_custom_theme*"></a>
+  <h4 id="Gtk_IconTheme_Native_set_custom_theme_System_IntPtr_System_String_" data-uid="Gtk.IconTheme.Native.set_custom_theme(System.IntPtr,System.String)">set_custom_theme(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Sets the name of the icon theme that the #GtkIconTheme object uses
+overriding system configuration. This function cannot be called
+on the icon theme objects returned from gtk_icon_theme_get_default()
+and gtk_icon_theme_get_for_screen().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_custom_theme(IntPtr icon_theme, string theme_name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_theme</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">theme_name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconTheme_Native_set_screen_" data-uid="Gtk.IconTheme.Native.set_screen*"></a>
+  <h4 id="Gtk_IconTheme_Native_set_screen_System_IntPtr_System_IntPtr_" data-uid="Gtk.IconTheme.Native.set_screen(System.IntPtr,System.IntPtr)">set_screen(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets the screen for an icon theme; the screen is used
+to track the user’s currently configured icon theme,
+which might be different for different screens.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_screen(IntPtr icon_theme, IntPtr screen)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_theme</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">screen</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_IconTheme_Native_set_search_path_" data-uid="Gtk.IconTheme.Native.set_search_path*"></a>
+  <h4 id="Gtk_IconTheme_Native_set_search_path_System_IntPtr_System_IntPtr__System_Int32_" data-uid="Gtk.IconTheme.Native.set_search_path(System.IntPtr,System.IntPtr@,System.Int32)">set_search_path(IntPtr, ref IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the search path for the icon theme object. When looking
+for an icon theme, GTK+ will search for a subdirectory of
+one or more of the directories in @path with the same name
+as the icon theme containing an index.theme file. (Themes from
+multiple of the path elements are combined to allow themes to be
+extended by adding icons in the user’s home directory.)</p>
+<p>In addition if an icon found isn’t found either in the current
+icon theme or the default icon theme, and an image file with
+the right name is found directly in one of the elements of
+@path, then that image will be used for the icon name.
+(This is legacy feature, and new icons should be put
+into the fallback icon theme, which is called hicolor,
+rather than directly on the icon path.)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_search_path(IntPtr icon_theme, ref IntPtr path, int n_elements)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon_theme</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n_elements</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_IconTheme_Native.md&amp;value=---%0Auid%3A%20Gtk.IconTheme.Native%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/IconTheme.Generated.cs/#L54" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

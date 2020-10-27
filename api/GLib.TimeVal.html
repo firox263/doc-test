@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct TimeVal
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct TimeVal
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GLib.TimeVal">
+  
+  
+  <h1 id="GLib_TimeVal" data-uid="GLib.TimeVal" class="text-break">Struct TimeVal
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a precise time, with seconds and microseconds.
+Similar to the struct timeval returned by the gettimeofday()
+UNIX system call.</p>
+<p>GLib is attempting to unify around the use of 64-bit integers to
+represent microsecond-precision time. As such, this type will be
+removed from a future version of GLib. A consequence of using <code>glong</code> for
+<code>tv_sec</code> is that on 32-bit systems <code>GTimeVal</code> is subject to the year 2038
+problem.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.ValueType.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ValueType.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.ValueType.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GLib.html">GLib</a></h6>
+  <h6><strong>Assembly</strong>: GLib.dll</h6>
+  <h5 id="GLib_TimeVal_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct TimeVal</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GLib_TimeVal_tv_sec.md&amp;value=---%0Auid%3A%20GLib.TimeVal.tv_sec%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GLib/Structs/TimeVal.Generated.cs/#L31">View Source</a>
+  </span>
+  <h4 id="GLib_TimeVal_tv_sec" data-uid="GLib.TimeVal.tv_sec">tv_sec</h4>
+  <div class="markdown level1 summary"><p>seconds</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long tv_sec</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GLib_TimeVal_tv_usec.md&amp;value=---%0Auid%3A%20GLib.TimeVal.tv_usec%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GLib/Structs/TimeVal.Generated.cs/#L40">View Source</a>
+  </span>
+  <h4 id="GLib_TimeVal_tv_usec" data-uid="GLib.TimeVal.tv_usec">tv_usec</h4>
+  <div class="markdown level1 summary"><p>microseconds</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long tv_usec</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="GLib_TimeVal_add_" data-uid="GLib.TimeVal.add*"></a>
+  <h4 id="GLib_TimeVal_add_System_IntPtr_System_Int64_" data-uid="GLib.TimeVal.add(System.IntPtr,System.Int64)">add(IntPtr, Int64)</h4>
+  <div class="markdown level1 summary"><p>Adds the given number of microseconds to @time_. @microseconds can
+also be negative to decrease the value of @time_.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;#GTimeVal is not year-2038-safe. Use `guint64` for   representing microseconds since the epoch, or use #GDateTime.&quot;)]
+public static void add(IntPtr time_, long microseconds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">time_</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">microseconds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_TimeVal_to_iso8601_" data-uid="GLib.TimeVal.to_iso8601*"></a>
+  <h4 id="GLib_TimeVal_to_iso8601_System_IntPtr_" data-uid="GLib.TimeVal.to_iso8601(System.IntPtr)">to_iso8601(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Converts @time_ into an RFC 3339 encoded string, relative to the
+Coordinated Universal Time (UTC). This is one of the many formats
+allowed by ISO 8601.</p>
+<p>ISO 8601 allows a large number of date/time formats, with or without
+punctuation and optional elements. The format returned by this function
+is a complete date and time, with optional punctuation included, the
+UTC time zone represented as &quot;Z&quot;, and the @tv_usec part included if
+and only if it is nonzero, i.e. either
+&quot;YYYY-MM-DDTHH:MM:SSZ&quot; or &quot;YYYY-MM-DDTHH:MM:SS.fffffZ&quot;.</p>
+<p>This corresponds to the Internet date/time format defined by
+<a href="https://www.ietf.org/rfc/rfc3339.txt">RFC 3339</a>,
+and to either of the two most-precise formats defined by
+the W3C Note
+<a href="http://www.w3.org/TR/NOTE-datetime-19980827">Date and Time Formats</a>.
+Both of these documents are profiles of ISO 8601.</p>
+<p>Use g_date_time_format() or g_strdup_printf() if a different
+variation of ISO 8601 format is required.</p>
+<p>If @time_ represents a date which is too large to fit into a <code>struct tm</code>,
+%NULL will be returned. This is platform dependent. Note also that since
+<code>GTimeVal</code> stores the number of seconds as a <code>glong</code>, on 32-bit systems it
+is subject to the year 2038 problem. Accordingly, since GLib 2.62, this
+function has been deprecated. Equivalent functionality is available using:
+|[
+GDateTime *dt = g_date_time_new_from_unix_utc (time_val);
+iso8601_string = g_date_time_format_iso8601 (dt);
+g_date_time_unref (dt);
+]|</p>
+<p>The return value of g_time_val_to_iso8601() has been nullable since GLib
+2.54; before then, GLib would crash under the same conditions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;#GTimeVal is not year-2038-safe. Use   g_date_time_format_iso8601(dt) instead.&quot;)]
+public static IntPtr to_iso8601(IntPtr time_)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">time_</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GLib_TimeVal.md&amp;value=---%0Auid%3A%20GLib.TimeVal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GLib/Structs/TimeVal.Generated.cs/#L19" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

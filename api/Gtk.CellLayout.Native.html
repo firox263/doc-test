@@ -1,0 +1,554 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CellLayout.Native
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CellLayout.Native
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gtk.CellLayout.Native">
+  
+  
+  <h1 id="Gtk_CellLayout_Native" data-uid="Gtk.CellLayout.Native" class="text-break">Class CellLayout.Native
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CellLayout.Native</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gtk.html">Gtk</a></h6>
+  <h6><strong>Assembly</strong>: Gtk3.dll</h6>
+  <h5 id="Gtk_CellLayout_Native_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static class Native</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Gtk_CellLayout_Native_add_attribute_" data-uid="Gtk.CellLayout.Native.add_attribute*"></a>
+  <h4 id="Gtk_CellLayout_Native_add_attribute_System_IntPtr_System_IntPtr_System_String_System_Int32_" data-uid="Gtk.CellLayout.Native.add_attribute(System.IntPtr,System.IntPtr,System.String,System.Int32)">add_attribute(IntPtr, IntPtr, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Adds an attribute mapping to the list in @cell_layout.</p>
+<p>The @column is the column of the model to get a value from, and the
+@attribute is the parameter on @cell to be set from the value. So for
+example if column 2 of the model contains strings, you could have the
+“text” attribute of a #GtkCellRendererText get its values from column 2.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void add_attribute(IntPtr cell_layout, IntPtr cell, string attribute, int column)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cell_layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_CellLayout_Native_clear_" data-uid="Gtk.CellLayout.Native.clear*"></a>
+  <h4 id="Gtk_CellLayout_Native_clear_System_IntPtr_" data-uid="Gtk.CellLayout.Native.clear(System.IntPtr)">clear(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Unsets all the mappings on all renderers on @cell_layout and
+removes all renderers from @cell_layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void clear(IntPtr cell_layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cell_layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_CellLayout_Native_clear_attributes_" data-uid="Gtk.CellLayout.Native.clear_attributes*"></a>
+  <h4 id="Gtk_CellLayout_Native_clear_attributes_System_IntPtr_System_IntPtr_" data-uid="Gtk.CellLayout.Native.clear_attributes(System.IntPtr,System.IntPtr)">clear_attributes(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Clears all existing attributes previously set with
+gtk_cell_layout_set_attributes().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void clear_attributes(IntPtr cell_layout, IntPtr cell)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cell_layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_CellLayout_Native_get_area_" data-uid="Gtk.CellLayout.Native.get_area*"></a>
+  <h4 id="Gtk_CellLayout_Native_get_area_System_IntPtr_" data-uid="Gtk.CellLayout.Native.get_area(System.IntPtr)">get_area(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the underlying #GtkCellArea which might be @cell_layout
+if called on a #GtkCellArea or might be %NULL if no #GtkCellArea
+is used by @cell_layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_area(IntPtr cell_layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cell_layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_CellLayout_Native_get_cells_" data-uid="Gtk.CellLayout.Native.get_cells*"></a>
+  <h4 id="Gtk_CellLayout_Native_get_cells_System_IntPtr_" data-uid="Gtk.CellLayout.Native.get_cells(System.IntPtr)">get_cells(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the cell renderers which have been added to @cell_layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_cells(IntPtr cell_layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cell_layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_CellLayout_Native_get_type_" data-uid="Gtk.CellLayout.Native.get_type*"></a>
+  <h4 id="Gtk_CellLayout_Native_get_type" data-uid="Gtk.CellLayout.Native.get_type">get_type()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong get_type()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_CellLayout_Native_pack_end_" data-uid="Gtk.CellLayout.Native.pack_end*"></a>
+  <h4 id="Gtk_CellLayout_Native_pack_end_System_IntPtr_System_IntPtr_System_Boolean_" data-uid="Gtk.CellLayout.Native.pack_end(System.IntPtr,System.IntPtr,System.Boolean)">pack_end(IntPtr, IntPtr, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Adds the @cell to the end of @cell_layout. If @expand is %FALSE, then the
+@cell is allocated no more space than it needs. Any unused space is
+divided evenly between cells for which @expand is %TRUE.</p>
+<p>Note that reusing the same cell renderer is not supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void pack_end(IntPtr cell_layout, IntPtr cell, bool expand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cell_layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">expand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_CellLayout_Native_pack_start_" data-uid="Gtk.CellLayout.Native.pack_start*"></a>
+  <h4 id="Gtk_CellLayout_Native_pack_start_System_IntPtr_System_IntPtr_System_Boolean_" data-uid="Gtk.CellLayout.Native.pack_start(System.IntPtr,System.IntPtr,System.Boolean)">pack_start(IntPtr, IntPtr, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Packs the @cell into the beginning of @cell_layout. If @expand is %FALSE,
+then the @cell is allocated no more space than it needs. Any unused space
+is divided evenly between cells for which @expand is %TRUE.</p>
+<p>Note that reusing the same cell renderer is not supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void pack_start(IntPtr cell_layout, IntPtr cell, bool expand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cell_layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">expand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_CellLayout_Native_reorder_" data-uid="Gtk.CellLayout.Native.reorder*"></a>
+  <h4 id="Gtk_CellLayout_Native_reorder_System_IntPtr_System_IntPtr_System_Int32_" data-uid="Gtk.CellLayout.Native.reorder(System.IntPtr,System.IntPtr,System.Int32)">reorder(IntPtr, IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Re-inserts @cell at @position.</p>
+<p>Note that @cell has already to be packed into @cell_layout
+for this to function properly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void reorder(IntPtr cell_layout, IntPtr cell, int position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cell_layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_CellLayout_Native_set_cell_data_func_" data-uid="Gtk.CellLayout.Native.set_cell_data_func*"></a>
+  <h4 id="Gtk_CellLayout_Native_set_cell_data_func_System_IntPtr_System_IntPtr_Gtk_CellLayoutDataFunc_System_IntPtr_GLib_DestroyNotify_" data-uid="Gtk.CellLayout.Native.set_cell_data_func(System.IntPtr,System.IntPtr,Gtk.CellLayoutDataFunc,System.IntPtr,GLib.DestroyNotify)">set_cell_data_func(IntPtr, IntPtr, CellLayoutDataFunc, IntPtr, DestroyNotify)</h4>
+  <div class="markdown level1 summary"><p>Sets the #GtkCellLayoutDataFunc to use for @cell_layout.</p>
+<p>This function is used instead of the standard attributes mapping
+for setting the column value, and should set the value of @cell_layout’s
+cell renderer(s) as appropriate.</p>
+<p>@func may be %NULL to remove a previously set function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_cell_data_func(IntPtr cell_layout, IntPtr cell, CellLayoutDataFunc func, IntPtr func_data, DestroyNotify destroy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cell_layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.CellLayoutDataFunc.html">CellLayoutDataFunc</a></td>
+        <td><span class="parametername">func</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">func_data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.DestroyNotify.html">DestroyNotify</a></td>
+        <td><span class="parametername">destroy</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_CellLayout_Native.md&amp;value=---%0Auid%3A%20Gtk.CellLayout.Native%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Interfaces/CellLayout.Generated.cs/#L27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

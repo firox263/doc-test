@@ -1,0 +1,1442 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PrintOperation
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PrintOperation
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gtk.PrintOperation">
+  
+  
+  <h1 id="Gtk_PrintOperation" data-uid="Gtk.PrintOperation" class="text-break">Class PrintOperation
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="GObject.Object.html">Object</a></div>
+    <div class="level2"><span class="xref">PrintOperation</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_PropertyChanged">Object.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Handle">Object.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Disposed">Object.Disposed</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Initialize">Object.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RegisterNotifyPropertyChangedEvent_System_String_System_Action_">Object.RegisterNotifyPropertyChangedEvent(String, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RegisterEvent_System_String_GObject_ActionRefValues_System_Boolean_">Object.RegisterEvent(String, ActionRefValues, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RegisterEvent_System_String_System_Action_System_Boolean_">Object.RegisterEvent(String, Action, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_UnregisterEvent_GObject_ActionRefValues_">Object.UnregisterEvent(ActionRefValues)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_UnregisterEvent_System_Action_">Object.UnregisterEvent(Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ThrowIfDisposed">Object.ThrowIfDisposed()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_HandleError_System_IntPtr_">Object.HandleError(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetHandle_GObject_Object_">Object.GetHandle(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnPropertyChanged_System_String_">Object.OnPropertyChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetObject__1_System_IntPtr___0__">Object.GetObject&lt;T&gt;(IntPtr, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_TryWrapPointerAs__1_System_IntPtr___0__">Object.TryWrapPointerAs&lt;T&gt;(IntPtr, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Dispose">Object.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Dispose_System_Boolean_">Object.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Item_GObject_Signal_GObject_Object_NotifySignalArgs__">Object.Item[Signal&lt;Object.NotifySignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifySignal">Object.NotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnNotify">Object.OnNotify</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetProperty__1_GObject_Property___0__">Object.GetProperty&lt;T&gt;(Property&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetProperty__1_GObject_Property___0____0_">Object.SetProperty&lt;T&gt;(Property&lt;T&gt;, T)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gtk.html">Gtk</a></h6>
+  <h6><strong>Assembly</strong>: Gtk3.dll</h6>
+  <h5 id="Gtk_PrintOperation_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PrintOperation : Object, INotifyPropertyChanged, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation__ctor_GObject_ConstructParameter___.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.%23ctor(GObject.ConstructParameter%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L694">View Source</a>
+  </span>
+  <a id="Gtk_PrintOperation__ctor_" data-uid="Gtk.PrintOperation.#ctor*"></a>
+  <h4 id="Gtk_PrintOperation__ctor_GObject_ConstructParameter___" data-uid="Gtk.PrintOperation.#ctor(GObject.ConstructParameter[])">PrintOperation(ConstructParameter[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PrintOperation(params ConstructParameter[] properties)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.ConstructParameter.html">ConstructParameter</a>[]</td>
+        <td><span class="parametername">properties</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation__ctor_System_IntPtr_.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.%23ctor(System.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L693">View Source</a>
+  </span>
+  <a id="Gtk_PrintOperation__ctor_" data-uid="Gtk.PrintOperation.#ctor*"></a>
+  <h4 id="Gtk_PrintOperation__ctor_System_IntPtr_" data-uid="Gtk.PrintOperation.#ctor(System.IntPtr)">PrintOperation(IntPtr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PrintOperation(IntPtr ptr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">ptr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_BeginPrintSignal.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.BeginPrintSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L60">View Source</a>
+  </span>
+  <h4 id="Gtk_PrintOperation_BeginPrintSignal" data-uid="Gtk.PrintOperation.BeginPrintSignal">BeginPrintSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnBeginPrint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;PrintOperation.BeginPrintSignalArgs&gt; BeginPrintSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PrintOperation.BeginPrintSignalArgs.html">PrintOperation.BeginPrintSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_CreateCustomWidgetSignal.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.CreateCustomWidgetSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L85">View Source</a>
+  </span>
+  <h4 id="Gtk_PrintOperation_CreateCustomWidgetSignal" data-uid="Gtk.PrintOperation.CreateCustomWidgetSignal">CreateCustomWidgetSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnCreateCustomWidget.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;SignalArgs&gt; CreateCustomWidgetSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_CustomWidgetApplySignal.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.CustomWidgetApplySignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L146">View Source</a>
+  </span>
+  <h4 id="Gtk_PrintOperation_CustomWidgetApplySignal" data-uid="Gtk.PrintOperation.CustomWidgetApplySignal">CustomWidgetApplySignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnCustomWidgetApply.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;PrintOperation.CustomWidgetApplySignalArgs&gt; CustomWidgetApplySignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PrintOperation.CustomWidgetApplySignalArgs.html">PrintOperation.CustomWidgetApplySignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_DoneSignal.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.DoneSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L202">View Source</a>
+  </span>
+  <h4 id="Gtk_PrintOperation_DoneSignal" data-uid="Gtk.PrintOperation.DoneSignal">DoneSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnDone.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;PrintOperation.DoneSignalArgs&gt; DoneSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PrintOperation.DoneSignalArgs.html">PrintOperation.DoneSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_DrawPageSignal.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.DrawPageSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L270">View Source</a>
+  </span>
+  <h4 id="Gtk_PrintOperation_DrawPageSignal" data-uid="Gtk.PrintOperation.DrawPageSignal">DrawPageSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnDrawPage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;PrintOperation.DrawPageSignalArgs&gt; DrawPageSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PrintOperation.DrawPageSignalArgs.html">PrintOperation.DrawPageSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_EndPrintSignal.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.EndPrintSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L369">View Source</a>
+  </span>
+  <h4 id="Gtk_PrintOperation_EndPrintSignal" data-uid="Gtk.PrintOperation.EndPrintSignal">EndPrintSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnEndPrint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;PrintOperation.EndPrintSignalArgs&gt; EndPrintSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PrintOperation.EndPrintSignalArgs.html">PrintOperation.EndPrintSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_PaginateSignal.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.PaginateSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L423">View Source</a>
+  </span>
+  <h4 id="Gtk_PrintOperation_PaginateSignal" data-uid="Gtk.PrintOperation.PaginateSignal">PaginateSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnPaginate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;PrintOperation.PaginateSignalArgs&gt; PaginateSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PrintOperation.PaginateSignalArgs.html">PrintOperation.PaginateSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_PreviewSignal.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.PreviewSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L501">View Source</a>
+  </span>
+  <h4 id="Gtk_PrintOperation_PreviewSignal" data-uid="Gtk.PrintOperation.PreviewSignal">PreviewSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnPreview.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;PrintOperation.PreviewSignalArgs&gt; PreviewSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PrintOperation.PreviewSignalArgs.html">PrintOperation.PreviewSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_RequestPageSetupSignal.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.RequestPageSetupSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L582">View Source</a>
+  </span>
+  <h4 id="Gtk_PrintOperation_RequestPageSetupSignal" data-uid="Gtk.PrintOperation.RequestPageSetupSignal">RequestPageSetupSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnRequestPageSetup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;PrintOperation.RequestPageSetupSignalArgs&gt; RequestPageSetupSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PrintOperation.RequestPageSetupSignalArgs.html">PrintOperation.RequestPageSetupSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_StatusChangedSignal.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.StatusChangedSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L604">View Source</a>
+  </span>
+  <h4 id="Gtk_PrintOperation_StatusChangedSignal" data-uid="Gtk.PrintOperation.StatusChangedSignal">StatusChangedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnStatusChanged.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;SignalArgs&gt; StatusChangedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_UpdateCustomWidgetSignal.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.UpdateCustomWidgetSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L673">View Source</a>
+  </span>
+  <h4 id="Gtk_PrintOperation_UpdateCustomWidgetSignal" data-uid="Gtk.PrintOperation.UpdateCustomWidgetSignal">UpdateCustomWidgetSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnUpdateCustomWidget.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;PrintOperation.UpdateCustomWidgetSignalArgs&gt; UpdateCustomWidgetSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PrintOperation.UpdateCustomWidgetSignalArgs.html">PrintOperation.UpdateCustomWidgetSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_Item_GObject_Signal_Gtk_PrintOperation_BeginPrintSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.Item(GObject.Signal%7BGtk.PrintOperation.BeginPrintSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L28">View Source</a>
+  </span>
+  <a id="Gtk_PrintOperation_Item_" data-uid="Gtk.PrintOperation.Item*"></a>
+  <h4 id="Gtk_PrintOperation_Item_GObject_Signal_Gtk_PrintOperation_BeginPrintSignalArgs__" data-uid="Gtk.PrintOperation.Item(GObject.Signal{Gtk.PrintOperation.BeginPrintSignalArgs})">Item[Signal&lt;PrintOperation.BeginPrintSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;PrintOperation.BeginPrintSignalArgs&gt; this[Signal&lt;PrintOperation.BeginPrintSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PrintOperation.BeginPrintSignalArgs.html">PrintOperation.BeginPrintSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PrintOperation.BeginPrintSignalArgs.html">PrintOperation.BeginPrintSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_Item_GObject_Signal_Gtk_PrintOperation_CustomWidgetApplySignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.Item(GObject.Signal%7BGtk.PrintOperation.CustomWidgetApplySignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L114">View Source</a>
+  </span>
+  <a id="Gtk_PrintOperation_Item_" data-uid="Gtk.PrintOperation.Item*"></a>
+  <h4 id="Gtk_PrintOperation_Item_GObject_Signal_Gtk_PrintOperation_CustomWidgetApplySignalArgs__" data-uid="Gtk.PrintOperation.Item(GObject.Signal{Gtk.PrintOperation.CustomWidgetApplySignalArgs})">Item[Signal&lt;PrintOperation.CustomWidgetApplySignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;PrintOperation.CustomWidgetApplySignalArgs&gt; this[Signal&lt;PrintOperation.CustomWidgetApplySignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PrintOperation.CustomWidgetApplySignalArgs.html">PrintOperation.CustomWidgetApplySignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PrintOperation.CustomWidgetApplySignalArgs.html">PrintOperation.CustomWidgetApplySignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_Item_GObject_Signal_Gtk_PrintOperation_DoneSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.Item(GObject.Signal%7BGtk.PrintOperation.DoneSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L170">View Source</a>
+  </span>
+  <a id="Gtk_PrintOperation_Item_" data-uid="Gtk.PrintOperation.Item*"></a>
+  <h4 id="Gtk_PrintOperation_Item_GObject_Signal_Gtk_PrintOperation_DoneSignalArgs__" data-uid="Gtk.PrintOperation.Item(GObject.Signal{Gtk.PrintOperation.DoneSignalArgs})">Item[Signal&lt;PrintOperation.DoneSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;PrintOperation.DoneSignalArgs&gt; this[Signal&lt;PrintOperation.DoneSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PrintOperation.DoneSignalArgs.html">PrintOperation.DoneSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PrintOperation.DoneSignalArgs.html">PrintOperation.DoneSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_Item_GObject_Signal_Gtk_PrintOperation_DrawPageSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.Item(GObject.Signal%7BGtk.PrintOperation.DrawPageSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L231">View Source</a>
+  </span>
+  <a id="Gtk_PrintOperation_Item_" data-uid="Gtk.PrintOperation.Item*"></a>
+  <h4 id="Gtk_PrintOperation_Item_GObject_Signal_Gtk_PrintOperation_DrawPageSignalArgs__" data-uid="Gtk.PrintOperation.Item(GObject.Signal{Gtk.PrintOperation.DrawPageSignalArgs})">Item[Signal&lt;PrintOperation.DrawPageSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;PrintOperation.DrawPageSignalArgs&gt; this[Signal&lt;PrintOperation.DrawPageSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PrintOperation.DrawPageSignalArgs.html">PrintOperation.DrawPageSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PrintOperation.DrawPageSignalArgs.html">PrintOperation.DrawPageSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_Item_GObject_Signal_Gtk_PrintOperation_EndPrintSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.Item(GObject.Signal%7BGtk.PrintOperation.EndPrintSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L337">View Source</a>
+  </span>
+  <a id="Gtk_PrintOperation_Item_" data-uid="Gtk.PrintOperation.Item*"></a>
+  <h4 id="Gtk_PrintOperation_Item_GObject_Signal_Gtk_PrintOperation_EndPrintSignalArgs__" data-uid="Gtk.PrintOperation.Item(GObject.Signal{Gtk.PrintOperation.EndPrintSignalArgs})">Item[Signal&lt;PrintOperation.EndPrintSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;PrintOperation.EndPrintSignalArgs&gt; this[Signal&lt;PrintOperation.EndPrintSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PrintOperation.EndPrintSignalArgs.html">PrintOperation.EndPrintSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PrintOperation.EndPrintSignalArgs.html">PrintOperation.EndPrintSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_Item_GObject_Signal_Gtk_PrintOperation_PaginateSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.Item(GObject.Signal%7BGtk.PrintOperation.PaginateSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L391">View Source</a>
+  </span>
+  <a id="Gtk_PrintOperation_Item_" data-uid="Gtk.PrintOperation.Item*"></a>
+  <h4 id="Gtk_PrintOperation_Item_GObject_Signal_Gtk_PrintOperation_PaginateSignalArgs__" data-uid="Gtk.PrintOperation.Item(GObject.Signal{Gtk.PrintOperation.PaginateSignalArgs})">Item[Signal&lt;PrintOperation.PaginateSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;PrintOperation.PaginateSignalArgs&gt; this[Signal&lt;PrintOperation.PaginateSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PrintOperation.PaginateSignalArgs.html">PrintOperation.PaginateSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PrintOperation.PaginateSignalArgs.html">PrintOperation.PaginateSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_Item_GObject_Signal_Gtk_PrintOperation_PreviewSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.Item(GObject.Signal%7BGtk.PrintOperation.PreviewSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L455">View Source</a>
+  </span>
+  <a id="Gtk_PrintOperation_Item_" data-uid="Gtk.PrintOperation.Item*"></a>
+  <h4 id="Gtk_PrintOperation_Item_GObject_Signal_Gtk_PrintOperation_PreviewSignalArgs__" data-uid="Gtk.PrintOperation.Item(GObject.Signal{Gtk.PrintOperation.PreviewSignalArgs})">Item[Signal&lt;PrintOperation.PreviewSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;PrintOperation.PreviewSignalArgs&gt; this[Signal&lt;PrintOperation.PreviewSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PrintOperation.PreviewSignalArgs.html">PrintOperation.PreviewSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PrintOperation.PreviewSignalArgs.html">PrintOperation.PreviewSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_Item_GObject_Signal_Gtk_PrintOperation_RequestPageSetupSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.Item(GObject.Signal%7BGtk.PrintOperation.RequestPageSetupSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L536">View Source</a>
+  </span>
+  <a id="Gtk_PrintOperation_Item_" data-uid="Gtk.PrintOperation.Item*"></a>
+  <h4 id="Gtk_PrintOperation_Item_GObject_Signal_Gtk_PrintOperation_RequestPageSetupSignalArgs__" data-uid="Gtk.PrintOperation.Item(GObject.Signal{Gtk.PrintOperation.RequestPageSetupSignalArgs})">Item[Signal&lt;PrintOperation.RequestPageSetupSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;PrintOperation.RequestPageSetupSignalArgs&gt; this[Signal&lt;PrintOperation.RequestPageSetupSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PrintOperation.RequestPageSetupSignalArgs.html">PrintOperation.RequestPageSetupSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PrintOperation.RequestPageSetupSignalArgs.html">PrintOperation.RequestPageSetupSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_Item_GObject_Signal_Gtk_PrintOperation_UpdateCustomWidgetSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.Item(GObject.Signal%7BGtk.PrintOperation.UpdateCustomWidgetSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L627">View Source</a>
+  </span>
+  <a id="Gtk_PrintOperation_Item_" data-uid="Gtk.PrintOperation.Item*"></a>
+  <h4 id="Gtk_PrintOperation_Item_GObject_Signal_Gtk_PrintOperation_UpdateCustomWidgetSignalArgs__" data-uid="Gtk.PrintOperation.Item(GObject.Signal{Gtk.PrintOperation.UpdateCustomWidgetSignalArgs})">Item[Signal&lt;PrintOperation.UpdateCustomWidgetSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;PrintOperation.UpdateCustomWidgetSignalArgs&gt; this[Signal&lt;PrintOperation.UpdateCustomWidgetSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PrintOperation.UpdateCustomWidgetSignalArgs.html">PrintOperation.UpdateCustomWidgetSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PrintOperation.UpdateCustomWidgetSignalArgs.html">PrintOperation.UpdateCustomWidgetSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_OnBeginPrint.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.OnBeginPrint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L71">View Source</a>
+  </span>
+  <h4 id="Gtk_PrintOperation_OnBeginPrint" data-uid="Gtk.PrintOperation.OnBeginPrint">OnBeginPrint</h4>
+  <div class="markdown level1 summary"><p>Emitted after the user has finished changing print settings
+in the dialog, before the actual rendering starts.</p>
+<p>A typical use for ::begin-print is to use the parameters from the
+#GtkPrintContext and paginate the document accordingly, and then
+set the number of pages with gtk_print_operation_set_n_pages().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PrintOperation.BeginPrintSignalArgs&gt; OnBeginPrint</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PrintOperation.BeginPrintSignalArgs.html">PrintOperation.BeginPrintSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_OnCreateCustomWidget.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.OnCreateCustomWidget%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L100">View Source</a>
+  </span>
+  <h4 id="Gtk_PrintOperation_OnCreateCustomWidget" data-uid="Gtk.PrintOperation.OnCreateCustomWidget">OnCreateCustomWidget</h4>
+  <div class="markdown level1 summary"><p>Emitted when displaying the print dialog. If you return a
+widget in a handler for this signal it will be added to a custom
+tab in the print dialog. You typically return a container widget
+with multiple widgets in it.</p>
+<p>The print dialog owns the returned widget, and its lifetime is not
+controlled by the application. However, the widget is guaranteed
+to stay around until the #GtkPrintOperation::custom-widget-apply
+signal is emitted on the operation. Then you can read out any
+information you need from the widgets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SignalArgs&gt; OnCreateCustomWidget</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_OnCustomWidgetApply.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.OnCustomWidgetApply%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L156">View Source</a>
+  </span>
+  <h4 id="Gtk_PrintOperation_OnCustomWidgetApply" data-uid="Gtk.PrintOperation.OnCustomWidgetApply">OnCustomWidgetApply</h4>
+  <div class="markdown level1 summary"><p>Emitted right before #GtkPrintOperation::begin-print if you added
+a custom widget in the #GtkPrintOperation::create-custom-widget handler.
+When you get this signal you should read the information from the
+custom widgets, as the widgets are not guaraneed to be around at a
+later time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PrintOperation.CustomWidgetApplySignalArgs&gt; OnCustomWidgetApply</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PrintOperation.CustomWidgetApplySignalArgs.html">PrintOperation.CustomWidgetApplySignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_OnDone.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.OnDone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L217">View Source</a>
+  </span>
+  <h4 id="Gtk_PrintOperation_OnDone" data-uid="Gtk.PrintOperation.OnDone">OnDone</h4>
+  <div class="markdown level1 summary"><p>Emitted when the print operation run has finished doing
+everything required for printing.</p>
+<p>@result gives you information about what happened during the run.
+If @result is %GTK_PRINT_OPERATION_RESULT_ERROR then you can call
+gtk_print_operation_get_error() for more information.</p>
+<p>If you enabled print status tracking then
+gtk_print_operation_is_finished() may still return %FALSE
+after #GtkPrintOperation::done was emitted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PrintOperation.DoneSignalArgs&gt; OnDone</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PrintOperation.DoneSignalArgs.html">PrintOperation.DoneSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_OnDrawPage.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.OnDrawPage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L323">View Source</a>
+  </span>
+  <h4 id="Gtk_PrintOperation_OnDrawPage" data-uid="Gtk.PrintOperation.OnDrawPage">OnDrawPage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PrintOperation.DrawPageSignalArgs&gt; OnDrawPage</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PrintOperation.DrawPageSignalArgs.html">PrintOperation.DrawPageSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_OnEndPrint.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.OnEndPrint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L377">View Source</a>
+  </span>
+  <h4 id="Gtk_PrintOperation_OnEndPrint" data-uid="Gtk.PrintOperation.OnEndPrint">OnEndPrint</h4>
+  <div class="markdown level1 summary"><p>Emitted after all pages have been rendered.
+A handler for this signal can clean up any resources that have
+been allocated in the #GtkPrintOperation::begin-print handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PrintOperation.EndPrintSignalArgs&gt; OnEndPrint</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PrintOperation.EndPrintSignalArgs.html">PrintOperation.EndPrintSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_OnPaginate.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.OnPaginate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L441">View Source</a>
+  </span>
+  <h4 id="Gtk_PrintOperation_OnPaginate" data-uid="Gtk.PrintOperation.OnPaginate">OnPaginate</h4>
+  <div class="markdown level1 summary"><p>Emitted after the #GtkPrintOperation::begin-print signal, but before
+the actual rendering starts. It keeps getting emitted until a connected
+signal handler returns %TRUE.</p>
+<p>The ::paginate signal is intended to be used for paginating a document
+in small chunks, to avoid blocking the user interface for a long
+time. The signal handler should update the number of pages using
+gtk_print_operation_set_n_pages(), and return %TRUE if the document
+has been completely paginated.</p>
+<p>If you don't need to do pagination in chunks, you can simply do
+it all in the ::begin-print handler, and set the number of pages
+from there.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PrintOperation.PaginateSignalArgs&gt; OnPaginate</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PrintOperation.PaginateSignalArgs.html">PrintOperation.PaginateSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_OnPreview.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.OnPreview%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L522">View Source</a>
+  </span>
+  <h4 id="Gtk_PrintOperation_OnPreview" data-uid="Gtk.PrintOperation.OnPreview">OnPreview</h4>
+  <div class="markdown level1 summary"><p>Gets emitted when a preview is requested from the native dialog.</p>
+<p>The default handler for this signal uses an external viewer
+application to preview.</p>
+<p>To implement a custom print preview, an application must return
+%TRUE from its handler for this signal. In order to use the
+provided @context for the preview implementation, it must be
+given a suitable cairo context with gtk_print_context_set_cairo_context().</p>
+<p>The custom preview implementation can use
+gtk_print_operation_preview_is_selected() and
+gtk_print_operation_preview_render_page() to find pages which
+are selected for print and render them. The preview must be
+finished by calling gtk_print_operation_preview_end_preview()
+(typically in response to the user clicking a close button).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PrintOperation.PreviewSignalArgs&gt; OnPreview</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PrintOperation.PreviewSignalArgs.html">PrintOperation.PreviewSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_OnRequestPageSetup.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.OnRequestPageSetup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L590">View Source</a>
+  </span>
+  <h4 id="Gtk_PrintOperation_OnRequestPageSetup" data-uid="Gtk.PrintOperation.OnRequestPageSetup">OnRequestPageSetup</h4>
+  <div class="markdown level1 summary"><p>Emitted once for every page that is printed, to give
+the application a chance to modify the page setup. Any changes
+done to @setup will be in force only for printing this page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PrintOperation.RequestPageSetupSignalArgs&gt; OnRequestPageSetup</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PrintOperation.RequestPageSetupSignalArgs.html">PrintOperation.RequestPageSetupSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_OnStatusChanged.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.OnStatusChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L613">View Source</a>
+  </span>
+  <h4 id="Gtk_PrintOperation_OnStatusChanged" data-uid="Gtk.PrintOperation.OnStatusChanged">OnStatusChanged</h4>
+  <div class="markdown level1 summary"><p>Emitted at between the various phases of the print operation.
+See #GtkPrintStatus for the phases that are being discriminated.
+Use gtk_print_operation_get_status() to find out the current
+status.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SignalArgs&gt; OnStatusChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation_OnUpdateCustomWidget.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation.OnUpdateCustomWidget%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L681">View Source</a>
+  </span>
+  <h4 id="Gtk_PrintOperation_OnUpdateCustomWidget" data-uid="Gtk.PrintOperation.OnUpdateCustomWidget">OnUpdateCustomWidget</h4>
+  <div class="markdown level1 summary"><p>Emitted after change of selected printer. The actual page setup and
+print settings are passed to the custom widget, which can actualize
+itself according to this change.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PrintOperation.UpdateCustomWidgetSignalArgs&gt; OnUpdateCustomWidget</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PrintOperation.UpdateCustomWidgetSignalArgs.html">PrintOperation.UpdateCustomWidgetSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PrintOperation.md&amp;value=---%0Auid%3A%20Gtk.PrintOperation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PrintOperation.Generated.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

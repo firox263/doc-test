@@ -1,0 +1,823 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct Matrix
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct Matrix
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Pango.Matrix">
+  
+  
+  <h1 id="Pango_Matrix" data-uid="Pango.Matrix" class="text-break">Struct Matrix
+  </h1>
+  <div class="markdown level0 summary"><p>A structure specifying a transformation between user-space
+coordinates and device coordinates. The transformation
+is given by</p>
+<programlisting>
+x_device = x_user * matrix->xx + y_user * matrix->xy + matrix->x0;
+y_device = x_user * matrix->yx + y_user * matrix->yy + matrix->y0;
+</programlisting>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.ValueType.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ValueType.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.ValueType.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Pango.html">Pango</a></h6>
+  <h6><strong>Assembly</strong>: Pango.dll</h6>
+  <h5 id="Pango_Matrix_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct Matrix</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Pango_Matrix_x0.md&amp;value=---%0Auid%3A%20Pango.Matrix.x0%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Pango/Structs/Matrix.Generated.cs/#L66">View Source</a>
+  </span>
+  <h4 id="Pango_Matrix_x0" data-uid="Pango.Matrix.x0">x0</h4>
+  <div class="markdown level1 summary"><p>x translation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double x0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Pango_Matrix_xx.md&amp;value=---%0Auid%3A%20Pango.Matrix.xx%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Pango/Structs/Matrix.Generated.cs/#L30">View Source</a>
+  </span>
+  <h4 id="Pango_Matrix_xx" data-uid="Pango.Matrix.xx">xx</h4>
+  <div class="markdown level1 summary"><p>1st component of the transformation matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double xx</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Pango_Matrix_xy.md&amp;value=---%0Auid%3A%20Pango.Matrix.xy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Pango/Structs/Matrix.Generated.cs/#L39">View Source</a>
+  </span>
+  <h4 id="Pango_Matrix_xy" data-uid="Pango.Matrix.xy">xy</h4>
+  <div class="markdown level1 summary"><p>2nd component of the transformation matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double xy</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Pango_Matrix_y0.md&amp;value=---%0Auid%3A%20Pango.Matrix.y0%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Pango/Structs/Matrix.Generated.cs/#L75">View Source</a>
+  </span>
+  <h4 id="Pango_Matrix_y0" data-uid="Pango.Matrix.y0">y0</h4>
+  <div class="markdown level1 summary"><p>y translation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double y0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Pango_Matrix_yx.md&amp;value=---%0Auid%3A%20Pango.Matrix.yx%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Pango/Structs/Matrix.Generated.cs/#L48">View Source</a>
+  </span>
+  <h4 id="Pango_Matrix_yx" data-uid="Pango.Matrix.yx">yx</h4>
+  <div class="markdown level1 summary"><p>3rd component of the transformation matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double yx</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Pango_Matrix_yy.md&amp;value=---%0Auid%3A%20Pango.Matrix.yy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Pango/Structs/Matrix.Generated.cs/#L57">View Source</a>
+  </span>
+  <h4 id="Pango_Matrix_yy" data-uid="Pango.Matrix.yy">yy</h4>
+  <div class="markdown level1 summary"><p>4th component of the transformation matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double yy</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Pango_Matrix_concat_" data-uid="Pango.Matrix.concat*"></a>
+  <h4 id="Pango_Matrix_concat_System_IntPtr_System_IntPtr_" data-uid="Pango.Matrix.concat(System.IntPtr,System.IntPtr)">concat(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Changes the transformation represented by @matrix to be the
+transformation given by first applying transformation
+given by @new_matrix then applying the original transformation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void concat(IntPtr matrix, IntPtr new_matrix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">matrix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">new_matrix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Matrix_copy_" data-uid="Pango.Matrix.copy*"></a>
+  <h4 id="Pango_Matrix_copy_System_IntPtr_" data-uid="Pango.Matrix.copy(System.IntPtr)">copy(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Copies a #PangoMatrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr copy(IntPtr matrix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">matrix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Matrix_free_" data-uid="Pango.Matrix.free*"></a>
+  <h4 id="Pango_Matrix_free_System_IntPtr_" data-uid="Pango.Matrix.free(System.IntPtr)">free(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Free a #PangoMatrix created with pango_matrix_copy().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void free(IntPtr matrix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">matrix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Matrix_get_font_scale_factor_" data-uid="Pango.Matrix.get_font_scale_factor*"></a>
+  <h4 id="Pango_Matrix_get_font_scale_factor_System_IntPtr_" data-uid="Pango.Matrix.get_font_scale_factor(System.IntPtr)">get_font_scale_factor(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the scale factor of a matrix on the height of the font.
+That is, the scale factor in the direction perpendicular to the
+vector that the X coordinate is mapped to.  If the scale in the X
+coordinate is needed as well, use pango_matrix_get_font_scale_factors().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double get_font_scale_factor(IntPtr matrix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">matrix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Matrix_get_font_scale_factors_" data-uid="Pango.Matrix.get_font_scale_factors*"></a>
+  <h4 id="Pango_Matrix_get_font_scale_factors_System_IntPtr_System_Double__System_Double__" data-uid="Pango.Matrix.get_font_scale_factors(System.IntPtr,System.Double@,System.Double@)">get_font_scale_factors(IntPtr, ref Double, ref Double)</h4>
+  <div class="markdown level1 summary"><p>Calculates the scale factor of a matrix on the width and height of the font.
+That is, @xscale is the scale factor in the direction of the X coordinate,
+and @yscale is the scale factor in the direction perpendicular to the
+vector that the X coordinate is mapped to.</p>
+<p>Note that output numbers will always be non-negative.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void get_font_scale_factors(IntPtr matrix, ref double xscale, ref double yscale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">matrix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">xscale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">yscale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Matrix_rotate_" data-uid="Pango.Matrix.rotate*"></a>
+  <h4 id="Pango_Matrix_rotate_System_IntPtr_System_Double_" data-uid="Pango.Matrix.rotate(System.IntPtr,System.Double)">rotate(IntPtr, Double)</h4>
+  <div class="markdown level1 summary"><p>Changes the transformation represented by @matrix to be the
+transformation given by first rotating by @degrees degrees
+counter-clockwise then applying the original transformation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void rotate(IntPtr matrix, double degrees)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">matrix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">degrees</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Matrix_scale_" data-uid="Pango.Matrix.scale*"></a>
+  <h4 id="Pango_Matrix_scale_System_IntPtr_System_Double_System_Double_" data-uid="Pango.Matrix.scale(System.IntPtr,System.Double,System.Double)">scale(IntPtr, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Changes the transformation represented by @matrix to be the
+transformation given by first scaling by @sx in the X direction
+and @sy in the Y direction then applying the original
+transformation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void scale(IntPtr matrix, double scale_x, double scale_y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">matrix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">scale_x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">scale_y</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Matrix_transform_distance_" data-uid="Pango.Matrix.transform_distance*"></a>
+  <h4 id="Pango_Matrix_transform_distance_System_IntPtr_System_Double__System_Double__" data-uid="Pango.Matrix.transform_distance(System.IntPtr,System.Double@,System.Double@)">transform_distance(IntPtr, ref Double, ref Double)</h4>
+  <div class="markdown level1 summary"><p>Transforms the distance vector (@dx,@dy) by @matrix. This is
+similar to pango_matrix_transform_point() except that the translation
+components of the transformation are ignored. The calculation of
+the returned vector is as follows:</p>
+<programlisting>
+dx2 = dx1 * xx + dy1 * xy;
+dy2 = dx1 * yx + dy1 * yy;
+</programlisting>
+<p>Affine transformations are position invariant, so the same vector
+always transforms to the same vector. If (@x1,@y1) transforms
+to (@x2,@y2) then (@x1+@dx1,@y1+@dy1) will transform to
+(@x1+@dx2,@y1+@dy2) for all values of @x1 and @x2.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void transform_distance(IntPtr matrix, ref double dx, ref double dy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">matrix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">dx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">dy</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Matrix_transform_pixel_rectangle_" data-uid="Pango.Matrix.transform_pixel_rectangle*"></a>
+  <h4 id="Pango_Matrix_transform_pixel_rectangle_System_IntPtr_System_IntPtr_" data-uid="Pango.Matrix.transform_pixel_rectangle(System.IntPtr,System.IntPtr)">transform_pixel_rectangle(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>First transforms the @rect using @matrix, then calculates the bounding box
+of the transformed rectangle.  The rectangle should be in device units
+(pixels).</p>
+<p>This function is useful for example when you want to draw a rotated
+@PangoLayout to an image buffer, and want to know how large the image
+should be and how much you should shift the layout when rendering.</p>
+<p>For better accuracy, you should use pango_matrix_transform_rectangle() on
+original rectangle in Pango units and convert to pixels afterward
+using pango_extents_to_pixels()'s first argument.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void transform_pixel_rectangle(IntPtr matrix, IntPtr rect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">matrix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">rect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Matrix_transform_point_" data-uid="Pango.Matrix.transform_point*"></a>
+  <h4 id="Pango_Matrix_transform_point_System_IntPtr_System_Double__System_Double__" data-uid="Pango.Matrix.transform_point(System.IntPtr,System.Double@,System.Double@)">transform_point(IntPtr, ref Double, ref Double)</h4>
+  <div class="markdown level1 summary"><p>Transforms the point (@x, @y) by @matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void transform_point(IntPtr matrix, ref double x, ref double y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">matrix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Matrix_transform_rectangle_" data-uid="Pango.Matrix.transform_rectangle*"></a>
+  <h4 id="Pango_Matrix_transform_rectangle_System_IntPtr_System_IntPtr_" data-uid="Pango.Matrix.transform_rectangle(System.IntPtr,System.IntPtr)">transform_rectangle(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>First transforms @rect using @matrix, then calculates the bounding box
+of the transformed rectangle.  The rectangle should be in Pango units.</p>
+<p>This function is useful for example when you want to draw a rotated
+@PangoLayout to an image buffer, and want to know how large the image
+should be and how much you should shift the layout when rendering.</p>
+<p>If you have a rectangle in device units (pixels), use
+pango_matrix_transform_pixel_rectangle().</p>
+<p>If you have the rectangle in Pango units and want to convert to
+transformed pixel bounding box, it is more accurate to transform it first
+(using this function) and pass the result to pango_extents_to_pixels(),
+first argument, for an inclusive rounded rectangle.
+However, there are valid reasons that you may want to convert
+to pixels first and then transform, for example when the transformed
+coordinates may overflow in Pango units (large matrix translation for
+example).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void transform_rectangle(IntPtr matrix, IntPtr rect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">matrix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">rect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Matrix_translate_" data-uid="Pango.Matrix.translate*"></a>
+  <h4 id="Pango_Matrix_translate_System_IntPtr_System_Double_System_Double_" data-uid="Pango.Matrix.translate(System.IntPtr,System.Double,System.Double)">translate(IntPtr, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Changes the transformation represented by @matrix to be the
+transformation given by first translating by (@tx, @ty)
+then applying the original transformation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void translate(IntPtr matrix, double tx, double ty)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">matrix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">ty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Pango_Matrix.md&amp;value=---%0Auid%3A%20Pango.Matrix%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Pango/Structs/Matrix.Generated.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

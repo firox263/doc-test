@@ -1,0 +1,2866 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FileInfo.Native
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FileInfo.Native
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gio.FileInfo.Native">
+  
+  
+  <h1 id="Gio_FileInfo_Native" data-uid="Gio.FileInfo.Native" class="text-break">Class FileInfo.Native
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">FileInfo.Native</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gio.html">Gio</a></h6>
+  <h6><strong>Assembly</strong>: Gio.dll</h6>
+  <h5 id="Gio_FileInfo_Native_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static class Native</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Gio_FileInfo_Native_clear_status_" data-uid="Gio.FileInfo.Native.clear_status*"></a>
+  <h4 id="Gio_FileInfo_Native_clear_status_System_IntPtr_" data-uid="Gio.FileInfo.Native.clear_status(System.IntPtr)">clear_status(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Clears the status information from @info.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void clear_status(IntPtr info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_copy_into_" data-uid="Gio.FileInfo.Native.copy_into*"></a>
+  <h4 id="Gio_FileInfo_Native_copy_into_System_IntPtr_System_IntPtr_" data-uid="Gio.FileInfo.Native.copy_into(System.IntPtr,System.IntPtr)">copy_into(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>First clears all of the [GFileAttribute][gio-GFileAttribute] of @dest_info,
+and then copies all of the file attributes from @src_info to @dest_info.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void copy_into(IntPtr src_info, IntPtr dest_info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">src_info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">dest_info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_dup_" data-uid="Gio.FileInfo.Native.dup*"></a>
+  <h4 id="Gio_FileInfo_Native_dup_System_IntPtr_" data-uid="Gio.FileInfo.Native.dup(System.IntPtr)">dup(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Duplicates a file info structure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr dup(IntPtr other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_attribute_as_string_" data-uid="Gio.FileInfo.Native.get_attribute_as_string*"></a>
+  <h4 id="Gio_FileInfo_Native_get_attribute_as_string_System_IntPtr_System_String_" data-uid="Gio.FileInfo.Native.get_attribute_as_string(System.IntPtr,System.String)">get_attribute_as_string(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the value of a attribute, formated as a string.
+This escapes things as needed to make the string valid
+UTF-8.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_attribute_as_string(IntPtr info, string attribute)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_attribute_boolean_" data-uid="Gio.FileInfo.Native.get_attribute_boolean*"></a>
+  <h4 id="Gio_FileInfo_Native_get_attribute_boolean_System_IntPtr_System_String_" data-uid="Gio.FileInfo.Native.get_attribute_boolean(System.IntPtr,System.String)">get_attribute_boolean(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the value of a boolean attribute. If the attribute does not
+contain a boolean value, %FALSE will be returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool get_attribute_boolean(IntPtr info, string attribute)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_attribute_byte_string_" data-uid="Gio.FileInfo.Native.get_attribute_byte_string*"></a>
+  <h4 id="Gio_FileInfo_Native_get_attribute_byte_string_System_IntPtr_System_String_" data-uid="Gio.FileInfo.Native.get_attribute_byte_string(System.IntPtr,System.String)">get_attribute_byte_string(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the value of a byte string attribute. If the attribute does
+not contain a byte string, %NULL will be returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_attribute_byte_string(IntPtr info, string attribute)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_attribute_data_" data-uid="Gio.FileInfo.Native.get_attribute_data*"></a>
+  <h4 id="Gio_FileInfo_Native_get_attribute_data_System_IntPtr_System_String_System_IntPtr_System_IntPtr__System_IntPtr_" data-uid="Gio.FileInfo.Native.get_attribute_data(System.IntPtr,System.String,System.IntPtr,System.IntPtr@,System.IntPtr)">get_attribute_data(IntPtr, String, IntPtr, ref IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the attribute type, value and status for an attribute key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool get_attribute_data(IntPtr info, string attribute, IntPtr type, ref IntPtr value_pp, IntPtr status)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">value_pp</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">status</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_attribute_int32_" data-uid="Gio.FileInfo.Native.get_attribute_int32*"></a>
+  <h4 id="Gio_FileInfo_Native_get_attribute_int32_System_IntPtr_System_String_" data-uid="Gio.FileInfo.Native.get_attribute_int32(System.IntPtr,System.String)">get_attribute_int32(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Gets a signed 32-bit integer contained within the attribute. If the
+attribute does not contain a signed 32-bit integer, or is invalid,
+0 will be returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int get_attribute_int32(IntPtr info, string attribute)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_attribute_int64_" data-uid="Gio.FileInfo.Native.get_attribute_int64*"></a>
+  <h4 id="Gio_FileInfo_Native_get_attribute_int64_System_IntPtr_System_String_" data-uid="Gio.FileInfo.Native.get_attribute_int64(System.IntPtr,System.String)">get_attribute_int64(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Gets a signed 64-bit integer contained within the attribute. If the
+attribute does not contain an signed 64-bit integer, or is invalid,
+0 will be returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long get_attribute_int64(IntPtr info, string attribute)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_attribute_object_" data-uid="Gio.FileInfo.Native.get_attribute_object*"></a>
+  <h4 id="Gio_FileInfo_Native_get_attribute_object_System_IntPtr_System_String_" data-uid="Gio.FileInfo.Native.get_attribute_object(System.IntPtr,System.String)">get_attribute_object(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the value of a #GObject attribute. If the attribute does
+not contain a #GObject, %NULL will be returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_attribute_object(IntPtr info, string attribute)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_attribute_status_" data-uid="Gio.FileInfo.Native.get_attribute_status*"></a>
+  <h4 id="Gio_FileInfo_Native_get_attribute_status_System_IntPtr_System_String_" data-uid="Gio.FileInfo.Native.get_attribute_status(System.IntPtr,System.String)">get_attribute_status(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the attribute status for an attribute key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FileAttributeStatus get_attribute_status(IntPtr info, string attribute)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileAttributeStatus.html">FileAttributeStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_attribute_string_" data-uid="Gio.FileInfo.Native.get_attribute_string*"></a>
+  <h4 id="Gio_FileInfo_Native_get_attribute_string_System_IntPtr_System_String_" data-uid="Gio.FileInfo.Native.get_attribute_string(System.IntPtr,System.String)">get_attribute_string(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the value of a string attribute. If the attribute does
+not contain a string, %NULL will be returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_attribute_string(IntPtr info, string attribute)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_attribute_stringv_" data-uid="Gio.FileInfo.Native.get_attribute_stringv*"></a>
+  <h4 id="Gio_FileInfo_Native_get_attribute_stringv_System_IntPtr_System_String_" data-uid="Gio.FileInfo.Native.get_attribute_stringv(System.IntPtr,System.String)">get_attribute_stringv(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the value of a stringv attribute. If the attribute does
+not contain a stringv, %NULL will be returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_attribute_stringv(IntPtr info, string attribute)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_attribute_type_" data-uid="Gio.FileInfo.Native.get_attribute_type*"></a>
+  <h4 id="Gio_FileInfo_Native_get_attribute_type_System_IntPtr_System_String_" data-uid="Gio.FileInfo.Native.get_attribute_type(System.IntPtr,System.String)">get_attribute_type(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the attribute type for an attribute key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FileAttributeType get_attribute_type(IntPtr info, string attribute)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileAttributeType.html">FileAttributeType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_attribute_uint32_" data-uid="Gio.FileInfo.Native.get_attribute_uint32*"></a>
+  <h4 id="Gio_FileInfo_Native_get_attribute_uint32_System_IntPtr_System_String_" data-uid="Gio.FileInfo.Native.get_attribute_uint32(System.IntPtr,System.String)">get_attribute_uint32(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Gets an unsigned 32-bit integer contained within the attribute. If the
+attribute does not contain an unsigned 32-bit integer, or is invalid,
+0 will be returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint get_attribute_uint32(IntPtr info, string attribute)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_attribute_uint64_" data-uid="Gio.FileInfo.Native.get_attribute_uint64*"></a>
+  <h4 id="Gio_FileInfo_Native_get_attribute_uint64_System_IntPtr_System_String_" data-uid="Gio.FileInfo.Native.get_attribute_uint64(System.IntPtr,System.String)">get_attribute_uint64(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Gets a unsigned 64-bit integer contained within the attribute. If the
+attribute does not contain an unsigned 64-bit integer, or is invalid,
+0 will be returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong get_attribute_uint64(IntPtr info, string attribute)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_content_type_" data-uid="Gio.FileInfo.Native.get_content_type*"></a>
+  <h4 id="Gio_FileInfo_Native_get_content_type_System_IntPtr_" data-uid="Gio.FileInfo.Native.get_content_type(System.IntPtr)">get_content_type(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the file's content type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_content_type(IntPtr info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_deletion_date_" data-uid="Gio.FileInfo.Native.get_deletion_date*"></a>
+  <h4 id="Gio_FileInfo_Native_get_deletion_date_System_IntPtr_" data-uid="Gio.FileInfo.Native.get_deletion_date(System.IntPtr)">get_deletion_date(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the #GDateTime representing the deletion date of the file, as
+available in G_FILE_ATTRIBUTE_TRASH_DELETION_DATE. If the
+G_FILE_ATTRIBUTE_TRASH_DELETION_DATE attribute is unset, %NULL is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_deletion_date(IntPtr info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_display_name_" data-uid="Gio.FileInfo.Native.get_display_name*"></a>
+  <h4 id="Gio_FileInfo_Native_get_display_name_System_IntPtr_" data-uid="Gio.FileInfo.Native.get_display_name(System.IntPtr)">get_display_name(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets a display name for a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_display_name(IntPtr info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_edit_name_" data-uid="Gio.FileInfo.Native.get_edit_name*"></a>
+  <h4 id="Gio_FileInfo_Native_get_edit_name_System_IntPtr_" data-uid="Gio.FileInfo.Native.get_edit_name(System.IntPtr)">get_edit_name(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the edit name for a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_edit_name(IntPtr info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_etag_" data-uid="Gio.FileInfo.Native.get_etag*"></a>
+  <h4 id="Gio_FileInfo_Native_get_etag_System_IntPtr_" data-uid="Gio.FileInfo.Native.get_etag(System.IntPtr)">get_etag(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the [entity tag][gfile-etag] for a given
+#GFileInfo. See %G_FILE_ATTRIBUTE_ETAG_VALUE.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_etag(IntPtr info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_file_type_" data-uid="Gio.FileInfo.Native.get_file_type*"></a>
+  <h4 id="Gio_FileInfo_Native_get_file_type_System_IntPtr_" data-uid="Gio.FileInfo.Native.get_file_type(System.IntPtr)">get_file_type(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets a file's type (whether it is a regular file, symlink, etc).
+This is different from the file's content type, see g_file_info_get_content_type().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FileType get_file_type(IntPtr info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileType.html">FileType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_icon_" data-uid="Gio.FileInfo.Native.get_icon*"></a>
+  <h4 id="Gio_FileInfo_Native_get_icon_System_IntPtr_" data-uid="Gio.FileInfo.Native.get_icon(System.IntPtr)">get_icon(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the icon for a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_icon(IntPtr info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_is_backup_" data-uid="Gio.FileInfo.Native.get_is_backup*"></a>
+  <h4 id="Gio_FileInfo_Native_get_is_backup_System_IntPtr_" data-uid="Gio.FileInfo.Native.get_is_backup(System.IntPtr)">get_is_backup(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Checks if a file is a backup file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool get_is_backup(IntPtr info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_is_hidden_" data-uid="Gio.FileInfo.Native.get_is_hidden*"></a>
+  <h4 id="Gio_FileInfo_Native_get_is_hidden_System_IntPtr_" data-uid="Gio.FileInfo.Native.get_is_hidden(System.IntPtr)">get_is_hidden(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Checks if a file is hidden.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool get_is_hidden(IntPtr info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_is_symlink_" data-uid="Gio.FileInfo.Native.get_is_symlink*"></a>
+  <h4 id="Gio_FileInfo_Native_get_is_symlink_System_IntPtr_" data-uid="Gio.FileInfo.Native.get_is_symlink(System.IntPtr)">get_is_symlink(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Checks if a file is a symlink.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool get_is_symlink(IntPtr info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_modification_date_time_" data-uid="Gio.FileInfo.Native.get_modification_date_time*"></a>
+  <h4 id="Gio_FileInfo_Native_get_modification_date_time_System_IntPtr_" data-uid="Gio.FileInfo.Native.get_modification_date_time(System.IntPtr)">get_modification_date_time(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the modification time of the current @info and returns it as a
+#GDateTime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_modification_date_time(IntPtr info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_modification_time_" data-uid="Gio.FileInfo.Native.get_modification_time*"></a>
+  <h4 id="Gio_FileInfo_Native_get_modification_time_System_IntPtr_System_IntPtr_" data-uid="Gio.FileInfo.Native.get_modification_time(System.IntPtr,System.IntPtr)">get_modification_time(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the modification time of the current @info and sets it
+in @result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use g_file_info_get_modification_date_time() instead, as   #GTimeVal is deprecated due to the year 2038 problem.&quot;)]
+public static void get_modification_time(IntPtr info, IntPtr result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_name_" data-uid="Gio.FileInfo.Native.get_name*"></a>
+  <h4 id="Gio_FileInfo_Native_get_name_System_IntPtr_" data-uid="Gio.FileInfo.Native.get_name(System.IntPtr)">get_name(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the name for a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_name(IntPtr info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_size_" data-uid="Gio.FileInfo.Native.get_size*"></a>
+  <h4 id="Gio_FileInfo_Native_get_size_System_IntPtr_" data-uid="Gio.FileInfo.Native.get_size(System.IntPtr)">get_size(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the file's size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long get_size(IntPtr info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_sort_order_" data-uid="Gio.FileInfo.Native.get_sort_order*"></a>
+  <h4 id="Gio_FileInfo_Native_get_sort_order_System_IntPtr_" data-uid="Gio.FileInfo.Native.get_sort_order(System.IntPtr)">get_sort_order(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the value of the sort_order attribute from the #GFileInfo.
+See %G_FILE_ATTRIBUTE_STANDARD_SORT_ORDER.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int get_sort_order(IntPtr info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_symbolic_icon_" data-uid="Gio.FileInfo.Native.get_symbolic_icon*"></a>
+  <h4 id="Gio_FileInfo_Native_get_symbolic_icon_System_IntPtr_" data-uid="Gio.FileInfo.Native.get_symbolic_icon(System.IntPtr)">get_symbolic_icon(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the symbolic icon for a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_symbolic_icon(IntPtr info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_symlink_target_" data-uid="Gio.FileInfo.Native.get_symlink_target*"></a>
+  <h4 id="Gio_FileInfo_Native_get_symlink_target_System_IntPtr_" data-uid="Gio.FileInfo.Native.get_symlink_target(System.IntPtr)">get_symlink_target(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the symlink target for a given #GFileInfo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_symlink_target(IntPtr info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_get_type_" data-uid="Gio.FileInfo.Native.get_type*"></a>
+  <h4 id="Gio_FileInfo_Native_get_type" data-uid="Gio.FileInfo.Native.get_type">get_type()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong get_type()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_has_attribute_" data-uid="Gio.FileInfo.Native.has_attribute*"></a>
+  <h4 id="Gio_FileInfo_Native_has_attribute_System_IntPtr_System_String_" data-uid="Gio.FileInfo.Native.has_attribute(System.IntPtr,System.String)">has_attribute(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Checks if a file info structure has an attribute named @attribute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool has_attribute(IntPtr info, string attribute)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_has_namespace_" data-uid="Gio.FileInfo.Native.has_namespace*"></a>
+  <h4 id="Gio_FileInfo_Native_has_namespace_System_IntPtr_System_String_" data-uid="Gio.FileInfo.Native.has_namespace(System.IntPtr,System.String)">has_namespace(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Checks if a file info structure has an attribute in the
+specified @name_space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool has_namespace(IntPtr info, string name_space)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name_space</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_list_attributes_" data-uid="Gio.FileInfo.Native.list_attributes*"></a>
+  <h4 id="Gio_FileInfo_Native_list_attributes_System_IntPtr_System_String_" data-uid="Gio.FileInfo.Native.list_attributes(System.IntPtr,System.String)">list_attributes(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Lists the file info structure's attributes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr list_attributes(IntPtr info, string name_space)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name_space</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_new_" data-uid="Gio.FileInfo.Native.new*"></a>
+  <h4 id="Gio_FileInfo_Native_new" data-uid="Gio.FileInfo.Native.new">new()</h4>
+  <div class="markdown level1 summary"><p>Creates a new file info structure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr new()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_remove_attribute_" data-uid="Gio.FileInfo.Native.remove_attribute*"></a>
+  <h4 id="Gio_FileInfo_Native_remove_attribute_System_IntPtr_System_String_" data-uid="Gio.FileInfo.Native.remove_attribute(System.IntPtr,System.String)">remove_attribute(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Removes all cases of @attribute from @info if it exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void remove_attribute(IntPtr info, string attribute)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_attribute_" data-uid="Gio.FileInfo.Native.set_attribute*"></a>
+  <h4 id="Gio_FileInfo_Native_set_attribute_System_IntPtr_System_String_Gio_FileAttributeType_System_IntPtr_" data-uid="Gio.FileInfo.Native.set_attribute(System.IntPtr,System.String,Gio.FileAttributeType,System.IntPtr)">set_attribute(IntPtr, String, FileAttributeType, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets the @attribute to contain the given value, if possible. To unset the
+attribute, use %G_FILE_ATTRIBUTE_TYPE_INVALID for @type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_attribute(IntPtr info, string attribute, FileAttributeType type, IntPtr value_p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.FileAttributeType.html">FileAttributeType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">value_p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_attribute_boolean_" data-uid="Gio.FileInfo.Native.set_attribute_boolean*"></a>
+  <h4 id="Gio_FileInfo_Native_set_attribute_boolean_System_IntPtr_System_String_System_Boolean_" data-uid="Gio.FileInfo.Native.set_attribute_boolean(System.IntPtr,System.String,System.Boolean)">set_attribute_boolean(IntPtr, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets the @attribute to contain the given @attr_value,
+if possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_attribute_boolean(IntPtr info, string attribute, bool attr_value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">attr_value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_attribute_byte_string_" data-uid="Gio.FileInfo.Native.set_attribute_byte_string*"></a>
+  <h4 id="Gio_FileInfo_Native_set_attribute_byte_string_System_IntPtr_System_String_System_String_" data-uid="Gio.FileInfo.Native.set_attribute_byte_string(System.IntPtr,System.String,System.String)">set_attribute_byte_string(IntPtr, String, String)</h4>
+  <div class="markdown level1 summary"><p>Sets the @attribute to contain the given @attr_value,
+if possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_attribute_byte_string(IntPtr info, string attribute, string attr_value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attr_value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_attribute_int32_" data-uid="Gio.FileInfo.Native.set_attribute_int32*"></a>
+  <h4 id="Gio_FileInfo_Native_set_attribute_int32_System_IntPtr_System_String_System_Int32_" data-uid="Gio.FileInfo.Native.set_attribute_int32(System.IntPtr,System.String,System.Int32)">set_attribute_int32(IntPtr, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the @attribute to contain the given @attr_value,
+if possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_attribute_int32(IntPtr info, string attribute, int attr_value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">attr_value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_attribute_int64_" data-uid="Gio.FileInfo.Native.set_attribute_int64*"></a>
+  <h4 id="Gio_FileInfo_Native_set_attribute_int64_System_IntPtr_System_String_System_Int64_" data-uid="Gio.FileInfo.Native.set_attribute_int64(System.IntPtr,System.String,System.Int64)">set_attribute_int64(IntPtr, String, Int64)</h4>
+  <div class="markdown level1 summary"><p>Sets the @attribute to contain the given @attr_value,
+if possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_attribute_int64(IntPtr info, string attribute, long attr_value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">attr_value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_attribute_mask_" data-uid="Gio.FileInfo.Native.set_attribute_mask*"></a>
+  <h4 id="Gio_FileInfo_Native_set_attribute_mask_System_IntPtr_System_IntPtr_" data-uid="Gio.FileInfo.Native.set_attribute_mask(System.IntPtr,System.IntPtr)">set_attribute_mask(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets @mask on @info to match specific attribute types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_attribute_mask(IntPtr info, IntPtr mask)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">mask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_attribute_object_" data-uid="Gio.FileInfo.Native.set_attribute_object*"></a>
+  <h4 id="Gio_FileInfo_Native_set_attribute_object_System_IntPtr_System_String_System_IntPtr_" data-uid="Gio.FileInfo.Native.set_attribute_object(System.IntPtr,System.String,System.IntPtr)">set_attribute_object(IntPtr, String, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets the @attribute to contain the given @attr_value,
+if possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_attribute_object(IntPtr info, string attribute, IntPtr attr_value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">attr_value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_attribute_status_" data-uid="Gio.FileInfo.Native.set_attribute_status*"></a>
+  <h4 id="Gio_FileInfo_Native_set_attribute_status_System_IntPtr_System_String_Gio_FileAttributeStatus_" data-uid="Gio.FileInfo.Native.set_attribute_status(System.IntPtr,System.String,Gio.FileAttributeStatus)">set_attribute_status(IntPtr, String, FileAttributeStatus)</h4>
+  <div class="markdown level1 summary"><p>Sets the attribute status for an attribute key. This is only
+needed by external code that implement g_file_set_attributes_from_info()
+or similar functions.</p>
+<p>The attribute must exist in @info for this to work. Otherwise %FALSE
+is returned and @info is unchanged.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool set_attribute_status(IntPtr info, string attribute, FileAttributeStatus status)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.FileAttributeStatus.html">FileAttributeStatus</a></td>
+        <td><span class="parametername">status</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_attribute_string_" data-uid="Gio.FileInfo.Native.set_attribute_string*"></a>
+  <h4 id="Gio_FileInfo_Native_set_attribute_string_System_IntPtr_System_String_System_String_" data-uid="Gio.FileInfo.Native.set_attribute_string(System.IntPtr,System.String,System.String)">set_attribute_string(IntPtr, String, String)</h4>
+  <div class="markdown level1 summary"><p>Sets the @attribute to contain the given @attr_value,
+if possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_attribute_string(IntPtr info, string attribute, string attr_value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attr_value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_attribute_stringv_" data-uid="Gio.FileInfo.Native.set_attribute_stringv*"></a>
+  <h4 id="Gio_FileInfo_Native_set_attribute_stringv_System_IntPtr_System_String_System_IntPtr__" data-uid="Gio.FileInfo.Native.set_attribute_stringv(System.IntPtr,System.String,System.IntPtr@)">set_attribute_stringv(IntPtr, String, ref IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets the @attribute to contain the given @attr_value,
+if possible.</p>
+<p>Sinze: 2.22</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_attribute_stringv(IntPtr info, string attribute, ref IntPtr attr_value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">attr_value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_attribute_uint32_" data-uid="Gio.FileInfo.Native.set_attribute_uint32*"></a>
+  <h4 id="Gio_FileInfo_Native_set_attribute_uint32_System_IntPtr_System_String_System_UInt32_" data-uid="Gio.FileInfo.Native.set_attribute_uint32(System.IntPtr,System.String,System.UInt32)">set_attribute_uint32(IntPtr, String, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Sets the @attribute to contain the given @attr_value,
+if possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_attribute_uint32(IntPtr info, string attribute, uint attr_value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">attr_value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_attribute_uint64_" data-uid="Gio.FileInfo.Native.set_attribute_uint64*"></a>
+  <h4 id="Gio_FileInfo_Native_set_attribute_uint64_System_IntPtr_System_String_System_UInt64_" data-uid="Gio.FileInfo.Native.set_attribute_uint64(System.IntPtr,System.String,System.UInt64)">set_attribute_uint64(IntPtr, String, UInt64)</h4>
+  <div class="markdown level1 summary"><p>Sets the @attribute to contain the given @attr_value,
+if possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_attribute_uint64(IntPtr info, string attribute, ulong attr_value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">attr_value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_content_type_" data-uid="Gio.FileInfo.Native.set_content_type*"></a>
+  <h4 id="Gio_FileInfo_Native_set_content_type_System_IntPtr_System_String_" data-uid="Gio.FileInfo.Native.set_content_type(System.IntPtr,System.String)">set_content_type(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Sets the content type attribute for a given #GFileInfo.
+See %G_FILE_ATTRIBUTE_STANDARD_CONTENT_TYPE.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_content_type(IntPtr info, string content_type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">content_type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_display_name_" data-uid="Gio.FileInfo.Native.set_display_name*"></a>
+  <h4 id="Gio_FileInfo_Native_set_display_name_System_IntPtr_System_String_" data-uid="Gio.FileInfo.Native.set_display_name(System.IntPtr,System.String)">set_display_name(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Sets the display name for the current #GFileInfo.
+See %G_FILE_ATTRIBUTE_STANDARD_DISPLAY_NAME.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_display_name(IntPtr info, string display_name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">display_name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_edit_name_" data-uid="Gio.FileInfo.Native.set_edit_name*"></a>
+  <h4 id="Gio_FileInfo_Native_set_edit_name_System_IntPtr_System_String_" data-uid="Gio.FileInfo.Native.set_edit_name(System.IntPtr,System.String)">set_edit_name(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Sets the edit name for the current file.
+See %G_FILE_ATTRIBUTE_STANDARD_EDIT_NAME.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_edit_name(IntPtr info, string edit_name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">edit_name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_file_type_" data-uid="Gio.FileInfo.Native.set_file_type*"></a>
+  <h4 id="Gio_FileInfo_Native_set_file_type_System_IntPtr_Gio_FileType_" data-uid="Gio.FileInfo.Native.set_file_type(System.IntPtr,Gio.FileType)">set_file_type(IntPtr, FileType)</h4>
+  <div class="markdown level1 summary"><p>Sets the file type in a #GFileInfo to @type.
+See %G_FILE_ATTRIBUTE_STANDARD_TYPE.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_file_type(IntPtr info, FileType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.FileType.html">FileType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_icon_" data-uid="Gio.FileInfo.Native.set_icon*"></a>
+  <h4 id="Gio_FileInfo_Native_set_icon_System_IntPtr_System_IntPtr_" data-uid="Gio.FileInfo.Native.set_icon(System.IntPtr,System.IntPtr)">set_icon(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets the icon for a given #GFileInfo.
+See %G_FILE_ATTRIBUTE_STANDARD_ICON.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_icon(IntPtr info, IntPtr icon)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_is_hidden_" data-uid="Gio.FileInfo.Native.set_is_hidden*"></a>
+  <h4 id="Gio_FileInfo_Native_set_is_hidden_System_IntPtr_System_Boolean_" data-uid="Gio.FileInfo.Native.set_is_hidden(System.IntPtr,System.Boolean)">set_is_hidden(IntPtr, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets the &quot;is_hidden&quot; attribute in a #GFileInfo according to @is_hidden.
+See %G_FILE_ATTRIBUTE_STANDARD_IS_HIDDEN.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_is_hidden(IntPtr info, bool is_hidden)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">is_hidden</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_is_symlink_" data-uid="Gio.FileInfo.Native.set_is_symlink*"></a>
+  <h4 id="Gio_FileInfo_Native_set_is_symlink_System_IntPtr_System_Boolean_" data-uid="Gio.FileInfo.Native.set_is_symlink(System.IntPtr,System.Boolean)">set_is_symlink(IntPtr, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets the &quot;is_symlink&quot; attribute in a #GFileInfo according to @is_symlink.
+See %G_FILE_ATTRIBUTE_STANDARD_IS_SYMLINK.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_is_symlink(IntPtr info, bool is_symlink)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">is_symlink</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_modification_date_time_" data-uid="Gio.FileInfo.Native.set_modification_date_time*"></a>
+  <h4 id="Gio_FileInfo_Native_set_modification_date_time_System_IntPtr_System_IntPtr_" data-uid="Gio.FileInfo.Native.set_modification_date_time(System.IntPtr,System.IntPtr)">set_modification_date_time(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets the %G_FILE_ATTRIBUTE_TIME_MODIFIED attribute in the file
+info to the given date/time value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_modification_date_time(IntPtr info, IntPtr mtime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">mtime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_modification_time_" data-uid="Gio.FileInfo.Native.set_modification_time*"></a>
+  <h4 id="Gio_FileInfo_Native_set_modification_time_System_IntPtr_System_IntPtr_" data-uid="Gio.FileInfo.Native.set_modification_time(System.IntPtr,System.IntPtr)">set_modification_time(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets the %G_FILE_ATTRIBUTE_TIME_MODIFIED attribute in the file
+info to the given time value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use g_file_info_set_modification_date_time() instead, as   #GTimeVal is deprecated due to the year 2038 problem.&quot;)]
+public static void set_modification_time(IntPtr info, IntPtr mtime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">mtime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_name_" data-uid="Gio.FileInfo.Native.set_name*"></a>
+  <h4 id="Gio_FileInfo_Native_set_name_System_IntPtr_System_String_" data-uid="Gio.FileInfo.Native.set_name(System.IntPtr,System.String)">set_name(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Sets the name attribute for the current #GFileInfo.
+See %G_FILE_ATTRIBUTE_STANDARD_NAME.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_name(IntPtr info, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_size_" data-uid="Gio.FileInfo.Native.set_size*"></a>
+  <h4 id="Gio_FileInfo_Native_set_size_System_IntPtr_System_Int64_" data-uid="Gio.FileInfo.Native.set_size(System.IntPtr,System.Int64)">set_size(IntPtr, Int64)</h4>
+  <div class="markdown level1 summary"><p>Sets the %G_FILE_ATTRIBUTE_STANDARD_SIZE attribute in the file info
+to the given size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_size(IntPtr info, long size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_sort_order_" data-uid="Gio.FileInfo.Native.set_sort_order*"></a>
+  <h4 id="Gio_FileInfo_Native_set_sort_order_System_IntPtr_System_Int32_" data-uid="Gio.FileInfo.Native.set_sort_order(System.IntPtr,System.Int32)">set_sort_order(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the sort order attribute in the file info structure. See
+%G_FILE_ATTRIBUTE_STANDARD_SORT_ORDER.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_sort_order(IntPtr info, int sort_order)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sort_order</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_symbolic_icon_" data-uid="Gio.FileInfo.Native.set_symbolic_icon*"></a>
+  <h4 id="Gio_FileInfo_Native_set_symbolic_icon_System_IntPtr_System_IntPtr_" data-uid="Gio.FileInfo.Native.set_symbolic_icon(System.IntPtr,System.IntPtr)">set_symbolic_icon(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets the symbolic icon for a given #GFileInfo.
+See %G_FILE_ATTRIBUTE_STANDARD_SYMBOLIC_ICON.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_symbolic_icon(IntPtr info, IntPtr icon)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_set_symlink_target_" data-uid="Gio.FileInfo.Native.set_symlink_target*"></a>
+  <h4 id="Gio_FileInfo_Native_set_symlink_target_System_IntPtr_System_String_" data-uid="Gio.FileInfo.Native.set_symlink_target(System.IntPtr,System.String)">set_symlink_target(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Sets the %G_FILE_ATTRIBUTE_STANDARD_SYMLINK_TARGET attribute in the file info
+to the given symlink target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_symlink_target(IntPtr info, string symlink_target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">symlink_target</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_FileInfo_Native_unset_attribute_mask_" data-uid="Gio.FileInfo.Native.unset_attribute_mask*"></a>
+  <h4 id="Gio_FileInfo_Native_unset_attribute_mask_System_IntPtr_" data-uid="Gio.FileInfo.Native.unset_attribute_mask(System.IntPtr)">unset_attribute_mask(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Unsets a mask set by g_file_info_set_attribute_mask(), if one
+is set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void unset_attribute_mask(IntPtr info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_FileInfo_Native.md&amp;value=---%0Auid%3A%20Gio.FileInfo.Native%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/FileInfo.Generated.cs/#L32" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

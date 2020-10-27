@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Description: General information </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Description: General information ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="description-general-information">Description: General information</h2>
+
+<p>Currently there are multiple libraries supported to integrate deeply into linux: <a href="#gtk">Gtk</a>, <a href="#webkitgtk">WebkitGTK</a>, <a href="#libchamplain">Libchamplain</a>, <a href="#libhandy">libhandy</a>, <a href="#gio">GIO</a>, <a href="#gstreamer">gstreamer</a>.</p>
+<h2 id="gtk">GTK</h2>
+<p><a href="https://gtk.org">Gtk</a> is the toolkit which is used to display windows and widgets on the screen. The widgets can be added directly in code or described through an xml file.</p>
+<p>Supported widgets are for example: Windows, dialogs, lables, images, spinner, progressbars, several buttons and switches, textboxes, tables,  lists, menus, toolbars, popovers, and much more. It powers several linux desktops like <a href="https://gnome.org">Gnome</a> and <a href="https://xfce.org">Xfce</a> and applications like <a href="https://gimp.org">Gimp</a>.</p>
+<h2 id="webkitgtk">WebkitGTK</h2>
+<p><a href="https://webkitgtk.org/">WebkitGTK</a> is a browser component for GTK and can be used to embed the webkit webengine into an application as a widget. There is support for the web inspector and several settings to tweak the webview to your needs.</p>
+<p>The bindings make it easy to:</p>
+<ul>
+<li>Embed javascript into a webpage</li>
+<li>Call a javascript function</li>
+<li>Callback from the webpage into the C# code.</li>
+</ul>
+<h2 id="libchamplain">Libchamplain</h2>
+<p><a href="https://wiki.gnome.org/Projects/libchamplain">Libchamplain</a> is map component for GTK and can be used to embed maps into an application widget. By default it uses openstreetmap.</p>
+<h2 id="libhandy">libhandy</h2>
+<p><a href="https://source.puri.sm/Librem5/libhandy">libhandy</a> extends GTK with new widgets, to support mobile devices. Meaning full blown applications automatically adopt their UI to different view modes,if the available space changes.</p>
+<p>One widget of this library is the <em>Paginator</em> which is shown in the pictures above. It allows to swipe through widgets and is used to switch between the webpage and maps control.</p>
+<h2 id="gio">GIO</h2>
+<p><a href="https://developer.gnome.org/gio/stable/">GIO</a> is a library to allow easy access to input / output operations. Currently there is initial support for <a href="https://www.freedesktop.org/wiki/Software/dbus/">DBus</a> operations. DBus is a standardized IPC-Framework which all major linux desktops use for interprocess communication.</p>
+<h2 id="gstreamer">Gstreamer</h2>
+<p><a href="https://gstreamer.freedesktop.org/">Gstreamer</a> is a multimedia library to play back various media format via a flexible pipelining system. The code to playback a movie is in the <a href="https://github.com/gircore/gir.core/blob/develop/Samples/Gst/Play.cs">samples</a>.
+(Homepage of the free movie: <a href="https://mango.blender.org/">https://mango.blender.org/</a>)</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/docs/articles/libraries.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

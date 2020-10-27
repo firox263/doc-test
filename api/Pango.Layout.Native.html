@@ -1,0 +1,2700 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Layout.Native
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Layout.Native
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Pango.Layout.Native">
+  
+  
+  <h1 id="Pango_Layout_Native" data-uid="Pango.Layout.Native" class="text-break">Class Layout.Native
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Layout.Native</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Pango.html">Pango</a></h6>
+  <h6><strong>Assembly</strong>: Pango.dll</h6>
+  <h5 id="Pango_Layout_Native_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static class Native</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Pango_Layout_Native_context_changed_" data-uid="Pango.Layout.Native.context_changed*"></a>
+  <h4 id="Pango_Layout_Native_context_changed_System_IntPtr_" data-uid="Pango.Layout.Native.context_changed(System.IntPtr)">context_changed(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Forces recomputation of any state in the #PangoLayout that
+might depend on the layout's context. This function should
+be called if you make changes to the context subsequent
+to creating the layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void context_changed(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_copy_" data-uid="Pango.Layout.Native.copy*"></a>
+  <h4 id="Pango_Layout_Native_copy_System_IntPtr_" data-uid="Pango.Layout.Native.copy(System.IntPtr)">copy(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Does a deep copy-by-value of the @src layout. The attribute list,
+tab array, and text from the original layout are all copied by
+value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr copy(IntPtr src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_alignment_" data-uid="Pango.Layout.Native.get_alignment*"></a>
+  <h4 id="Pango_Layout_Native_get_alignment_System_IntPtr_" data-uid="Pango.Layout.Native.get_alignment(System.IntPtr)">get_alignment(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the alignment for the layout: how partial lines are
+positioned within the horizontal space available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Alignment get_alignment(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pango.Alignment.html">Alignment</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_attributes_" data-uid="Pango.Layout.Native.get_attributes*"></a>
+  <h4 id="Pango_Layout_Native_get_attributes_System_IntPtr_" data-uid="Pango.Layout.Native.get_attributes(System.IntPtr)">get_attributes(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the attribute list for the layout, if any.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_attributes(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_auto_dir_" data-uid="Pango.Layout.Native.get_auto_dir*"></a>
+  <h4 id="Pango_Layout_Native_get_auto_dir_System_IntPtr_" data-uid="Pango.Layout.Native.get_auto_dir(System.IntPtr)">get_auto_dir(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets whether to calculate the bidirectional base direction
+for the layout according to the contents of the layout.
+See pango_layout_set_auto_dir().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool get_auto_dir(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_baseline_" data-uid="Pango.Layout.Native.get_baseline*"></a>
+  <h4 id="Pango_Layout_Native_get_baseline_System_IntPtr_" data-uid="Pango.Layout.Native.get_baseline(System.IntPtr)">get_baseline(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the Y position of baseline of the first line in @layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int get_baseline(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_character_count_" data-uid="Pango.Layout.Native.get_character_count*"></a>
+  <h4 id="Pango_Layout_Native_get_character_count_System_IntPtr_" data-uid="Pango.Layout.Native.get_character_count(System.IntPtr)">get_character_count(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the number of Unicode characters in the
+the text of @layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int get_character_count(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_context_" data-uid="Pango.Layout.Native.get_context*"></a>
+  <h4 id="Pango_Layout_Native_get_context_System_IntPtr_" data-uid="Pango.Layout.Native.get_context(System.IntPtr)">get_context(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the #PangoContext used for this layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_context(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_cursor_pos_" data-uid="Pango.Layout.Native.get_cursor_pos*"></a>
+  <h4 id="Pango_Layout_Native_get_cursor_pos_System_IntPtr_System_Int32_System_IntPtr_System_IntPtr_" data-uid="Pango.Layout.Native.get_cursor_pos(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)">get_cursor_pos(IntPtr, Int32, IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Given an index within a layout, determines the positions that of the
+strong and weak cursors if the insertion point is at that
+index. The position of each cursor is stored as a zero-width
+rectangle. The strong cursor location is the location where
+characters of the directionality equal to the base direction of the
+layout are inserted.  The weak cursor location is the location
+where characters of the directionality opposite to the base
+direction of the layout are inserted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void get_cursor_pos(IntPtr layout, int index_, IntPtr strong_pos, IntPtr weak_pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index_</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">strong_pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">weak_pos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_ellipsize_" data-uid="Pango.Layout.Native.get_ellipsize*"></a>
+  <h4 id="Pango_Layout_Native_get_ellipsize_System_IntPtr_" data-uid="Pango.Layout.Native.get_ellipsize(System.IntPtr)">get_ellipsize(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the type of ellipsization being performed for @layout.
+See pango_layout_set_ellipsize()</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EllipsizeMode get_ellipsize(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pango.EllipsizeMode.html">EllipsizeMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_extents_" data-uid="Pango.Layout.Native.get_extents*"></a>
+  <h4 id="Pango_Layout_Native_get_extents_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="Pango.Layout.Native.get_extents(System.IntPtr,System.IntPtr,System.IntPtr)">get_extents(IntPtr, IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Computes the logical and ink extents of @layout. Logical extents
+are usually what you want for positioning things.  Note that both extents
+may have non-zero x and y.  You may want to use those to offset where you
+render the layout.  Not doing that is a very typical bug that shows up as
+right-to-left layouts not being correctly positioned in a layout with
+a set width.</p>
+<p>The extents are given in layout coordinates and in Pango units; layout
+coordinates begin at the top left corner of the layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void get_extents(IntPtr layout, IntPtr ink_rect, IntPtr logical_rect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">ink_rect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">logical_rect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_font_description_" data-uid="Pango.Layout.Native.get_font_description*"></a>
+  <h4 id="Pango_Layout_Native_get_font_description_System_IntPtr_" data-uid="Pango.Layout.Native.get_font_description(System.IntPtr)">get_font_description(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the font description for the layout, if any.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_font_description(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_height_" data-uid="Pango.Layout.Native.get_height*"></a>
+  <h4 id="Pango_Layout_Native_get_height_System_IntPtr_" data-uid="Pango.Layout.Native.get_height(System.IntPtr)">get_height(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the height of layout used for ellipsization.  See
+pango_layout_set_height() for details.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int get_height(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_indent_" data-uid="Pango.Layout.Native.get_indent*"></a>
+  <h4 id="Pango_Layout_Native_get_indent_System_IntPtr_" data-uid="Pango.Layout.Native.get_indent(System.IntPtr)">get_indent(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the paragraph indent width in Pango units. A negative value
+indicates a hanging indentation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int get_indent(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_iter_" data-uid="Pango.Layout.Native.get_iter*"></a>
+  <h4 id="Pango_Layout_Native_get_iter_System_IntPtr_" data-uid="Pango.Layout.Native.get_iter(System.IntPtr)">get_iter(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns an iterator to iterate over the visual extents of the layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_iter(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_justify_" data-uid="Pango.Layout.Native.get_justify*"></a>
+  <h4 id="Pango_Layout_Native_get_justify_System_IntPtr_" data-uid="Pango.Layout.Native.get_justify(System.IntPtr)">get_justify(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets whether each complete line should be stretched to fill the entire
+width of the layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool get_justify(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_line_" data-uid="Pango.Layout.Native.get_line*"></a>
+  <h4 id="Pango_Layout_Native_get_line_System_IntPtr_System_Int32_" data-uid="Pango.Layout.Native.get_line(System.IntPtr,System.Int32)">get_line(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Retrieves a particular line from a #PangoLayout.</p>
+<p>Use the faster pango_layout_get_line_readonly() if you do not plan
+to modify the contents of the line (glyphs, glyph widths, etc.).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_line(IntPtr layout, int line)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">line</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_line_count_" data-uid="Pango.Layout.Native.get_line_count*"></a>
+  <h4 id="Pango_Layout_Native_get_line_count_System_IntPtr_" data-uid="Pango.Layout.Native.get_line_count(System.IntPtr)">get_line_count(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the count of lines for the @layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int get_line_count(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_line_readonly_" data-uid="Pango.Layout.Native.get_line_readonly*"></a>
+  <h4 id="Pango_Layout_Native_get_line_readonly_System_IntPtr_System_Int32_" data-uid="Pango.Layout.Native.get_line_readonly(System.IntPtr,System.Int32)">get_line_readonly(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Retrieves a particular line from a #PangoLayout.</p>
+<p>This is a faster alternative to pango_layout_get_line(),
+but the user is not expected
+to modify the contents of the line (glyphs, glyph widths, etc.).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_line_readonly(IntPtr layout, int line)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">line</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_lines_" data-uid="Pango.Layout.Native.get_lines*"></a>
+  <h4 id="Pango_Layout_Native_get_lines_System_IntPtr_" data-uid="Pango.Layout.Native.get_lines(System.IntPtr)">get_lines(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the lines of the @layout as a list.</p>
+<p>Use the faster pango_layout_get_lines_readonly() if you do not plan
+to modify the contents of the lines (glyphs, glyph widths, etc.).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_lines(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_lines_readonly_" data-uid="Pango.Layout.Native.get_lines_readonly*"></a>
+  <h4 id="Pango_Layout_Native_get_lines_readonly_System_IntPtr_" data-uid="Pango.Layout.Native.get_lines_readonly(System.IntPtr)">get_lines_readonly(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the lines of the @layout as a list.</p>
+<p>This is a faster alternative to pango_layout_get_lines(),
+but the user is not expected
+to modify the contents of the lines (glyphs, glyph widths, etc.).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_lines_readonly(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_log_attrs_" data-uid="Pango.Layout.Native.get_log_attrs*"></a>
+  <h4 id="Pango_Layout_Native_get_log_attrs_System_IntPtr_System_IntPtr__System_Int32__" data-uid="Pango.Layout.Native.get_log_attrs(System.IntPtr,System.IntPtr@,System.Int32@)">get_log_attrs(IntPtr, ref IntPtr, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Retrieves an array of logical attributes for each character in
+the @layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void get_log_attrs(IntPtr layout, ref IntPtr attrs, ref int n_attrs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">attrs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n_attrs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_log_attrs_readonly_" data-uid="Pango.Layout.Native.get_log_attrs_readonly*"></a>
+  <h4 id="Pango_Layout_Native_get_log_attrs_readonly_System_IntPtr_System_Int32__" data-uid="Pango.Layout.Native.get_log_attrs_readonly(System.IntPtr,System.Int32@)">get_log_attrs_readonly(IntPtr, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Retrieves an array of logical attributes for each character in
+the @layout.</p>
+<p>This is a faster alternative to pango_layout_get_log_attrs().
+The returned array is part of @layout and must not be modified.
+Modifying the layout will invalidate the returned array.</p>
+<p>The number of attributes returned in @n_attrs will be one more
+than the total number of characters in the layout, since there
+need to be attributes corresponding to both the position before
+the first character and the position after the last character.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LogAttr get_log_attrs_readonly(IntPtr layout, ref int n_attrs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n_attrs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pango.LogAttr.html">LogAttr</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_pixel_extents_" data-uid="Pango.Layout.Native.get_pixel_extents*"></a>
+  <h4 id="Pango_Layout_Native_get_pixel_extents_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="Pango.Layout.Native.get_pixel_extents(System.IntPtr,System.IntPtr,System.IntPtr)">get_pixel_extents(IntPtr, IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Computes the logical and ink extents of @layout in device units.
+This function just calls pango_layout_get_extents() followed by
+two pango_extents_to_pixels() calls, rounding @ink_rect and @logical_rect
+such that the rounded rectangles fully contain the unrounded one (that is,
+passes them as first argument to pango_extents_to_pixels()).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void get_pixel_extents(IntPtr layout, IntPtr ink_rect, IntPtr logical_rect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">ink_rect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">logical_rect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_pixel_size_" data-uid="Pango.Layout.Native.get_pixel_size*"></a>
+  <h4 id="Pango_Layout_Native_get_pixel_size_System_IntPtr_System_Int32__System_Int32__" data-uid="Pango.Layout.Native.get_pixel_size(System.IntPtr,System.Int32@,System.Int32@)">get_pixel_size(IntPtr, ref Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Determines the logical width and height of a #PangoLayout
+in device units. (pango_layout_get_size() returns the width
+and height scaled by %PANGO_SCALE.) This
+is simply a convenience function around
+pango_layout_get_pixel_extents().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void get_pixel_size(IntPtr layout, ref int width, ref int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_serial_" data-uid="Pango.Layout.Native.get_serial*"></a>
+  <h4 id="Pango_Layout_Native_get_serial_System_IntPtr_" data-uid="Pango.Layout.Native.get_serial(System.IntPtr)">get_serial(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the current serial number of @layout.  The serial number is
+initialized to an small number  larger than zero when a new layout
+is created and is increased whenever the layout is changed using any
+of the setter functions, or the #PangoContext it uses has changed.
+The serial may wrap, but will never have the value 0. Since it
+can wrap, never compare it with &quot;less than&quot;, always use &quot;not equals&quot;.</p>
+<p>This can be used to automatically detect changes to a #PangoLayout, and
+is useful for example to decide whether a layout needs redrawing.
+To force the serial to be increased, use pango_layout_context_changed().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint get_serial(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_single_paragraph_mode_" data-uid="Pango.Layout.Native.get_single_paragraph_mode*"></a>
+  <h4 id="Pango_Layout_Native_get_single_paragraph_mode_System_IntPtr_" data-uid="Pango.Layout.Native.get_single_paragraph_mode(System.IntPtr)">get_single_paragraph_mode(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Obtains the value set by pango_layout_set_single_paragraph_mode().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool get_single_paragraph_mode(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_size_" data-uid="Pango.Layout.Native.get_size*"></a>
+  <h4 id="Pango_Layout_Native_get_size_System_IntPtr_System_Int32__System_Int32__" data-uid="Pango.Layout.Native.get_size(System.IntPtr,System.Int32@,System.Int32@)">get_size(IntPtr, ref Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Determines the logical width and height of a #PangoLayout
+in Pango units (device units scaled by %PANGO_SCALE). This
+is simply a convenience function around pango_layout_get_extents().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void get_size(IntPtr layout, ref int width, ref int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_spacing_" data-uid="Pango.Layout.Native.get_spacing*"></a>
+  <h4 id="Pango_Layout_Native_get_spacing_System_IntPtr_" data-uid="Pango.Layout.Native.get_spacing(System.IntPtr)">get_spacing(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the amount of spacing between the lines of the layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int get_spacing(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_tabs_" data-uid="Pango.Layout.Native.get_tabs*"></a>
+  <h4 id="Pango_Layout_Native_get_tabs_System_IntPtr_" data-uid="Pango.Layout.Native.get_tabs(System.IntPtr)">get_tabs(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the current #PangoTabArray used by this layout. If no
+#PangoTabArray has been set, then the default tabs are in use
+and %NULL is returned. Default tabs are every 8 spaces.
+The return value should be freed with pango_tab_array_free().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_tabs(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_text_" data-uid="Pango.Layout.Native.get_text*"></a>
+  <h4 id="Pango_Layout_Native_get_text_System_IntPtr_" data-uid="Pango.Layout.Native.get_text(System.IntPtr)">get_text(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the text in the layout. The returned text should not
+be freed or modified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_text(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_type_" data-uid="Pango.Layout.Native.get_type*"></a>
+  <h4 id="Pango_Layout_Native_get_type" data-uid="Pango.Layout.Native.get_type">get_type()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong get_type()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_unknown_glyphs_count_" data-uid="Pango.Layout.Native.get_unknown_glyphs_count*"></a>
+  <h4 id="Pango_Layout_Native_get_unknown_glyphs_count_System_IntPtr_" data-uid="Pango.Layout.Native.get_unknown_glyphs_count(System.IntPtr)">get_unknown_glyphs_count(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Counts the number unknown glyphs in @layout.  That is, zero if
+glyphs for all characters in the layout text were found, or more
+than zero otherwise.</p>
+<p>This function can be used to determine if there are any fonts
+available to render all characters in a certain string, or when
+used in combination with %PANGO_ATTR_FALLBACK, to check if a
+certain font supports all the characters in the string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int get_unknown_glyphs_count(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_width_" data-uid="Pango.Layout.Native.get_width*"></a>
+  <h4 id="Pango_Layout_Native_get_width_System_IntPtr_" data-uid="Pango.Layout.Native.get_width(System.IntPtr)">get_width(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the width to which the lines of the #PangoLayout should wrap.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int get_width(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_get_wrap_" data-uid="Pango.Layout.Native.get_wrap*"></a>
+  <h4 id="Pango_Layout_Native_get_wrap_System_IntPtr_" data-uid="Pango.Layout.Native.get_wrap(System.IntPtr)">get_wrap(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the wrap mode for the layout.</p>
+<p>Use pango_layout_is_wrapped() to query whether any paragraphs
+were actually wrapped.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WrapMode get_wrap(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pango.WrapMode.html">WrapMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_index_to_line_x_" data-uid="Pango.Layout.Native.index_to_line_x*"></a>
+  <h4 id="Pango_Layout_Native_index_to_line_x_System_IntPtr_System_Int32_System_Boolean_System_Int32__System_Int32__" data-uid="Pango.Layout.Native.index_to_line_x(System.IntPtr,System.Int32,System.Boolean,System.Int32@,System.Int32@)">index_to_line_x(IntPtr, Int32, Boolean, ref Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Converts from byte @index_ within the @layout to line and X position.
+(X position is measured from the left edge of the line)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void index_to_line_x(IntPtr layout, int index_, bool trailing, ref int line, ref int x_pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index_</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">trailing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">line</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x_pos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_index_to_pos_" data-uid="Pango.Layout.Native.index_to_pos*"></a>
+  <h4 id="Pango_Layout_Native_index_to_pos_System_IntPtr_System_Int32_System_IntPtr_" data-uid="Pango.Layout.Native.index_to_pos(System.IntPtr,System.Int32,System.IntPtr)">index_to_pos(IntPtr, Int32, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Converts from an index within a #PangoLayout to the onscreen position
+corresponding to the grapheme at that index, which is represented
+as rectangle.  Note that <literal>pos-&gt;x</literal> is always the leading
+edge of the grapheme and <literal>pos-&gt;x + pos-&gt;width</literal> the trailing
+edge of the grapheme. If the directionality of the grapheme is right-to-left,
+then <literal>pos-&gt;width</literal> will be negative.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void index_to_pos(IntPtr layout, int index_, IntPtr pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index_</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_is_ellipsized_" data-uid="Pango.Layout.Native.is_ellipsized*"></a>
+  <h4 id="Pango_Layout_Native_is_ellipsized_System_IntPtr_" data-uid="Pango.Layout.Native.is_ellipsized(System.IntPtr)">is_ellipsized(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Queries whether the layout had to ellipsize any paragraphs.</p>
+<p>This returns %TRUE if the ellipsization mode for @layout
+is not %PANGO_ELLIPSIZE_NONE, a positive width is set on @layout,
+and there are paragraphs exceeding that width that have to be
+ellipsized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool is_ellipsized(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_is_wrapped_" data-uid="Pango.Layout.Native.is_wrapped*"></a>
+  <h4 id="Pango_Layout_Native_is_wrapped_System_IntPtr_" data-uid="Pango.Layout.Native.is_wrapped(System.IntPtr)">is_wrapped(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Queries whether the layout had to wrap any paragraphs.</p>
+<p>This returns %TRUE if a positive width is set on @layout,
+ellipsization mode of @layout is set to %PANGO_ELLIPSIZE_NONE,
+and there are paragraphs exceeding the layout width that have
+to be wrapped.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool is_wrapped(IntPtr layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_move_cursor_visually_" data-uid="Pango.Layout.Native.move_cursor_visually*"></a>
+  <h4 id="Pango_Layout_Native_move_cursor_visually_System_IntPtr_System_Boolean_System_Int32_System_Int32_System_Int32_System_Int32__System_Int32__" data-uid="Pango.Layout.Native.move_cursor_visually(System.IntPtr,System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32@,System.Int32@)">move_cursor_visually(IntPtr, Boolean, Int32, Int32, Int32, ref Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Computes a new cursor position from an old position and
+a count of positions to move visually. If @direction is positive,
+then the new strong cursor position will be one position
+to the right of the old cursor position. If @direction is negative,
+then the new strong cursor position will be one position
+to the left of the old cursor position.</p>
+<p>In the presence of bidirectional text, the correspondence
+between logical and visual order will depend on the direction
+of the current run, and there may be jumps when the cursor
+is moved off of the end of a run.</p>
+<p>Motion here is in cursor positions, not in characters, so a
+single call to pango_layout_move_cursor_visually() may move the
+cursor over multiple characters when multiple characters combine
+to form a single grapheme.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void move_cursor_visually(IntPtr layout, bool strong, int old_index, int old_trailing, int direction, ref int new_index, ref int new_trailing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">strong</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">old_index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">old_trailing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">direction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">new_index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">new_trailing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_new_" data-uid="Pango.Layout.Native.new*"></a>
+  <h4 id="Pango_Layout_Native_new_System_IntPtr_" data-uid="Pango.Layout.Native.new(System.IntPtr)">new(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Create a new #PangoLayout object with attributes initialized to
+default values for a particular #PangoContext.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr new(IntPtr context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_set_alignment_" data-uid="Pango.Layout.Native.set_alignment*"></a>
+  <h4 id="Pango_Layout_Native_set_alignment_System_IntPtr_Pango_Alignment_" data-uid="Pango.Layout.Native.set_alignment(System.IntPtr,Pango.Alignment)">set_alignment(IntPtr, Alignment)</h4>
+  <div class="markdown level1 summary"><p>Sets the alignment for the layout: how partial lines are
+positioned within the horizontal space available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_alignment(IntPtr layout, Alignment alignment)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pango.Alignment.html">Alignment</a></td>
+        <td><span class="parametername">alignment</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_set_attributes_" data-uid="Pango.Layout.Native.set_attributes*"></a>
+  <h4 id="Pango_Layout_Native_set_attributes_System_IntPtr_System_IntPtr_" data-uid="Pango.Layout.Native.set_attributes(System.IntPtr,System.IntPtr)">set_attributes(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets the text attributes for a layout object.
+References @attrs, so the caller can unref its reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_attributes(IntPtr layout, IntPtr attrs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">attrs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_set_auto_dir_" data-uid="Pango.Layout.Native.set_auto_dir*"></a>
+  <h4 id="Pango_Layout_Native_set_auto_dir_System_IntPtr_System_Boolean_" data-uid="Pango.Layout.Native.set_auto_dir(System.IntPtr,System.Boolean)">set_auto_dir(IntPtr, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets whether to calculate the bidirectional base direction
+for the layout according to the contents of the layout;
+when this flag is on (the default), then paragraphs in
+@layout that begin with strong right-to-left characters
+(Arabic and Hebrew principally), will have right-to-left
+layout, paragraphs with letters from other scripts will
+have left-to-right layout. Paragraphs with only neutral
+characters get their direction from the surrounding paragraphs.</p>
+<p>When %FALSE, the choice between left-to-right and
+right-to-left layout is done according to the base direction
+of the layout's #PangoContext. (See pango_context_set_base_dir()).</p>
+<p>When the auto-computed direction of a paragraph differs from the
+base direction of the context, the interpretation of
+%PANGO_ALIGN_LEFT and %PANGO_ALIGN_RIGHT are swapped.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_auto_dir(IntPtr layout, bool auto_dir)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">auto_dir</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_set_ellipsize_" data-uid="Pango.Layout.Native.set_ellipsize*"></a>
+  <h4 id="Pango_Layout_Native_set_ellipsize_System_IntPtr_Pango_EllipsizeMode_" data-uid="Pango.Layout.Native.set_ellipsize(System.IntPtr,Pango.EllipsizeMode)">set_ellipsize(IntPtr, EllipsizeMode)</h4>
+  <div class="markdown level1 summary"><p>Sets the type of ellipsization being performed for @layout.
+Depending on the ellipsization mode @ellipsize text is
+removed from the start, middle, or end of text so they
+fit within the width and height of layout set with
+pango_layout_set_width() and pango_layout_set_height().</p>
+<p>If the layout contains characters such as newlines that
+force it to be layed out in multiple paragraphs, then whether
+each paragraph is ellipsized separately or the entire layout
+is ellipsized as a whole depends on the set height of the layout.
+See pango_layout_set_height() for details.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_ellipsize(IntPtr layout, EllipsizeMode ellipsize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pango.EllipsizeMode.html">EllipsizeMode</a></td>
+        <td><span class="parametername">ellipsize</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_set_font_description_" data-uid="Pango.Layout.Native.set_font_description*"></a>
+  <h4 id="Pango_Layout_Native_set_font_description_System_IntPtr_System_IntPtr_" data-uid="Pango.Layout.Native.set_font_description(System.IntPtr,System.IntPtr)">set_font_description(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets the default font description for the layout. If no font
+description is set on the layout, the font description from
+the layout's context is used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_font_description(IntPtr layout, IntPtr desc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_set_height_" data-uid="Pango.Layout.Native.set_height*"></a>
+  <h4 id="Pango_Layout_Native_set_height_System_IntPtr_System_Int32_" data-uid="Pango.Layout.Native.set_height(System.IntPtr,System.Int32)">set_height(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the height to which the #PangoLayout should be ellipsized at.  There
+are two different behaviors, based on whether @height is positive or
+negative.</p>
+<p>If @height is positive, it will be the maximum height of the layout.  Only
+lines would be shown that would fit, and if there is any text omitted,
+an ellipsis added.  At least one line is included in each paragraph regardless
+of how small the height value is.  A value of zero will render exactly one
+line for the entire layout.</p>
+<p>If @height is negative, it will be the (negative of) maximum number of lines per
+paragraph.  That is, the total number of lines shown may well be more than
+this value if the layout contains multiple paragraphs of text.
+The default value of -1 means that first line of each paragraph is ellipsized.
+This behvaior may be changed in the future to act per layout instead of per
+paragraph.  File a bug against pango at <ulink url="http://bugzilla.gnome.org/">http://bugzilla.gnome.org/</ulink> if your
+code relies on this behavior.</p>
+<p>Height setting only has effect if a positive width is set on
+@layout and ellipsization mode of @layout is not %PANGO_ELLIPSIZE_NONE.
+The behavior is undefined if a height other than -1 is set and
+ellipsization mode is set to %PANGO_ELLIPSIZE_NONE, and may change in the
+future.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_height(IntPtr layout, int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_set_indent_" data-uid="Pango.Layout.Native.set_indent*"></a>
+  <h4 id="Pango_Layout_Native_set_indent_System_IntPtr_System_Int32_" data-uid="Pango.Layout.Native.set_indent(System.IntPtr,System.Int32)">set_indent(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the width in Pango units to indent each paragraph. A negative value
+of @indent will produce a hanging indentation. That is, the first line will
+have the full width, and subsequent lines will be indented by the
+absolute value of @indent.</p>
+<p>The indent setting is ignored if layout alignment is set to
+%PANGO_ALIGN_CENTER.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_indent(IntPtr layout, int indent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">indent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_set_justify_" data-uid="Pango.Layout.Native.set_justify*"></a>
+  <h4 id="Pango_Layout_Native_set_justify_System_IntPtr_System_Boolean_" data-uid="Pango.Layout.Native.set_justify(System.IntPtr,System.Boolean)">set_justify(IntPtr, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets whether each complete line should be stretched to
+fill the entire width of the layout. This stretching is typically
+done by adding whitespace, but for some scripts (such as Arabic),
+the justification may be done in more complex ways, like extending
+the characters.</p>
+<p>Note that this setting is not implemented and so is ignored in Pango
+older than 1.18.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_justify(IntPtr layout, bool justify)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">justify</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_set_markup_" data-uid="Pango.Layout.Native.set_markup*"></a>
+  <h4 id="Pango_Layout_Native_set_markup_System_IntPtr_System_String_System_Int32_" data-uid="Pango.Layout.Native.set_markup(System.IntPtr,System.String,System.Int32)">set_markup(IntPtr, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Same as pango_layout_set_markup_with_accel(), but
+the markup text isn't scanned for accelerators.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_markup(IntPtr layout, string markup, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">markup</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_set_markup_with_accel_" data-uid="Pango.Layout.Native.set_markup_with_accel*"></a>
+  <h4 id="Pango_Layout_Native_set_markup_with_accel_System_IntPtr_System_String_System_Int32_System_UInt32_System_UInt32__" data-uid="Pango.Layout.Native.set_markup_with_accel(System.IntPtr,System.String,System.Int32,System.UInt32,System.UInt32@)">set_markup_with_accel(IntPtr, String, Int32, UInt32, ref UInt32)</h4>
+  <div class="markdown level1 summary"><p>Sets the layout text and attribute list from marked-up text (see</p>
+<link linkend="PangoMarkupFormat">markup format). Replaces
+the current text and attribute list.
+<p>If @accel_marker is nonzero, the given character will mark the
+character following it as an accelerator. For example, @accel_marker
+might be an ampersand or underscore. All characters marked
+as an accelerator will receive a %PANGO_UNDERLINE_LOW attribute,
+and the first character so marked will be returned in @accel_char.
+Two @accel_marker characters following each other produce a single
+literal @accel_marker character.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_markup_with_accel(IntPtr layout, string markup, int length, uint accel_marker, ref uint accel_char)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">markup</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">accel_marker</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">accel_char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_set_single_paragraph_mode_" data-uid="Pango.Layout.Native.set_single_paragraph_mode*"></a>
+  <h4 id="Pango_Layout_Native_set_single_paragraph_mode_System_IntPtr_System_Boolean_" data-uid="Pango.Layout.Native.set_single_paragraph_mode(System.IntPtr,System.Boolean)">set_single_paragraph_mode(IntPtr, Boolean)</h4>
+  <div class="markdown level1 summary"><p>If @setting is %TRUE, do not treat newlines and similar characters
+as paragraph separators; instead, keep all text in a single paragraph,
+and display a glyph for paragraph separator characters. Used when
+you want to allow editing of newlines on a single text line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_single_paragraph_mode(IntPtr layout, bool setting)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">setting</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_set_spacing_" data-uid="Pango.Layout.Native.set_spacing*"></a>
+  <h4 id="Pango_Layout_Native_set_spacing_System_IntPtr_System_Int32_" data-uid="Pango.Layout.Native.set_spacing(System.IntPtr,System.Int32)">set_spacing(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the amount of spacing in Pango unit between the lines of the
+layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_spacing(IntPtr layout, int spacing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">spacing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_set_tabs_" data-uid="Pango.Layout.Native.set_tabs*"></a>
+  <h4 id="Pango_Layout_Native_set_tabs_System_IntPtr_System_IntPtr_" data-uid="Pango.Layout.Native.set_tabs(System.IntPtr,System.IntPtr)">set_tabs(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets the tabs to use for @layout, overriding the default tabs
+(by default, tabs are every 8 spaces). If @tabs is %NULL, the default
+tabs are reinstated. @tabs is copied into the layout; you must
+free your copy of @tabs yourself.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_tabs(IntPtr layout, IntPtr tabs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">tabs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_set_text_" data-uid="Pango.Layout.Native.set_text*"></a>
+  <h4 id="Pango_Layout_Native_set_text_System_IntPtr_System_String_System_Int32_" data-uid="Pango.Layout.Native.set_text(System.IntPtr,System.String,System.Int32)">set_text(IntPtr, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the text of the layout.</p>
+<p>Note that if you have used
+pango_layout_set_markup() or pango_layout_set_markup_with_accel() on
+@layout before, you may want to call pango_layout_set_attributes() to clear
+the attributes set on the layout from the markup as this function does not
+clear attributes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_text(IntPtr layout, string text, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_set_width_" data-uid="Pango.Layout.Native.set_width*"></a>
+  <h4 id="Pango_Layout_Native_set_width_System_IntPtr_System_Int32_" data-uid="Pango.Layout.Native.set_width(System.IntPtr,System.Int32)">set_width(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the width to which the lines of the #PangoLayout should wrap or
+ellipsized.  The default value is -1: no width set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_width(IntPtr layout, int width)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_set_wrap_" data-uid="Pango.Layout.Native.set_wrap*"></a>
+  <h4 id="Pango_Layout_Native_set_wrap_System_IntPtr_Pango_WrapMode_" data-uid="Pango.Layout.Native.set_wrap(System.IntPtr,Pango.WrapMode)">set_wrap(IntPtr, WrapMode)</h4>
+  <div class="markdown level1 summary"><p>Sets the wrap mode; the wrap mode only has effect if a width
+is set on the layout with pango_layout_set_width().
+To turn off wrapping, set the width to -1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_wrap(IntPtr layout, WrapMode wrap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pango.WrapMode.html">WrapMode</a></td>
+        <td><span class="parametername">wrap</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Layout_Native_xy_to_index_" data-uid="Pango.Layout.Native.xy_to_index*"></a>
+  <h4 id="Pango_Layout_Native_xy_to_index_System_IntPtr_System_Int32_System_Int32_System_Int32__System_Int32__" data-uid="Pango.Layout.Native.xy_to_index(System.IntPtr,System.Int32,System.Int32,System.Int32@,System.Int32@)">xy_to_index(IntPtr, Int32, Int32, ref Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Converts from X and Y position within a layout to the byte
+index to the character at that logical position. If the
+Y position is not inside the layout, the closest position is chosen
+(the position will be clamped inside the layout). If the
+X position is not within the layout, then the start or the
+end of the line is chosen as described for pango_layout_line_x_to_index().
+If either the X or Y positions were not inside the layout, then the
+function returns %FALSE; on an exact hit, it returns %TRUE.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool xy_to_index(IntPtr layout, int x, int y, ref int index_, ref int trailing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index_</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">trailing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Pango_Layout_Native.md&amp;value=---%0Auid%3A%20Pango.Layout.Native%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Pango/Classes/Layout.Generated.cs/#L32" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

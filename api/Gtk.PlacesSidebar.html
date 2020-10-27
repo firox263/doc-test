@@ -1,0 +1,2289 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PlacesSidebar
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PlacesSidebar
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gtk.PlacesSidebar">
+  
+  
+  <h1 id="Gtk_PlacesSidebar" data-uid="Gtk.PlacesSidebar" class="text-break">Class PlacesSidebar
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="GObject.Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="GObject.InitiallyUnowned.html">InitiallyUnowned</a></div>
+    <div class="level3"><a class="xref" href="Gtk.Widget.html">Widget</a></div>
+    <div class="level4"><a class="xref" href="Gtk.Container.html">Container</a></div>
+    <div class="level5"><a class="xref" href="Gtk.Bin.html">Bin</a></div>
+    <div class="level6"><a class="xref" href="Gtk.ScrolledWindow.html">ScrolledWindow</a></div>
+    <div class="level7"><span class="xref">PlacesSidebar</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Gtk.ScrolledWindow.html#Gtk_ScrolledWindow_Item_GObject_Signal_Gtk_ScrolledWindow_EdgeOvershotSignalArgs__">ScrolledWindow.Item[Signal&lt;ScrolledWindow.EdgeOvershotSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.ScrolledWindow.html#Gtk_ScrolledWindow_EdgeOvershotSignal">ScrolledWindow.EdgeOvershotSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.ScrolledWindow.html#Gtk_ScrolledWindow_OnEdgeOvershot">ScrolledWindow.OnEdgeOvershot</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.ScrolledWindow.html#Gtk_ScrolledWindow_Item_GObject_Signal_Gtk_ScrolledWindow_EdgeReachedSignalArgs__">ScrolledWindow.Item[Signal&lt;ScrolledWindow.EdgeReachedSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.ScrolledWindow.html#Gtk_ScrolledWindow_EdgeReachedSignal">ScrolledWindow.EdgeReachedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.ScrolledWindow.html#Gtk_ScrolledWindow_OnEdgeReached">ScrolledWindow.OnEdgeReached</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.ScrolledWindow.html#Gtk_ScrolledWindow_Item_GObject_Signal_Gtk_ScrolledWindow_MoveFocusOutSignalArgs__">ScrolledWindow.Item[Signal&lt;ScrolledWindow.MoveFocusOutSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.ScrolledWindow.html#Gtk_ScrolledWindow_MoveFocusOutSignal">ScrolledWindow.MoveFocusOutSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.ScrolledWindow.html#Gtk_ScrolledWindow_OnMoveFocusOut">ScrolledWindow.OnMoveFocusOut</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.ScrolledWindow.html#Gtk_ScrolledWindow_Item_GObject_Signal_Gtk_ScrolledWindow_ScrollChildSignalArgs__">ScrolledWindow.Item[Signal&lt;ScrolledWindow.ScrollChildSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.ScrolledWindow.html#Gtk_ScrolledWindow_ScrollChildSignal">ScrolledWindow.ScrollChildSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.ScrolledWindow.html#Gtk_ScrolledWindow_OnScrollChild">ScrolledWindow.OnScrollChild</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_ChildProperty">Container.ChildProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_Child">Container.Child</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_Item_GObject_Signal_Gtk_Container_AddSignalArgs__">Container.Item[Signal&lt;Container.AddSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_AddSignal">Container.AddSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_OnAdd">Container.OnAdd</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_CheckResizeSignal">Container.CheckResizeSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_OnCheckResize">Container.OnCheckResize</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_Item_GObject_Signal_Gtk_Container_RemoveSignalArgs__">Container.Item[Signal&lt;Container.RemoveSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_RemoveSignal">Container.RemoveSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_OnRemove">Container.OnRemove</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_Item_GObject_Signal_Gtk_Container_SetFocusChildSignalArgs__">Container.Item[Signal&lt;Container.SetFocusChildSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_SetFocusChildSignal">Container.SetFocusChildSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Container.html#Gtk_Container_OnSetFocusChild">Container.OnSetFocusChild</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ShowAll">Widget.ShowAll()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_AccelClosuresChangedSignal">Widget.AccelClosuresChangedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnAccelClosuresChanged">Widget.OnAccelClosuresChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_ButtonPressEventSignalArgs__">Widget.Item[Signal&lt;Widget.ButtonPressEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ButtonPressEventSignal">Widget.ButtonPressEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnButtonPressEvent">Widget.OnButtonPressEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_ButtonReleaseEventSignalArgs__">Widget.Item[Signal&lt;Widget.ButtonReleaseEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ButtonReleaseEventSignal">Widget.ButtonReleaseEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnButtonReleaseEvent">Widget.OnButtonReleaseEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_CanActivateAccelSignalArgs__">Widget.Item[Signal&lt;Widget.CanActivateAccelSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CanActivateAccelSignal">Widget.CanActivateAccelSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnCanActivateAccel">Widget.OnCanActivateAccel</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_ChildNotifySignalArgs__">Widget.Item[Signal&lt;Widget.ChildNotifySignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ChildNotifySignal">Widget.ChildNotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnChildNotify">Widget.OnChildNotify</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CompositedChangedSignal">Widget.CompositedChangedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnCompositedChanged">Widget.OnCompositedChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_ConfigureEventSignalArgs__">Widget.Item[Signal&lt;Widget.ConfigureEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ConfigureEventSignal">Widget.ConfigureEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnConfigureEvent">Widget.OnConfigureEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DamageEventSignalArgs__">Widget.Item[Signal&lt;Widget.DamageEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DamageEventSignal">Widget.DamageEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDamageEvent">Widget.OnDamageEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DeleteEventSignalArgs__">Widget.Item[Signal&lt;Widget.DeleteEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DeleteEventSignal">Widget.DeleteEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDeleteEvent">Widget.OnDeleteEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DestroySignal">Widget.DestroySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDestroy">Widget.OnDestroy</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DestroyEventSignalArgs__">Widget.Item[Signal&lt;Widget.DestroyEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DestroyEventSignal">Widget.DestroyEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDestroyEvent">Widget.OnDestroyEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DirectionChangedSignalArgs__">Widget.Item[Signal&lt;Widget.DirectionChangedSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DirectionChangedSignal">Widget.DirectionChangedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDirectionChanged">Widget.OnDirectionChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DragBeginSignalArgs__">Widget.Item[Signal&lt;Widget.DragBeginSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DragBeginSignal">Widget.DragBeginSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDragBegin">Widget.OnDragBegin</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DragDataDeleteSignalArgs__">Widget.Item[Signal&lt;Widget.DragDataDeleteSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DragDataDeleteSignal">Widget.DragDataDeleteSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDragDataDelete">Widget.OnDragDataDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DragDataGetSignalArgs__">Widget.Item[Signal&lt;Widget.DragDataGetSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DragDataGetSignal">Widget.DragDataGetSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDragDataGet">Widget.OnDragDataGet</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DragDataReceivedSignalArgs__">Widget.Item[Signal&lt;Widget.DragDataReceivedSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DragDataReceivedSignal">Widget.DragDataReceivedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDragDataReceived">Widget.OnDragDataReceived</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DragDropSignalArgs__">Widget.Item[Signal&lt;Widget.DragDropSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DragDropSignal">Widget.DragDropSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDragDrop">Widget.OnDragDrop</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DragEndSignalArgs__">Widget.Item[Signal&lt;Widget.DragEndSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DragEndSignal">Widget.DragEndSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDragEnd">Widget.OnDragEnd</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DragFailedSignalArgs__">Widget.Item[Signal&lt;Widget.DragFailedSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DragFailedSignal">Widget.DragFailedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDragFailed">Widget.OnDragFailed</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DragLeaveSignalArgs__">Widget.Item[Signal&lt;Widget.DragLeaveSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DragLeaveSignal">Widget.DragLeaveSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDragLeave">Widget.OnDragLeave</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DragMotionSignalArgs__">Widget.Item[Signal&lt;Widget.DragMotionSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DragMotionSignal">Widget.DragMotionSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDragMotion">Widget.OnDragMotion</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_DrawSignalArgs__">Widget.Item[Signal&lt;Widget.DrawSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DrawSignal">Widget.DrawSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDraw">Widget.OnDraw</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_EnterNotifyEventSignalArgs__">Widget.Item[Signal&lt;Widget.EnterNotifyEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_EnterNotifyEventSignal">Widget.EnterNotifyEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnEnterNotifyEvent">Widget.OnEnterNotifyEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_EventSignalArgs__">Widget.Item[Signal&lt;Widget.EventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_EventSignal">Widget.EventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnEvent">Widget.OnEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_EventAfterSignalArgs__">Widget.Item[Signal&lt;Widget.EventAfterSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_EventAfterSignal">Widget.EventAfterSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnEventAfter">Widget.OnEventAfter</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_FocusSignalArgs__">Widget.Item[Signal&lt;Widget.FocusSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_FocusSignal">Widget.FocusSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnFocus">Widget.OnFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_FocusInEventSignalArgs__">Widget.Item[Signal&lt;Widget.FocusInEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_FocusInEventSignal">Widget.FocusInEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnFocusInEvent">Widget.OnFocusInEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_FocusOutEventSignalArgs__">Widget.Item[Signal&lt;Widget.FocusOutEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_FocusOutEventSignal">Widget.FocusOutEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnFocusOutEvent">Widget.OnFocusOutEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_GrabBrokenEventSignalArgs__">Widget.Item[Signal&lt;Widget.GrabBrokenEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GrabBrokenEventSignal">Widget.GrabBrokenEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnGrabBrokenEvent">Widget.OnGrabBrokenEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GrabFocusSignal">Widget.GrabFocusSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnGrabFocus">Widget.OnGrabFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_GrabNotifySignalArgs__">Widget.Item[Signal&lt;Widget.GrabNotifySignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GrabNotifySignal">Widget.GrabNotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnGrabNotify">Widget.OnGrabNotify</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HideSignal">Widget.HideSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnHide">Widget.OnHide</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_HierarchyChangedSignalArgs__">Widget.Item[Signal&lt;Widget.HierarchyChangedSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HierarchyChangedSignal">Widget.HierarchyChangedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnHierarchyChanged">Widget.OnHierarchyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_KeyPressEventSignalArgs__">Widget.Item[Signal&lt;Widget.KeyPressEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_KeyPressEventSignal">Widget.KeyPressEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnKeyPressEvent">Widget.OnKeyPressEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_KeyReleaseEventSignalArgs__">Widget.Item[Signal&lt;Widget.KeyReleaseEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_KeyReleaseEventSignal">Widget.KeyReleaseEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnKeyReleaseEvent">Widget.OnKeyReleaseEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_KeynavFailedSignalArgs__">Widget.Item[Signal&lt;Widget.KeynavFailedSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_KeynavFailedSignal">Widget.KeynavFailedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnKeynavFailed">Widget.OnKeynavFailed</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_LeaveNotifyEventSignalArgs__">Widget.Item[Signal&lt;Widget.LeaveNotifyEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_LeaveNotifyEventSignal">Widget.LeaveNotifyEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnLeaveNotifyEvent">Widget.OnLeaveNotifyEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MapSignal">Widget.MapSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnMap">Widget.OnMap</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_MapEventSignalArgs__">Widget.Item[Signal&lt;Widget.MapEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MapEventSignal">Widget.MapEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnMapEvent">Widget.OnMapEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_MnemonicActivateSignalArgs__">Widget.Item[Signal&lt;Widget.MnemonicActivateSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MnemonicActivateSignal">Widget.MnemonicActivateSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnMnemonicActivate">Widget.OnMnemonicActivate</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_MotionNotifyEventSignalArgs__">Widget.Item[Signal&lt;Widget.MotionNotifyEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MotionNotifyEventSignal">Widget.MotionNotifyEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnMotionNotifyEvent">Widget.OnMotionNotifyEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_MoveFocusSignalArgs__">Widget.Item[Signal&lt;Widget.MoveFocusSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MoveFocusSignal">Widget.MoveFocusSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnMoveFocus">Widget.OnMoveFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_ParentSetSignalArgs__">Widget.Item[Signal&lt;Widget.ParentSetSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ParentSetSignal">Widget.ParentSetSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnParentSet">Widget.OnParentSet</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_PopupMenuSignal">Widget.PopupMenuSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnPopupMenu">Widget.OnPopupMenu</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_PropertyNotifyEventSignalArgs__">Widget.Item[Signal&lt;Widget.PropertyNotifyEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_PropertyNotifyEventSignal">Widget.PropertyNotifyEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnPropertyNotifyEvent">Widget.OnPropertyNotifyEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_ProximityInEventSignalArgs__">Widget.Item[Signal&lt;Widget.ProximityInEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ProximityInEventSignal">Widget.ProximityInEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnProximityInEvent">Widget.OnProximityInEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_ProximityOutEventSignalArgs__">Widget.Item[Signal&lt;Widget.ProximityOutEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ProximityOutEventSignal">Widget.ProximityOutEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnProximityOutEvent">Widget.OnProximityOutEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_QueryTooltipSignalArgs__">Widget.Item[Signal&lt;Widget.QueryTooltipSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_QueryTooltipSignal">Widget.QueryTooltipSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnQueryTooltip">Widget.OnQueryTooltip</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_RealizeSignal">Widget.RealizeSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnRealize">Widget.OnRealize</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_ScreenChangedSignalArgs__">Widget.Item[Signal&lt;Widget.ScreenChangedSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ScreenChangedSignal">Widget.ScreenChangedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnScreenChanged">Widget.OnScreenChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_ScrollEventSignalArgs__">Widget.Item[Signal&lt;Widget.ScrollEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ScrollEventSignal">Widget.ScrollEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnScrollEvent">Widget.OnScrollEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_SelectionClearEventSignalArgs__">Widget.Item[Signal&lt;Widget.SelectionClearEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SelectionClearEventSignal">Widget.SelectionClearEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnSelectionClearEvent">Widget.OnSelectionClearEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_SelectionGetSignalArgs__">Widget.Item[Signal&lt;Widget.SelectionGetSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SelectionGetSignal">Widget.SelectionGetSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnSelectionGet">Widget.OnSelectionGet</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_SelectionNotifyEventSignalArgs__">Widget.Item[Signal&lt;Widget.SelectionNotifyEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SelectionNotifyEventSignal">Widget.SelectionNotifyEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnSelectionNotifyEvent">Widget.OnSelectionNotifyEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_SelectionReceivedSignalArgs__">Widget.Item[Signal&lt;Widget.SelectionReceivedSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SelectionReceivedSignal">Widget.SelectionReceivedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnSelectionReceived">Widget.OnSelectionReceived</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_SelectionRequestEventSignalArgs__">Widget.Item[Signal&lt;Widget.SelectionRequestEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SelectionRequestEventSignal">Widget.SelectionRequestEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnSelectionRequestEvent">Widget.OnSelectionRequestEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ShowSignal">Widget.ShowSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnShow">Widget.OnShow</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_ShowHelpSignalArgs__">Widget.Item[Signal&lt;Widget.ShowHelpSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ShowHelpSignal">Widget.ShowHelpSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnShowHelp">Widget.OnShowHelp</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_SizeAllocateSignalArgs__">Widget.Item[Signal&lt;Widget.SizeAllocateSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SizeAllocateSignal">Widget.SizeAllocateSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnSizeAllocate">Widget.OnSizeAllocate</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_StateChangedSignalArgs__">Widget.Item[Signal&lt;Widget.StateChangedSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_StateChangedSignal">Widget.StateChangedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnStateChanged">Widget.OnStateChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_StateFlagsChangedSignalArgs__">Widget.Item[Signal&lt;Widget.StateFlagsChangedSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_StateFlagsChangedSignal">Widget.StateFlagsChangedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnStateFlagsChanged">Widget.OnStateFlagsChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_StyleSetSignalArgs__">Widget.Item[Signal&lt;Widget.StyleSetSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_StyleSetSignal">Widget.StyleSetSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnStyleSet">Widget.OnStyleSet</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_StyleUpdatedSignal">Widget.StyleUpdatedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnStyleUpdated">Widget.OnStyleUpdated</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_TouchEventSignalArgs__">Widget.Item[Signal&lt;Widget.TouchEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_TouchEventSignal">Widget.TouchEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnTouchEvent">Widget.OnTouchEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_UnmapSignal">Widget.UnmapSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnUnmap">Widget.OnUnmap</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_UnmapEventSignalArgs__">Widget.Item[Signal&lt;Widget.UnmapEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_UnmapEventSignal">Widget.UnmapEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnUnmapEvent">Widget.OnUnmapEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_UnrealizeSignal">Widget.UnrealizeSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnUnrealize">Widget.OnUnrealize</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_VisibilityNotifyEventSignalArgs__">Widget.Item[Signal&lt;Widget.VisibilityNotifyEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_VisibilityNotifyEventSignal">Widget.VisibilityNotifyEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnVisibilityNotifyEvent">Widget.OnVisibilityNotifyEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Item_GObject_Signal_Gtk_Widget_WindowStateEventSignalArgs__">Widget.Item[Signal&lt;Widget.WindowStateEventSignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_WindowStateEventSignal">Widget.WindowStateEventSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnWindowStateEvent">Widget.OnWindowStateEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.InitiallyUnowned.html#GObject_InitiallyUnowned_Initialize">InitiallyUnowned.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_PropertyChanged">Object.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Handle">Object.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Disposed">Object.Disposed</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RegisterNotifyPropertyChangedEvent_System_String_System_Action_">Object.RegisterNotifyPropertyChangedEvent(String, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RegisterEvent_System_String_GObject_ActionRefValues_System_Boolean_">Object.RegisterEvent(String, ActionRefValues, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RegisterEvent_System_String_System_Action_System_Boolean_">Object.RegisterEvent(String, Action, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_UnregisterEvent_GObject_ActionRefValues_">Object.UnregisterEvent(ActionRefValues)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_UnregisterEvent_System_Action_">Object.UnregisterEvent(Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ThrowIfDisposed">Object.ThrowIfDisposed()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_HandleError_System_IntPtr_">Object.HandleError(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetHandle_GObject_Object_">Object.GetHandle(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnPropertyChanged_System_String_">Object.OnPropertyChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetObject__1_System_IntPtr___0__">Object.GetObject&lt;T&gt;(IntPtr, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_TryWrapPointerAs__1_System_IntPtr___0__">Object.TryWrapPointerAs&lt;T&gt;(IntPtr, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Dispose">Object.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Dispose_System_Boolean_">Object.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Item_GObject_Signal_GObject_Object_NotifySignalArgs__">Object.Item[Signal&lt;Object.NotifySignalArgs&gt;]</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifySignal">Object.NotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnNotify">Object.OnNotify</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetProperty__1_GObject_Property___0__">Object.GetProperty&lt;T&gt;(Property&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetProperty__1_GObject_Property___0____0_">Object.SetProperty&lt;T&gt;(Property&lt;T&gt;, T)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gtk.html">Gtk</a></h6>
+  <h6><strong>Assembly</strong>: Gtk3.dll</h6>
+  <h5 id="Gtk_PlacesSidebar_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PlacesSidebar : ScrolledWindow, INotifyPropertyChanged, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar__ctor_GObject_ConstructParameter___.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.%23ctor(GObject.ConstructParameter%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L735">View Source</a>
+  </span>
+  <a id="Gtk_PlacesSidebar__ctor_" data-uid="Gtk.PlacesSidebar.#ctor*"></a>
+  <h4 id="Gtk_PlacesSidebar__ctor_GObject_ConstructParameter___" data-uid="Gtk.PlacesSidebar.#ctor(GObject.ConstructParameter[])">PlacesSidebar(ConstructParameter[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PlacesSidebar(params ConstructParameter[] properties)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.ConstructParameter.html">ConstructParameter</a>[]</td>
+        <td><span class="parametername">properties</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar__ctor_System_IntPtr_.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.%23ctor(System.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L734">View Source</a>
+  </span>
+  <a id="Gtk_PlacesSidebar__ctor_" data-uid="Gtk.PlacesSidebar.#ctor*"></a>
+  <h4 id="Gtk_PlacesSidebar__ctor_System_IntPtr_" data-uid="Gtk.PlacesSidebar.#ctor(System.IntPtr)">PlacesSidebar(IntPtr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PlacesSidebar(IntPtr ptr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">ptr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_DragActionAskSignal.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.DragActionAskSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L60">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_DragActionAskSignal" data-uid="Gtk.PlacesSidebar.DragActionAskSignal">DragActionAskSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnDragActionAsk.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;PlacesSidebar.DragActionAskSignalArgs&gt; DragActionAskSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PlacesSidebar.DragActionAskSignalArgs.html">PlacesSidebar.DragActionAskSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_DragActionRequestedSignal.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.DragActionRequestedSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L128">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_DragActionRequestedSignal" data-uid="Gtk.PlacesSidebar.DragActionRequestedSignal">DragActionRequestedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnDragActionRequested.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;PlacesSidebar.DragActionRequestedSignalArgs&gt; DragActionRequestedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PlacesSidebar.DragActionRequestedSignalArgs.html">PlacesSidebar.DragActionRequestedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_DragPerformDropSignal.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.DragPerformDropSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L203">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_DragPerformDropSignal" data-uid="Gtk.PlacesSidebar.DragPerformDropSignal">DragPerformDropSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnDragPerformDrop.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;PlacesSidebar.DragPerformDropSignalArgs&gt; DragPerformDropSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PlacesSidebar.DragPerformDropSignalArgs.html">PlacesSidebar.DragPerformDropSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_MountSignal.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.MountSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L259">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_MountSignal" data-uid="Gtk.PlacesSidebar.MountSignal">MountSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnMount.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;PlacesSidebar.MountSignalArgs&gt; MountSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PlacesSidebar.MountSignalArgs.html">PlacesSidebar.MountSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_OpenLocationSignal.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.OpenLocationSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L321">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_OpenLocationSignal" data-uid="Gtk.PlacesSidebar.OpenLocationSignal">OpenLocationSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnOpenLocation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;PlacesSidebar.OpenLocationSignalArgs&gt; OpenLocationSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PlacesSidebar.OpenLocationSignalArgs.html">PlacesSidebar.OpenLocationSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_PopulatePopupSignal.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.PopulatePopupSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L392">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_PopulatePopupSignal" data-uid="Gtk.PlacesSidebar.PopulatePopupSignal">PopulatePopupSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnPopulatePopup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;PlacesSidebar.PopulatePopupSignalArgs&gt; PopulatePopupSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PlacesSidebar.PopulatePopupSignalArgs.html">PlacesSidebar.PopulatePopupSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_ShowConnectToServerSignal.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.ShowConnectToServerSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L436">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_ShowConnectToServerSignal" data-uid="Gtk.PlacesSidebar.ShowConnectToServerSignal">ShowConnectToServerSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnShowConnectToServer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;&quot;)]
+public static readonly Signal&lt;SignalArgs&gt; ShowConnectToServerSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_ShowEnterLocationSignal.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.ShowEnterLocationSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L460">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_ShowEnterLocationSignal" data-uid="Gtk.PlacesSidebar.ShowEnterLocationSignal">ShowEnterLocationSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnShowEnterLocation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;SignalArgs&gt; ShowEnterLocationSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_ShowErrorMessageSignal.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.ShowErrorMessageSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L522">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_ShowErrorMessageSignal" data-uid="Gtk.PlacesSidebar.ShowErrorMessageSignal">ShowErrorMessageSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnShowErrorMessage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;PlacesSidebar.ShowErrorMessageSignalArgs&gt; ShowErrorMessageSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PlacesSidebar.ShowErrorMessageSignalArgs.html">PlacesSidebar.ShowErrorMessageSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_ShowOtherLocationsSignal.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.ShowOtherLocationsSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L545">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_ShowOtherLocationsSignal" data-uid="Gtk.PlacesSidebar.ShowOtherLocationsSignal">ShowOtherLocationsSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnShowOtherLocations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;&quot;)]
+public static readonly Signal&lt;SignalArgs&gt; ShowOtherLocationsSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_ShowOtherLocationsWithFlagsSignal.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.ShowOtherLocationsWithFlagsSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L601">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_ShowOtherLocationsWithFlagsSignal" data-uid="Gtk.PlacesSidebar.ShowOtherLocationsWithFlagsSignal">ShowOtherLocationsWithFlagsSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnShowOtherLocationsWithFlags.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;PlacesSidebar.ShowOtherLocationsWithFlagsSignalArgs&gt; ShowOtherLocationsWithFlagsSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PlacesSidebar.ShowOtherLocationsWithFlagsSignalArgs.html">PlacesSidebar.ShowOtherLocationsWithFlagsSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_ShowStarredLocationSignal.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.ShowStarredLocationSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L658">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_ShowStarredLocationSignal" data-uid="Gtk.PlacesSidebar.ShowStarredLocationSignal">ShowStarredLocationSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnShowStarredLocation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;PlacesSidebar.ShowStarredLocationSignalArgs&gt; ShowStarredLocationSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PlacesSidebar.ShowStarredLocationSignalArgs.html">PlacesSidebar.ShowStarredLocationSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_UnmountSignal.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.UnmountSignal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L713">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_UnmountSignal" data-uid="Gtk.PlacesSidebar.UnmountSignal">UnmountSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnUnmount.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;PlacesSidebar.UnmountSignalArgs&gt; UnmountSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PlacesSidebar.UnmountSignalArgs.html">PlacesSidebar.UnmountSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_Item_GObject_Signal_Gtk_PlacesSidebar_DragActionAskSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.Item(GObject.Signal%7BGtk.PlacesSidebar.DragActionAskSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L28">View Source</a>
+  </span>
+  <a id="Gtk_PlacesSidebar_Item_" data-uid="Gtk.PlacesSidebar.Item*"></a>
+  <h4 id="Gtk_PlacesSidebar_Item_GObject_Signal_Gtk_PlacesSidebar_DragActionAskSignalArgs__" data-uid="Gtk.PlacesSidebar.Item(GObject.Signal{Gtk.PlacesSidebar.DragActionAskSignalArgs})">Item[Signal&lt;PlacesSidebar.DragActionAskSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;PlacesSidebar.DragActionAskSignalArgs&gt; this[Signal&lt;PlacesSidebar.DragActionAskSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PlacesSidebar.DragActionAskSignalArgs.html">PlacesSidebar.DragActionAskSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PlacesSidebar.DragActionAskSignalArgs.html">PlacesSidebar.DragActionAskSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_Item_GObject_Signal_Gtk_PlacesSidebar_DragActionRequestedSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.Item(GObject.Signal%7BGtk.PlacesSidebar.DragActionRequestedSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L81">View Source</a>
+  </span>
+  <a id="Gtk_PlacesSidebar_Item_" data-uid="Gtk.PlacesSidebar.Item*"></a>
+  <h4 id="Gtk_PlacesSidebar_Item_GObject_Signal_Gtk_PlacesSidebar_DragActionRequestedSignalArgs__" data-uid="Gtk.PlacesSidebar.Item(GObject.Signal{Gtk.PlacesSidebar.DragActionRequestedSignalArgs})">Item[Signal&lt;PlacesSidebar.DragActionRequestedSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;PlacesSidebar.DragActionRequestedSignalArgs&gt; this[Signal&lt;PlacesSidebar.DragActionRequestedSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PlacesSidebar.DragActionRequestedSignalArgs.html">PlacesSidebar.DragActionRequestedSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PlacesSidebar.DragActionRequestedSignalArgs.html">PlacesSidebar.DragActionRequestedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_Item_GObject_Signal_Gtk_PlacesSidebar_DragPerformDropSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.Item(GObject.Signal%7BGtk.PlacesSidebar.DragPerformDropSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L156">View Source</a>
+  </span>
+  <a id="Gtk_PlacesSidebar_Item_" data-uid="Gtk.PlacesSidebar.Item*"></a>
+  <h4 id="Gtk_PlacesSidebar_Item_GObject_Signal_Gtk_PlacesSidebar_DragPerformDropSignalArgs__" data-uid="Gtk.PlacesSidebar.Item(GObject.Signal{Gtk.PlacesSidebar.DragPerformDropSignalArgs})">Item[Signal&lt;PlacesSidebar.DragPerformDropSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;PlacesSidebar.DragPerformDropSignalArgs&gt; this[Signal&lt;PlacesSidebar.DragPerformDropSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PlacesSidebar.DragPerformDropSignalArgs.html">PlacesSidebar.DragPerformDropSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PlacesSidebar.DragPerformDropSignalArgs.html">PlacesSidebar.DragPerformDropSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_Item_GObject_Signal_Gtk_PlacesSidebar_MountSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.Item(GObject.Signal%7BGtk.PlacesSidebar.MountSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L227">View Source</a>
+  </span>
+  <a id="Gtk_PlacesSidebar_Item_" data-uid="Gtk.PlacesSidebar.Item*"></a>
+  <h4 id="Gtk_PlacesSidebar_Item_GObject_Signal_Gtk_PlacesSidebar_MountSignalArgs__" data-uid="Gtk.PlacesSidebar.Item(GObject.Signal{Gtk.PlacesSidebar.MountSignalArgs})">Item[Signal&lt;PlacesSidebar.MountSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;PlacesSidebar.MountSignalArgs&gt; this[Signal&lt;PlacesSidebar.MountSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PlacesSidebar.MountSignalArgs.html">PlacesSidebar.MountSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PlacesSidebar.MountSignalArgs.html">PlacesSidebar.MountSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_Item_GObject_Signal_Gtk_PlacesSidebar_OpenLocationSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.Item(GObject.Signal%7BGtk.PlacesSidebar.OpenLocationSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L282">View Source</a>
+  </span>
+  <a id="Gtk_PlacesSidebar_Item_" data-uid="Gtk.PlacesSidebar.Item*"></a>
+  <h4 id="Gtk_PlacesSidebar_Item_GObject_Signal_Gtk_PlacesSidebar_OpenLocationSignalArgs__" data-uid="Gtk.PlacesSidebar.Item(GObject.Signal{Gtk.PlacesSidebar.OpenLocationSignalArgs})">Item[Signal&lt;PlacesSidebar.OpenLocationSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;PlacesSidebar.OpenLocationSignalArgs&gt; this[Signal&lt;PlacesSidebar.OpenLocationSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PlacesSidebar.OpenLocationSignalArgs.html">PlacesSidebar.OpenLocationSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PlacesSidebar.OpenLocationSignalArgs.html">PlacesSidebar.OpenLocationSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_Item_GObject_Signal_Gtk_PlacesSidebar_PopulatePopupSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.Item(GObject.Signal%7BGtk.PlacesSidebar.PopulatePopupSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L344">View Source</a>
+  </span>
+  <a id="Gtk_PlacesSidebar_Item_" data-uid="Gtk.PlacesSidebar.Item*"></a>
+  <h4 id="Gtk_PlacesSidebar_Item_GObject_Signal_Gtk_PlacesSidebar_PopulatePopupSignalArgs__" data-uid="Gtk.PlacesSidebar.Item(GObject.Signal{Gtk.PlacesSidebar.PopulatePopupSignalArgs})">Item[Signal&lt;PlacesSidebar.PopulatePopupSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;PlacesSidebar.PopulatePopupSignalArgs&gt; this[Signal&lt;PlacesSidebar.PopulatePopupSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PlacesSidebar.PopulatePopupSignalArgs.html">PlacesSidebar.PopulatePopupSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PlacesSidebar.PopulatePopupSignalArgs.html">PlacesSidebar.PopulatePopupSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_Item_GObject_Signal_Gtk_PlacesSidebar_ShowErrorMessageSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.Item(GObject.Signal%7BGtk.PlacesSidebar.ShowErrorMessageSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L483">View Source</a>
+  </span>
+  <a id="Gtk_PlacesSidebar_Item_" data-uid="Gtk.PlacesSidebar.Item*"></a>
+  <h4 id="Gtk_PlacesSidebar_Item_GObject_Signal_Gtk_PlacesSidebar_ShowErrorMessageSignalArgs__" data-uid="Gtk.PlacesSidebar.Item(GObject.Signal{Gtk.PlacesSidebar.ShowErrorMessageSignalArgs})">Item[Signal&lt;PlacesSidebar.ShowErrorMessageSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;PlacesSidebar.ShowErrorMessageSignalArgs&gt; this[Signal&lt;PlacesSidebar.ShowErrorMessageSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PlacesSidebar.ShowErrorMessageSignalArgs.html">PlacesSidebar.ShowErrorMessageSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PlacesSidebar.ShowErrorMessageSignalArgs.html">PlacesSidebar.ShowErrorMessageSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_Item_GObject_Signal_Gtk_PlacesSidebar_ShowOtherLocationsWithFlagsSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.Item(GObject.Signal%7BGtk.PlacesSidebar.ShowOtherLocationsWithFlagsSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L569">View Source</a>
+  </span>
+  <a id="Gtk_PlacesSidebar_Item_" data-uid="Gtk.PlacesSidebar.Item*"></a>
+  <h4 id="Gtk_PlacesSidebar_Item_GObject_Signal_Gtk_PlacesSidebar_ShowOtherLocationsWithFlagsSignalArgs__" data-uid="Gtk.PlacesSidebar.Item(GObject.Signal{Gtk.PlacesSidebar.ShowOtherLocationsWithFlagsSignalArgs})">Item[Signal&lt;PlacesSidebar.ShowOtherLocationsWithFlagsSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;PlacesSidebar.ShowOtherLocationsWithFlagsSignalArgs&gt; this[Signal&lt;PlacesSidebar.ShowOtherLocationsWithFlagsSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PlacesSidebar.ShowOtherLocationsWithFlagsSignalArgs.html">PlacesSidebar.ShowOtherLocationsWithFlagsSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PlacesSidebar.ShowOtherLocationsWithFlagsSignalArgs.html">PlacesSidebar.ShowOtherLocationsWithFlagsSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_Item_GObject_Signal_Gtk_PlacesSidebar_ShowStarredLocationSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.Item(GObject.Signal%7BGtk.PlacesSidebar.ShowStarredLocationSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L625">View Source</a>
+  </span>
+  <a id="Gtk_PlacesSidebar_Item_" data-uid="Gtk.PlacesSidebar.Item*"></a>
+  <h4 id="Gtk_PlacesSidebar_Item_GObject_Signal_Gtk_PlacesSidebar_ShowStarredLocationSignalArgs__" data-uid="Gtk.PlacesSidebar.Item(GObject.Signal{Gtk.PlacesSidebar.ShowStarredLocationSignalArgs})">Item[Signal&lt;PlacesSidebar.ShowStarredLocationSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;PlacesSidebar.ShowStarredLocationSignalArgs&gt; this[Signal&lt;PlacesSidebar.ShowStarredLocationSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PlacesSidebar.ShowStarredLocationSignalArgs.html">PlacesSidebar.ShowStarredLocationSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PlacesSidebar.ShowStarredLocationSignalArgs.html">PlacesSidebar.ShowStarredLocationSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_Item_GObject_Signal_Gtk_PlacesSidebar_UnmountSignalArgs__.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.Item(GObject.Signal%7BGtk.PlacesSidebar.UnmountSignalArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L681">View Source</a>
+  </span>
+  <a id="Gtk_PlacesSidebar_Item_" data-uid="Gtk.PlacesSidebar.Item*"></a>
+  <h4 id="Gtk_PlacesSidebar_Item_GObject_Signal_Gtk_PlacesSidebar_UnmountSignalArgs__" data-uid="Gtk.PlacesSidebar.Item(GObject.Signal{Gtk.PlacesSidebar.UnmountSignalArgs})">Item[Signal&lt;PlacesSidebar.UnmountSignalArgs&gt;]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;PlacesSidebar.UnmountSignalArgs&gt; this[Signal&lt;PlacesSidebar.UnmountSignalArgs&gt; signal] { set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.PlacesSidebar.UnmountSignalArgs.html">PlacesSidebar.UnmountSignalArgs</a>&gt;</td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PlacesSidebar.UnmountSignalArgs.html">PlacesSidebar.UnmountSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_OnDragActionAsk.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.OnDragActionAsk%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L67">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_OnDragActionAsk" data-uid="Gtk.PlacesSidebar.OnDragActionAsk">OnDragActionAsk</h4>
+  <div class="markdown level1 summary"><p>The places sidebar emits this signal when it needs to ask the application
+to pop up a menu to ask the user for which drag action to perform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PlacesSidebar.DragActionAskSignalArgs&gt; OnDragActionAsk</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PlacesSidebar.DragActionAskSignalArgs.html">PlacesSidebar.DragActionAskSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_OnDragActionRequested.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.OnDragActionRequested%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L142">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_OnDragActionRequested" data-uid="Gtk.PlacesSidebar.OnDragActionRequested">OnDragActionRequested</h4>
+  <div class="markdown level1 summary"><p>When the user starts a drag-and-drop operation and the sidebar needs
+to ask the application for which drag action to perform, then the
+sidebar will emit this signal.</p>
+<p>The application can evaluate the @context for customary actions, or
+it can check the type of the files indicated by @source_file_list against the
+possible actions for the destination @dest_file.</p>
+<p>The drag action to use must be the return value of the signal handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PlacesSidebar.DragActionRequestedSignalArgs&gt; OnDragActionRequested</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PlacesSidebar.DragActionRequestedSignalArgs.html">PlacesSidebar.DragActionRequestedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_OnDragPerformDrop.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.OnDragPerformDrop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L213">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_OnDragPerformDrop" data-uid="Gtk.PlacesSidebar.OnDragPerformDrop">OnDragPerformDrop</h4>
+  <div class="markdown level1 summary"><p>The places sidebar emits this signal when the user completes a
+drag-and-drop operation and one of the sidebar's items is the
+destination.  This item is in the @dest_file, and the
+@source_file_list has the list of files that are dropped into it and
+which should be copied/moved/etc. based on the specified @action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PlacesSidebar.DragPerformDropSignalArgs&gt; OnDragPerformDrop</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PlacesSidebar.DragPerformDropSignalArgs.html">PlacesSidebar.DragPerformDropSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_OnMount.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.OnMount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L268">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_OnMount" data-uid="Gtk.PlacesSidebar.OnMount">OnMount</h4>
+  <div class="markdown level1 summary"><p>The places sidebar emits this signal when it starts a new operation
+because the user clicked on some location that needs mounting.
+In this way the application using the #GtkPlacesSidebar can track the
+progress of the operation and, for example, show a notification.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PlacesSidebar.MountSignalArgs&gt; OnMount</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PlacesSidebar.MountSignalArgs.html">PlacesSidebar.MountSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_OnOpenLocation.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.OnOpenLocation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L330">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_OnOpenLocation" data-uid="Gtk.PlacesSidebar.OnOpenLocation">OnOpenLocation</h4>
+  <div class="markdown level1 summary"><p>The places sidebar emits this signal when the user selects a location
+in it.  The calling application should display the contents of that
+location; for example, a file manager should show a list of files in
+the specified location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PlacesSidebar.OpenLocationSignalArgs&gt; OnOpenLocation</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PlacesSidebar.OpenLocationSignalArgs.html">PlacesSidebar.OpenLocationSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_OnPopulatePopup.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.OnPopulatePopup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L422">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_OnPopulatePopup" data-uid="Gtk.PlacesSidebar.OnPopulatePopup">OnPopulatePopup</h4>
+  <div class="markdown level1 summary"><p>The places sidebar emits this signal when the user invokes a contextual
+popup on one of its items. In the signal handler, the application may
+add extra items to the menu as appropriate. For example, a file manager
+may want to add a &quot;Properties&quot; command to the menu.</p>
+<p>It is not necessary to store the @selected_item for each menu item;
+during their callbacks, the application can use gtk_places_sidebar_get_location()
+to get the file to which the item refers.</p>
+<p>The @selected_item argument may be %NULL in case the selection refers to
+a volume. In this case, @selected_volume will be non-%NULL. In this case,
+the calling application will have to g_object_ref() the @selected_volume and
+keep it around to use it in the callback.</p>
+<p>The @container and all its contents are destroyed after the user
+dismisses the popup. The popup is re-created (and thus, this signal is
+emitted) every time the user activates the contextual menu.</p>
+<p>Before 3.18, the @container always was a #GtkMenu, and you were expected
+to add your items as #GtkMenuItems. Since 3.18, the popup may be implemented
+as a #GtkPopover, in which case @container will be something else, e.g. a
+#GtkBox, to which you may add #GtkModelButtons or other widgets, such as
+#GtkEntries, #GtkSpinButtons, etc. If your application can deal with this
+situation, you can set #GtkPlacesSidebar::populate-all to %TRUE to request
+that this signal is emitted for populating popovers as well.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PlacesSidebar.PopulatePopupSignalArgs&gt; OnPopulatePopup</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PlacesSidebar.PopulatePopupSignalArgs.html">PlacesSidebar.PopulatePopupSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_OnShowConnectToServer.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.OnShowConnectToServer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L446">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_OnShowConnectToServer" data-uid="Gtk.PlacesSidebar.OnShowConnectToServer">OnShowConnectToServer</h4>
+  <div class="markdown level1 summary"><p>The places sidebar emits this signal when it needs the calling
+application to present an way to connect directly to a network server.
+For example, the application may bring up a dialog box asking for
+a URL like &quot;sftp://ftp.example.com&quot;.  It is up to the application to create
+the corresponding mount by using, for example, g_file_mount_enclosing_volume().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;&quot;)]
+public event EventHandler&lt;SignalArgs&gt; OnShowConnectToServer</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_OnShowEnterLocation.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.OnShowEnterLocation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L469">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_OnShowEnterLocation" data-uid="Gtk.PlacesSidebar.OnShowEnterLocation">OnShowEnterLocation</h4>
+  <div class="markdown level1 summary"><p>The places sidebar emits this signal when it needs the calling
+application to present an way to directly enter a location.
+For example, the application may bring up a dialog box asking for
+a URL like &quot;http://http.example.com&quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SignalArgs&gt; OnShowEnterLocation</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_OnShowErrorMessage.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.OnShowErrorMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L531">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_OnShowErrorMessage" data-uid="Gtk.PlacesSidebar.OnShowErrorMessage">OnShowErrorMessage</h4>
+  <div class="markdown level1 summary"><p>The places sidebar emits this signal when it needs the calling
+application to present an error message.  Most of these messages
+refer to mounting or unmounting media, for example, when a drive
+cannot be started for some reason.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PlacesSidebar.ShowErrorMessageSignalArgs&gt; OnShowErrorMessage</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PlacesSidebar.ShowErrorMessageSignalArgs.html">PlacesSidebar.ShowErrorMessageSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_OnShowOtherLocations.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.OnShowOtherLocations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L555">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_OnShowOtherLocations" data-uid="Gtk.PlacesSidebar.OnShowOtherLocations">OnShowOtherLocations</h4>
+  <div class="markdown level1 summary"><p>The places sidebar emits this signal when it needs the calling
+application to present a way to show other locations e.g. drives
+and network access points.
+For example, the application may bring up a page showing persistent
+volumes and discovered network addresses.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;&quot;)]
+public event EventHandler&lt;SignalArgs&gt; OnShowOtherLocations</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="GObject.SignalArgs.html">SignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_OnShowOtherLocationsWithFlags.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.OnShowOtherLocationsWithFlags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L611">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_OnShowOtherLocationsWithFlags" data-uid="Gtk.PlacesSidebar.OnShowOtherLocationsWithFlags">OnShowOtherLocationsWithFlags</h4>
+  <div class="markdown level1 summary"><p>The places sidebar emits this signal when it needs the calling
+application to present a way to show other locations e.g. drives
+and network access points.
+For example, the application may bring up a page showing persistent
+volumes and discovered network addresses.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PlacesSidebar.ShowOtherLocationsWithFlagsSignalArgs&gt; OnShowOtherLocationsWithFlags</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PlacesSidebar.ShowOtherLocationsWithFlagsSignalArgs.html">PlacesSidebar.ShowOtherLocationsWithFlagsSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_OnShowStarredLocation.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.OnShowStarredLocation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L667">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_OnShowStarredLocation" data-uid="Gtk.PlacesSidebar.OnShowStarredLocation">OnShowStarredLocation</h4>
+  <div class="markdown level1 summary"><p>The places sidebar emits this signal when it needs the calling
+application to present a way to show the starred files. In GNOME,
+starred files are implemented by setting the nao:predefined-tag-favorite
+tag in the tracker database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PlacesSidebar.ShowStarredLocationSignalArgs&gt; OnShowStarredLocation</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PlacesSidebar.ShowStarredLocationSignalArgs.html">PlacesSidebar.ShowStarredLocationSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar_OnUnmount.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar.OnUnmount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L722">View Source</a>
+  </span>
+  <h4 id="Gtk_PlacesSidebar_OnUnmount" data-uid="Gtk.PlacesSidebar.OnUnmount">OnUnmount</h4>
+  <div class="markdown level1 summary"><p>The places sidebar emits this signal when it starts a new operation
+because the user for example ejected some drive or unmounted a mount.
+In this way the application using the #GtkPlacesSidebar can track the
+progress of the operation and, for example, show a notification.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PlacesSidebar.UnmountSignalArgs&gt; OnUnmount</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Gtk.PlacesSidebar.UnmountSignalArgs.html">PlacesSidebar.UnmountSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_PlacesSidebar.md&amp;value=---%0Auid%3A%20Gtk.PlacesSidebar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/PlacesSidebar.Generated.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

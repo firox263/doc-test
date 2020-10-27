@@ -1,0 +1,692 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PixbufLoader.Native
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PixbufLoader.Native
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GdkPixbuf.PixbufLoader.Native">
+  
+  
+  <h1 id="GdkPixbuf_PixbufLoader_Native" data-uid="GdkPixbuf.PixbufLoader.Native" class="text-break">Class PixbufLoader.Native
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PixbufLoader.Native</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GdkPixbuf.html">GdkPixbuf</a></h6>
+  <h6><strong>Assembly</strong>: GdkPixbuf.dll</h6>
+  <h5 id="GdkPixbuf_PixbufLoader_Native_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static class Native</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="GdkPixbuf_PixbufLoader_Native_close_" data-uid="GdkPixbuf.PixbufLoader.Native.close*"></a>
+  <h4 id="GdkPixbuf_PixbufLoader_Native_close_System_IntPtr_System_IntPtr__" data-uid="GdkPixbuf.PixbufLoader.Native.close(System.IntPtr,System.IntPtr@)">close(IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Informs a pixbuf loader that no further writes with
+gdk_pixbuf_loader_write() will occur, so that it can free its
+internal loading structures. Also, tries to parse any data that
+hasn't yet been parsed; if the remaining data is partial or
+corrupt, an error will be returned.  If %FALSE is returned, @error
+will be set to an error from the #GDK_PIXBUF_ERROR or #G_FILE_ERROR
+domains. If you're just cancelling a load rather than expecting it
+to be finished, passing %NULL for @error to ignore it is
+reasonable.</p>
+<p>Remember that this does not unref the loader, so if you plan not to
+use it anymore, please g_object_unref() it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool close(IntPtr loader, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">loader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GdkPixbuf_PixbufLoader_Native_get_animation_" data-uid="GdkPixbuf.PixbufLoader.Native.get_animation*"></a>
+  <h4 id="GdkPixbuf_PixbufLoader_Native_get_animation_System_IntPtr_" data-uid="GdkPixbuf.PixbufLoader.Native.get_animation(System.IntPtr)">get_animation(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Queries the #GdkPixbufAnimation that a pixbuf loader is currently creating.
+In general it only makes sense to call this function after the &quot;area-prepared&quot;
+signal has been emitted by the loader. If the loader doesn't have enough
+bytes yet (hasn't emitted the &quot;area-prepared&quot; signal) this function will
+return %NULL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_animation(IntPtr loader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">loader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GdkPixbuf_PixbufLoader_Native_get_format_" data-uid="GdkPixbuf.PixbufLoader.Native.get_format*"></a>
+  <h4 id="GdkPixbuf_PixbufLoader_Native_get_format_System_IntPtr_" data-uid="GdkPixbuf.PixbufLoader.Native.get_format(System.IntPtr)">get_format(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Obtains the available information about the format of the
+currently loading image file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_format(IntPtr loader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">loader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GdkPixbuf_PixbufLoader_Native_get_pixbuf_" data-uid="GdkPixbuf.PixbufLoader.Native.get_pixbuf*"></a>
+  <h4 id="GdkPixbuf_PixbufLoader_Native_get_pixbuf_System_IntPtr_" data-uid="GdkPixbuf.PixbufLoader.Native.get_pixbuf(System.IntPtr)">get_pixbuf(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Queries the #GdkPixbuf that a pixbuf loader is currently creating.
+In general it only makes sense to call this function after the
+&quot;area-prepared&quot; signal has been emitted by the loader; this means
+that enough data has been read to know the size of the image that
+will be allocated.  If the loader has not received enough data via
+gdk_pixbuf_loader_write(), then this function returns %NULL.  The
+returned pixbuf will be the same in all future calls to the loader,
+so simply calling g_object_ref() should be sufficient to continue
+using it.  Additionally, if the loader is an animation, it will
+return the &quot;static image&quot; of the animation
+(see gdk_pixbuf_animation_get_static_image()).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_pixbuf(IntPtr loader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">loader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GdkPixbuf_PixbufLoader_Native_get_type_" data-uid="GdkPixbuf.PixbufLoader.Native.get_type*"></a>
+  <h4 id="GdkPixbuf_PixbufLoader_Native_get_type" data-uid="GdkPixbuf.PixbufLoader.Native.get_type">get_type()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong get_type()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GdkPixbuf_PixbufLoader_Native_new_" data-uid="GdkPixbuf.PixbufLoader.Native.new*"></a>
+  <h4 id="GdkPixbuf_PixbufLoader_Native_new" data-uid="GdkPixbuf.PixbufLoader.Native.new">new()</h4>
+  <div class="markdown level1 summary"><p>Creates a new pixbuf loader object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr new()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GdkPixbuf_PixbufLoader_Native_new_with_mime_type_" data-uid="GdkPixbuf.PixbufLoader.Native.new_with_mime_type*"></a>
+  <h4 id="GdkPixbuf_PixbufLoader_Native_new_with_mime_type_System_String_System_IntPtr__" data-uid="GdkPixbuf.PixbufLoader.Native.new_with_mime_type(System.String,System.IntPtr@)">new_with_mime_type(String, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Creates a new pixbuf loader object that always attempts to parse
+image data as if it were an image of mime type @mime_type, instead of
+identifying the type automatically. Useful if you want an error if
+the image isn't the expected mime type, for loading image formats
+that can't be reliably identified by looking at the data, or if
+the user manually forces a specific mime type.</p>
+<p>The list of supported mime types depends on what image loaders
+are installed, but typically &quot;image/png&quot;, &quot;image/jpeg&quot;, &quot;image/gif&quot;,
+&quot;image/tiff&quot; and &quot;image/x-xpixmap&quot; are among the supported mime types.
+To obtain the full list of supported mime types, call
+gdk_pixbuf_format_get_mime_types() on each of the #GdkPixbufFormat
+structs returned by gdk_pixbuf_get_formats().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr new_with_mime_type(string mime_type, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">mime_type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GdkPixbuf_PixbufLoader_Native_new_with_type_" data-uid="GdkPixbuf.PixbufLoader.Native.new_with_type*"></a>
+  <h4 id="GdkPixbuf_PixbufLoader_Native_new_with_type_System_String_System_IntPtr__" data-uid="GdkPixbuf.PixbufLoader.Native.new_with_type(System.String,System.IntPtr@)">new_with_type(String, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Creates a new pixbuf loader object that always attempts to parse
+image data as if it were an image of type @image_type, instead of
+identifying the type automatically. Useful if you want an error if
+the image isn't the expected type, for loading image formats
+that can't be reliably identified by looking at the data, or if
+the user manually forces a specific type.</p>
+<p>The list of supported image formats depends on what image loaders
+are installed, but typically &quot;png&quot;, &quot;jpeg&quot;, &quot;gif&quot;, &quot;tiff&quot; and
+&quot;xpm&quot; are among the supported formats. To obtain the full list of
+supported image formats, call gdk_pixbuf_format_get_name() on each
+of the #GdkPixbufFormat structs returned by gdk_pixbuf_get_formats().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr new_with_type(string image_type, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">image_type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GdkPixbuf_PixbufLoader_Native_set_size_" data-uid="GdkPixbuf.PixbufLoader.Native.set_size*"></a>
+  <h4 id="GdkPixbuf_PixbufLoader_Native_set_size_System_IntPtr_System_Int32_System_Int32_" data-uid="GdkPixbuf.PixbufLoader.Native.set_size(System.IntPtr,System.Int32,System.Int32)">set_size(IntPtr, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Causes the image to be scaled while it is loaded. The desired
+image size can be determined relative to the original size of
+the image by calling gdk_pixbuf_loader_set_size() from a
+signal handler for the ::size-prepared signal.</p>
+<p>Attempts to set the desired image size  are ignored after the
+emission of the ::size-prepared signal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_size(IntPtr loader, int width, int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">loader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GdkPixbuf_PixbufLoader_Native_write_" data-uid="GdkPixbuf.PixbufLoader.Native.write*"></a>
+  <h4 id="GdkPixbuf_PixbufLoader_Native_write_System_IntPtr_System_Byte___System_UInt64_System_IntPtr__" data-uid="GdkPixbuf.PixbufLoader.Native.write(System.IntPtr,System.Byte[],System.UInt64,System.IntPtr@)">write(IntPtr, Byte[], UInt64, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>This will cause a pixbuf loader to parse the next @count bytes of
+an image.  It will return %TRUE if the data was loaded successfully,
+and %FALSE if an error occurred.  In the latter case, the loader
+will be closed, and will not accept further writes. If %FALSE is
+returned, @error will be set to an error from the #GDK_PIXBUF_ERROR
+or #G_FILE_ERROR domains.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool write(IntPtr loader, byte[] buf, ulong count, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">loader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GdkPixbuf_PixbufLoader_Native_write_bytes_" data-uid="GdkPixbuf.PixbufLoader.Native.write_bytes*"></a>
+  <h4 id="GdkPixbuf_PixbufLoader_Native_write_bytes_System_IntPtr_System_IntPtr_System_IntPtr__" data-uid="GdkPixbuf.PixbufLoader.Native.write_bytes(System.IntPtr,System.IntPtr,System.IntPtr@)">write_bytes(IntPtr, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>This will cause a pixbuf loader to parse a buffer inside a #GBytes
+for an image.  It will return %TRUE if the data was loaded successfully,
+and %FALSE if an error occurred.  In the latter case, the loader
+will be closed, and will not accept further writes. If %FALSE is
+returned, @error will be set to an error from the #GDK_PIXBUF_ERROR
+or #G_FILE_ERROR domains.</p>
+<p>See also: gdk_pixbuf_loader_write()</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool write_bytes(IntPtr loader, IntPtr buffer, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">loader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GdkPixbuf_PixbufLoader_Native.md&amp;value=---%0Auid%3A%20GdkPixbuf.PixbufLoader.Native%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GdkPixbuf/Classes/PixbufLoader.Generated.cs/#L218" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

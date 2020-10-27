@@ -1,0 +1,534 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SignalArgs
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SignalArgs
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GObject.SignalArgs">
+  
+  
+  <h1 id="GObject_SignalArgs" data-uid="GObject.SignalArgs" class="text-break">Class SignalArgs
+  </h1>
+  <div class="markdown level0 summary"><p>Base class for signal based events.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.EventArgs</span></div>
+    <div class="level2"><span class="xref">SignalArgs</span></div>
+      <div class="level3"><a class="xref" href="Gdk.Device.ToolChangedSignalArgs.html">Device.ToolChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gdk.DeviceManager.DeviceAddedSignalArgs.html">DeviceManager.DeviceAddedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gdk.DeviceManager.DeviceChangedSignalArgs.html">DeviceManager.DeviceChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gdk.DeviceManager.DeviceRemovedSignalArgs.html">DeviceManager.DeviceRemovedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gdk.Display.ClosedSignalArgs.html">Display.ClosedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gdk.Display.MonitorAddedSignalArgs.html">Display.MonitorAddedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gdk.Display.MonitorRemovedSignalArgs.html">Display.MonitorRemovedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gdk.Display.SeatAddedSignalArgs.html">Display.SeatAddedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gdk.Display.SeatRemovedSignalArgs.html">Display.SeatRemovedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gdk.DisplayManager.DisplayOpenedSignalArgs.html">DisplayManager.DisplayOpenedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gdk.DragContext.ActionChangedSignalArgs.html">DragContext.ActionChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gdk.DragContext.CancelSignalArgs.html">DragContext.CancelSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gdk.DragContext.DropPerformedSignalArgs.html">DragContext.DropPerformedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gdk.Seat.DeviceAddedSignalArgs.html">Seat.DeviceAddedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gdk.Seat.DeviceRemovedSignalArgs.html">Seat.DeviceRemovedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gdk.Seat.ToolAddedSignalArgs.html">Seat.ToolAddedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gdk.Seat.ToolRemovedSignalArgs.html">Seat.ToolRemovedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gdk.Window.CreateSurfaceSignalArgs.html">Window.CreateSurfaceSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gdk.Window.FromEmbedderSignalArgs.html">Window.FromEmbedderSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gdk.Window.MovedToRectSignalArgs.html">Window.MovedToRectSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gdk.Window.PickEmbeddedChildSignalArgs.html">Window.PickEmbeddedChildSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gdk.Window.ToEmbedderSignalArgs.html">Window.ToEmbedderSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="GdkPixbuf.PixbufLoader.AreaUpdatedSignalArgs.html">PixbufLoader.AreaUpdatedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="GdkPixbuf.PixbufLoader.SizePreparedSignalArgs.html">PixbufLoader.SizePreparedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.AppLaunchContext.LaunchedSignalArgs.html">AppLaunchContext.LaunchedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.AppLaunchContext.LaunchFailedSignalArgs.html">AppLaunchContext.LaunchFailedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.Application.CommandLineSignalArgs.html">Application.CommandLineSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.Application.HandleLocalOptionsSignalArgs.html">Application.HandleLocalOptionsSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.Application.OpenSignalArgs.html">Application.OpenSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.DBusAuthObserver.AllowMechanismSignalArgs.html">DBusAuthObserver.AllowMechanismSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.DBusAuthObserver.AuthorizeAuthenticatedPeerSignalArgs.html">DBusAuthObserver.AuthorizeAuthenticatedPeerSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.DBusConnection.ClosedSignalArgs.html">DBusConnection.ClosedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.DBusInterfaceSkeleton.GAuthorizeMethodSignalArgs.html">DBusInterfaceSkeleton.GAuthorizeMethodSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.DBusObjectManagerClient.InterfaceProxyPropertiesChangedSignalArgs.html">DBusObjectManagerClient.InterfaceProxyPropertiesChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.DBusObjectManagerClient.InterfaceProxySignalSignalArgs.html">DBusObjectManagerClient.InterfaceProxySignalSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.DBusObjectSkeleton.AuthorizeMethodSignalArgs.html">DBusObjectSkeleton.AuthorizeMethodSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.DBusProxy.GPropertiesChangedSignalArgs.html">DBusProxy.GPropertiesChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.DBusProxy.GSignalSignalArgs.html">DBusProxy.GSignalSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.DBusServer.NewConnectionSignalArgs.html">DBusServer.NewConnectionSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.FileMonitor.ChangedSignalArgs.html">FileMonitor.ChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.MenuModel.ItemsChangedSignalArgs.html">MenuModel.ItemsChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.MountOperation.AskPasswordSignalArgs.html">MountOperation.AskPasswordSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.MountOperation.AskQuestionSignalArgs.html">MountOperation.AskQuestionSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.MountOperation.ReplySignalArgs.html">MountOperation.ReplySignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.MountOperation.ShowProcessesSignalArgs.html">MountOperation.ShowProcessesSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.MountOperation.ShowUnmountProgressSignalArgs.html">MountOperation.ShowUnmountProgressSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.Settings.ChangedSignalArgs.html">Settings.ChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.Settings.ChangeEventSignalArgs.html">Settings.ChangeEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.Settings.WritableChangedSignalArgs.html">Settings.WritableChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.Settings.WritableChangeEventSignalArgs.html">Settings.WritableChangeEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.SimpleAction.ActivateSignalArgs.html">SimpleAction.ActivateSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.SimpleAction.ChangeStateSignalArgs.html">SimpleAction.ChangeStateSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.SocketClient.EventSignalArgs.html">SocketClient.EventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.SocketListener.EventSignalArgs.html">SocketListener.EventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.SocketService.IncomingSignalArgs.html">SocketService.IncomingSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.ThreadedSocketService.RunSignalArgs.html">ThreadedSocketService.RunSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.TlsConnection.AcceptCertificateSignalArgs.html">TlsConnection.AcceptCertificateSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.VolumeMonitor.DriveChangedSignalArgs.html">VolumeMonitor.DriveChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.VolumeMonitor.DriveConnectedSignalArgs.html">VolumeMonitor.DriveConnectedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.VolumeMonitor.DriveDisconnectedSignalArgs.html">VolumeMonitor.DriveDisconnectedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.VolumeMonitor.DriveEjectButtonSignalArgs.html">VolumeMonitor.DriveEjectButtonSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.VolumeMonitor.DriveStopButtonSignalArgs.html">VolumeMonitor.DriveStopButtonSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.VolumeMonitor.MountAddedSignalArgs.html">VolumeMonitor.MountAddedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.VolumeMonitor.MountChangedSignalArgs.html">VolumeMonitor.MountChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.VolumeMonitor.MountPreUnmountSignalArgs.html">VolumeMonitor.MountPreUnmountSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.VolumeMonitor.MountRemovedSignalArgs.html">VolumeMonitor.MountRemovedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.VolumeMonitor.VolumeAddedSignalArgs.html">VolumeMonitor.VolumeAddedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.VolumeMonitor.VolumeChangedSignalArgs.html">VolumeMonitor.VolumeChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gio.VolumeMonitor.VolumeRemovedSignalArgs.html">VolumeMonitor.VolumeRemovedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="GObject.Object.NotifySignalArgs.html">Object.NotifySignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.AboutDialog.ActivateLinkSignalArgs.html">AboutDialog.ActivateLinkSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.AccelGroup.AccelActivateSignalArgs.html">AccelGroup.AccelActivateSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.AccelGroup.AccelChangedSignalArgs.html">AccelGroup.AccelChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.AccelMap.ChangedSignalArgs.html">AccelMap.ChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.ActionGroup.ConnectProxySignalArgs.html">ActionGroup.ConnectProxySignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.ActionGroup.DisconnectProxySignalArgs.html">ActionGroup.DisconnectProxySignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.ActionGroup.PostActivateSignalArgs.html">ActionGroup.PostActivateSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.ActionGroup.PreActivateSignalArgs.html">ActionGroup.PreActivateSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.AppChooserButton.CustomItemActivatedSignalArgs.html">AppChooserButton.CustomItemActivatedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.AppChooserWidget.ApplicationActivatedSignalArgs.html">AppChooserWidget.ApplicationActivatedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.AppChooserWidget.ApplicationSelectedSignalArgs.html">AppChooserWidget.ApplicationSelectedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.AppChooserWidget.PopulatePopupSignalArgs.html">AppChooserWidget.PopulatePopupSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Application.WindowAddedSignalArgs.html">Application.WindowAddedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Application.WindowRemovedSignalArgs.html">Application.WindowRemovedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Assistant.PrepareSignalArgs.html">Assistant.PrepareSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.CellArea.AddEditableSignalArgs.html">CellArea.AddEditableSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.CellArea.ApplyAttributesSignalArgs.html">CellArea.ApplyAttributesSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.CellArea.FocusChangedSignalArgs.html">CellArea.FocusChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.CellArea.RemoveEditableSignalArgs.html">CellArea.RemoveEditableSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.CellRenderer.EditingStartedSignalArgs.html">CellRenderer.EditingStartedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.CellRendererAccel.AccelClearedSignalArgs.html">CellRendererAccel.AccelClearedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.CellRendererAccel.AccelEditedSignalArgs.html">CellRendererAccel.AccelEditedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.CellRendererCombo.ChangedSignalArgs.html">CellRendererCombo.ChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.CellRendererText.EditedSignalArgs.html">CellRendererText.EditedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.CellRendererToggle.ToggledSignalArgs.html">CellRendererToggle.ToggledSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Clipboard.OwnerChangeSignalArgs.html">Clipboard.OwnerChangeSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.ComboBox.FormatEntryTextSignalArgs.html">ComboBox.FormatEntryTextSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.ComboBox.MoveActiveSignalArgs.html">ComboBox.MoveActiveSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Container.AddSignalArgs.html">Container.AddSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Container.RemoveSignalArgs.html">Container.RemoveSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Container.SetFocusChildSignalArgs.html">Container.SetFocusChildSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.CssProvider.ParsingErrorSignalArgs.html">CssProvider.ParsingErrorSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Dialog.ResponseSignalArgs.html">Dialog.ResponseSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Entry.DeleteFromCursorSignalArgs.html">Entry.DeleteFromCursorSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Entry.IconPressSignalArgs.html">Entry.IconPressSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Entry.IconReleaseSignalArgs.html">Entry.IconReleaseSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Entry.InsertAtCursorSignalArgs.html">Entry.InsertAtCursorSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Entry.MoveCursorSignalArgs.html">Entry.MoveCursorSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Entry.PopulatePopupSignalArgs.html">Entry.PopulatePopupSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Entry.PreeditChangedSignalArgs.html">Entry.PreeditChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.EntryBuffer.DeletedTextSignalArgs.html">EntryBuffer.DeletedTextSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.EntryBuffer.InsertedTextSignalArgs.html">EntryBuffer.InsertedTextSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.EntryCompletion.ActionActivatedSignalArgs.html">EntryCompletion.ActionActivatedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.EntryCompletion.CursorOnMatchSignalArgs.html">EntryCompletion.CursorOnMatchSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.EntryCompletion.InsertPrefixSignalArgs.html">EntryCompletion.InsertPrefixSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.EntryCompletion.MatchSelectedSignalArgs.html">EntryCompletion.MatchSelectedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.EventControllerKey.KeyPressedSignalArgs.html">EventControllerKey.KeyPressedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.EventControllerKey.KeyReleasedSignalArgs.html">EventControllerKey.KeyReleasedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.EventControllerKey.ModifiersSignalArgs.html">EventControllerKey.ModifiersSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.EventControllerMotion.EnterSignalArgs.html">EventControllerMotion.EnterSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.EventControllerMotion.MotionSignalArgs.html">EventControllerMotion.MotionSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.EventControllerScroll.DecelerateSignalArgs.html">EventControllerScroll.DecelerateSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.EventControllerScroll.ScrollSignalArgs.html">EventControllerScroll.ScrollSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.FileChooserWidget.LocationPopupSignalArgs.html">FileChooserWidget.LocationPopupSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.FileChooserWidget.QuickBookmarkSignalArgs.html">FileChooserWidget.QuickBookmarkSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.FlowBox.ChildActivatedSignalArgs.html">FlowBox.ChildActivatedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.FlowBox.MoveCursorSignalArgs.html">FlowBox.MoveCursorSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Gesture.BeginSignalArgs.html">Gesture.BeginSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Gesture.CancelSignalArgs.html">Gesture.CancelSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Gesture.EndSignalArgs.html">Gesture.EndSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Gesture.SequenceStateChangedSignalArgs.html">Gesture.SequenceStateChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Gesture.UpdateSignalArgs.html">Gesture.UpdateSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.GestureDrag.DragBeginSignalArgs.html">GestureDrag.DragBeginSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.GestureDrag.DragEndSignalArgs.html">GestureDrag.DragEndSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.GestureDrag.DragUpdateSignalArgs.html">GestureDrag.DragUpdateSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.GestureLongPress.PressedSignalArgs.html">GestureLongPress.PressedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.GestureMultiPress.PressedSignalArgs.html">GestureMultiPress.PressedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.GestureMultiPress.ReleasedSignalArgs.html">GestureMultiPress.ReleasedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.GesturePan.PanSignalArgs.html">GesturePan.PanSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.GestureRotate.AngleChangedSignalArgs.html">GestureRotate.AngleChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.GestureStylus.DownSignalArgs.html">GestureStylus.DownSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.GestureStylus.MotionSignalArgs.html">GestureStylus.MotionSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.GestureStylus.ProximitySignalArgs.html">GestureStylus.ProximitySignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.GestureStylus.UpSignalArgs.html">GestureStylus.UpSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.GestureSwipe.SwipeSignalArgs.html">GestureSwipe.SwipeSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.GestureZoom.ScaleChangedSignalArgs.html">GestureZoom.ScaleChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.GLArea.RenderSignalArgs.html">GLArea.RenderSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.GLArea.ResizeSignalArgs.html">GLArea.ResizeSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.HandleBox.ChildAttachedSignalArgs.html">HandleBox.ChildAttachedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.HandleBox.ChildDetachedSignalArgs.html">HandleBox.ChildDetachedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.HSV.MoveSignalArgs.html">HSV.MoveSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.IconView.ItemActivatedSignalArgs.html">IconView.ItemActivatedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.IconView.MoveCursorSignalArgs.html">IconView.MoveCursorSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.IMContext.CommitSignalArgs.html">IMContext.CommitSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.IMContext.DeleteSurroundingSignalArgs.html">IMContext.DeleteSurroundingSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.InfoBar.ResponseSignalArgs.html">InfoBar.ResponseSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Label.ActivateLinkSignalArgs.html">Label.ActivateLinkSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Label.MoveCursorSignalArgs.html">Label.MoveCursorSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Label.PopulatePopupSignalArgs.html">Label.PopulatePopupSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.LevelBar.OffsetChangedSignalArgs.html">LevelBar.OffsetChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.ListBox.MoveCursorSignalArgs.html">ListBox.MoveCursorSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.ListBox.RowActivatedSignalArgs.html">ListBox.RowActivatedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.ListBox.RowSelectedSignalArgs.html">ListBox.RowSelectedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Menu.MoveScrollSignalArgs.html">Menu.MoveScrollSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Menu.PoppedUpSignalArgs.html">Menu.PoppedUpSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.MenuItem.ToggleSizeAllocateSignalArgs.html">MenuItem.ToggleSizeAllocateSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.MenuItem.ToggleSizeRequestSignalArgs.html">MenuItem.ToggleSizeRequestSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.MenuShell.ActivateCurrentSignalArgs.html">MenuShell.ActivateCurrentSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.MenuShell.CycleFocusSignalArgs.html">MenuShell.CycleFocusSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.MenuShell.InsertSignalArgs.html">MenuShell.InsertSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.MenuShell.MoveCurrentSignalArgs.html">MenuShell.MoveCurrentSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.MenuShell.MoveSelectedSignalArgs.html">MenuShell.MoveSelectedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.NativeDialog.ResponseSignalArgs.html">NativeDialog.ResponseSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Notebook.ChangeCurrentPageSignalArgs.html">Notebook.ChangeCurrentPageSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Notebook.CreateWindowSignalArgs.html">Notebook.CreateWindowSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Notebook.FocusTabSignalArgs.html">Notebook.FocusTabSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Notebook.MoveFocusOutSignalArgs.html">Notebook.MoveFocusOutSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Notebook.PageAddedSignalArgs.html">Notebook.PageAddedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Notebook.PageRemovedSignalArgs.html">Notebook.PageRemovedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Notebook.PageReorderedSignalArgs.html">Notebook.PageReorderedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Notebook.ReorderTabSignalArgs.html">Notebook.ReorderTabSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Notebook.SelectPageSignalArgs.html">Notebook.SelectPageSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Notebook.SwitchPageSignalArgs.html">Notebook.SwitchPageSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Overlay.GetChildPositionSignalArgs.html">Overlay.GetChildPositionSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Paned.CycleChildFocusSignalArgs.html">Paned.CycleChildFocusSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Paned.CycleHandleFocusSignalArgs.html">Paned.CycleHandleFocusSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Paned.MoveHandleSignalArgs.html">Paned.MoveHandleSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.PlacesSidebar.DragActionAskSignalArgs.html">PlacesSidebar.DragActionAskSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.PlacesSidebar.DragActionRequestedSignalArgs.html">PlacesSidebar.DragActionRequestedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.PlacesSidebar.DragPerformDropSignalArgs.html">PlacesSidebar.DragPerformDropSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.PlacesSidebar.MountSignalArgs.html">PlacesSidebar.MountSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.PlacesSidebar.OpenLocationSignalArgs.html">PlacesSidebar.OpenLocationSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.PlacesSidebar.PopulatePopupSignalArgs.html">PlacesSidebar.PopulatePopupSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.PlacesSidebar.ShowErrorMessageSignalArgs.html">PlacesSidebar.ShowErrorMessageSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.PlacesSidebar.ShowOtherLocationsWithFlagsSignalArgs.html">PlacesSidebar.ShowOtherLocationsWithFlagsSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.PlacesSidebar.ShowStarredLocationSignalArgs.html">PlacesSidebar.ShowStarredLocationSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.PlacesSidebar.UnmountSignalArgs.html">PlacesSidebar.UnmountSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.PrintOperation.BeginPrintSignalArgs.html">PrintOperation.BeginPrintSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.PrintOperation.CustomWidgetApplySignalArgs.html">PrintOperation.CustomWidgetApplySignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.PrintOperation.DoneSignalArgs.html">PrintOperation.DoneSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.PrintOperation.DrawPageSignalArgs.html">PrintOperation.DrawPageSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.PrintOperation.EndPrintSignalArgs.html">PrintOperation.EndPrintSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.PrintOperation.PaginateSignalArgs.html">PrintOperation.PaginateSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.PrintOperation.PreviewSignalArgs.html">PrintOperation.PreviewSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.PrintOperation.RequestPageSetupSignalArgs.html">PrintOperation.RequestPageSetupSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.PrintOperation.UpdateCustomWidgetSignalArgs.html">PrintOperation.UpdateCustomWidgetSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.RadioAction.ChangedSignalArgs.html">RadioAction.ChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Range.AdjustBoundsSignalArgs.html">Range.AdjustBoundsSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Range.ChangeValueSignalArgs.html">Range.ChangeValueSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Range.MoveSliderSignalArgs.html">Range.MoveSliderSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Scale.FormatValueSignalArgs.html">Scale.FormatValueSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.ScaleButton.ValueChangedSignalArgs.html">ScaleButton.ValueChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.ScrolledWindow.EdgeOvershotSignalArgs.html">ScrolledWindow.EdgeOvershotSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.ScrolledWindow.EdgeReachedSignalArgs.html">ScrolledWindow.EdgeReachedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.ScrolledWindow.MoveFocusOutSignalArgs.html">ScrolledWindow.MoveFocusOutSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.ScrolledWindow.ScrollChildSignalArgs.html">ScrolledWindow.ScrollChildSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.ShortcutsSection.ChangeCurrentPageSignalArgs.html">ShortcutsSection.ChangeCurrentPageSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.SpinButton.ChangeValueSignalArgs.html">SpinButton.ChangeValueSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.SpinButton.InputSignalArgs.html">SpinButton.InputSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Statusbar.TextPoppedSignalArgs.html">Statusbar.TextPoppedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Statusbar.TextPushedSignalArgs.html">Statusbar.TextPushedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.StatusIcon.ButtonPressEventSignalArgs.html">StatusIcon.ButtonPressEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.StatusIcon.ButtonReleaseEventSignalArgs.html">StatusIcon.ButtonReleaseEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.StatusIcon.PopupMenuSignalArgs.html">StatusIcon.PopupMenuSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.StatusIcon.QueryTooltipSignalArgs.html">StatusIcon.QueryTooltipSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.StatusIcon.ScrollEventSignalArgs.html">StatusIcon.ScrollEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.StatusIcon.SizeChangedSignalArgs.html">StatusIcon.SizeChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Switch.StateSetSignalArgs.html">Switch.StateSetSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TextBuffer.ApplyTagSignalArgs.html">TextBuffer.ApplyTagSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TextBuffer.DeleteRangeSignalArgs.html">TextBuffer.DeleteRangeSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TextBuffer.InsertChildAnchorSignalArgs.html">TextBuffer.InsertChildAnchorSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TextBuffer.InsertPixbufSignalArgs.html">TextBuffer.InsertPixbufSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TextBuffer.InsertTextSignalArgs.html">TextBuffer.InsertTextSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TextBuffer.MarkDeletedSignalArgs.html">TextBuffer.MarkDeletedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TextBuffer.MarkSetSignalArgs.html">TextBuffer.MarkSetSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TextBuffer.PasteDoneSignalArgs.html">TextBuffer.PasteDoneSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TextBuffer.RemoveTagSignalArgs.html">TextBuffer.RemoveTagSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TextTag.EventSignalArgs.html">TextTag.EventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TextTagTable.TagAddedSignalArgs.html">TextTagTable.TagAddedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TextTagTable.TagChangedSignalArgs.html">TextTagTable.TagChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TextTagTable.TagRemovedSignalArgs.html">TextTagTable.TagRemovedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TextView.DeleteFromCursorSignalArgs.html">TextView.DeleteFromCursorSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TextView.ExtendSelectionSignalArgs.html">TextView.ExtendSelectionSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TextView.InsertAtCursorSignalArgs.html">TextView.InsertAtCursorSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TextView.MoveCursorSignalArgs.html">TextView.MoveCursorSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TextView.MoveViewportSignalArgs.html">TextView.MoveViewportSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TextView.PopulatePopupSignalArgs.html">TextView.PopulatePopupSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TextView.PreeditChangedSignalArgs.html">TextView.PreeditChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TextView.SelectAllSignalArgs.html">TextView.SelectAllSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Toolbar.FocusHomeOrEndSignalArgs.html">Toolbar.FocusHomeOrEndSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Toolbar.OrientationChangedSignalArgs.html">Toolbar.OrientationChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Toolbar.PopupContextMenuSignalArgs.html">Toolbar.PopupContextMenuSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Toolbar.StyleChangedSignalArgs.html">Toolbar.StyleChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TreeView.ExpandCollapseCursorRowSignalArgs.html">TreeView.ExpandCollapseCursorRowSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TreeView.MoveCursorSignalArgs.html">TreeView.MoveCursorSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TreeView.RowActivatedSignalArgs.html">TreeView.RowActivatedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TreeView.RowCollapsedSignalArgs.html">TreeView.RowCollapsedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TreeView.RowExpandedSignalArgs.html">TreeView.RowExpandedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TreeView.SelectCursorRowSignalArgs.html">TreeView.SelectCursorRowSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TreeView.TestCollapseRowSignalArgs.html">TreeView.TestCollapseRowSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.TreeView.TestExpandRowSignalArgs.html">TreeView.TestExpandRowSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.UIManager.AddWidgetSignalArgs.html">UIManager.AddWidgetSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.UIManager.ConnectProxySignalArgs.html">UIManager.ConnectProxySignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.UIManager.DisconnectProxySignalArgs.html">UIManager.DisconnectProxySignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.UIManager.PostActivateSignalArgs.html">UIManager.PostActivateSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.UIManager.PreActivateSignalArgs.html">UIManager.PreActivateSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.ButtonPressEventSignalArgs.html">Widget.ButtonPressEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.ButtonReleaseEventSignalArgs.html">Widget.ButtonReleaseEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.CanActivateAccelSignalArgs.html">Widget.CanActivateAccelSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.ChildNotifySignalArgs.html">Widget.ChildNotifySignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.ConfigureEventSignalArgs.html">Widget.ConfigureEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.DamageEventSignalArgs.html">Widget.DamageEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.DeleteEventSignalArgs.html">Widget.DeleteEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.DestroyEventSignalArgs.html">Widget.DestroyEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.DirectionChangedSignalArgs.html">Widget.DirectionChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.DragBeginSignalArgs.html">Widget.DragBeginSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.DragDataDeleteSignalArgs.html">Widget.DragDataDeleteSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.DragDataGetSignalArgs.html">Widget.DragDataGetSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.DragDataReceivedSignalArgs.html">Widget.DragDataReceivedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.DragDropSignalArgs.html">Widget.DragDropSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.DragEndSignalArgs.html">Widget.DragEndSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.DragFailedSignalArgs.html">Widget.DragFailedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.DragLeaveSignalArgs.html">Widget.DragLeaveSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.DragMotionSignalArgs.html">Widget.DragMotionSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.DrawSignalArgs.html">Widget.DrawSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.EnterNotifyEventSignalArgs.html">Widget.EnterNotifyEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.EventAfterSignalArgs.html">Widget.EventAfterSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.EventSignalArgs.html">Widget.EventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.FocusInEventSignalArgs.html">Widget.FocusInEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.FocusOutEventSignalArgs.html">Widget.FocusOutEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.FocusSignalArgs.html">Widget.FocusSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.GrabBrokenEventSignalArgs.html">Widget.GrabBrokenEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.GrabNotifySignalArgs.html">Widget.GrabNotifySignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.HierarchyChangedSignalArgs.html">Widget.HierarchyChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.KeynavFailedSignalArgs.html">Widget.KeynavFailedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.KeyPressEventSignalArgs.html">Widget.KeyPressEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.KeyReleaseEventSignalArgs.html">Widget.KeyReleaseEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.LeaveNotifyEventSignalArgs.html">Widget.LeaveNotifyEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.MapEventSignalArgs.html">Widget.MapEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.MnemonicActivateSignalArgs.html">Widget.MnemonicActivateSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.MotionNotifyEventSignalArgs.html">Widget.MotionNotifyEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.MoveFocusSignalArgs.html">Widget.MoveFocusSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.ParentSetSignalArgs.html">Widget.ParentSetSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.PropertyNotifyEventSignalArgs.html">Widget.PropertyNotifyEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.ProximityInEventSignalArgs.html">Widget.ProximityInEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.ProximityOutEventSignalArgs.html">Widget.ProximityOutEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.QueryTooltipSignalArgs.html">Widget.QueryTooltipSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.ScreenChangedSignalArgs.html">Widget.ScreenChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.ScrollEventSignalArgs.html">Widget.ScrollEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.SelectionClearEventSignalArgs.html">Widget.SelectionClearEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.SelectionGetSignalArgs.html">Widget.SelectionGetSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.SelectionNotifyEventSignalArgs.html">Widget.SelectionNotifyEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.SelectionReceivedSignalArgs.html">Widget.SelectionReceivedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.SelectionRequestEventSignalArgs.html">Widget.SelectionRequestEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.ShowHelpSignalArgs.html">Widget.ShowHelpSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.SizeAllocateSignalArgs.html">Widget.SizeAllocateSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.StateChangedSignalArgs.html">Widget.StateChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.StateFlagsChangedSignalArgs.html">Widget.StateFlagsChangedSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.StyleSetSignalArgs.html">Widget.StyleSetSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.TouchEventSignalArgs.html">Widget.TouchEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.UnmapEventSignalArgs.html">Widget.UnmapEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.VisibilityNotifyEventSignalArgs.html">Widget.VisibilityNotifyEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Widget.WindowStateEventSignalArgs.html">Widget.WindowStateEventSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Window.EnableDebuggingSignalArgs.html">Window.EnableDebuggingSignalArgs</a></div>
+      <div class="level3"><a class="xref" href="Gtk.Window.SetFocusSignalArgs.html">Window.SetFocusSignalArgs</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.EventArgs.Empty</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GObject.html">GObject</a></h6>
+  <h6><strong>Assembly</strong>: GObject.dll</h6>
+  <h5 id="GObject_SignalArgs_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SignalArgs : EventArgs</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GObject_SignalArgs__ctor.md&amp;value=---%0Auid%3A%20GObject.SignalArgs.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GObject/Classes/Signal.cs/#L36">View Source</a>
+  </span>
+  <a id="GObject_SignalArgs__ctor_" data-uid="GObject.SignalArgs.#ctor*"></a>
+  <h4 id="GObject_SignalArgs__ctor" data-uid="GObject.SignalArgs.#ctor">SignalArgs()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SignalArgs()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GObject_SignalArgs_Args.md&amp;value=---%0Auid%3A%20GObject.SignalArgs.Args%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GObject/Classes/Signal.cs/#L30">View Source</a>
+  </span>
+  <a id="GObject_SignalArgs_Args_" data-uid="GObject.SignalArgs.Args*"></a>
+  <h4 id="GObject_SignalArgs_Args" data-uid="GObject.SignalArgs.Args">Args</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Value[] Args { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Value.html">Value</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GObject_SignalArgs.md&amp;value=---%0Auid%3A%20GObject.SignalArgs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GObject/Classes/Signal.cs/#L26" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

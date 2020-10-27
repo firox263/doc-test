@@ -1,0 +1,1106 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Context.Native
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Context.Native
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Pango.Context.Native">
+  
+  
+  <h1 id="Pango_Context_Native" data-uid="Pango.Context.Native" class="text-break">Class Context.Native
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Context.Native</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Pango.html">Pango</a></h6>
+  <h6><strong>Assembly</strong>: Pango.dll</h6>
+  <h5 id="Pango_Context_Native_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static class Native</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Pango_Context_Native_changed_" data-uid="Pango.Context.Native.changed*"></a>
+  <h4 id="Pango_Context_Native_changed_System_IntPtr_" data-uid="Pango.Context.Native.changed(System.IntPtr)">changed(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Forces a change in the context, which will cause any #PangoLayout
+using this context to re-layout.</p>
+<p>This function is only useful when implementing a new backend
+for Pango, something applications won't do. Backends should
+call this function if they have attached extra data to the context
+and such data is changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void changed(IntPtr context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Context_Native_get_base_dir_" data-uid="Pango.Context.Native.get_base_dir*"></a>
+  <h4 id="Pango_Context_Native_get_base_dir_System_IntPtr_" data-uid="Pango.Context.Native.get_base_dir(System.IntPtr)">get_base_dir(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the base direction for the context. See
+pango_context_set_base_dir().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Direction get_base_dir(IntPtr context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pango.Direction.html">Direction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Context_Native_get_base_gravity_" data-uid="Pango.Context.Native.get_base_gravity*"></a>
+  <h4 id="Pango_Context_Native_get_base_gravity_System_IntPtr_" data-uid="Pango.Context.Native.get_base_gravity(System.IntPtr)">get_base_gravity(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the base gravity for the context. See
+pango_context_set_base_gravity().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Gravity get_base_gravity(IntPtr context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pango.Gravity.html">Gravity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Context_Native_get_font_description_" data-uid="Pango.Context.Native.get_font_description*"></a>
+  <h4 id="Pango_Context_Native_get_font_description_System_IntPtr_" data-uid="Pango.Context.Native.get_font_description(System.IntPtr)">get_font_description(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Retrieve the default font description for the context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_font_description(IntPtr context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Context_Native_get_font_map_" data-uid="Pango.Context.Native.get_font_map*"></a>
+  <h4 id="Pango_Context_Native_get_font_map_System_IntPtr_" data-uid="Pango.Context.Native.get_font_map(System.IntPtr)">get_font_map(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the #PangoFontMap used to look up fonts for this context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_font_map(IntPtr context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Context_Native_get_gravity_" data-uid="Pango.Context.Native.get_gravity*"></a>
+  <h4 id="Pango_Context_Native_get_gravity_System_IntPtr_" data-uid="Pango.Context.Native.get_gravity(System.IntPtr)">get_gravity(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the gravity for the context. This is similar to
+pango_context_get_base_gravity(), except for when the base gravity
+is %PANGO_GRAVITY_AUTO for which pango_gravity_get_for_matrix() is used
+to return the gravity from the current context matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Gravity get_gravity(IntPtr context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pango.Gravity.html">Gravity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Context_Native_get_gravity_hint_" data-uid="Pango.Context.Native.get_gravity_hint*"></a>
+  <h4 id="Pango_Context_Native_get_gravity_hint_System_IntPtr_" data-uid="Pango.Context.Native.get_gravity_hint(System.IntPtr)">get_gravity_hint(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the gravity hint for the context. See
+pango_context_set_gravity_hint() for details.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GravityHint get_gravity_hint(IntPtr context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pango.GravityHint.html">GravityHint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Context_Native_get_language_" data-uid="Pango.Context.Native.get_language*"></a>
+  <h4 id="Pango_Context_Native_get_language_System_IntPtr_" data-uid="Pango.Context.Native.get_language(System.IntPtr)">get_language(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the global language tag for the context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_language(IntPtr context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Context_Native_get_matrix_" data-uid="Pango.Context.Native.get_matrix*"></a>
+  <h4 id="Pango_Context_Native_get_matrix_System_IntPtr_" data-uid="Pango.Context.Native.get_matrix(System.IntPtr)">get_matrix(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the transformation matrix that will be applied when
+rendering with this context. See pango_context_set_matrix().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_matrix(IntPtr context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Context_Native_get_metrics_" data-uid="Pango.Context.Native.get_metrics*"></a>
+  <h4 id="Pango_Context_Native_get_metrics_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="Pango.Context.Native.get_metrics(System.IntPtr,System.IntPtr,System.IntPtr)">get_metrics(IntPtr, IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Get overall metric information for a particular font
+description.  Since the metrics may be substantially different for
+different scripts, a language tag can be provided to indicate that
+the metrics should be retrieved that correspond to the script(s)
+used by that language.</p>
+<p>The #PangoFontDescription is interpreted in the same way as
+by pango_itemize(), and the family name may be a comma separated
+list of figures. If characters from multiple of these families
+would be used to render the string, then the returned fonts would
+be a composite of the metrics for the fonts loaded for the
+individual families.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_metrics(IntPtr context, IntPtr desc, IntPtr language)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">language</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Context_Native_get_serial_" data-uid="Pango.Context.Native.get_serial*"></a>
+  <h4 id="Pango_Context_Native_get_serial_System_IntPtr_" data-uid="Pango.Context.Native.get_serial(System.IntPtr)">get_serial(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the current serial number of @context.  The serial number is
+initialized to an small number larger than zero when a new context
+is created and is increased whenever the context is changed using any
+of the setter functions, or the #PangoFontMap it uses to find fonts has
+changed. The serial may wrap, but will never have the value 0. Since it
+can wrap, never compare it with &quot;less than&quot;, always use &quot;not equals&quot;.</p>
+<p>This can be used to automatically detect changes to a #PangoContext, and
+is only useful when implementing objects that need update when their
+#PangoContext changes, like #PangoLayout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint get_serial(IntPtr context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Context_Native_get_type_" data-uid="Pango.Context.Native.get_type*"></a>
+  <h4 id="Pango_Context_Native_get_type" data-uid="Pango.Context.Native.get_type">get_type()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong get_type()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Context_Native_list_families_" data-uid="Pango.Context.Native.list_families*"></a>
+  <h4 id="Pango_Context_Native_list_families_System_IntPtr_System_IntPtr__System_Int32__" data-uid="Pango.Context.Native.list_families(System.IntPtr,System.IntPtr@,System.Int32@)">list_families(IntPtr, ref IntPtr, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>List all families for a context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void list_families(IntPtr context, ref IntPtr families, ref int n_families)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">families</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n_families</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Context_Native_load_font_" data-uid="Pango.Context.Native.load_font*"></a>
+  <h4 id="Pango_Context_Native_load_font_System_IntPtr_System_IntPtr_" data-uid="Pango.Context.Native.load_font(System.IntPtr,System.IntPtr)">load_font(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Loads the font in one of the fontmaps in the context
+that is the closest match for @desc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr load_font(IntPtr context, IntPtr desc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Context_Native_load_fontset_" data-uid="Pango.Context.Native.load_fontset*"></a>
+  <h4 id="Pango_Context_Native_load_fontset_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="Pango.Context.Native.load_fontset(System.IntPtr,System.IntPtr,System.IntPtr)">load_fontset(IntPtr, IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Load a set of fonts in the context that can be used to render
+a font matching @desc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr load_fontset(IntPtr context, IntPtr desc, IntPtr language)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">language</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Context_Native_new_" data-uid="Pango.Context.Native.new*"></a>
+  <h4 id="Pango_Context_Native_new" data-uid="Pango.Context.Native.new">new()</h4>
+  <div class="markdown level1 summary"><p>Creates a new #PangoContext initialized to default values.</p>
+<p>This function is not particularly useful as it should always
+be followed by a pango_context_set_font_map() call, and the
+function pango_font_map_create_context() does these two steps
+together and hence users are recommended to use that.</p>
+<p>If you are using Pango as part of a higher-level system,
+that system may have it's own way of create a #PangoContext.
+For instance, the GTK+ toolkit has, among others,
+gdk_pango_context_get_for_screen(), and
+gtk_widget_get_pango_context().  Use those instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr new()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Context_Native_set_base_dir_" data-uid="Pango.Context.Native.set_base_dir*"></a>
+  <h4 id="Pango_Context_Native_set_base_dir_System_IntPtr_Pango_Direction_" data-uid="Pango.Context.Native.set_base_dir(System.IntPtr,Pango.Direction)">set_base_dir(IntPtr, Direction)</h4>
+  <div class="markdown level1 summary"><p>Sets the base direction for the context.</p>
+<p>The base direction is used in applying the Unicode bidirectional
+algorithm; if the @direction is %PANGO_DIRECTION_LTR or
+%PANGO_DIRECTION_RTL, then the value will be used as the paragraph
+direction in the Unicode bidirectional algorithm.  A value of
+%PANGO_DIRECTION_WEAK_LTR or %PANGO_DIRECTION_WEAK_RTL is used only
+for paragraphs that do not contain any strong characters themselves.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_base_dir(IntPtr context, Direction direction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pango.Direction.html">Direction</a></td>
+        <td><span class="parametername">direction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Context_Native_set_base_gravity_" data-uid="Pango.Context.Native.set_base_gravity*"></a>
+  <h4 id="Pango_Context_Native_set_base_gravity_System_IntPtr_Pango_Gravity_" data-uid="Pango.Context.Native.set_base_gravity(System.IntPtr,Pango.Gravity)">set_base_gravity(IntPtr, Gravity)</h4>
+  <div class="markdown level1 summary"><p>Sets the base gravity for the context.</p>
+<p>The base gravity is used in laying vertical text out.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_base_gravity(IntPtr context, Gravity gravity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pango.Gravity.html">Gravity</a></td>
+        <td><span class="parametername">gravity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Context_Native_set_font_description_" data-uid="Pango.Context.Native.set_font_description*"></a>
+  <h4 id="Pango_Context_Native_set_font_description_System_IntPtr_System_IntPtr_" data-uid="Pango.Context.Native.set_font_description(System.IntPtr,System.IntPtr)">set_font_description(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Set the default font description for the context</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_font_description(IntPtr context, IntPtr desc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Context_Native_set_font_map_" data-uid="Pango.Context.Native.set_font_map*"></a>
+  <h4 id="Pango_Context_Native_set_font_map_System_IntPtr_System_IntPtr_" data-uid="Pango.Context.Native.set_font_map(System.IntPtr,System.IntPtr)">set_font_map(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets the font map to be searched when fonts are looked-up in this context.
+This is only for internal use by Pango backends, a #PangoContext obtained
+via one of the recommended methods should already have a suitable font map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_font_map(IntPtr context, IntPtr font_map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">font_map</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Context_Native_set_gravity_hint_" data-uid="Pango.Context.Native.set_gravity_hint*"></a>
+  <h4 id="Pango_Context_Native_set_gravity_hint_System_IntPtr_Pango_GravityHint_" data-uid="Pango.Context.Native.set_gravity_hint(System.IntPtr,Pango.GravityHint)">set_gravity_hint(IntPtr, GravityHint)</h4>
+  <div class="markdown level1 summary"><p>Sets the gravity hint for the context.</p>
+<p>The gravity hint is used in laying vertical text out, and is only relevant
+if gravity of the context as returned by pango_context_get_gravity()
+is set %PANGO_GRAVITY_EAST or %PANGO_GRAVITY_WEST.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_gravity_hint(IntPtr context, GravityHint hint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pango.GravityHint.html">GravityHint</a></td>
+        <td><span class="parametername">hint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Context_Native_set_language_" data-uid="Pango.Context.Native.set_language*"></a>
+  <h4 id="Pango_Context_Native_set_language_System_IntPtr_System_IntPtr_" data-uid="Pango.Context.Native.set_language(System.IntPtr,System.IntPtr)">set_language(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets the global language tag for the context.  The default language
+for the locale of the running process can be found using
+pango_language_get_default().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_language(IntPtr context, IntPtr language)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">language</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pango_Context_Native_set_matrix_" data-uid="Pango.Context.Native.set_matrix*"></a>
+  <h4 id="Pango_Context_Native_set_matrix_System_IntPtr_System_IntPtr_" data-uid="Pango.Context.Native.set_matrix(System.IntPtr,System.IntPtr)">set_matrix(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets the transformation matrix that will be applied when rendering
+with this context. Note that reported metrics are in the user space
+coordinates before the application of the matrix, not device-space
+coordinates after the application of the matrix. So, they don't scale
+with the matrix, though they may change slightly for different
+matrices, depending on how the text is fit to the pixel grid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_matrix(IntPtr context, IntPtr matrix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">matrix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Pango_Context_Native.md&amp;value=---%0Auid%3A%20Pango.Context.Native%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Pango/Classes/Context.Generated.cs/#L32" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

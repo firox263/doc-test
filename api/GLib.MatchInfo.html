@@ -1,0 +1,915 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MatchInfo
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MatchInfo
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GLib.MatchInfo">
+  
+  
+  <h1 id="GLib_MatchInfo" data-uid="GLib.MatchInfo" class="text-break">Class MatchInfo
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MatchInfo</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GLib.html">GLib</a></h6>
+  <h6><strong>Assembly</strong>: GLib.dll</h6>
+  <h5 id="GLib_MatchInfo_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MatchInfo</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="GLib_MatchInfo_expand_references_" data-uid="GLib.MatchInfo.expand_references*"></a>
+  <h4 id="GLib_MatchInfo_expand_references_System_IntPtr_System_String_System_IntPtr__" data-uid="GLib.MatchInfo.expand_references(System.IntPtr,System.String,System.IntPtr@)">expand_references(IntPtr, String, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns a new string containing the text in @string_to_expand with
+references and escape sequences expanded. References refer to the last
+match done with @string against @regex and have the same syntax used by
+g_regex_replace().</p>
+<p>The @string_to_expand must be UTF-8 encoded even if #G_REGEX_RAW was
+passed to g_regex_new().</p>
+<p>The backreferences are extracted from the string passed to the match
+function, so you cannot call this function after freeing the string.</p>
+<p>@match_info may be %NULL in which case @string_to_expand must not
+contain references. For instance &quot;foo\n&quot; does not refer to an actual
+pattern and '\n' merely will be replaced with \n character,
+while to expand &quot;\0&quot; (whole match) one needs the result of a match.
+Use g_regex_check_replacement() to find out whether @string_to_expand
+contains references.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr expand_references(IntPtr match_info, string string_to_expand, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">match_info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">string_to_expand</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MatchInfo_fetch_" data-uid="GLib.MatchInfo.fetch*"></a>
+  <h4 id="GLib_MatchInfo_fetch_System_IntPtr_System_Int32_" data-uid="GLib.MatchInfo.fetch(System.IntPtr,System.Int32)">fetch(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the text matching the @match_num&amp;apos;th capturing
+parentheses. 0 is the full text of the match, 1 is the first paren
+set, 2 the second, and so on.</p>
+<p>If @match_num is a valid sub pattern but it didn't match anything
+(e.g. sub pattern 1, matching &quot;b&quot; against &quot;(a)?b&quot;) then an empty
+string is returned.</p>
+<p>If the match was obtained using the DFA algorithm, that is using
+g_regex_match_all() or g_regex_match_all_full(), the retrieved
+string is not that of a set of parentheses but that of a matched
+substring. Substrings are matched in reverse order of length, so
+0 is the longest match.</p>
+<p>The string is fetched from the string passed to the match function,
+so you cannot call this function after freeing the string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr fetch(IntPtr match_info, int match_num)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">match_info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">match_num</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MatchInfo_fetch_all_" data-uid="GLib.MatchInfo.fetch_all*"></a>
+  <h4 id="GLib_MatchInfo_fetch_all_System_IntPtr_" data-uid="GLib.MatchInfo.fetch_all(System.IntPtr)">fetch_all(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Bundles up pointers to each of the matching substrings from a match
+and stores them in an array of gchar pointers. The first element in
+the returned array is the match number 0, i.e. the entire matched
+text.</p>
+<p>If a sub pattern didn't match anything (e.g. sub pattern 1, matching
+&quot;b&quot; against &quot;(a)?b&quot;) then an empty string is inserted.</p>
+<p>If the last match was obtained using the DFA algorithm, that is using
+g_regex_match_all() or g_regex_match_all_full(), the retrieved
+strings are not that matched by sets of parentheses but that of the
+matched substring. Substrings are matched in reverse order of length,
+so the first one is the longest match.</p>
+<p>The strings are fetched from the string passed to the match function,
+so you cannot call this function after freeing the string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr fetch_all(IntPtr match_info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">match_info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MatchInfo_fetch_named_" data-uid="GLib.MatchInfo.fetch_named*"></a>
+  <h4 id="GLib_MatchInfo_fetch_named_System_IntPtr_System_String_" data-uid="GLib.MatchInfo.fetch_named(System.IntPtr,System.String)">fetch_named(IntPtr, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr fetch_named(IntPtr match_info, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">match_info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MatchInfo_fetch_named_pos_" data-uid="GLib.MatchInfo.fetch_named_pos*"></a>
+  <h4 id="GLib_MatchInfo_fetch_named_pos_System_IntPtr_System_String_System_Int32__System_Int32__" data-uid="GLib.MatchInfo.fetch_named_pos(System.IntPtr,System.String,System.Int32@,System.Int32@)">fetch_named_pos(IntPtr, String, ref Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool fetch_named_pos(IntPtr match_info, string name, ref int start_pos, ref int end_pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">match_info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">start_pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">end_pos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MatchInfo_fetch_pos_" data-uid="GLib.MatchInfo.fetch_pos*"></a>
+  <h4 id="GLib_MatchInfo_fetch_pos_System_IntPtr_System_Int32_System_Int32__System_Int32__" data-uid="GLib.MatchInfo.fetch_pos(System.IntPtr,System.Int32,System.Int32@,System.Int32@)">fetch_pos(IntPtr, Int32, ref Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the position in bytes of the @match_num&amp;apos;th capturing
+parentheses. 0 is the full text of the match, 1 is the first
+paren set, 2 the second, and so on.</p>
+<p>If @match_num is a valid sub pattern but it didn't match anything
+(e.g. sub pattern 1, matching &quot;b&quot; against &quot;(a)?b&quot;) then @start_pos
+and @end_pos are set to -1 and %TRUE is returned.</p>
+<p>If the match was obtained using the DFA algorithm, that is using
+g_regex_match_all() or g_regex_match_all_full(), the retrieved
+position is not that of a set of parentheses but that of a matched
+substring. Substrings are matched in reverse order of length, so
+0 is the longest match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool fetch_pos(IntPtr match_info, int match_num, ref int start_pos, ref int end_pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">match_info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">match_num</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">start_pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">end_pos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MatchInfo_free_" data-uid="GLib.MatchInfo.free*"></a>
+  <h4 id="GLib_MatchInfo_free_System_IntPtr_" data-uid="GLib.MatchInfo.free(System.IntPtr)">free(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>If @match_info is not %NULL, calls g_match_info_unref(); otherwise does
+nothing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void free(IntPtr match_info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">match_info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MatchInfo_get_match_count_" data-uid="GLib.MatchInfo.get_match_count*"></a>
+  <h4 id="GLib_MatchInfo_get_match_count_System_IntPtr_" data-uid="GLib.MatchInfo.get_match_count(System.IntPtr)">get_match_count(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the number of matched substrings (including substring 0,
+that is the whole matched text), so 1 is returned if the pattern
+has no substrings in it and 0 is returned if the match failed.</p>
+<p>If the last match was obtained using the DFA algorithm, that is
+using g_regex_match_all() or g_regex_match_all_full(), the retrieved
+count is not that of the number of capturing parentheses but that of
+the number of matched substrings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int get_match_count(IntPtr match_info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">match_info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MatchInfo_get_regex_" data-uid="GLib.MatchInfo.get_regex*"></a>
+  <h4 id="GLib_MatchInfo_get_regex_System_IntPtr_" data-uid="GLib.MatchInfo.get_regex(System.IntPtr)">get_regex(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns #GRegex object used in @match_info. It belongs to Glib
+and must not be freed. Use g_regex_ref() if you need to keep it
+after you free @match_info object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_regex(IntPtr match_info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">match_info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MatchInfo_get_string_" data-uid="GLib.MatchInfo.get_string*"></a>
+  <h4 id="GLib_MatchInfo_get_string_System_IntPtr_" data-uid="GLib.MatchInfo.get_string(System.IntPtr)">get_string(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the string searched with @match_info. This is the
+string passed to g_regex_match() or g_regex_replace() so
+you may not free it before calling this function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_string(IntPtr match_info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">match_info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MatchInfo_is_partial_match_" data-uid="GLib.MatchInfo.is_partial_match*"></a>
+  <h4 id="GLib_MatchInfo_is_partial_match_System_IntPtr_" data-uid="GLib.MatchInfo.is_partial_match(System.IntPtr)">is_partial_match(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Usually if the string passed to g_regex_match*() matches as far as
+it goes, but is too short to match the entire pattern, %FALSE is
+returned. There are circumstances where it might be helpful to
+distinguish this case from other cases in which there is no match.</p>
+<p>Consider, for example, an application where a human is required to
+type in data for a field with specific formatting requirements. An
+example might be a date in the form ddmmmyy, defined by the pattern
+&quot;^\d?\d(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\d\d$&quot;.
+If the application sees the user’s keystrokes one by one, and can
+check that what has been typed so far is potentially valid, it is
+able to raise an error as soon as a mistake is made.</p>
+<p>GRegex supports the concept of partial matching by means of the
+#G_REGEX_MATCH_PARTIAL_SOFT and #G_REGEX_MATCH_PARTIAL_HARD flags.
+When they are used, the return code for
+g_regex_match() or g_regex_match_full() is, as usual, %TRUE
+for a complete match, %FALSE otherwise. But, when these functions
+return %FALSE, you can check if the match was partial calling
+g_match_info_is_partial_match().</p>
+<p>The difference between #G_REGEX_MATCH_PARTIAL_SOFT and
+#G_REGEX_MATCH_PARTIAL_HARD is that when a partial match is encountered
+with #G_REGEX_MATCH_PARTIAL_SOFT, matching continues to search for a
+possible complete match, while with #G_REGEX_MATCH_PARTIAL_HARD matching
+stops at the partial match.
+When both #G_REGEX_MATCH_PARTIAL_SOFT and #G_REGEX_MATCH_PARTIAL_HARD
+are set, the latter takes precedence.</p>
+<p>There were formerly some restrictions on the pattern for partial matching.
+The restrictions no longer apply.</p>
+<p>See pcrepartial(3) for more information on partial matching.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool is_partial_match(IntPtr match_info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">match_info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MatchInfo_matches_" data-uid="GLib.MatchInfo.matches*"></a>
+  <h4 id="GLib_MatchInfo_matches_System_IntPtr_" data-uid="GLib.MatchInfo.matches(System.IntPtr)">matches(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns whether the previous match operation succeeded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool matches(IntPtr match_info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">match_info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MatchInfo_next_" data-uid="GLib.MatchInfo.next*"></a>
+  <h4 id="GLib_MatchInfo_next_System_IntPtr_System_IntPtr__" data-uid="GLib.MatchInfo.next(System.IntPtr,System.IntPtr@)">next(IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Scans for the next match using the same parameters of the previous
+call to g_regex_match_full() or g_regex_match() that returned
+@match_info.</p>
+<p>The match is done on the string passed to the match function, so you
+cannot free it before calling this function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool next(IntPtr match_info, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">match_info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MatchInfo_ref_" data-uid="GLib.MatchInfo.ref*"></a>
+  <h4 id="GLib_MatchInfo_ref_System_IntPtr_" data-uid="GLib.MatchInfo.ref(System.IntPtr)">ref(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Increases reference count of @match_info by 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr ref(IntPtr match_info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">match_info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MatchInfo_unref_" data-uid="GLib.MatchInfo.unref*"></a>
+  <h4 id="GLib_MatchInfo_unref_System_IntPtr_" data-uid="GLib.MatchInfo.unref(System.IntPtr)">unref(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Decreases reference count of @match_info by 1. When reference count drops
+to zero, it frees all the memory associated with the match_info structure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void unref(IntPtr match_info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">match_info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GLib_MatchInfo.md&amp;value=---%0Auid%3A%20GLib.MatchInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GLib/Classes/MatchInfo.Generated.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1903 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct WidgetPath
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct WidgetPath
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gtk.WidgetPath">
+  
+  
+  <h1 id="Gtk_WidgetPath" data-uid="Gtk.WidgetPath" class="text-break">Struct WidgetPath
+  </h1>
+  <div class="markdown level0 summary"><p>GtkWidgetPath is a boxed type that represents a widget hierarchy from
+the topmost widget, typically a toplevel, to any child. This widget
+path abstraction is used in #GtkStyleContext on behalf of the real
+widget in order to query style information.</p>
+<p>If you are using GTK+ widgets, you probably will not need to use
+this API directly, as there is gtk_widget_get_path(), and the style
+context returned by gtk_widget_get_style_context() will be automatically
+updated on widget hierarchy changes.</p>
+<p>The widget path generation is generally simple:</p>
+<h2 id="defining-a-button-within-a-window">Defining a button within a window</h2>
+<p>|[<!-- language="C" -->
+{
+GtkWidgetPath *path;</p>
+<p>path = gtk_widget_path_new ();
+gtk_widget_path_append_type (path, GTK_TYPE_WINDOW);
+gtk_widget_path_append_type (path, GTK_TYPE_BUTTON);
+}
+]|</p>
+<p>Although more complex information, such as widget names, or
+different classes (property that may be used by other widget
+types) and intermediate regions may be included:</p>
+<h2 id="defining-the-first-tab-widget-in-a-notebook">Defining the first tab widget in a notebook</h2>
+<p>|[<!-- language="C" -->
+{
+GtkWidgetPath *path;
+guint pos;</p>
+<p>path = gtk_widget_path_new ();</p>
+<p>pos = gtk_widget_path_append_type (path, GTK_TYPE_NOTEBOOK);
+gtk_widget_path_iter_add_region (path, pos, &quot;tab&quot;, GTK_REGION_EVEN | GTK_REGION_FIRST);</p>
+<p>pos = gtk_widget_path_append_type (path, GTK_TYPE_LABEL);
+gtk_widget_path_iter_set_name (path, pos, &quot;first tab label&quot;);
+}
+]|</p>
+<p>All this information will be used to match the style information
+that applies to the described widget.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.ValueType.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ValueType.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.ValueType.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gtk.html">Gtk</a></h6>
+  <h6><strong>Assembly</strong>: Gtk3.dll</h6>
+  <h5 id="Gtk_WidgetPath_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct WidgetPath</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Gtk_WidgetPath_append_for_widget_" data-uid="Gtk.WidgetPath.append_for_widget*"></a>
+  <h4 id="Gtk_WidgetPath_append_for_widget_System_IntPtr_System_IntPtr_" data-uid="Gtk.WidgetPath.append_for_widget(System.IntPtr,System.IntPtr)">append_for_widget(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Appends the data from @widget to the widget hierarchy represented
+by @path. This function is a shortcut for adding information from
+@widget to the given @path. This includes setting the name or
+adding the style classes from @widget.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int append_for_widget(IntPtr path, IntPtr widget)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">widget</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_append_type_" data-uid="Gtk.WidgetPath.append_type*"></a>
+  <h4 id="Gtk_WidgetPath_append_type_System_IntPtr_System_UInt64_" data-uid="Gtk.WidgetPath.append_type(System.IntPtr,System.UInt64)">append_type(IntPtr, UInt64)</h4>
+  <div class="markdown level1 summary"><p>Appends a widget type to the widget hierarchy represented by @path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int append_type(IntPtr path, ulong type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_append_with_siblings_" data-uid="Gtk.WidgetPath.append_with_siblings*"></a>
+  <h4 id="Gtk_WidgetPath_append_with_siblings_System_IntPtr_System_IntPtr_System_UInt32_" data-uid="Gtk.WidgetPath.append_with_siblings(System.IntPtr,System.IntPtr,System.UInt32)">append_with_siblings(IntPtr, IntPtr, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Appends a widget type with all its siblings to the widget hierarchy
+represented by @path. Using this function instead of
+gtk_widget_path_append_type() will allow the CSS theming to use
+sibling matches in selectors and apply :nth-child() pseudo classes.
+In turn, it requires a lot more care in widget implementations as
+widgets need to make sure to call gtk_widget_reset_style() on all
+involved widgets when the @siblings path changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int append_with_siblings(IntPtr path, IntPtr siblings, uint sibling_index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">siblings</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">sibling_index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_copy_" data-uid="Gtk.WidgetPath.copy*"></a>
+  <h4 id="Gtk_WidgetPath_copy_System_IntPtr_" data-uid="Gtk.WidgetPath.copy(System.IntPtr)">copy(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns a copy of @path</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr copy(IntPtr path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_free_" data-uid="Gtk.WidgetPath.free*"></a>
+  <h4 id="Gtk_WidgetPath_free_System_IntPtr_" data-uid="Gtk.WidgetPath.free(System.IntPtr)">free(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Decrements the reference count on @path, freeing the structure
+if the reference count reaches 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void free(IntPtr path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_get_object_type_" data-uid="Gtk.WidgetPath.get_object_type*"></a>
+  <h4 id="Gtk_WidgetPath_get_object_type_System_IntPtr_" data-uid="Gtk.WidgetPath.get_object_type(System.IntPtr)">get_object_type(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the topmost object type, that is, the object type this path
+is representing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong get_object_type(IntPtr path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_has_parent_" data-uid="Gtk.WidgetPath.has_parent*"></a>
+  <h4 id="Gtk_WidgetPath_has_parent_System_IntPtr_System_UInt64_" data-uid="Gtk.WidgetPath.has_parent(System.IntPtr,System.UInt64)">has_parent(IntPtr, UInt64)</h4>
+  <div class="markdown level1 summary"><p>Returns %TRUE if any of the parents of the widget represented
+in @path is of type @type, or any subtype of it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool has_parent(IntPtr path, ulong type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_is_type_" data-uid="Gtk.WidgetPath.is_type*"></a>
+  <h4 id="Gtk_WidgetPath_is_type_System_IntPtr_System_UInt64_" data-uid="Gtk.WidgetPath.is_type(System.IntPtr,System.UInt64)">is_type(IntPtr, UInt64)</h4>
+  <div class="markdown level1 summary"><p>Returns %TRUE if the widget type represented by this path
+is @type, or a subtype of it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool is_type(IntPtr path, ulong type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_iter_add_class_" data-uid="Gtk.WidgetPath.iter_add_class*"></a>
+  <h4 id="Gtk_WidgetPath_iter_add_class_System_IntPtr_System_Int32_System_String_" data-uid="Gtk.WidgetPath.iter_add_class(System.IntPtr,System.Int32,System.String)">iter_add_class(IntPtr, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Adds the class @name to the widget at position @pos in
+the hierarchy defined in @path. See
+gtk_style_context_add_class().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void iter_add_class(IntPtr path, int pos, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_iter_add_region_" data-uid="Gtk.WidgetPath.iter_add_region*"></a>
+  <h4 id="Gtk_WidgetPath_iter_add_region_System_IntPtr_System_Int32_System_String_Gtk_RegionFlags_" data-uid="Gtk.WidgetPath.iter_add_region(System.IntPtr,System.Int32,System.String,Gtk.RegionFlags)">iter_add_region(IntPtr, Int32, String, RegionFlags)</h4>
+  <div class="markdown level1 summary"><p>Adds the region @name to the widget at position @pos in
+the hierarchy defined in @path. See
+gtk_style_context_add_region().</p>
+<p>Region names must only contain lowercase letters
+and “-”, starting always with a lowercase letter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;The use of regions is deprecated.&quot;)]
+public static void iter_add_region(IntPtr path, int pos, string name, RegionFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.RegionFlags.html">RegionFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_iter_clear_classes_" data-uid="Gtk.WidgetPath.iter_clear_classes*"></a>
+  <h4 id="Gtk_WidgetPath_iter_clear_classes_System_IntPtr_System_Int32_" data-uid="Gtk.WidgetPath.iter_clear_classes(System.IntPtr,System.Int32)">iter_clear_classes(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes all classes from the widget at position @pos in the
+hierarchy defined in @path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void iter_clear_classes(IntPtr path, int pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_iter_clear_regions_" data-uid="Gtk.WidgetPath.iter_clear_regions*"></a>
+  <h4 id="Gtk_WidgetPath_iter_clear_regions_System_IntPtr_System_Int32_" data-uid="Gtk.WidgetPath.iter_clear_regions(System.IntPtr,System.Int32)">iter_clear_regions(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes all regions from the widget at position @pos in the
+hierarchy defined in @path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;The use of regions is deprecated.&quot;)]
+public static void iter_clear_regions(IntPtr path, int pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_iter_get_name_" data-uid="Gtk.WidgetPath.iter_get_name*"></a>
+  <h4 id="Gtk_WidgetPath_iter_get_name_System_IntPtr_System_Int32_" data-uid="Gtk.WidgetPath.iter_get_name(System.IntPtr,System.Int32)">iter_get_name(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the name corresponding to the widget found at
+the position @pos in the widget hierarchy defined by
+@path</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr iter_get_name(IntPtr path, int pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_iter_get_object_name_" data-uid="Gtk.WidgetPath.iter_get_object_name*"></a>
+  <h4 id="Gtk_WidgetPath_iter_get_object_name_System_IntPtr_System_Int32_" data-uid="Gtk.WidgetPath.iter_get_object_name(System.IntPtr,System.Int32)">iter_get_object_name(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the object name that is at position @pos in the widget
+hierarchy defined in @path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr iter_get_object_name(IntPtr path, int pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_iter_get_object_type_" data-uid="Gtk.WidgetPath.iter_get_object_type*"></a>
+  <h4 id="Gtk_WidgetPath_iter_get_object_type_System_IntPtr_System_Int32_" data-uid="Gtk.WidgetPath.iter_get_object_type(System.IntPtr,System.Int32)">iter_get_object_type(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the object #GType that is at position @pos in the widget
+hierarchy defined in @path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong iter_get_object_type(IntPtr path, int pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_iter_get_sibling_index_" data-uid="Gtk.WidgetPath.iter_get_sibling_index*"></a>
+  <h4 id="Gtk_WidgetPath_iter_get_sibling_index_System_IntPtr_System_Int32_" data-uid="Gtk.WidgetPath.iter_get_sibling_index(System.IntPtr,System.Int32)">iter_get_sibling_index(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the index into the list of siblings for the element at @pos as
+returned by gtk_widget_path_iter_get_siblings(). If that function would
+return %NULL because the element at @pos has no siblings, this function
+will return 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint iter_get_sibling_index(IntPtr path, int pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_iter_get_siblings_" data-uid="Gtk.WidgetPath.iter_get_siblings*"></a>
+  <h4 id="Gtk_WidgetPath_iter_get_siblings_System_IntPtr_System_Int32_" data-uid="Gtk.WidgetPath.iter_get_siblings(System.IntPtr,System.Int32)">iter_get_siblings(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the list of siblings for the element at @pos. If the element
+was not added with siblings, %NULL is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr iter_get_siblings(IntPtr path, int pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_iter_get_state_" data-uid="Gtk.WidgetPath.iter_get_state*"></a>
+  <h4 id="Gtk_WidgetPath_iter_get_state_System_IntPtr_System_Int32_" data-uid="Gtk.WidgetPath.iter_get_state(System.IntPtr,System.Int32)">iter_get_state(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the state flags corresponding to the widget found at
+the position @pos in the widget hierarchy defined by
+@path</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StateFlags iter_get_state(IntPtr path, int pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.StateFlags.html">StateFlags</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_iter_has_class_" data-uid="Gtk.WidgetPath.iter_has_class*"></a>
+  <h4 id="Gtk_WidgetPath_iter_has_class_System_IntPtr_System_Int32_System_String_" data-uid="Gtk.WidgetPath.iter_has_class(System.IntPtr,System.Int32,System.String)">iter_has_class(IntPtr, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Returns %TRUE if the widget at position @pos has the class @name
+defined, %FALSE otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool iter_has_class(IntPtr path, int pos, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_iter_has_name_" data-uid="Gtk.WidgetPath.iter_has_name*"></a>
+  <h4 id="Gtk_WidgetPath_iter_has_name_System_IntPtr_System_Int32_System_String_" data-uid="Gtk.WidgetPath.iter_has_name(System.IntPtr,System.Int32,System.String)">iter_has_name(IntPtr, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Returns %TRUE if the widget at position @pos has the name @name,
+%FALSE otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool iter_has_name(IntPtr path, int pos, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_iter_has_qclass_" data-uid="Gtk.WidgetPath.iter_has_qclass*"></a>
+  <h4 id="Gtk_WidgetPath_iter_has_qclass_System_IntPtr_System_Int32_System_UInt32_" data-uid="Gtk.WidgetPath.iter_has_qclass(System.IntPtr,System.Int32,System.UInt32)">iter_has_qclass(IntPtr, Int32, UInt32)</h4>
+  <div class="markdown level1 summary"><p>See gtk_widget_path_iter_has_class(). This is a version that operates
+with GQuarks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool iter_has_qclass(IntPtr path, int pos, uint qname)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">qname</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_iter_has_qname_" data-uid="Gtk.WidgetPath.iter_has_qname*"></a>
+  <h4 id="Gtk_WidgetPath_iter_has_qname_System_IntPtr_System_Int32_System_UInt32_" data-uid="Gtk.WidgetPath.iter_has_qname(System.IntPtr,System.Int32,System.UInt32)">iter_has_qname(IntPtr, Int32, UInt32)</h4>
+  <div class="markdown level1 summary"><p>See gtk_widget_path_iter_has_name(). This is a version
+that operates on #GQuarks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool iter_has_qname(IntPtr path, int pos, uint qname)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">qname</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_iter_has_qregion_" data-uid="Gtk.WidgetPath.iter_has_qregion*"></a>
+  <h4 id="Gtk_WidgetPath_iter_has_qregion_System_IntPtr_System_Int32_System_UInt32_System_IntPtr_" data-uid="Gtk.WidgetPath.iter_has_qregion(System.IntPtr,System.Int32,System.UInt32,System.IntPtr)">iter_has_qregion(IntPtr, Int32, UInt32, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>See gtk_widget_path_iter_has_region(). This is a version that operates
+with GQuarks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;The use of regions is deprecated.&quot;)]
+public static bool iter_has_qregion(IntPtr path, int pos, uint qname, IntPtr flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">qname</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_iter_has_region_" data-uid="Gtk.WidgetPath.iter_has_region*"></a>
+  <h4 id="Gtk_WidgetPath_iter_has_region_System_IntPtr_System_Int32_System_String_System_IntPtr_" data-uid="Gtk.WidgetPath.iter_has_region(System.IntPtr,System.Int32,System.String,System.IntPtr)">iter_has_region(IntPtr, Int32, String, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns %TRUE if the widget at position @pos has the class @name
+defined, %FALSE otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;The use of regions is deprecated.&quot;)]
+public static bool iter_has_region(IntPtr path, int pos, string name, IntPtr flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_iter_list_classes_" data-uid="Gtk.WidgetPath.iter_list_classes*"></a>
+  <h4 id="Gtk_WidgetPath_iter_list_classes_System_IntPtr_System_Int32_" data-uid="Gtk.WidgetPath.iter_list_classes(System.IntPtr,System.Int32)">iter_list_classes(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns a list with all the class names defined for the widget
+at position @pos in the hierarchy defined in @path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr iter_list_classes(IntPtr path, int pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_iter_list_regions_" data-uid="Gtk.WidgetPath.iter_list_regions*"></a>
+  <h4 id="Gtk_WidgetPath_iter_list_regions_System_IntPtr_System_Int32_" data-uid="Gtk.WidgetPath.iter_list_regions(System.IntPtr,System.Int32)">iter_list_regions(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns a list with all the region names defined for the widget
+at position @pos in the hierarchy defined in @path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;The use of regions is deprecated.&quot;)]
+public static IntPtr iter_list_regions(IntPtr path, int pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_iter_remove_class_" data-uid="Gtk.WidgetPath.iter_remove_class*"></a>
+  <h4 id="Gtk_WidgetPath_iter_remove_class_System_IntPtr_System_Int32_System_String_" data-uid="Gtk.WidgetPath.iter_remove_class(System.IntPtr,System.Int32,System.String)">iter_remove_class(IntPtr, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Removes the class @name from the widget at position @pos in
+the hierarchy defined in @path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void iter_remove_class(IntPtr path, int pos, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_iter_remove_region_" data-uid="Gtk.WidgetPath.iter_remove_region*"></a>
+  <h4 id="Gtk_WidgetPath_iter_remove_region_System_IntPtr_System_Int32_System_String_" data-uid="Gtk.WidgetPath.iter_remove_region(System.IntPtr,System.Int32,System.String)">iter_remove_region(IntPtr, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Removes the region @name from the widget at position @pos in
+the hierarchy defined in @path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;The use of regions is deprecated.&quot;)]
+public static void iter_remove_region(IntPtr path, int pos, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_iter_set_name_" data-uid="Gtk.WidgetPath.iter_set_name*"></a>
+  <h4 id="Gtk_WidgetPath_iter_set_name_System_IntPtr_System_Int32_System_String_" data-uid="Gtk.WidgetPath.iter_set_name(System.IntPtr,System.Int32,System.String)">iter_set_name(IntPtr, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Sets the widget name for the widget found at position @pos
+in the widget hierarchy defined by @path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void iter_set_name(IntPtr path, int pos, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_iter_set_object_name_" data-uid="Gtk.WidgetPath.iter_set_object_name*"></a>
+  <h4 id="Gtk_WidgetPath_iter_set_object_name_System_IntPtr_System_Int32_System_String_" data-uid="Gtk.WidgetPath.iter_set_object_name(System.IntPtr,System.Int32,System.String)">iter_set_object_name(IntPtr, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Sets the object name for a given position in the widget hierarchy
+defined by @path.</p>
+<p>When set, the object name overrides the object type when matching
+CSS.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void iter_set_object_name(IntPtr path, int pos, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_iter_set_object_type_" data-uid="Gtk.WidgetPath.iter_set_object_type*"></a>
+  <h4 id="Gtk_WidgetPath_iter_set_object_type_System_IntPtr_System_Int32_System_UInt64_" data-uid="Gtk.WidgetPath.iter_set_object_type(System.IntPtr,System.Int32,System.UInt64)">iter_set_object_type(IntPtr, Int32, UInt64)</h4>
+  <div class="markdown level1 summary"><p>Sets the object type for a given position in the widget hierarchy
+defined by @path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void iter_set_object_type(IntPtr path, int pos, ulong type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_iter_set_state_" data-uid="Gtk.WidgetPath.iter_set_state*"></a>
+  <h4 id="Gtk_WidgetPath_iter_set_state_System_IntPtr_System_Int32_Gtk_StateFlags_" data-uid="Gtk.WidgetPath.iter_set_state(System.IntPtr,System.Int32,Gtk.StateFlags)">iter_set_state(IntPtr, Int32, StateFlags)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void iter_set_state(IntPtr path, int pos, StateFlags state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.StateFlags.html">StateFlags</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_length_" data-uid="Gtk.WidgetPath.length*"></a>
+  <h4 id="Gtk_WidgetPath_length_System_IntPtr_" data-uid="Gtk.WidgetPath.length(System.IntPtr)">length(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the number of #GtkWidget #GTypes between the represented
+widget and its topmost container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int length(IntPtr path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_new_" data-uid="Gtk.WidgetPath.new*"></a>
+  <h4 id="Gtk_WidgetPath_new" data-uid="Gtk.WidgetPath.new">new()</h4>
+  <div class="markdown level1 summary"><p>Returns an empty widget path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr new()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_prepend_type_" data-uid="Gtk.WidgetPath.prepend_type*"></a>
+  <h4 id="Gtk_WidgetPath_prepend_type_System_IntPtr_System_UInt64_" data-uid="Gtk.WidgetPath.prepend_type(System.IntPtr,System.UInt64)">prepend_type(IntPtr, UInt64)</h4>
+  <div class="markdown level1 summary"><p>Prepends a widget type to the widget hierachy represented by @path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void prepend_type(IntPtr path, ulong type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_ref_" data-uid="Gtk.WidgetPath.ref*"></a>
+  <h4 id="Gtk_WidgetPath_ref_System_IntPtr_" data-uid="Gtk.WidgetPath.ref(System.IntPtr)">ref(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Increments the reference count on @path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr ref(IntPtr path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_to_string_" data-uid="Gtk.WidgetPath.to_string*"></a>
+  <h4 id="Gtk_WidgetPath_to_string_System_IntPtr_" data-uid="Gtk.WidgetPath.to_string(System.IntPtr)">to_string(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Dumps the widget path into a string representation. It tries to match
+the CSS style as closely as possible (Note that there might be paths
+that cannot be represented in CSS).</p>
+<p>The main use of this code is for debugging purposes, so that you can
+g_print() the path or dump it in a gdb session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr to_string(IntPtr path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_WidgetPath_unref_" data-uid="Gtk.WidgetPath.unref*"></a>
+  <h4 id="Gtk_WidgetPath_unref_System_IntPtr_" data-uid="Gtk.WidgetPath.unref(System.IntPtr)">unref(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Decrements the reference count on @path, freeing the structure
+if the reference count reaches 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void unref(IntPtr path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_WidgetPath.md&amp;value=---%0Auid%3A%20Gtk.WidgetPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Structs/WidgetPath.Generated.cs/#L57" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

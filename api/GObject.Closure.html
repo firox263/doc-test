@@ -1,0 +1,1228 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct Closure
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct Closure
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GObject.Closure">
+  
+  
+  <h1 id="GObject_Closure" data-uid="GObject.Closure" class="text-break">Struct Closure
+  </h1>
+  <div class="markdown level0 summary"><p>A #GClosure represents a callback supplied by the programmer. It
+will generally comprise a function of some kind and a marshaller
+used to call it. It is the responsibility of the marshaller to
+convert the arguments for the invocation from #GValues into
+a suitable form, perform the callback on the converted arguments,
+and transform the return value back into a #GValue.</p>
+<p>In the case of C programs, a closure usually just holds a pointer
+to a function and maybe a data argument, and the marshaller
+converts between #GValue and native C types. The GObject
+library provides the #GCClosure type for this purpose. Bindings for
+other languages need marshallers which convert between #GValues
+and suitable representations in the runtime of the language in
+order to use functions written in that language as callbacks. Use
+g_closure_set_marshal() to set the marshaller on such a custom
+closure implementation.</p>
+<p>Within GObject, closures play an important role in the
+implementation of signals. When a signal is registered, the
+@c_marshaller argument to g_signal_new() specifies the default C
+marshaller for any closure which is connected to this
+signal. GObject provides a number of C marshallers for this
+purpose, see the g_cclosure_marshal_<em>() functions. Additional C
+marshallers can be generated with the [glib-genmarshal][glib-genmarshal]
+utility.  Closures can be explicitly connected to signals with
+g_signal_connect_closure(), but it usually more convenient to let
+GObject create a closure automatically by using one of the
+g_signal_connect_</em>() functions which take a callback function/user
+data pair.</p>
+<p>Using closures has a number of important advantages over a simple
+callback function/data pointer combination:</p>
+<ul>
+<li><p>Closures allow the callee to get the types of the callback parameters,
+which means that language bindings don't have to write individual glue
+for each callback type.</p>
+</li>
+<li><p>The reference counting of #GClosure makes it easy to handle reentrancy
+right; if a callback is removed while it is being invoked, the closure
+and its parameters won't be freed until the invocation finishes.</p>
+</li>
+<li><p>g_closure_invalidate() and invalidation notifiers allow callbacks to be
+automatically removed when the objects they point to go away.</p>
+</li>
+</ul>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.ValueType.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ValueType.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.ValueType.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GObject.html">GObject</a></h6>
+  <h6><strong>Assembly</strong>: GObject.dll</h6>
+  <h5 id="GObject_Closure_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct Closure</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GObject_Closure_data.md&amp;value=---%0Auid%3A%20GObject.Closure.data%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GObject/Structs/Closure.Generated.cs/#L136">View Source</a>
+  </span>
+  <h4 id="GObject_Closure_data" data-uid="GObject.Closure.data">data</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntPtr data</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GObject_Closure_derivative_flag.md&amp;value=---%0Auid%3A%20GObject.Closure.derivative_flag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GObject/Structs/Closure.Generated.cs/#L104">View Source</a>
+  </span>
+  <h4 id="GObject_Closure_derivative_flag" data-uid="GObject.Closure.derivative_flag">derivative_flag</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint derivative_flag</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GObject_Closure_floating.md&amp;value=---%0Auid%3A%20GObject.Closure.floating%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GObject/Structs/Closure.Generated.cs/#L98">View Source</a>
+  </span>
+  <h4 id="GObject_Closure_floating" data-uid="GObject.Closure.floating">floating</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint floating</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GObject_Closure_in_inotify.md&amp;value=---%0Auid%3A%20GObject.Closure.in_inotify%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GObject/Structs/Closure.Generated.cs/#L92">View Source</a>
+  </span>
+  <h4 id="GObject_Closure_in_inotify" data-uid="GObject.Closure.in_inotify">in_inotify</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint in_inotify</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GObject_Closure_in_marshal.md&amp;value=---%0Auid%3A%20GObject.Closure.in_marshal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GObject/Structs/Closure.Generated.cs/#L114">View Source</a>
+  </span>
+  <h4 id="GObject_Closure_in_marshal" data-uid="GObject.Closure.in_marshal">in_marshal</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the closure is currently being invoked with
+g_closure_invoke()</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint in_marshal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GObject_Closure_is_invalid.md&amp;value=---%0Auid%3A%20GObject.Closure.is_invalid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GObject/Structs/Closure.Generated.cs/#L124">View Source</a>
+  </span>
+  <h4 id="GObject_Closure_is_invalid" data-uid="GObject.Closure.is_invalid">is_invalid</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the closure has been invalidated by
+g_closure_invalidate()</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint is_invalid</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GObject_Closure_marshal.md&amp;value=---%0Auid%3A%20GObject.Closure.marshal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GObject/Structs/Closure.Generated.cs/#L130">View Source</a>
+  </span>
+  <h4 id="GObject_Closure_marshal" data-uid="GObject.Closure.marshal">marshal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntPtr marshal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GObject_Closure_meta_marshal_nouse.md&amp;value=---%0Auid%3A%20GObject.Closure.meta_marshal_nouse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GObject/Structs/Closure.Generated.cs/#L68">View Source</a>
+  </span>
+  <h4 id="GObject_Closure_meta_marshal_nouse" data-uid="GObject.Closure.meta_marshal_nouse">meta_marshal_nouse</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint meta_marshal_nouse</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GObject_Closure_n_fnotifiers.md&amp;value=---%0Auid%3A%20GObject.Closure.n_fnotifiers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GObject/Structs/Closure.Generated.cs/#L80">View Source</a>
+  </span>
+  <h4 id="GObject_Closure_n_fnotifiers" data-uid="GObject.Closure.n_fnotifiers">n_fnotifiers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint n_fnotifiers</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GObject_Closure_n_guards.md&amp;value=---%0Auid%3A%20GObject.Closure.n_guards%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GObject/Structs/Closure.Generated.cs/#L74">View Source</a>
+  </span>
+  <h4 id="GObject_Closure_n_guards" data-uid="GObject.Closure.n_guards">n_guards</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint n_guards</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GObject_Closure_n_inotifiers.md&amp;value=---%0Auid%3A%20GObject.Closure.n_inotifiers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GObject/Structs/Closure.Generated.cs/#L86">View Source</a>
+  </span>
+  <h4 id="GObject_Closure_n_inotifiers" data-uid="GObject.Closure.n_inotifiers">n_inotifiers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint n_inotifiers</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GObject_Closure_notifiers.md&amp;value=---%0Auid%3A%20GObject.Closure.notifiers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GObject/Structs/Closure.Generated.cs/#L142">View Source</a>
+  </span>
+  <h4 id="GObject_Closure_notifiers" data-uid="GObject.Closure.notifiers">notifiers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntPtr notifiers</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GObject_Closure_ref_count.md&amp;value=---%0Auid%3A%20GObject.Closure.ref_count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GObject/Structs/Closure.Generated.cs/#L62">View Source</a>
+  </span>
+  <h4 id="GObject_Closure_ref_count" data-uid="GObject.Closure.ref_count">ref_count</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint ref_count</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="GObject_Closure_add_finalize_notifier_" data-uid="GObject.Closure.add_finalize_notifier*"></a>
+  <h4 id="GObject_Closure_add_finalize_notifier_System_IntPtr_System_IntPtr_GObject_ClosureNotify_" data-uid="GObject.Closure.add_finalize_notifier(System.IntPtr,System.IntPtr,GObject.ClosureNotify)">add_finalize_notifier(IntPtr, IntPtr, ClosureNotify)</h4>
+  <div class="markdown level1 summary"><p>Registers a finalization notifier which will be called when the
+reference count of @closure goes down to 0. Multiple finalization
+notifiers on a single closure are invoked in unspecified order. If
+a single call to g_closure_unref() results in the closure being
+both invalidated and finalized, then the invalidate notifiers will
+be run before the finalize notifiers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void add_finalize_notifier(IntPtr closure, IntPtr notify_data, ClosureNotify notify_func)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">notify_data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.ClosureNotify.html">ClosureNotify</a></td>
+        <td><span class="parametername">notify_func</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Closure_add_invalidate_notifier_" data-uid="GObject.Closure.add_invalidate_notifier*"></a>
+  <h4 id="GObject_Closure_add_invalidate_notifier_System_IntPtr_System_IntPtr_GObject_ClosureNotify_" data-uid="GObject.Closure.add_invalidate_notifier(System.IntPtr,System.IntPtr,GObject.ClosureNotify)">add_invalidate_notifier(IntPtr, IntPtr, ClosureNotify)</h4>
+  <div class="markdown level1 summary"><p>Registers an invalidation notifier which will be called when the
+@closure is invalidated with g_closure_invalidate(). Invalidation
+notifiers are invoked before finalization notifiers, in an
+unspecified order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void add_invalidate_notifier(IntPtr closure, IntPtr notify_data, ClosureNotify notify_func)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">notify_data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.ClosureNotify.html">ClosureNotify</a></td>
+        <td><span class="parametername">notify_func</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Closure_add_marshal_guards_" data-uid="GObject.Closure.add_marshal_guards*"></a>
+  <h4 id="GObject_Closure_add_marshal_guards_System_IntPtr_System_IntPtr_GObject_ClosureNotify_System_IntPtr_GObject_ClosureNotify_" data-uid="GObject.Closure.add_marshal_guards(System.IntPtr,System.IntPtr,GObject.ClosureNotify,System.IntPtr,GObject.ClosureNotify)">add_marshal_guards(IntPtr, IntPtr, ClosureNotify, IntPtr, ClosureNotify)</h4>
+  <div class="markdown level1 summary"><p>Adds a pair of notifiers which get invoked before and after the
+closure callback, respectively. This is typically used to protect
+the extra arguments for the duration of the callback. See
+g_object_watch_closure() for an example of marshal guards.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void add_marshal_guards(IntPtr closure, IntPtr pre_marshal_data, ClosureNotify pre_marshal_notify, IntPtr post_marshal_data, ClosureNotify post_marshal_notify)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">pre_marshal_data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.ClosureNotify.html">ClosureNotify</a></td>
+        <td><span class="parametername">pre_marshal_notify</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">post_marshal_data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.ClosureNotify.html">ClosureNotify</a></td>
+        <td><span class="parametername">post_marshal_notify</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Closure_invalidate_" data-uid="GObject.Closure.invalidate*"></a>
+  <h4 id="GObject_Closure_invalidate_System_IntPtr_" data-uid="GObject.Closure.invalidate(System.IntPtr)">invalidate(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets a flag on the closure to indicate that its calling
+environment has become invalid, and thus causes any future
+invocations of g_closure_invoke() on this @closure to be
+ignored. Also, invalidation notifiers installed on the closure will
+be called at this point. Note that unless you are holding a
+reference to the closure yourself, the invalidation notifiers may
+unref the closure and cause it to be destroyed, so if you need to
+access the closure after calling g_closure_invalidate(), make sure
+that you've previously called g_closure_ref().</p>
+<p>Note that g_closure_invalidate() will also be called when the
+reference count of a closure drops to zero (unless it has already
+been invalidated before).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void invalidate(IntPtr closure)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Closure_invoke_" data-uid="GObject.Closure.invoke*"></a>
+  <h4 id="GObject_Closure_invoke_System_IntPtr_GObject_Value__System_UInt32_GObject_Value___System_IntPtr_" data-uid="GObject.Closure.invoke(System.IntPtr,GObject.Value@,System.UInt32,GObject.Value[],System.IntPtr)">invoke(IntPtr, ref Value, UInt32, Value[], IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Invokes the closure, i.e. executes the callback represented by the @closure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void invoke(IntPtr closure, ref Value return_value, uint n_param_values, Value[] param_values, IntPtr invocation_hint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Value.html">Value</a></td>
+        <td><span class="parametername">return_value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">n_param_values</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Value.html">Value</a>[]</td>
+        <td><span class="parametername">param_values</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">invocation_hint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Closure_new_object_" data-uid="GObject.Closure.new_object*"></a>
+  <h4 id="GObject_Closure_new_object_System_UInt32_System_IntPtr_" data-uid="GObject.Closure.new_object(System.UInt32,System.IntPtr)">new_object(UInt32, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>A variant of g_closure_new_simple() which stores @object in the
+@data field of the closure and calls g_object_watch_closure() on
+@object and the created closure. This function is mainly useful
+when implementing new types of closures.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr new_object(uint sizeof_closure, IntPtr object)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">sizeof_closure</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Closure_new_simple_" data-uid="GObject.Closure.new_simple*"></a>
+  <h4 id="GObject_Closure_new_simple_System_UInt32_System_IntPtr_" data-uid="GObject.Closure.new_simple(System.UInt32,System.IntPtr)">new_simple(UInt32, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Allocates a struct of the given size and initializes the initial
+part as a #GClosure. This function is mainly useful when
+implementing new types of closures.</p>
+<p>|[<!-- language="C" -->
+typedef struct _MyClosure MyClosure;
+struct _MyClosure
+{
+GClosure closure;
+// extra data goes here
+};</p>
+<p>static void
+my_closure_finalize (gpointer  notify_data,
+GClosure *closure)
+{
+MyClosure *my_closure = (MyClosure *)closure;</p>
+<p>// free extra data here
+}</p>
+<p>MyClosure *my_closure_new (gpointer data)
+{
+GClosure *closure;
+MyClosure *my_closure;</p>
+<p>closure = g_closure_new_simple (sizeof (MyClosure), data);
+my_closure = (MyClosure *) closure;</p>
+<p>// initialize extra data here</p>
+<p>g_closure_add_finalize_notifier (closure, notify_data,
+my_closure_finalize);
+return my_closure;
+}
+]|</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr new_simple(uint sizeof_closure, IntPtr data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">sizeof_closure</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Closure_ref_" data-uid="GObject.Closure.ref*"></a>
+  <h4 id="GObject_Closure_ref_System_IntPtr_" data-uid="GObject.Closure.ref(System.IntPtr)">ref(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Increments the reference count on a closure to force it staying
+alive while the caller holds a pointer to it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr ref(IntPtr closure)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Closure_remove_finalize_notifier_" data-uid="GObject.Closure.remove_finalize_notifier*"></a>
+  <h4 id="GObject_Closure_remove_finalize_notifier_System_IntPtr_System_IntPtr_GObject_ClosureNotify_" data-uid="GObject.Closure.remove_finalize_notifier(System.IntPtr,System.IntPtr,GObject.ClosureNotify)">remove_finalize_notifier(IntPtr, IntPtr, ClosureNotify)</h4>
+  <div class="markdown level1 summary"><p>Removes a finalization notifier.</p>
+<p>Notice that notifiers are automatically removed after they are run.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void remove_finalize_notifier(IntPtr closure, IntPtr notify_data, ClosureNotify notify_func)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">notify_data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.ClosureNotify.html">ClosureNotify</a></td>
+        <td><span class="parametername">notify_func</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Closure_remove_invalidate_notifier_" data-uid="GObject.Closure.remove_invalidate_notifier*"></a>
+  <h4 id="GObject_Closure_remove_invalidate_notifier_System_IntPtr_System_IntPtr_GObject_ClosureNotify_" data-uid="GObject.Closure.remove_invalidate_notifier(System.IntPtr,System.IntPtr,GObject.ClosureNotify)">remove_invalidate_notifier(IntPtr, IntPtr, ClosureNotify)</h4>
+  <div class="markdown level1 summary"><p>Removes an invalidation notifier.</p>
+<p>Notice that notifiers are automatically removed after they are run.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void remove_invalidate_notifier(IntPtr closure, IntPtr notify_data, ClosureNotify notify_func)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">notify_data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.ClosureNotify.html">ClosureNotify</a></td>
+        <td><span class="parametername">notify_func</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Closure_set_marshal_" data-uid="GObject.Closure.set_marshal*"></a>
+  <h4 id="GObject_Closure_set_marshal_System_IntPtr_GObject_ClosureMarshal_" data-uid="GObject.Closure.set_marshal(System.IntPtr,GObject.ClosureMarshal)">set_marshal(IntPtr, ClosureMarshal)</h4>
+  <div class="markdown level1 summary"><p>Sets the marshaller of @closure. The <code>marshal_data</code>
+of @marshal provides a way for a meta marshaller to provide additional
+information to the marshaller. (See g_closure_set_meta_marshal().) For
+GObject's C predefined marshallers (the g_cclosure_marshal_*()
+functions), what it provides is a callback function to use instead of
+@closure-&gt;callback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_marshal(IntPtr closure, ClosureMarshal marshal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.ClosureMarshal.html">ClosureMarshal</a></td>
+        <td><span class="parametername">marshal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Closure_set_meta_marshal_" data-uid="GObject.Closure.set_meta_marshal*"></a>
+  <h4 id="GObject_Closure_set_meta_marshal_System_IntPtr_System_IntPtr_GObject_ClosureMarshal_" data-uid="GObject.Closure.set_meta_marshal(System.IntPtr,System.IntPtr,GObject.ClosureMarshal)">set_meta_marshal(IntPtr, IntPtr, ClosureMarshal)</h4>
+  <div class="markdown level1 summary"><p>Sets the meta marshaller of @closure.  A meta marshaller wraps
+@closure-&gt;marshal and modifies the way it is called in some
+fashion. The most common use of this facility is for C callbacks.
+The same marshallers (generated by [glib-genmarshal][glib-genmarshal]),
+are used everywhere, but the way that we get the callback function
+differs. In most cases we want to use @closure-&gt;callback, but in
+other cases we want to use some different technique to retrieve the
+callback function.</p>
+<p>For example, class closures for signals (see
+g_signal_type_cclosure_new()) retrieve the callback function from a
+fixed offset in the class structure.  The meta marshaller retrieves
+the right callback and passes it to the marshaller as the
+@marshal_data argument.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_meta_marshal(IntPtr closure, IntPtr marshal_data, ClosureMarshal meta_marshal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">marshal_data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.ClosureMarshal.html">ClosureMarshal</a></td>
+        <td><span class="parametername">meta_marshal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Closure_sink_" data-uid="GObject.Closure.sink*"></a>
+  <h4 id="GObject_Closure_sink_System_IntPtr_" data-uid="GObject.Closure.sink(System.IntPtr)">sink(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Takes over the initial ownership of a closure.  Each closure is
+initially created in a &quot;floating&quot; state, which means that the initial
+reference count is not owned by any caller. g_closure_sink() checks
+to see if the object is still floating, and if so, unsets the
+floating state and decreases the reference count. If the closure
+is not floating, g_closure_sink() does nothing. The reason for the
+existence of the floating state is to prevent cumbersome code
+sequences like:
+|[<!-- language="C" -->
+closure = g_cclosure_new (cb_func, cb_data);
+g_source_set_closure (source, closure);
+g_closure_unref (closure); // GObject doesn't really need this
+]|
+Because g_source_set_closure() (and similar functions) take ownership of the
+initial reference count, if it is unowned, we instead can write:
+|[<!-- language="C" -->
+g_source_set_closure (source, g_cclosure_new (cb_func, cb_data));
+]|</p>
+<p>Generally, this function is used together with g_closure_ref(). Ane example
+of storing a closure for later notification looks like:
+|[<!-- language="C" -->
+static GClosure *notify_closure = NULL;
+void
+foo_notify_set_closure (GClosure *closure)
+{
+if (notify_closure)
+g_closure_unref (notify_closure);
+notify_closure = closure;
+if (notify_closure)
+{
+g_closure_ref (notify_closure);
+g_closure_sink (notify_closure);
+}
+}
+]|</p>
+<p>Because g_closure_sink() may decrement the reference count of a closure
+(if it hasn't been called on @closure yet) just like g_closure_unref(),
+g_closure_ref() should be called prior to this function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void sink(IntPtr closure)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GObject_Closure_unref_" data-uid="GObject.Closure.unref*"></a>
+  <h4 id="GObject_Closure_unref_System_IntPtr_" data-uid="GObject.Closure.unref(System.IntPtr)">unref(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Decrements the reference count of a closure after it was previously
+incremented by the same caller. If no other callers are using the
+closure, then the closure will be destroyed and freed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void unref(IntPtr closure)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GObject_Closure.md&amp;value=---%0Auid%3A%20GObject.Closure%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GObject/Structs/Closure.Generated.cs/#L53" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

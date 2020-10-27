@@ -1,0 +1,1465 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Clipboard.Native
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Clipboard.Native
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gtk.Clipboard.Native">
+  
+  
+  <h1 id="Gtk_Clipboard_Native" data-uid="Gtk.Clipboard.Native" class="text-break">Class Clipboard.Native
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Clipboard.Native</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gtk.html">Gtk</a></h6>
+  <h6><strong>Assembly</strong>: Gtk3.dll</h6>
+  <h5 id="Gtk_Clipboard_Native_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static class Native</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Gtk_Clipboard_Native_clear_" data-uid="Gtk.Clipboard.Native.clear*"></a>
+  <h4 id="Gtk_Clipboard_Native_clear_System_IntPtr_" data-uid="Gtk.Clipboard.Native.clear(System.IntPtr)">clear(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Clears the contents of the clipboard. Generally this should only
+be called between the time you call gtk_clipboard_set_with_owner()
+or gtk_clipboard_set_with_data(),
+and when the @clear_func you supplied is called. Otherwise, the
+clipboard may be owned by someone else.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void clear(IntPtr clipboard)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_get_display_" data-uid="Gtk.Clipboard.Native.get_display*"></a>
+  <h4 id="Gtk_Clipboard_Native_get_display_System_IntPtr_" data-uid="Gtk.Clipboard.Native.get_display(System.IntPtr)">get_display(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the #GdkDisplay associated with @clipboard</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_display(IntPtr clipboard)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_get_owner_" data-uid="Gtk.Clipboard.Native.get_owner*"></a>
+  <h4 id="Gtk_Clipboard_Native_get_owner_System_IntPtr_" data-uid="Gtk.Clipboard.Native.get_owner(System.IntPtr)">get_owner(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>If the clipboard contents callbacks were set with
+gtk_clipboard_set_with_owner(), and the gtk_clipboard_set_with_data() or
+gtk_clipboard_clear() has not subsequently called, returns the owner set
+by gtk_clipboard_set_with_owner().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_owner(IntPtr clipboard)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_get_selection_" data-uid="Gtk.Clipboard.Native.get_selection*"></a>
+  <h4 id="Gtk_Clipboard_Native_get_selection_System_IntPtr_" data-uid="Gtk.Clipboard.Native.get_selection(System.IntPtr)">get_selection(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the selection that this clipboard is for.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Atom get_selection(IntPtr clipboard)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gdk.Atom.html">Atom</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_get_type_" data-uid="Gtk.Clipboard.Native.get_type*"></a>
+  <h4 id="Gtk_Clipboard_Native_get_type" data-uid="Gtk.Clipboard.Native.get_type">get_type()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong get_type()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_request_contents_" data-uid="Gtk.Clipboard.Native.request_contents*"></a>
+  <h4 id="Gtk_Clipboard_Native_request_contents_System_IntPtr_Gdk_Atom_Gtk_ClipboardReceivedFunc_System_IntPtr_" data-uid="Gtk.Clipboard.Native.request_contents(System.IntPtr,Gdk.Atom,Gtk.ClipboardReceivedFunc,System.IntPtr)">request_contents(IntPtr, Atom, ClipboardReceivedFunc, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Requests the contents of clipboard as the given target.
+When the results of the result are later received the supplied callback
+will be called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void request_contents(IntPtr clipboard, Atom target, ClipboardReceivedFunc callback, IntPtr user_data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gdk.Atom.html">Atom</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.ClipboardReceivedFunc.html">ClipboardReceivedFunc</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_request_image_" data-uid="Gtk.Clipboard.Native.request_image*"></a>
+  <h4 id="Gtk_Clipboard_Native_request_image_System_IntPtr_Gtk_ClipboardImageReceivedFunc_System_IntPtr_" data-uid="Gtk.Clipboard.Native.request_image(System.IntPtr,Gtk.ClipboardImageReceivedFunc,System.IntPtr)">request_image(IntPtr, ClipboardImageReceivedFunc, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Requests the contents of the clipboard as image. When the image is
+later received, it will be converted to a #GdkPixbuf, and
+@callback will be called.</p>
+<p>The @pixbuf parameter to @callback will contain the resulting
+#GdkPixbuf if the request succeeded, or %NULL if it failed. This
+could happen for various reasons, in particular if the clipboard
+was empty or if the contents of the clipboard could not be
+converted into an image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void request_image(IntPtr clipboard, ClipboardImageReceivedFunc callback, IntPtr user_data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.ClipboardImageReceivedFunc.html">ClipboardImageReceivedFunc</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_request_rich_text_" data-uid="Gtk.Clipboard.Native.request_rich_text*"></a>
+  <h4 id="Gtk_Clipboard_Native_request_rich_text_System_IntPtr_System_IntPtr_Gtk_ClipboardRichTextReceivedFunc_System_IntPtr_" data-uid="Gtk.Clipboard.Native.request_rich_text(System.IntPtr,System.IntPtr,Gtk.ClipboardRichTextReceivedFunc,System.IntPtr)">request_rich_text(IntPtr, IntPtr, ClipboardRichTextReceivedFunc, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Requests the contents of the clipboard as rich text. When the rich
+text is later received, @callback will be called.</p>
+<p>The @text parameter to @callback will contain the resulting rich
+text if the request succeeded, or %NULL if it failed. The @length
+parameter will contain @text’s length. This function can fail for
+various reasons, in particular if the clipboard was empty or if the
+contents of the clipboard could not be converted into rich text form.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void request_rich_text(IntPtr clipboard, IntPtr buffer, ClipboardRichTextReceivedFunc callback, IntPtr user_data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.ClipboardRichTextReceivedFunc.html">ClipboardRichTextReceivedFunc</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_request_targets_" data-uid="Gtk.Clipboard.Native.request_targets*"></a>
+  <h4 id="Gtk_Clipboard_Native_request_targets_System_IntPtr_Gtk_ClipboardTargetsReceivedFunc_System_IntPtr_" data-uid="Gtk.Clipboard.Native.request_targets(System.IntPtr,Gtk.ClipboardTargetsReceivedFunc,System.IntPtr)">request_targets(IntPtr, ClipboardTargetsReceivedFunc, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Requests the contents of the clipboard as list of supported targets.
+When the list is later received, @callback will be called.</p>
+<p>The @targets parameter to @callback will contain the resulting targets if
+the request succeeded, or %NULL if it failed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void request_targets(IntPtr clipboard, ClipboardTargetsReceivedFunc callback, IntPtr user_data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.ClipboardTargetsReceivedFunc.html">ClipboardTargetsReceivedFunc</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_request_text_" data-uid="Gtk.Clipboard.Native.request_text*"></a>
+  <h4 id="Gtk_Clipboard_Native_request_text_System_IntPtr_Gtk_ClipboardTextReceivedFunc_System_IntPtr_" data-uid="Gtk.Clipboard.Native.request_text(System.IntPtr,Gtk.ClipboardTextReceivedFunc,System.IntPtr)">request_text(IntPtr, ClipboardTextReceivedFunc, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Requests the contents of the clipboard as text. When the text is
+later received, it will be converted to UTF-8 if necessary, and
+@callback will be called.</p>
+<p>The @text parameter to @callback will contain the resulting text if
+the request succeeded, or %NULL if it failed. This could happen for
+various reasons, in particular if the clipboard was empty or if the
+contents of the clipboard could not be converted into text form.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void request_text(IntPtr clipboard, ClipboardTextReceivedFunc callback, IntPtr user_data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.ClipboardTextReceivedFunc.html">ClipboardTextReceivedFunc</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_request_uris_" data-uid="Gtk.Clipboard.Native.request_uris*"></a>
+  <h4 id="Gtk_Clipboard_Native_request_uris_System_IntPtr_Gtk_ClipboardURIReceivedFunc_System_IntPtr_" data-uid="Gtk.Clipboard.Native.request_uris(System.IntPtr,Gtk.ClipboardURIReceivedFunc,System.IntPtr)">request_uris(IntPtr, ClipboardURIReceivedFunc, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Requests the contents of the clipboard as URIs. When the URIs are
+later received @callback will be called.</p>
+<p>The @uris parameter to @callback will contain the resulting array of
+URIs if the request succeeded, or %NULL if it failed. This could happen
+for various reasons, in particular if the clipboard was empty or if the
+contents of the clipboard could not be converted into URI form.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void request_uris(IntPtr clipboard, ClipboardURIReceivedFunc callback, IntPtr user_data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.ClipboardURIReceivedFunc.html">ClipboardURIReceivedFunc</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_set_can_store_" data-uid="Gtk.Clipboard.Native.set_can_store*"></a>
+  <h4 id="Gtk_Clipboard_Native_set_can_store_System_IntPtr_System_IntPtr___System_Int32_" data-uid="Gtk.Clipboard.Native.set_can_store(System.IntPtr,System.IntPtr[],System.Int32)">set_can_store(IntPtr, IntPtr[], Int32)</h4>
+  <div class="markdown level1 summary"><p>Hints that the clipboard data should be stored somewhere when the
+application exits or when gtk_clipboard_store () is called.</p>
+<p>This value is reset when the clipboard owner changes.
+Where the clipboard data is stored is platform dependent,
+see gdk_display_store_clipboard () for more information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_can_store(IntPtr clipboard, IntPtr[] targets, int n_targets)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span>[]</td>
+        <td><span class="parametername">targets</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n_targets</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_set_image_" data-uid="Gtk.Clipboard.Native.set_image*"></a>
+  <h4 id="Gtk_Clipboard_Native_set_image_System_IntPtr_System_IntPtr_" data-uid="Gtk.Clipboard.Native.set_image(System.IntPtr,System.IntPtr)">set_image(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets the contents of the clipboard to the given #GdkPixbuf.
+GTK+ will take responsibility for responding for requests
+for the image, and for converting the image into the
+requested format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_image(IntPtr clipboard, IntPtr pixbuf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">pixbuf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_set_text_" data-uid="Gtk.Clipboard.Native.set_text*"></a>
+  <h4 id="Gtk_Clipboard_Native_set_text_System_IntPtr_System_String_System_Int32_" data-uid="Gtk.Clipboard.Native.set_text(System.IntPtr,System.String,System.Int32)">set_text(IntPtr, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the contents of the clipboard to the given UTF-8 string. GTK+ will
+make a copy of the text and take responsibility for responding
+for requests for the text, and for converting the text into
+the requested format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_text(IntPtr clipboard, string text, int len)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">len</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_set_with_data_" data-uid="Gtk.Clipboard.Native.set_with_data*"></a>
+  <h4 id="Gtk_Clipboard_Native_set_with_data_System_IntPtr_System_IntPtr___System_UInt32_Gtk_ClipboardGetFunc_Gtk_ClipboardClearFunc_System_IntPtr_" data-uid="Gtk.Clipboard.Native.set_with_data(System.IntPtr,System.IntPtr[],System.UInt32,Gtk.ClipboardGetFunc,Gtk.ClipboardClearFunc,System.IntPtr)">set_with_data(IntPtr, IntPtr[], UInt32, ClipboardGetFunc, ClipboardClearFunc, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Virtually sets the contents of the specified clipboard by providing
+a list of supported formats for the clipboard data and a function
+to call to get the actual data when it is requested.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool set_with_data(IntPtr clipboard, IntPtr[] targets, uint n_targets, ClipboardGetFunc get_func, ClipboardClearFunc clear_func, IntPtr user_data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span>[]</td>
+        <td><span class="parametername">targets</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">n_targets</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.ClipboardGetFunc.html">ClipboardGetFunc</a></td>
+        <td><span class="parametername">get_func</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.ClipboardClearFunc.html">ClipboardClearFunc</a></td>
+        <td><span class="parametername">clear_func</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_set_with_owner_" data-uid="Gtk.Clipboard.Native.set_with_owner*"></a>
+  <h4 id="Gtk_Clipboard_Native_set_with_owner_System_IntPtr_System_IntPtr___System_UInt32_Gtk_ClipboardGetFunc_Gtk_ClipboardClearFunc_System_IntPtr_" data-uid="Gtk.Clipboard.Native.set_with_owner(System.IntPtr,System.IntPtr[],System.UInt32,Gtk.ClipboardGetFunc,Gtk.ClipboardClearFunc,System.IntPtr)">set_with_owner(IntPtr, IntPtr[], UInt32, ClipboardGetFunc, ClipboardClearFunc, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Virtually sets the contents of the specified clipboard by providing
+a list of supported formats for the clipboard data and a function
+to call to get the actual data when it is requested.</p>
+<p>The difference between this function and gtk_clipboard_set_with_data()
+is that instead of an generic @user_data pointer, a #GObject is passed
+in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool set_with_owner(IntPtr clipboard, IntPtr[] targets, uint n_targets, ClipboardGetFunc get_func, ClipboardClearFunc clear_func, IntPtr owner)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span>[]</td>
+        <td><span class="parametername">targets</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">n_targets</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.ClipboardGetFunc.html">ClipboardGetFunc</a></td>
+        <td><span class="parametername">get_func</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.ClipboardClearFunc.html">ClipboardClearFunc</a></td>
+        <td><span class="parametername">clear_func</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">owner</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_store_" data-uid="Gtk.Clipboard.Native.store*"></a>
+  <h4 id="Gtk_Clipboard_Native_store_System_IntPtr_" data-uid="Gtk.Clipboard.Native.store(System.IntPtr)">store(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Stores the current clipboard data somewhere so that it will stay
+around after the application has quit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void store(IntPtr clipboard)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_wait_for_contents_" data-uid="Gtk.Clipboard.Native.wait_for_contents*"></a>
+  <h4 id="Gtk_Clipboard_Native_wait_for_contents_System_IntPtr_Gdk_Atom_" data-uid="Gtk.Clipboard.Native.wait_for_contents(System.IntPtr,Gdk.Atom)">wait_for_contents(IntPtr, Atom)</h4>
+  <div class="markdown level1 summary"><p>Requests the contents of the clipboard using the given target.
+This function waits for the data to be received using the main
+loop, so events, timeouts, etc, may be dispatched during the wait.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr wait_for_contents(IntPtr clipboard, Atom target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gdk.Atom.html">Atom</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_wait_for_image_" data-uid="Gtk.Clipboard.Native.wait_for_image*"></a>
+  <h4 id="Gtk_Clipboard_Native_wait_for_image_System_IntPtr_" data-uid="Gtk.Clipboard.Native.wait_for_image(System.IntPtr)">wait_for_image(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Requests the contents of the clipboard as image and converts
+the result to a #GdkPixbuf. This function waits for
+the data to be received using the main loop, so events,
+timeouts, etc, may be dispatched during the wait.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr wait_for_image(IntPtr clipboard)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_wait_for_rich_text_" data-uid="Gtk.Clipboard.Native.wait_for_rich_text*"></a>
+  <h4 id="Gtk_Clipboard_Native_wait_for_rich_text_System_IntPtr_System_IntPtr_System_IntPtr_System_UInt64__" data-uid="Gtk.Clipboard.Native.wait_for_rich_text(System.IntPtr,System.IntPtr,System.IntPtr,System.UInt64@)">wait_for_rich_text(IntPtr, IntPtr, IntPtr, ref UInt64)</h4>
+  <div class="markdown level1 summary"><p>Requests the contents of the clipboard as rich text.  This function
+waits for the data to be received using the main loop, so events,
+timeouts, etc, may be dispatched during the wait.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] wait_for_rich_text(IntPtr clipboard, IntPtr buffer, IntPtr format, ref ulong length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_wait_for_targets_" data-uid="Gtk.Clipboard.Native.wait_for_targets*"></a>
+  <h4 id="Gtk_Clipboard_Native_wait_for_targets_System_IntPtr_System_IntPtr__System_Int32__" data-uid="Gtk.Clipboard.Native.wait_for_targets(System.IntPtr,System.IntPtr@,System.Int32@)">wait_for_targets(IntPtr, ref IntPtr, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns a list of targets that are present on the clipboard, or %NULL
+if there aren’t any targets available. The returned list must be
+freed with g_free().
+This function waits for the data to be received using the main
+loop, so events, timeouts, etc, may be dispatched during the wait.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool wait_for_targets(IntPtr clipboard, ref IntPtr targets, ref int n_targets)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">targets</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n_targets</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_wait_for_text_" data-uid="Gtk.Clipboard.Native.wait_for_text*"></a>
+  <h4 id="Gtk_Clipboard_Native_wait_for_text_System_IntPtr_" data-uid="Gtk.Clipboard.Native.wait_for_text(System.IntPtr)">wait_for_text(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Requests the contents of the clipboard as text and converts
+the result to UTF-8 if necessary. This function waits for
+the data to be received using the main loop, so events,
+timeouts, etc, may be dispatched during the wait.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr wait_for_text(IntPtr clipboard)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_wait_for_uris_" data-uid="Gtk.Clipboard.Native.wait_for_uris*"></a>
+  <h4 id="Gtk_Clipboard_Native_wait_for_uris_System_IntPtr_" data-uid="Gtk.Clipboard.Native.wait_for_uris(System.IntPtr)">wait_for_uris(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Requests the contents of the clipboard as URIs. This function waits
+for the data to be received using the main loop, so events,
+timeouts, etc, may be dispatched during the wait.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr wait_for_uris(IntPtr clipboard)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_wait_is_image_available_" data-uid="Gtk.Clipboard.Native.wait_is_image_available*"></a>
+  <h4 id="Gtk_Clipboard_Native_wait_is_image_available_System_IntPtr_" data-uid="Gtk.Clipboard.Native.wait_is_image_available(System.IntPtr)">wait_is_image_available(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Test to see if there is an image available to be pasted
+This is done by requesting the TARGETS atom and checking
+if it contains any of the supported image targets. This function
+waits for the data to be received using the main loop, so events,
+timeouts, etc, may be dispatched during the wait.</p>
+<p>This function is a little faster than calling
+gtk_clipboard_wait_for_image() since it doesn’t need to retrieve
+the actual image data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool wait_is_image_available(IntPtr clipboard)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_wait_is_rich_text_available_" data-uid="Gtk.Clipboard.Native.wait_is_rich_text_available*"></a>
+  <h4 id="Gtk_Clipboard_Native_wait_is_rich_text_available_System_IntPtr_System_IntPtr_" data-uid="Gtk.Clipboard.Native.wait_is_rich_text_available(System.IntPtr,System.IntPtr)">wait_is_rich_text_available(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Test to see if there is rich text available to be pasted
+This is done by requesting the TARGETS atom and checking
+if it contains any of the supported rich text targets. This function
+waits for the data to be received using the main loop, so events,
+timeouts, etc, may be dispatched during the wait.</p>
+<p>This function is a little faster than calling
+gtk_clipboard_wait_for_rich_text() since it doesn’t need to retrieve
+the actual text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool wait_is_rich_text_available(IntPtr clipboard, IntPtr buffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_wait_is_target_available_" data-uid="Gtk.Clipboard.Native.wait_is_target_available*"></a>
+  <h4 id="Gtk_Clipboard_Native_wait_is_target_available_System_IntPtr_Gdk_Atom_" data-uid="Gtk.Clipboard.Native.wait_is_target_available(System.IntPtr,Gdk.Atom)">wait_is_target_available(IntPtr, Atom)</h4>
+  <div class="markdown level1 summary"><p>Checks if a clipboard supports pasting data of a given type. This
+function can be used to determine if a “Paste” menu item should be
+insensitive or not.</p>
+<p>If you want to see if there’s text available on the clipboard, use
+gtk_clipboard_wait_is_text_available () instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool wait_is_target_available(IntPtr clipboard, Atom target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gdk.Atom.html">Atom</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_wait_is_text_available_" data-uid="Gtk.Clipboard.Native.wait_is_text_available*"></a>
+  <h4 id="Gtk_Clipboard_Native_wait_is_text_available_System_IntPtr_" data-uid="Gtk.Clipboard.Native.wait_is_text_available(System.IntPtr)">wait_is_text_available(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Test to see if there is text available to be pasted
+This is done by requesting the TARGETS atom and checking
+if it contains any of the supported text targets. This function
+waits for the data to be received using the main loop, so events,
+timeouts, etc, may be dispatched during the wait.</p>
+<p>This function is a little faster than calling
+gtk_clipboard_wait_for_text() since it doesn’t need to retrieve
+the actual text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool wait_is_text_available(IntPtr clipboard)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gtk_Clipboard_Native_wait_is_uris_available_" data-uid="Gtk.Clipboard.Native.wait_is_uris_available*"></a>
+  <h4 id="Gtk_Clipboard_Native_wait_is_uris_available_System_IntPtr_" data-uid="Gtk.Clipboard.Native.wait_is_uris_available(System.IntPtr)">wait_is_uris_available(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Test to see if there is a list of URIs available to be pasted
+This is done by requesting the TARGETS atom and checking
+if it contains the URI targets. This function
+waits for the data to be received using the main loop, so events,
+timeouts, etc, may be dispatched during the wait.</p>
+<p>This function is a little faster than calling
+gtk_clipboard_wait_for_uris() since it doesn’t need to retrieve
+the actual URI data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool wait_is_uris_available(IntPtr clipboard)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gtk_Clipboard_Native.md&amp;value=---%0Auid%3A%20Gtk.Clipboard.Native%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gtk3/Classes/Clipboard.Generated.cs/#L86" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

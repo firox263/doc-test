@@ -1,0 +1,2876 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class KeyFile
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class KeyFile
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GLib.KeyFile">
+  
+  
+  <h1 id="GLib_KeyFile" data-uid="GLib.KeyFile" class="text-break">Class KeyFile
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">KeyFile</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GLib.html">GLib</a></h6>
+  <h6><strong>Assembly</strong>: GLib.dll</h6>
+  <h5 id="GLib_KeyFile_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class KeyFile</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="GLib_KeyFile_free_" data-uid="GLib.KeyFile.free*"></a>
+  <h4 id="GLib_KeyFile_free_System_IntPtr_" data-uid="GLib.KeyFile.free(System.IntPtr)">free(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Clears all keys and groups from @key_file, and decreases the
+reference count by 1. If the reference count reaches zero,
+frees the key file and all its allocated memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void free(IntPtr key_file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_get_boolean_" data-uid="GLib.KeyFile.get_boolean*"></a>
+  <h4 id="GLib_KeyFile_get_boolean_System_IntPtr_System_String_System_String_System_IntPtr__" data-uid="GLib.KeyFile.get_boolean(System.IntPtr,System.String,System.String,System.IntPtr@)">get_boolean(IntPtr, String, String, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the value associated with @key under @group_name as a
+boolean.</p>
+<p>If @key cannot be found then %FALSE is returned and @error is set
+to #G_KEY_FILE_ERROR_KEY_NOT_FOUND. Likewise, if the value
+associated with @key cannot be interpreted as a boolean then %FALSE
+is returned and @error is set to #G_KEY_FILE_ERROR_INVALID_VALUE.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool get_boolean(IntPtr key_file, string group_name, string key, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_get_boolean_list_" data-uid="GLib.KeyFile.get_boolean_list*"></a>
+  <h4 id="GLib_KeyFile_get_boolean_list_System_IntPtr_System_String_System_String_System_UInt64__System_IntPtr__" data-uid="GLib.KeyFile.get_boolean_list(System.IntPtr,System.String,System.String,System.UInt64@,System.IntPtr@)">get_boolean_list(IntPtr, String, String, ref UInt64, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the values associated with @key under @group_name as
+booleans.</p>
+<p>If @key cannot be found then %NULL is returned and @error is set to
+#G_KEY_FILE_ERROR_KEY_NOT_FOUND. Likewise, if the values associated
+with @key cannot be interpreted as booleans then %NULL is returned
+and @error is set to #G_KEY_FILE_ERROR_INVALID_VALUE.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_boolean_list(IntPtr key_file, string group_name, string key, ref ulong length, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_get_comment_" data-uid="GLib.KeyFile.get_comment*"></a>
+  <h4 id="GLib_KeyFile_get_comment_System_IntPtr_System_String_System_String_System_IntPtr__" data-uid="GLib.KeyFile.get_comment(System.IntPtr,System.String,System.String,System.IntPtr@)">get_comment(IntPtr, String, String, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Retrieves a comment above @key from @group_name.
+If @key is %NULL then @comment will be read from above
+@group_name. If both @key and @group_name are %NULL, then
+@comment will be read from above the first group in the file.</p>
+<p>Note that the returned string does not include the '#' comment markers,
+but does include any whitespace after them (on each line). It includes
+the line breaks between lines, but does not include the final line break.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_comment(IntPtr key_file, string group_name, string key, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_get_double_" data-uid="GLib.KeyFile.get_double*"></a>
+  <h4 id="GLib_KeyFile_get_double_System_IntPtr_System_String_System_String_System_IntPtr__" data-uid="GLib.KeyFile.get_double(System.IntPtr,System.String,System.String,System.IntPtr@)">get_double(IntPtr, String, String, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the value associated with @key under @group_name as a
+double. If @group_name is %NULL, the start_group is used.</p>
+<p>If @key cannot be found then 0.0 is returned and @error is set to
+#G_KEY_FILE_ERROR_KEY_NOT_FOUND. Likewise, if the value associated
+with @key cannot be interpreted as a double then 0.0 is returned
+and @error is set to #G_KEY_FILE_ERROR_INVALID_VALUE.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double get_double(IntPtr key_file, string group_name, string key, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_get_double_list_" data-uid="GLib.KeyFile.get_double_list*"></a>
+  <h4 id="GLib_KeyFile_get_double_list_System_IntPtr_System_String_System_String_System_UInt64__System_IntPtr__" data-uid="GLib.KeyFile.get_double_list(System.IntPtr,System.String,System.String,System.UInt64@,System.IntPtr@)">get_double_list(IntPtr, String, String, ref UInt64, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the values associated with @key under @group_name as
+doubles.</p>
+<p>If @key cannot be found then %NULL is returned and @error is set to
+#G_KEY_FILE_ERROR_KEY_NOT_FOUND. Likewise, if the values associated
+with @key cannot be interpreted as doubles then %NULL is returned
+and @error is set to #G_KEY_FILE_ERROR_INVALID_VALUE.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_double_list(IntPtr key_file, string group_name, string key, ref ulong length, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_get_groups_" data-uid="GLib.KeyFile.get_groups*"></a>
+  <h4 id="GLib_KeyFile_get_groups_System_IntPtr_System_UInt64__" data-uid="GLib.KeyFile.get_groups(System.IntPtr,System.UInt64@)">get_groups(IntPtr, ref UInt64)</h4>
+  <div class="markdown level1 summary"><p>Returns all groups in the key file loaded with @key_file.
+The array of returned groups will be %NULL-terminated, so
+@length may optionally be %NULL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_groups(IntPtr key_file, ref ulong length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_get_int64_" data-uid="GLib.KeyFile.get_int64*"></a>
+  <h4 id="GLib_KeyFile_get_int64_System_IntPtr_System_String_System_String_System_IntPtr__" data-uid="GLib.KeyFile.get_int64(System.IntPtr,System.String,System.String,System.IntPtr@)">get_int64(IntPtr, String, String, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the value associated with @key under @group_name as a signed
+64-bit integer. This is similar to g_key_file_get_integer() but can return
+64-bit results without truncation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long get_int64(IntPtr key_file, string group_name, string key, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_get_integer_" data-uid="GLib.KeyFile.get_integer*"></a>
+  <h4 id="GLib_KeyFile_get_integer_System_IntPtr_System_String_System_String_System_IntPtr__" data-uid="GLib.KeyFile.get_integer(System.IntPtr,System.String,System.String,System.IntPtr@)">get_integer(IntPtr, String, String, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the value associated with @key under @group_name as an
+integer.</p>
+<p>If @key cannot be found then 0 is returned and @error is set to
+#G_KEY_FILE_ERROR_KEY_NOT_FOUND. Likewise, if the value associated
+with @key cannot be interpreted as an integer, or is out of range
+for a #gint, then 0 is returned
+and @error is set to #G_KEY_FILE_ERROR_INVALID_VALUE.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int get_integer(IntPtr key_file, string group_name, string key, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_get_integer_list_" data-uid="GLib.KeyFile.get_integer_list*"></a>
+  <h4 id="GLib_KeyFile_get_integer_list_System_IntPtr_System_String_System_String_System_UInt64__System_IntPtr__" data-uid="GLib.KeyFile.get_integer_list(System.IntPtr,System.String,System.String,System.UInt64@,System.IntPtr@)">get_integer_list(IntPtr, String, String, ref UInt64, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the values associated with @key under @group_name as
+integers.</p>
+<p>If @key cannot be found then %NULL is returned and @error is set to
+#G_KEY_FILE_ERROR_KEY_NOT_FOUND. Likewise, if the values associated
+with @key cannot be interpreted as integers, or are out of range for
+#gint, then %NULL is returned
+and @error is set to #G_KEY_FILE_ERROR_INVALID_VALUE.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_integer_list(IntPtr key_file, string group_name, string key, ref ulong length, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_get_keys_" data-uid="GLib.KeyFile.get_keys*"></a>
+  <h4 id="GLib_KeyFile_get_keys_System_IntPtr_System_String_System_UInt64__System_IntPtr__" data-uid="GLib.KeyFile.get_keys(System.IntPtr,System.String,System.UInt64@,System.IntPtr@)">get_keys(IntPtr, String, ref UInt64, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns all keys for the group name @group_name.  The array of
+returned keys will be %NULL-terminated, so @length may
+optionally be %NULL. In the event that the @group_name cannot
+be found, %NULL is returned and @error is set to
+#G_KEY_FILE_ERROR_GROUP_NOT_FOUND.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_keys(IntPtr key_file, string group_name, ref ulong length, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_get_locale_for_key_" data-uid="GLib.KeyFile.get_locale_for_key*"></a>
+  <h4 id="GLib_KeyFile_get_locale_for_key_System_IntPtr_System_String_System_String_System_String_" data-uid="GLib.KeyFile.get_locale_for_key(System.IntPtr,System.String,System.String,System.String)">get_locale_for_key(IntPtr, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Returns the actual locale which the result of
+g_key_file_get_locale_string() or g_key_file_get_locale_string_list()
+came from.</p>
+<p>If calling g_key_file_get_locale_string() or
+g_key_file_get_locale_string_list() with exactly the same @key_file,
+@group_name, @key and @locale, the result of those functions will
+have originally been tagged with the locale that is the result of
+this function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_locale_for_key(IntPtr key_file, string group_name, string key, string locale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">locale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_get_locale_string_" data-uid="GLib.KeyFile.get_locale_string*"></a>
+  <h4 id="GLib_KeyFile_get_locale_string_System_IntPtr_System_String_System_String_System_String_System_IntPtr__" data-uid="GLib.KeyFile.get_locale_string(System.IntPtr,System.String,System.String,System.String,System.IntPtr@)">get_locale_string(IntPtr, String, String, String, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the value associated with @key under @group_name
+translated in the given @locale if available.  If @locale is
+%NULL then the current locale is assumed.</p>
+<p>If @locale is to be non-%NULL, or if the current locale will change over
+the lifetime of the #GKeyFile, it must be loaded with
+%G_KEY_FILE_KEEP_TRANSLATIONS in order to load strings for all locales.</p>
+<p>If @key cannot be found then %NULL is returned and @error is set
+to #G_KEY_FILE_ERROR_KEY_NOT_FOUND. If the value associated
+with @key cannot be interpreted or no suitable translation can
+be found then the untranslated value is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_locale_string(IntPtr key_file, string group_name, string key, string locale, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">locale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_get_locale_string_list_" data-uid="GLib.KeyFile.get_locale_string_list*"></a>
+  <h4 id="GLib_KeyFile_get_locale_string_list_System_IntPtr_System_String_System_String_System_String_System_UInt64__System_IntPtr__" data-uid="GLib.KeyFile.get_locale_string_list(System.IntPtr,System.String,System.String,System.String,System.UInt64@,System.IntPtr@)">get_locale_string_list(IntPtr, String, String, String, ref UInt64, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the values associated with @key under @group_name
+translated in the given @locale if available.  If @locale is
+%NULL then the current locale is assumed.</p>
+<p>If @locale is to be non-%NULL, or if the current locale will change over
+the lifetime of the #GKeyFile, it must be loaded with
+%G_KEY_FILE_KEEP_TRANSLATIONS in order to load strings for all locales.</p>
+<p>If @key cannot be found then %NULL is returned and @error is set
+to #G_KEY_FILE_ERROR_KEY_NOT_FOUND. If the values associated
+with @key cannot be interpreted or no suitable translations
+can be found then the untranslated values are returned. The
+returned array is %NULL-terminated, so @length may optionally
+be %NULL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_locale_string_list(IntPtr key_file, string group_name, string key, string locale, ref ulong length, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">locale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_get_start_group_" data-uid="GLib.KeyFile.get_start_group*"></a>
+  <h4 id="GLib_KeyFile_get_start_group_System_IntPtr_" data-uid="GLib.KeyFile.get_start_group(System.IntPtr)">get_start_group(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the name of the start group of the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_start_group(IntPtr key_file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_get_string_" data-uid="GLib.KeyFile.get_string*"></a>
+  <h4 id="GLib_KeyFile_get_string_System_IntPtr_System_String_System_String_System_IntPtr__" data-uid="GLib.KeyFile.get_string(System.IntPtr,System.String,System.String,System.IntPtr@)">get_string(IntPtr, String, String, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the string value associated with @key under @group_name.
+Unlike g_key_file_get_value(), this function handles escape sequences
+like \s.</p>
+<p>In the event the key cannot be found, %NULL is returned and
+@error is set to #G_KEY_FILE_ERROR_KEY_NOT_FOUND.  In the
+event that the @group_name cannot be found, %NULL is returned
+and @error is set to #G_KEY_FILE_ERROR_GROUP_NOT_FOUND.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_string(IntPtr key_file, string group_name, string key, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_get_string_list_" data-uid="GLib.KeyFile.get_string_list*"></a>
+  <h4 id="GLib_KeyFile_get_string_list_System_IntPtr_System_String_System_String_System_UInt64__System_IntPtr__" data-uid="GLib.KeyFile.get_string_list(System.IntPtr,System.String,System.String,System.UInt64@,System.IntPtr@)">get_string_list(IntPtr, String, String, ref UInt64, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the values associated with @key under @group_name.</p>
+<p>In the event the key cannot be found, %NULL is returned and
+@error is set to #G_KEY_FILE_ERROR_KEY_NOT_FOUND.  In the
+event that the @group_name cannot be found, %NULL is returned
+and @error is set to #G_KEY_FILE_ERROR_GROUP_NOT_FOUND.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_string_list(IntPtr key_file, string group_name, string key, ref ulong length, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_get_uint64_" data-uid="GLib.KeyFile.get_uint64*"></a>
+  <h4 id="GLib_KeyFile_get_uint64_System_IntPtr_System_String_System_String_System_IntPtr__" data-uid="GLib.KeyFile.get_uint64(System.IntPtr,System.String,System.String,System.IntPtr@)">get_uint64(IntPtr, String, String, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the value associated with @key under @group_name as an unsigned
+64-bit integer. This is similar to g_key_file_get_integer() but can return
+large positive results without truncation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong get_uint64(IntPtr key_file, string group_name, string key, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_get_value_" data-uid="GLib.KeyFile.get_value*"></a>
+  <h4 id="GLib_KeyFile_get_value_System_IntPtr_System_String_System_String_System_IntPtr__" data-uid="GLib.KeyFile.get_value(System.IntPtr,System.String,System.String,System.IntPtr@)">get_value(IntPtr, String, String, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Returns the raw value associated with @key under @group_name.
+Use g_key_file_get_string() to retrieve an unescaped UTF-8 string.</p>
+<p>In the event the key cannot be found, %NULL is returned and
+@error is set to #G_KEY_FILE_ERROR_KEY_NOT_FOUND.  In the
+event that the @group_name cannot be found, %NULL is returned
+and @error is set to #G_KEY_FILE_ERROR_GROUP_NOT_FOUND.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_value(IntPtr key_file, string group_name, string key, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_has_group_" data-uid="GLib.KeyFile.has_group*"></a>
+  <h4 id="GLib_KeyFile_has_group_System_IntPtr_System_String_" data-uid="GLib.KeyFile.has_group(System.IntPtr,System.String)">has_group(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Looks whether the key file has the group @group_name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool has_group(IntPtr key_file, string group_name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_has_key_" data-uid="GLib.KeyFile.has_key*"></a>
+  <h4 id="GLib_KeyFile_has_key_System_IntPtr_System_String_System_String_System_IntPtr__" data-uid="GLib.KeyFile.has_key(System.IntPtr,System.String,System.String,System.IntPtr@)">has_key(IntPtr, String, String, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Looks whether the key file has the key @key in the group
+@group_name.</p>
+<p>Note that this function does not follow the rules for #GError strictly;
+the return value both carries meaning and signals an error.  To use
+this function, you must pass a #GError pointer in @error, and check
+whether it is not %NULL to see if an error occurred.</p>
+<p>Language bindings should use g_key_file_get_value() to test whether
+or not a key exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool has_key(IntPtr key_file, string group_name, string key, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_load_from_bytes_" data-uid="GLib.KeyFile.load_from_bytes*"></a>
+  <h4 id="GLib_KeyFile_load_from_bytes_System_IntPtr_System_IntPtr_GLib_KeyFileFlags_System_IntPtr__" data-uid="GLib.KeyFile.load_from_bytes(System.IntPtr,System.IntPtr,GLib.KeyFileFlags,System.IntPtr@)">load_from_bytes(IntPtr, IntPtr, KeyFileFlags, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Loads a key file from the data in @bytes into an empty #GKeyFile structure.
+If the object cannot be created then %error is set to a #GKeyFileError.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool load_from_bytes(IntPtr key_file, IntPtr bytes, KeyFileFlags flags, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">bytes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.KeyFileFlags.html">KeyFileFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_load_from_data_" data-uid="GLib.KeyFile.load_from_data*"></a>
+  <h4 id="GLib_KeyFile_load_from_data_System_IntPtr_System_String_System_UInt64_GLib_KeyFileFlags_System_IntPtr__" data-uid="GLib.KeyFile.load_from_data(System.IntPtr,System.String,System.UInt64,GLib.KeyFileFlags,System.IntPtr@)">load_from_data(IntPtr, String, UInt64, KeyFileFlags, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Loads a key file from memory into an empty #GKeyFile structure.
+If the object cannot be created then %error is set to a #GKeyFileError.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool load_from_data(IntPtr key_file, string data, ulong length, KeyFileFlags flags, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.KeyFileFlags.html">KeyFileFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_load_from_data_dirs_" data-uid="GLib.KeyFile.load_from_data_dirs*"></a>
+  <h4 id="GLib_KeyFile_load_from_data_dirs_System_IntPtr_System_String_System_String_GLib_KeyFileFlags_System_IntPtr__" data-uid="GLib.KeyFile.load_from_data_dirs(System.IntPtr,System.String,System.String,GLib.KeyFileFlags,System.IntPtr@)">load_from_data_dirs(IntPtr, String, String, KeyFileFlags, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>This function looks for a key file named @file in the paths
+returned from g_get_user_data_dir() and g_get_system_data_dirs(),
+loads the file into @key_file and returns the file's full path in
+@full_path.  If the file could not be loaded then an %error is
+set to either a #GFileError or #GKeyFileError.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool load_from_data_dirs(IntPtr key_file, string file, string full_path, KeyFileFlags flags, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">full_path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.KeyFileFlags.html">KeyFileFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_load_from_dirs_" data-uid="GLib.KeyFile.load_from_dirs*"></a>
+  <h4 id="GLib_KeyFile_load_from_dirs_System_IntPtr_System_String_System_IntPtr__System_String_GLib_KeyFileFlags_System_IntPtr__" data-uid="GLib.KeyFile.load_from_dirs(System.IntPtr,System.String,System.IntPtr@,System.String,GLib.KeyFileFlags,System.IntPtr@)">load_from_dirs(IntPtr, String, ref IntPtr, String, KeyFileFlags, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>This function looks for a key file named @file in the paths
+specified in @search_dirs, loads the file into @key_file and
+returns the file's full path in @full_path.</p>
+<p>If the file could not be found in any of the @search_dirs,
+%G_KEY_FILE_ERROR_NOT_FOUND is returned. If
+the file is found but the OS returns an error when opening or reading the
+file, a %G_FILE_ERROR is returned. If there is a problem parsing the file, a
+%G_KEY_FILE_ERROR is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool load_from_dirs(IntPtr key_file, string file, ref IntPtr search_dirs, string full_path, KeyFileFlags flags, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">search_dirs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">full_path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.KeyFileFlags.html">KeyFileFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_load_from_file_" data-uid="GLib.KeyFile.load_from_file*"></a>
+  <h4 id="GLib_KeyFile_load_from_file_System_IntPtr_System_String_GLib_KeyFileFlags_System_IntPtr__" data-uid="GLib.KeyFile.load_from_file(System.IntPtr,System.String,GLib.KeyFileFlags,System.IntPtr@)">load_from_file(IntPtr, String, KeyFileFlags, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Loads a key file into an empty #GKeyFile structure.</p>
+<p>If the OS returns an error when opening or reading the file, a
+%G_FILE_ERROR is returned. If there is a problem parsing the file, a
+%G_KEY_FILE_ERROR is returned.</p>
+<p>This function will never return a %G_KEY_FILE_ERROR_NOT_FOUND error. If the
+@file is not found, %G_FILE_ERROR_NOENT is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool load_from_file(IntPtr key_file, string file, KeyFileFlags flags, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.KeyFileFlags.html">KeyFileFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_new_" data-uid="GLib.KeyFile.new*"></a>
+  <h4 id="GLib_KeyFile_new" data-uid="GLib.KeyFile.new">new()</h4>
+  <div class="markdown level1 summary"><p>Creates a new empty #GKeyFile object. Use
+g_key_file_load_from_file(), g_key_file_load_from_data(),
+g_key_file_load_from_dirs() or g_key_file_load_from_data_dirs() to
+read an existing key file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr new()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_ref_" data-uid="GLib.KeyFile.ref*"></a>
+  <h4 id="GLib_KeyFile_ref_System_IntPtr_" data-uid="GLib.KeyFile.ref(System.IntPtr)">ref(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Increases the reference count of @key_file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr ref(IntPtr key_file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_remove_comment_" data-uid="GLib.KeyFile.remove_comment*"></a>
+  <h4 id="GLib_KeyFile_remove_comment_System_IntPtr_System_String_System_String_System_IntPtr__" data-uid="GLib.KeyFile.remove_comment(System.IntPtr,System.String,System.String,System.IntPtr@)">remove_comment(IntPtr, String, String, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Removes a comment above @key from @group_name.
+If @key is %NULL then @comment will be removed above @group_name.
+If both @key and @group_name are %NULL, then @comment will
+be removed above the first group in the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool remove_comment(IntPtr key_file, string group_name, string key, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_remove_group_" data-uid="GLib.KeyFile.remove_group*"></a>
+  <h4 id="GLib_KeyFile_remove_group_System_IntPtr_System_String_System_IntPtr__" data-uid="GLib.KeyFile.remove_group(System.IntPtr,System.String,System.IntPtr@)">remove_group(IntPtr, String, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Removes the specified group, @group_name,
+from the key file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool remove_group(IntPtr key_file, string group_name, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_remove_key_" data-uid="GLib.KeyFile.remove_key*"></a>
+  <h4 id="GLib_KeyFile_remove_key_System_IntPtr_System_String_System_String_System_IntPtr__" data-uid="GLib.KeyFile.remove_key(System.IntPtr,System.String,System.String,System.IntPtr@)">remove_key(IntPtr, String, String, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Removes @key in @group_name from the key file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool remove_key(IntPtr key_file, string group_name, string key, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_save_to_file_" data-uid="GLib.KeyFile.save_to_file*"></a>
+  <h4 id="GLib_KeyFile_save_to_file_System_IntPtr_System_String_System_IntPtr__" data-uid="GLib.KeyFile.save_to_file(System.IntPtr,System.String,System.IntPtr@)">save_to_file(IntPtr, String, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Writes the contents of @key_file to @filename using
+g_file_set_contents().</p>
+<p>This function can fail for any of the reasons that
+g_file_set_contents() may fail.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool save_to_file(IntPtr key_file, string filename, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_set_boolean_" data-uid="GLib.KeyFile.set_boolean*"></a>
+  <h4 id="GLib_KeyFile_set_boolean_System_IntPtr_System_String_System_String_System_Boolean_" data-uid="GLib.KeyFile.set_boolean(System.IntPtr,System.String,System.String,System.Boolean)">set_boolean(IntPtr, String, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Associates a new boolean value with @key under @group_name.
+If @key cannot be found then it is created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_boolean(IntPtr key_file, string group_name, string key, bool value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_set_boolean_list_" data-uid="GLib.KeyFile.set_boolean_list*"></a>
+  <h4 id="GLib_KeyFile_set_boolean_list_System_IntPtr_System_String_System_String_System_Boolean___System_UInt64_" data-uid="GLib.KeyFile.set_boolean_list(System.IntPtr,System.String,System.String,System.Boolean[],System.UInt64)">set_boolean_list(IntPtr, String, String, Boolean[], UInt64)</h4>
+  <div class="markdown level1 summary"><p>Associates a list of boolean values with @key under @group_name.
+If @key cannot be found then it is created.
+If @group_name is %NULL, the start_group is used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_boolean_list(IntPtr key_file, string group_name, string key, bool[] list, ulong length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span>[]</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_set_comment_" data-uid="GLib.KeyFile.set_comment*"></a>
+  <h4 id="GLib_KeyFile_set_comment_System_IntPtr_System_String_System_String_System_String_System_IntPtr__" data-uid="GLib.KeyFile.set_comment(System.IntPtr,System.String,System.String,System.String,System.IntPtr@)">set_comment(IntPtr, String, String, String, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Places a comment above @key from @group_name.</p>
+<p>If @key is %NULL then @comment will be written above @group_name.
+If both @key and @group_name  are %NULL, then @comment will be
+written above the first group in the file.</p>
+<p>Note that this function prepends a '#' comment marker to
+each line of @comment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool set_comment(IntPtr key_file, string group_name, string key, string comment, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">comment</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_set_double_" data-uid="GLib.KeyFile.set_double*"></a>
+  <h4 id="GLib_KeyFile_set_double_System_IntPtr_System_String_System_String_System_Double_" data-uid="GLib.KeyFile.set_double(System.IntPtr,System.String,System.String,System.Double)">set_double(IntPtr, String, String, Double)</h4>
+  <div class="markdown level1 summary"><p>Associates a new double value with @key under @group_name.
+If @key cannot be found then it is created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_double(IntPtr key_file, string group_name, string key, double value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_set_double_list_" data-uid="GLib.KeyFile.set_double_list*"></a>
+  <h4 id="GLib_KeyFile_set_double_list_System_IntPtr_System_String_System_String_System_Double___System_UInt64_" data-uid="GLib.KeyFile.set_double_list(System.IntPtr,System.String,System.String,System.Double[],System.UInt64)">set_double_list(IntPtr, String, String, Double[], UInt64)</h4>
+  <div class="markdown level1 summary"><p>Associates a list of double values with @key under
+@group_name.  If @key cannot be found then it is created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_double_list(IntPtr key_file, string group_name, string key, double[] list, ulong length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_set_int64_" data-uid="GLib.KeyFile.set_int64*"></a>
+  <h4 id="GLib_KeyFile_set_int64_System_IntPtr_System_String_System_String_System_Int64_" data-uid="GLib.KeyFile.set_int64(System.IntPtr,System.String,System.String,System.Int64)">set_int64(IntPtr, String, String, Int64)</h4>
+  <div class="markdown level1 summary"><p>Associates a new integer value with @key under @group_name.
+If @key cannot be found then it is created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_int64(IntPtr key_file, string group_name, string key, long value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_set_integer_" data-uid="GLib.KeyFile.set_integer*"></a>
+  <h4 id="GLib_KeyFile_set_integer_System_IntPtr_System_String_System_String_System_Int32_" data-uid="GLib.KeyFile.set_integer(System.IntPtr,System.String,System.String,System.Int32)">set_integer(IntPtr, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Associates a new integer value with @key under @group_name.
+If @key cannot be found then it is created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_integer(IntPtr key_file, string group_name, string key, int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_set_integer_list_" data-uid="GLib.KeyFile.set_integer_list*"></a>
+  <h4 id="GLib_KeyFile_set_integer_list_System_IntPtr_System_String_System_String_System_Int32___System_UInt64_" data-uid="GLib.KeyFile.set_integer_list(System.IntPtr,System.String,System.String,System.Int32[],System.UInt64)">set_integer_list(IntPtr, String, String, Int32[], UInt64)</h4>
+  <div class="markdown level1 summary"><p>Associates a list of integer values with @key under @group_name.
+If @key cannot be found then it is created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_integer_list(IntPtr key_file, string group_name, string key, int[] list, ulong length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_set_list_separator_" data-uid="GLib.KeyFile.set_list_separator*"></a>
+  <h4 id="GLib_KeyFile_set_list_separator_System_IntPtr_System_Byte_" data-uid="GLib.KeyFile.set_list_separator(System.IntPtr,System.Byte)">set_list_separator(IntPtr, Byte)</h4>
+  <div class="markdown level1 summary"><p>Sets the character which is used to separate
+values in lists. Typically ';' or ',' are used
+as separators. The default list separator is ';'.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_list_separator(IntPtr key_file, byte separator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">separator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_set_locale_string_" data-uid="GLib.KeyFile.set_locale_string*"></a>
+  <h4 id="GLib_KeyFile_set_locale_string_System_IntPtr_System_String_System_String_System_String_System_String_" data-uid="GLib.KeyFile.set_locale_string(System.IntPtr,System.String,System.String,System.String,System.String)">set_locale_string(IntPtr, String, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Associates a string value for @key and @locale under @group_name.
+If the translation for @key cannot be found then it is created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_locale_string(IntPtr key_file, string group_name, string key, string locale, string string)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">locale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_set_locale_string_list_" data-uid="GLib.KeyFile.set_locale_string_list*"></a>
+  <h4 id="GLib_KeyFile_set_locale_string_list_System_IntPtr_System_String_System_String_System_String_System_String___System_UInt64_" data-uid="GLib.KeyFile.set_locale_string_list(System.IntPtr,System.String,System.String,System.String,System.String[],System.UInt64)">set_locale_string_list(IntPtr, String, String, String, String[], UInt64)</h4>
+  <div class="markdown level1 summary"><p>Associates a list of string values for @key and @locale under
+@group_name.  If the translation for @key cannot be found then
+it is created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_locale_string_list(IntPtr key_file, string group_name, string key, string locale, string[] list, ulong length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">locale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_set_string_" data-uid="GLib.KeyFile.set_string*"></a>
+  <h4 id="GLib_KeyFile_set_string_System_IntPtr_System_String_System_String_System_String_" data-uid="GLib.KeyFile.set_string(System.IntPtr,System.String,System.String,System.String)">set_string(IntPtr, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Associates a new string value with @key under @group_name.
+If @key cannot be found then it is created.
+If @group_name cannot be found then it is created.
+Unlike g_key_file_set_value(), this function handles characters
+that need escaping, such as newlines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_string(IntPtr key_file, string group_name, string key, string string)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_set_string_list_" data-uid="GLib.KeyFile.set_string_list*"></a>
+  <h4 id="GLib_KeyFile_set_string_list_System_IntPtr_System_String_System_String_System_String___System_UInt64_" data-uid="GLib.KeyFile.set_string_list(System.IntPtr,System.String,System.String,System.String[],System.UInt64)">set_string_list(IntPtr, String, String, String[], UInt64)</h4>
+  <div class="markdown level1 summary"><p>Associates a list of string values for @key under @group_name.
+If @key cannot be found then it is created.
+If @group_name cannot be found then it is created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_string_list(IntPtr key_file, string group_name, string key, string[] list, ulong length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_set_uint64_" data-uid="GLib.KeyFile.set_uint64*"></a>
+  <h4 id="GLib_KeyFile_set_uint64_System_IntPtr_System_String_System_String_System_UInt64_" data-uid="GLib.KeyFile.set_uint64(System.IntPtr,System.String,System.String,System.UInt64)">set_uint64(IntPtr, String, String, UInt64)</h4>
+  <div class="markdown level1 summary"><p>Associates a new integer value with @key under @group_name.
+If @key cannot be found then it is created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_uint64(IntPtr key_file, string group_name, string key, ulong value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_set_value_" data-uid="GLib.KeyFile.set_value*"></a>
+  <h4 id="GLib_KeyFile_set_value_System_IntPtr_System_String_System_String_System_String_" data-uid="GLib.KeyFile.set_value(System.IntPtr,System.String,System.String,System.String)">set_value(IntPtr, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Associates a new value with @key under @group_name.</p>
+<p>If @key cannot be found then it is created. If @group_name cannot
+be found then it is created. To set an UTF-8 string which may contain
+characters that need escaping (such as newlines or spaces), use
+g_key_file_set_string().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_value(IntPtr key_file, string group_name, string key, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group_name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_to_data_" data-uid="GLib.KeyFile.to_data*"></a>
+  <h4 id="GLib_KeyFile_to_data_System_IntPtr_System_UInt64__System_IntPtr__" data-uid="GLib.KeyFile.to_data(System.IntPtr,System.UInt64@,System.IntPtr@)">to_data(IntPtr, ref UInt64, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>This function outputs @key_file as a string.</p>
+<p>Note that this function never reports an error,
+so it is safe to pass %NULL as @error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr to_data(IntPtr key_file, ref ulong length, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_KeyFile_unref_" data-uid="GLib.KeyFile.unref*"></a>
+  <h4 id="GLib_KeyFile_unref_System_IntPtr_" data-uid="GLib.KeyFile.unref(System.IntPtr)">unref(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Decreases the reference count of @key_file by 1. If the reference count
+reaches zero, frees the key file and all its allocated memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void unref(IntPtr key_file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">key_file</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GLib_KeyFile.md&amp;value=---%0Auid%3A%20GLib.KeyFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GLib/Classes/KeyFile.Generated.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

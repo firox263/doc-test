@@ -1,0 +1,2053 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class OutputStream.Native
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class OutputStream.Native
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gio.OutputStream.Native">
+  
+  
+  <h1 id="Gio_OutputStream_Native" data-uid="Gio.OutputStream.Native" class="text-break">Class OutputStream.Native
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">OutputStream.Native</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gio.html">Gio</a></h6>
+  <h6><strong>Assembly</strong>: Gio.dll</h6>
+  <h5 id="Gio_OutputStream_Native_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static class Native</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Gio_OutputStream_Native_clear_pending_" data-uid="Gio.OutputStream.Native.clear_pending*"></a>
+  <h4 id="Gio_OutputStream_Native_clear_pending_System_IntPtr_" data-uid="Gio.OutputStream.Native.clear_pending(System.IntPtr)">clear_pending(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Clears the pending flag on @stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void clear_pending(IntPtr stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_close_" data-uid="Gio.OutputStream.Native.close*"></a>
+  <h4 id="Gio_OutputStream_Native_close_System_IntPtr_System_IntPtr_System_IntPtr__" data-uid="Gio.OutputStream.Native.close(System.IntPtr,System.IntPtr,System.IntPtr@)">close(IntPtr, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Closes the stream, releasing resources related to it.</p>
+<p>Once the stream is closed, all other operations will return %G_IO_ERROR_CLOSED.
+Closing a stream multiple times will not return an error.</p>
+<p>Closing a stream will automatically flush any outstanding buffers in the
+stream.</p>
+<p>Streams will be automatically closed when the last reference
+is dropped, but you might want to call this function to make sure
+resources are released as early as possible.</p>
+<p>Some streams might keep the backing store of the stream (e.g. a file descriptor)
+open after the stream is closed. See the documentation for the individual
+stream for details.</p>
+<p>On failure the first error that happened will be reported, but the close
+operation will finish as much as possible. A stream that failed to
+close will still return %G_IO_ERROR_CLOSED for all operations. Still, it
+is important to check and report the error to the user, otherwise
+there might be a loss of data as all data might not be written.</p>
+<p>If @cancellable is not %NULL, then the operation can be cancelled by
+triggering the cancellable object from another thread. If the operation
+was cancelled, the error %G_IO_ERROR_CANCELLED will be returned.
+Cancelling a close will still leave the stream closed, but there some streams
+can use a faster close that doesn't block to e.g. check errors. On
+cancellation (as with any error) there is no guarantee that all written
+data will reach the target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool close(IntPtr stream, IntPtr cancellable, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_close_async_" data-uid="Gio.OutputStream.Native.close_async*"></a>
+  <h4 id="Gio_OutputStream_Native_close_async_System_IntPtr_System_Int32_System_IntPtr_Gio_AsyncReadyCallback_System_IntPtr_" data-uid="Gio.OutputStream.Native.close_async(System.IntPtr,System.Int32,System.IntPtr,Gio.AsyncReadyCallback,System.IntPtr)">close_async(IntPtr, Int32, IntPtr, AsyncReadyCallback, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Requests an asynchronous close of the stream, releasing resources
+related to it. When the operation is finished @callback will be
+called. You can then call g_output_stream_close_finish() to get
+the result of the operation.</p>
+<p>For behaviour details see g_output_stream_close().</p>
+<p>The asynchronous methods have a default fallback that uses threads
+to implement asynchronicity, so they are optional for inheriting
+classes. However, if you override one you must override all.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void close_async(IntPtr stream, int io_priority, IntPtr cancellable, AsyncReadyCallback callback, IntPtr user_data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">io_priority</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_close_finish_" data-uid="Gio.OutputStream.Native.close_finish*"></a>
+  <h4 id="Gio_OutputStream_Native_close_finish_System_IntPtr_System_IntPtr_System_IntPtr__" data-uid="Gio.OutputStream.Native.close_finish(System.IntPtr,System.IntPtr,System.IntPtr@)">close_finish(IntPtr, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Closes an output stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool close_finish(IntPtr stream, IntPtr result, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_flush_" data-uid="Gio.OutputStream.Native.flush*"></a>
+  <h4 id="Gio_OutputStream_Native_flush_System_IntPtr_System_IntPtr_System_IntPtr__" data-uid="Gio.OutputStream.Native.flush(System.IntPtr,System.IntPtr,System.IntPtr@)">flush(IntPtr, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Forces a write of all user-space buffered data for the given
+@stream. Will block during the operation. Closing the stream will
+implicitly cause a flush.</p>
+<p>This function is optional for inherited classes.</p>
+<p>If @cancellable is not %NULL, then the operation can be cancelled by
+triggering the cancellable object from another thread. If the operation
+was cancelled, the error %G_IO_ERROR_CANCELLED will be returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool flush(IntPtr stream, IntPtr cancellable, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_flush_async_" data-uid="Gio.OutputStream.Native.flush_async*"></a>
+  <h4 id="Gio_OutputStream_Native_flush_async_System_IntPtr_System_Int32_System_IntPtr_Gio_AsyncReadyCallback_System_IntPtr_" data-uid="Gio.OutputStream.Native.flush_async(System.IntPtr,System.Int32,System.IntPtr,Gio.AsyncReadyCallback,System.IntPtr)">flush_async(IntPtr, Int32, IntPtr, AsyncReadyCallback, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Forces an asynchronous write of all user-space buffered data for
+the given @stream.
+For behaviour details see g_output_stream_flush().</p>
+<p>When the operation is finished @callback will be
+called. You can then call g_output_stream_flush_finish() to get the
+result of the operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void flush_async(IntPtr stream, int io_priority, IntPtr cancellable, AsyncReadyCallback callback, IntPtr user_data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">io_priority</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_flush_finish_" data-uid="Gio.OutputStream.Native.flush_finish*"></a>
+  <h4 id="Gio_OutputStream_Native_flush_finish_System_IntPtr_System_IntPtr_System_IntPtr__" data-uid="Gio.OutputStream.Native.flush_finish(System.IntPtr,System.IntPtr,System.IntPtr@)">flush_finish(IntPtr, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Finishes flushing an output stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool flush_finish(IntPtr stream, IntPtr result, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_get_type_" data-uid="Gio.OutputStream.Native.get_type*"></a>
+  <h4 id="Gio_OutputStream_Native_get_type" data-uid="Gio.OutputStream.Native.get_type">get_type()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong get_type()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_has_pending_" data-uid="Gio.OutputStream.Native.has_pending*"></a>
+  <h4 id="Gio_OutputStream_Native_has_pending_System_IntPtr_" data-uid="Gio.OutputStream.Native.has_pending(System.IntPtr)">has_pending(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Checks if an output stream has pending actions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool has_pending(IntPtr stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_is_closed_" data-uid="Gio.OutputStream.Native.is_closed*"></a>
+  <h4 id="Gio_OutputStream_Native_is_closed_System_IntPtr_" data-uid="Gio.OutputStream.Native.is_closed(System.IntPtr)">is_closed(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Checks if an output stream has already been closed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool is_closed(IntPtr stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_is_closing_" data-uid="Gio.OutputStream.Native.is_closing*"></a>
+  <h4 id="Gio_OutputStream_Native_is_closing_System_IntPtr_" data-uid="Gio.OutputStream.Native.is_closing(System.IntPtr)">is_closing(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Checks if an output stream is being closed. This can be
+used inside e.g. a flush implementation to see if the
+flush (or other i/o operation) is called from within
+the closing operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool is_closing(IntPtr stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_set_pending_" data-uid="Gio.OutputStream.Native.set_pending*"></a>
+  <h4 id="Gio_OutputStream_Native_set_pending_System_IntPtr_System_IntPtr__" data-uid="Gio.OutputStream.Native.set_pending(System.IntPtr,System.IntPtr@)">set_pending(IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets @stream to have actions pending. If the pending flag is
+already set or @stream is closed, it will return %FALSE and set
+@error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool set_pending(IntPtr stream, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_splice_" data-uid="Gio.OutputStream.Native.splice*"></a>
+  <h4 id="Gio_OutputStream_Native_splice_System_IntPtr_System_IntPtr_Gio_OutputStreamSpliceFlags_System_IntPtr_System_IntPtr__" data-uid="Gio.OutputStream.Native.splice(System.IntPtr,System.IntPtr,Gio.OutputStreamSpliceFlags,System.IntPtr,System.IntPtr@)">splice(IntPtr, IntPtr, OutputStreamSpliceFlags, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Splices an input stream into an output stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long splice(IntPtr stream, IntPtr source, OutputStreamSpliceFlags flags, IntPtr cancellable, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.OutputStreamSpliceFlags.html">OutputStreamSpliceFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_splice_async_" data-uid="Gio.OutputStream.Native.splice_async*"></a>
+  <h4 id="Gio_OutputStream_Native_splice_async_System_IntPtr_System_IntPtr_Gio_OutputStreamSpliceFlags_System_Int32_System_IntPtr_Gio_AsyncReadyCallback_System_IntPtr_" data-uid="Gio.OutputStream.Native.splice_async(System.IntPtr,System.IntPtr,Gio.OutputStreamSpliceFlags,System.Int32,System.IntPtr,Gio.AsyncReadyCallback,System.IntPtr)">splice_async(IntPtr, IntPtr, OutputStreamSpliceFlags, Int32, IntPtr, AsyncReadyCallback, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Splices a stream asynchronously.
+When the operation is finished @callback will be called.
+You can then call g_output_stream_splice_finish() to get the
+result of the operation.</p>
+<p>For the synchronous, blocking version of this function, see
+g_output_stream_splice().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void splice_async(IntPtr stream, IntPtr source, OutputStreamSpliceFlags flags, int io_priority, IntPtr cancellable, AsyncReadyCallback callback, IntPtr user_data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.OutputStreamSpliceFlags.html">OutputStreamSpliceFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">io_priority</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_splice_finish_" data-uid="Gio.OutputStream.Native.splice_finish*"></a>
+  <h4 id="Gio_OutputStream_Native_splice_finish_System_IntPtr_System_IntPtr_System_IntPtr__" data-uid="Gio.OutputStream.Native.splice_finish(System.IntPtr,System.IntPtr,System.IntPtr@)">splice_finish(IntPtr, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Finishes an asynchronous stream splice operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long splice_finish(IntPtr stream, IntPtr result, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_vprintf_" data-uid="Gio.OutputStream.Native.vprintf*"></a>
+  <h4 id="Gio_OutputStream_Native_vprintf_System_IntPtr_System_UInt64__System_IntPtr_System_IntPtr_System_String_System_IntPtr_" data-uid="Gio.OutputStream.Native.vprintf(System.IntPtr,System.UInt64@,System.IntPtr,System.IntPtr,System.String,System.IntPtr)">vprintf(IntPtr, ref UInt64, IntPtr, IntPtr, String, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>This is a utility function around g_output_stream_write_all(). It
+uses g_strdup_vprintf() to turn @format and @args into a string that
+is then written to @stream.</p>
+<p>See the documentation of g_output_stream_write_all() about the
+behavior of the actual write operation.</p>
+<p>Note that partial writes cannot be properly checked with this
+function due to the variable length of the written string, if you
+need precise control over partial write failures, you need to
+create you own printf()-like wrapper around g_output_stream_write()
+or g_output_stream_write_all().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool vprintf(IntPtr stream, ref ulong bytes_written, IntPtr cancellable, IntPtr error, string format, IntPtr args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">bytes_written</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_write_" data-uid="Gio.OutputStream.Native.write*"></a>
+  <h4 id="Gio_OutputStream_Native_write_System_IntPtr_System_IntPtr_System_UInt64_System_IntPtr_System_IntPtr__" data-uid="Gio.OutputStream.Native.write(System.IntPtr,System.IntPtr,System.UInt64,System.IntPtr,System.IntPtr@)">write(IntPtr, IntPtr, UInt64, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Tries to write @count bytes from @buffer into the stream. Will block
+during the operation.</p>
+<p>If count is 0, returns 0 and does nothing. A value of @count
+larger than %G_MAXSSIZE will cause a %G_IO_ERROR_INVALID_ARGUMENT error.</p>
+<p>On success, the number of bytes written to the stream is returned.
+It is not an error if this is not the same as the requested size, as it
+can happen e.g. on a partial I/O error, or if there is not enough
+storage in the stream. All writes block until at least one byte
+is written or an error occurs; 0 is never returned (unless
+@count is 0).</p>
+<p>If @cancellable is not %NULL, then the operation can be cancelled by
+triggering the cancellable object from another thread. If the operation
+was cancelled, the error %G_IO_ERROR_CANCELLED will be returned. If an
+operation was partially finished when the operation was cancelled the
+partial result will be returned, without an error.</p>
+<p>On error -1 is returned and @error is set accordingly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long write(IntPtr stream, IntPtr buffer, ulong count, IntPtr cancellable, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_write_all_" data-uid="Gio.OutputStream.Native.write_all*"></a>
+  <h4 id="Gio_OutputStream_Native_write_all_System_IntPtr_System_IntPtr_System_UInt64_System_UInt64__System_IntPtr_System_IntPtr__" data-uid="Gio.OutputStream.Native.write_all(System.IntPtr,System.IntPtr,System.UInt64,System.UInt64@,System.IntPtr,System.IntPtr@)">write_all(IntPtr, IntPtr, UInt64, ref UInt64, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Tries to write @count bytes from @buffer into the stream. Will block
+during the operation.</p>
+<p>This function is similar to g_output_stream_write(), except it tries to
+write as many bytes as requested, only stopping on an error.</p>
+<p>On a successful write of @count bytes, %TRUE is returned, and @bytes_written
+is set to @count.</p>
+<p>If there is an error during the operation %FALSE is returned and @error
+is set to indicate the error status.</p>
+<p>As a special exception to the normal conventions for functions that
+use #GError, if this function returns %FALSE (and sets @error) then
+@bytes_written will be set to the number of bytes that were
+successfully written before the error was encountered.  This
+functionality is only available from C.  If you need it from another
+language then you must write your own loop around
+g_output_stream_write().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool write_all(IntPtr stream, IntPtr buffer, ulong count, ref ulong bytes_written, IntPtr cancellable, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">bytes_written</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_write_all_async_" data-uid="Gio.OutputStream.Native.write_all_async*"></a>
+  <h4 id="Gio_OutputStream_Native_write_all_async_System_IntPtr_System_IntPtr_System_UInt64_System_Int32_System_IntPtr_Gio_AsyncReadyCallback_System_IntPtr_" data-uid="Gio.OutputStream.Native.write_all_async(System.IntPtr,System.IntPtr,System.UInt64,System.Int32,System.IntPtr,Gio.AsyncReadyCallback,System.IntPtr)">write_all_async(IntPtr, IntPtr, UInt64, Int32, IntPtr, AsyncReadyCallback, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Request an asynchronous write of @count bytes from @buffer into
+the stream. When the operation is finished @callback will be called.
+You can then call g_output_stream_write_all_finish() to get the result of the
+operation.</p>
+<p>This is the asynchronous version of g_output_stream_write_all().</p>
+<p>Call g_output_stream_write_all_finish() to collect the result.</p>
+<p>Any outstanding I/O request with higher priority (lower numerical
+value) will be executed before an outstanding request with lower
+priority. Default priority is %G_PRIORITY_DEFAULT.</p>
+<p>Note that no copy of @buffer will be made, so it must stay valid
+until @callback is called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void write_all_async(IntPtr stream, IntPtr buffer, ulong count, int io_priority, IntPtr cancellable, AsyncReadyCallback callback, IntPtr user_data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">io_priority</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_write_all_finish_" data-uid="Gio.OutputStream.Native.write_all_finish*"></a>
+  <h4 id="Gio_OutputStream_Native_write_all_finish_System_IntPtr_System_IntPtr_System_UInt64__System_IntPtr__" data-uid="Gio.OutputStream.Native.write_all_finish(System.IntPtr,System.IntPtr,System.UInt64@,System.IntPtr@)">write_all_finish(IntPtr, IntPtr, ref UInt64, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Finishes an asynchronous stream write operation started with
+g_output_stream_write_all_async().</p>
+<p>As a special exception to the normal conventions for functions that
+use #GError, if this function returns %FALSE (and sets @error) then
+@bytes_written will be set to the number of bytes that were
+successfully written before the error was encountered.  This
+functionality is only available from C.  If you need it from another
+language then you must write your own loop around
+g_output_stream_write_async().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool write_all_finish(IntPtr stream, IntPtr result, ref ulong bytes_written, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">bytes_written</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_write_async_" data-uid="Gio.OutputStream.Native.write_async*"></a>
+  <h4 id="Gio_OutputStream_Native_write_async_System_IntPtr_System_IntPtr_System_UInt64_System_Int32_System_IntPtr_Gio_AsyncReadyCallback_System_IntPtr_" data-uid="Gio.OutputStream.Native.write_async(System.IntPtr,System.IntPtr,System.UInt64,System.Int32,System.IntPtr,Gio.AsyncReadyCallback,System.IntPtr)">write_async(IntPtr, IntPtr, UInt64, Int32, IntPtr, AsyncReadyCallback, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Request an asynchronous write of @count bytes from @buffer into
+the stream. When the operation is finished @callback will be called.
+You can then call g_output_stream_write_finish() to get the result of the
+operation.</p>
+<p>During an async request no other sync and async calls are allowed,
+and will result in %G_IO_ERROR_PENDING errors.</p>
+<p>A value of @count larger than %G_MAXSSIZE will cause a
+%G_IO_ERROR_INVALID_ARGUMENT error.</p>
+<p>On success, the number of bytes written will be passed to the
+@callback. It is not an error if this is not the same as the
+requested size, as it can happen e.g. on a partial I/O error,
+but generally we try to write as many bytes as requested.</p>
+<p>You are guaranteed that this method will never fail with
+%G_IO_ERROR_WOULD_BLOCK - if @stream can't accept more data, the
+method will just wait until this changes.</p>
+<p>Any outstanding I/O request with higher priority (lower numerical
+value) will be executed before an outstanding request with lower
+priority. Default priority is %G_PRIORITY_DEFAULT.</p>
+<p>The asynchronous methods have a default fallback that uses threads
+to implement asynchronicity, so they are optional for inheriting
+classes. However, if you override one you must override all.</p>
+<p>For the synchronous, blocking version of this function, see
+g_output_stream_write().</p>
+<p>Note that no copy of @buffer will be made, so it must stay valid
+until @callback is called. See g_output_stream_write_bytes_async()
+for a #GBytes version that will automatically hold a reference to
+the contents (without copying) for the duration of the call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void write_async(IntPtr stream, IntPtr buffer, ulong count, int io_priority, IntPtr cancellable, AsyncReadyCallback callback, IntPtr user_data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">io_priority</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_write_bytes_" data-uid="Gio.OutputStream.Native.write_bytes*"></a>
+  <h4 id="Gio_OutputStream_Native_write_bytes_System_IntPtr_System_IntPtr_System_IntPtr_System_IntPtr__" data-uid="Gio.OutputStream.Native.write_bytes(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr@)">write_bytes(IntPtr, IntPtr, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>A wrapper function for g_output_stream_write() which takes a
+#GBytes as input.  This can be more convenient for use by language
+bindings or in other cases where the refcounted nature of #GBytes
+is helpful over a bare pointer interface.</p>
+<p>However, note that this function may still perform partial writes,
+just like g_output_stream_write().  If that occurs, to continue
+writing, you will need to create a new #GBytes containing just the
+remaining bytes, using g_bytes_new_from_bytes(). Passing the same
+#GBytes instance multiple times potentially can result in duplicated
+data in the output stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long write_bytes(IntPtr stream, IntPtr bytes, IntPtr cancellable, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">bytes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_write_bytes_async_" data-uid="Gio.OutputStream.Native.write_bytes_async*"></a>
+  <h4 id="Gio_OutputStream_Native_write_bytes_async_System_IntPtr_System_IntPtr_System_Int32_System_IntPtr_Gio_AsyncReadyCallback_System_IntPtr_" data-uid="Gio.OutputStream.Native.write_bytes_async(System.IntPtr,System.IntPtr,System.Int32,System.IntPtr,Gio.AsyncReadyCallback,System.IntPtr)">write_bytes_async(IntPtr, IntPtr, Int32, IntPtr, AsyncReadyCallback, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>This function is similar to g_output_stream_write_async(), but
+takes a #GBytes as input.  Due to the refcounted nature of #GBytes,
+this allows the stream to avoid taking a copy of the data.</p>
+<p>However, note that this function may still perform partial writes,
+just like g_output_stream_write_async(). If that occurs, to continue
+writing, you will need to create a new #GBytes containing just the
+remaining bytes, using g_bytes_new_from_bytes(). Passing the same
+#GBytes instance multiple times potentially can result in duplicated
+data in the output stream.</p>
+<p>For the synchronous, blocking version of this function, see
+g_output_stream_write_bytes().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void write_bytes_async(IntPtr stream, IntPtr bytes, int io_priority, IntPtr cancellable, AsyncReadyCallback callback, IntPtr user_data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">bytes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">io_priority</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_write_bytes_finish_" data-uid="Gio.OutputStream.Native.write_bytes_finish*"></a>
+  <h4 id="Gio_OutputStream_Native_write_bytes_finish_System_IntPtr_System_IntPtr_System_IntPtr__" data-uid="Gio.OutputStream.Native.write_bytes_finish(System.IntPtr,System.IntPtr,System.IntPtr@)">write_bytes_finish(IntPtr, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Finishes a stream write-from-#GBytes operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long write_bytes_finish(IntPtr stream, IntPtr result, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_write_finish_" data-uid="Gio.OutputStream.Native.write_finish*"></a>
+  <h4 id="Gio_OutputStream_Native_write_finish_System_IntPtr_System_IntPtr_System_IntPtr__" data-uid="Gio.OutputStream.Native.write_finish(System.IntPtr,System.IntPtr,System.IntPtr@)">write_finish(IntPtr, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Finishes a stream write operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long write_finish(IntPtr stream, IntPtr result, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_writev_" data-uid="Gio.OutputStream.Native.writev*"></a>
+  <h4 id="Gio_OutputStream_Native_writev_System_IntPtr_System_IntPtr___System_UInt64_System_UInt64__System_IntPtr_System_IntPtr__" data-uid="Gio.OutputStream.Native.writev(System.IntPtr,System.IntPtr[],System.UInt64,System.UInt64@,System.IntPtr,System.IntPtr@)">writev(IntPtr, IntPtr[], UInt64, ref UInt64, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Tries to write the bytes contained in the @n_vectors @vectors into the
+stream. Will block during the operation.</p>
+<p>If @n_vectors is 0 or the sum of all bytes in @vectors is 0, returns 0 and
+does nothing.</p>
+<p>On success, the number of bytes written to the stream is returned.
+It is not an error if this is not the same as the requested size, as it
+can happen e.g. on a partial I/O error, or if there is not enough
+storage in the stream. All writes block until at least one byte
+is written or an error occurs; 0 is never returned (unless
+@n_vectors is 0 or the sum of all bytes in @vectors is 0).</p>
+<p>If @cancellable is not %NULL, then the operation can be cancelled by
+triggering the cancellable object from another thread. If the operation
+was cancelled, the error %G_IO_ERROR_CANCELLED will be returned. If an
+operation was partially finished when the operation was cancelled the
+partial result will be returned, without an error.</p>
+<p>Some implementations of g_output_stream_writev() may have limitations on the
+aggregate buffer size, and will return %G_IO_ERROR_INVALID_ARGUMENT if these
+are exceeded. For example, when writing to a local file on UNIX platforms,
+the aggregate buffer size must not exceed %G_MAXSSIZE bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool writev(IntPtr stream, IntPtr[] vectors, ulong n_vectors, ref ulong bytes_written, IntPtr cancellable, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span>[]</td>
+        <td><span class="parametername">vectors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">n_vectors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">bytes_written</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_writev_all_" data-uid="Gio.OutputStream.Native.writev_all*"></a>
+  <h4 id="Gio_OutputStream_Native_writev_all_System_IntPtr_System_IntPtr___System_UInt64_System_UInt64__System_IntPtr_System_IntPtr__" data-uid="Gio.OutputStream.Native.writev_all(System.IntPtr,System.IntPtr[],System.UInt64,System.UInt64@,System.IntPtr,System.IntPtr@)">writev_all(IntPtr, IntPtr[], UInt64, ref UInt64, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Tries to write the bytes contained in the @n_vectors @vectors into the
+stream. Will block during the operation.</p>
+<p>This function is similar to g_output_stream_writev(), except it tries to
+write as many bytes as requested, only stopping on an error.</p>
+<p>On a successful write of all @n_vectors vectors, %TRUE is returned, and
+@bytes_written is set to the sum of all the sizes of @vectors.</p>
+<p>If there is an error during the operation %FALSE is returned and @error
+is set to indicate the error status.</p>
+<p>As a special exception to the normal conventions for functions that
+use #GError, if this function returns %FALSE (and sets @error) then
+@bytes_written will be set to the number of bytes that were
+successfully written before the error was encountered.  This
+functionality is only available from C. If you need it from another
+language then you must write your own loop around
+g_output_stream_write().</p>
+<p>The content of the individual elements of @vectors might be changed by this
+function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool writev_all(IntPtr stream, IntPtr[] vectors, ulong n_vectors, ref ulong bytes_written, IntPtr cancellable, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span>[]</td>
+        <td><span class="parametername">vectors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">n_vectors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">bytes_written</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_writev_all_async_" data-uid="Gio.OutputStream.Native.writev_all_async*"></a>
+  <h4 id="Gio_OutputStream_Native_writev_all_async_System_IntPtr_System_IntPtr___System_UInt64_System_Int32_System_IntPtr_Gio_AsyncReadyCallback_System_IntPtr_" data-uid="Gio.OutputStream.Native.writev_all_async(System.IntPtr,System.IntPtr[],System.UInt64,System.Int32,System.IntPtr,Gio.AsyncReadyCallback,System.IntPtr)">writev_all_async(IntPtr, IntPtr[], UInt64, Int32, IntPtr, AsyncReadyCallback, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Request an asynchronous write of the bytes contained in the @n_vectors @vectors into
+the stream. When the operation is finished @callback will be called.
+You can then call g_output_stream_writev_all_finish() to get the result of the
+operation.</p>
+<p>This is the asynchronous version of g_output_stream_writev_all().</p>
+<p>Call g_output_stream_writev_all_finish() to collect the result.</p>
+<p>Any outstanding I/O request with higher priority (lower numerical
+value) will be executed before an outstanding request with lower
+priority. Default priority is %G_PRIORITY_DEFAULT.</p>
+<p>Note that no copy of @vectors will be made, so it must stay valid
+until @callback is called. The content of the individual elements
+of @vectors might be changed by this function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void writev_all_async(IntPtr stream, IntPtr[] vectors, ulong n_vectors, int io_priority, IntPtr cancellable, AsyncReadyCallback callback, IntPtr user_data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span>[]</td>
+        <td><span class="parametername">vectors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">n_vectors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">io_priority</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_writev_all_finish_" data-uid="Gio.OutputStream.Native.writev_all_finish*"></a>
+  <h4 id="Gio_OutputStream_Native_writev_all_finish_System_IntPtr_System_IntPtr_System_UInt64__System_IntPtr__" data-uid="Gio.OutputStream.Native.writev_all_finish(System.IntPtr,System.IntPtr,System.UInt64@,System.IntPtr@)">writev_all_finish(IntPtr, IntPtr, ref UInt64, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Finishes an asynchronous stream write operation started with
+g_output_stream_writev_all_async().</p>
+<p>As a special exception to the normal conventions for functions that
+use #GError, if this function returns %FALSE (and sets @error) then
+@bytes_written will be set to the number of bytes that were
+successfully written before the error was encountered.  This
+functionality is only available from C.  If you need it from another
+language then you must write your own loop around
+g_output_stream_writev_async().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool writev_all_finish(IntPtr stream, IntPtr result, ref ulong bytes_written, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">bytes_written</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_writev_async_" data-uid="Gio.OutputStream.Native.writev_async*"></a>
+  <h4 id="Gio_OutputStream_Native_writev_async_System_IntPtr_System_IntPtr___System_UInt64_System_Int32_System_IntPtr_Gio_AsyncReadyCallback_System_IntPtr_" data-uid="Gio.OutputStream.Native.writev_async(System.IntPtr,System.IntPtr[],System.UInt64,System.Int32,System.IntPtr,Gio.AsyncReadyCallback,System.IntPtr)">writev_async(IntPtr, IntPtr[], UInt64, Int32, IntPtr, AsyncReadyCallback, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Request an asynchronous write of the bytes contained in @n_vectors @vectors into
+the stream. When the operation is finished @callback will be called.
+You can then call g_output_stream_writev_finish() to get the result of the
+operation.</p>
+<p>During an async request no other sync and async calls are allowed,
+and will result in %G_IO_ERROR_PENDING errors.</p>
+<p>On success, the number of bytes written will be passed to the
+@callback. It is not an error if this is not the same as the
+requested size, as it can happen e.g. on a partial I/O error,
+but generally we try to write as many bytes as requested.</p>
+<p>You are guaranteed that this method will never fail with
+%G_IO_ERROR_WOULD_BLOCK — if @stream can't accept more data, the
+method will just wait until this changes.</p>
+<p>Any outstanding I/O request with higher priority (lower numerical
+value) will be executed before an outstanding request with lower
+priority. Default priority is %G_PRIORITY_DEFAULT.</p>
+<p>The asynchronous methods have a default fallback that uses threads
+to implement asynchronicity, so they are optional for inheriting
+classes. However, if you override one you must override all.</p>
+<p>For the synchronous, blocking version of this function, see
+g_output_stream_writev().</p>
+<p>Note that no copy of @vectors will be made, so it must stay valid
+until @callback is called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void writev_async(IntPtr stream, IntPtr[] vectors, ulong n_vectors, int io_priority, IntPtr cancellable, AsyncReadyCallback callback, IntPtr user_data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span>[]</td>
+        <td><span class="parametername">vectors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">n_vectors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">io_priority</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_OutputStream_Native_writev_finish_" data-uid="Gio.OutputStream.Native.writev_finish*"></a>
+  <h4 id="Gio_OutputStream_Native_writev_finish_System_IntPtr_System_IntPtr_System_UInt64__System_IntPtr__" data-uid="Gio.OutputStream.Native.writev_finish(System.IntPtr,System.IntPtr,System.UInt64@,System.IntPtr@)">writev_finish(IntPtr, IntPtr, ref UInt64, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Finishes a stream writev operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool writev_finish(IntPtr stream, IntPtr result, ref ulong bytes_written, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">bytes_written</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_OutputStream_Native.md&amp;value=---%0Auid%3A%20Gio.OutputStream.Native%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/OutputStream.Generated.cs/#L32" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

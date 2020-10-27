@@ -1,0 +1,571 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct SettingsSchema
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct SettingsSchema
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gio.SettingsSchema">
+  
+  
+  <h1 id="Gio_SettingsSchema" data-uid="Gio.SettingsSchema" class="text-break">Struct SettingsSchema
+  </h1>
+  <div class="markdown level0 summary"><p>The #GSettingsSchemaSource and #GSettingsSchema APIs provide a
+mechanism for advanced control over the loading of schemas and a
+mechanism for introspecting their content.</p>
+<p>Plugin loading systems that wish to provide plugins a way to access
+settings face the problem of how to make the schemas for these
+settings visible to GSettings.  Typically, a plugin will want to ship
+the schema along with itself and it won't be installed into the
+standard system directories for schemas.</p>
+<p>#GSettingsSchemaSource provides a mechanism for dealing with this by
+allowing the creation of a new 'schema source' from which schemas can
+be acquired.  This schema source can then become part of the metadata
+associated with the plugin and queried whenever the plugin requires
+access to some settings.</p>
+<p>Consider the following example:</p>
+<p>|[<!-- language="C" -->
+typedef struct
+{
+...
+GSettingsSchemaSource *schema_source;
+...
+} Plugin;</p>
+<p>Plugin *
+initialise_plugin (const gchar *dir)
+{
+Plugin *plugin;</p>
+<p>...</p>
+<p>plugin-&gt;schema_source =
+g_settings_schema_source_new_from_directory (dir,
+g_settings_schema_source_get_default (), FALSE, NULL);</p>
+<p>...</p>
+<p>return plugin;
+}</p>
+<p>...</p>
+<p>GSettings *
+plugin_get_settings (Plugin      *plugin,
+const gchar *schema_id)
+{
+GSettingsSchema *schema;</p>
+<p>if (schema_id == NULL)
+schema_id = plugin-&gt;identifier;</p>
+<p>schema = g_settings_schema_source_lookup (plugin-&gt;schema_source,
+schema_id, FALSE);</p>
+<p>if (schema == NULL)
+{
+... disable the plugin or abort, etc ...
+}</p>
+<p>return g_settings_new_full (schema, NULL, NULL);
+}
+]|</p>
+<p>The code above shows how hooks should be added to the code that
+initialises (or enables) the plugin to create the schema source and
+how an API can be added to the plugin system to provide a convenient
+way for the plugin to access its settings, using the schemas that it
+ships.</p>
+<p>From the standpoint of the plugin, it would need to ensure that it
+ships a gschemas.compiled file as part of itself, and then simply do
+the following:</p>
+<p>|[<!-- language="C" -->
+{
+GSettings *settings;
+gint some_value;</p>
+<p>settings = plugin_get_settings (self, NULL);
+some_value = g_settings_get_int (settings, &quot;some-value&quot;);
+...
+}
+]|</p>
+<p>It's also possible that the plugin system expects the schema source
+files (ie: .gschema.xml files) instead of a gschemas.compiled file.
+In that case, the plugin loading system must compile the schemas for
+itself before attempting to create the settings source.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.ValueType.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ValueType.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.ValueType.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gio.html">Gio</a></h6>
+  <h6><strong>Assembly</strong>: Gio.dll</h6>
+  <h5 id="Gio_SettingsSchema_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct SettingsSchema</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Gio_SettingsSchema_get_id_" data-uid="Gio.SettingsSchema.get_id*"></a>
+  <h4 id="Gio_SettingsSchema_get_id_System_IntPtr_" data-uid="Gio.SettingsSchema.get_id(System.IntPtr)">get_id(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Get the ID of @schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_id(IntPtr schema)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">schema</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SettingsSchema_get_key_" data-uid="Gio.SettingsSchema.get_key*"></a>
+  <h4 id="Gio_SettingsSchema_get_key_System_IntPtr_System_String_" data-uid="Gio.SettingsSchema.get_key(System.IntPtr,System.String)">get_key(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the key named @name from @schema.</p>
+<p>It is a programmer error to request a key that does not exist.  See
+g_settings_schema_list_keys().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_key(IntPtr schema, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">schema</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SettingsSchema_get_path_" data-uid="Gio.SettingsSchema.get_path*"></a>
+  <h4 id="Gio_SettingsSchema_get_path_System_IntPtr_" data-uid="Gio.SettingsSchema.get_path(System.IntPtr)">get_path(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the path associated with @schema, or %NULL.</p>
+<p>Schemas may be single-instance or relocatable.  Single-instance
+schemas correspond to exactly one set of keys in the backend
+database: those located at the path returned by this function.</p>
+<p>Relocatable schemas can be referenced by other schemas and can
+threfore describe multiple sets of keys at different locations.  For
+relocatable schemas, this function will return %NULL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_path(IntPtr schema)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">schema</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SettingsSchema_has_key_" data-uid="Gio.SettingsSchema.has_key*"></a>
+  <h4 id="Gio_SettingsSchema_has_key_System_IntPtr_System_String_" data-uid="Gio.SettingsSchema.has_key(System.IntPtr,System.String)">has_key(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Checks if @schema has a key named @name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool has_key(IntPtr schema, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">schema</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SettingsSchema_list_children_" data-uid="Gio.SettingsSchema.list_children*"></a>
+  <h4 id="Gio_SettingsSchema_list_children_System_IntPtr_" data-uid="Gio.SettingsSchema.list_children(System.IntPtr)">list_children(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the list of children in @schema.</p>
+<p>You should free the return value with g_strfreev() when you are done
+with it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr list_children(IntPtr schema)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">schema</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SettingsSchema_list_keys_" data-uid="Gio.SettingsSchema.list_keys*"></a>
+  <h4 id="Gio_SettingsSchema_list_keys_System_IntPtr_" data-uid="Gio.SettingsSchema.list_keys(System.IntPtr)">list_keys(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Introspects the list of keys on @schema.</p>
+<p>You should probably not be calling this function from &quot;normal&quot; code
+(since you should already know what keys are in your schema).  This
+function is intended for introspection reasons.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr list_keys(IntPtr schema)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">schema</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SettingsSchema_ref_" data-uid="Gio.SettingsSchema.ref*"></a>
+  <h4 id="Gio_SettingsSchema_ref_System_IntPtr_" data-uid="Gio.SettingsSchema.ref(System.IntPtr)">ref(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Increase the reference count of @schema, returning a new reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr ref(IntPtr schema)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">schema</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_SettingsSchema_unref_" data-uid="Gio.SettingsSchema.unref*"></a>
+  <h4 id="Gio_SettingsSchema_unref_System_IntPtr_" data-uid="Gio.SettingsSchema.unref(System.IntPtr)">unref(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Decrease the reference count of @schema, possibly freeing it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void unref(IntPtr schema)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">schema</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_SettingsSchema.md&amp;value=---%0Auid%3A%20Gio.SettingsSchema%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Structs/SettingsSchema.Generated.cs/#L100" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

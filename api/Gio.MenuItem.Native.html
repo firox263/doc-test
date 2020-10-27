@@ -1,0 +1,895 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MenuItem.Native
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MenuItem.Native
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gio.MenuItem.Native">
+  
+  
+  <h1 id="Gio_MenuItem_Native" data-uid="Gio.MenuItem.Native" class="text-break">Class MenuItem.Native
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MenuItem.Native</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gio.html">Gio</a></h6>
+  <h6><strong>Assembly</strong>: Gio.dll</h6>
+  <h5 id="Gio_MenuItem_Native_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static class Native</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Gio_MenuItem_Native_get_attribute_value_" data-uid="Gio.MenuItem.Native.get_attribute_value*"></a>
+  <h4 id="Gio_MenuItem_Native_get_attribute_value_System_IntPtr_System_String_System_IntPtr_" data-uid="Gio.MenuItem.Native.get_attribute_value(System.IntPtr,System.String,System.IntPtr)">get_attribute_value(IntPtr, String, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Queries the named @attribute on @menu_item.</p>
+<p>If @expected_type is specified and the attribute does not have this
+type, %NULL is returned.  %NULL is also returned if the attribute
+simply does not exist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_attribute_value(IntPtr menu_item, string attribute, IntPtr expected_type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu_item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">expected_type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_MenuItem_Native_get_link_" data-uid="Gio.MenuItem.Native.get_link*"></a>
+  <h4 id="Gio_MenuItem_Native_get_link_System_IntPtr_System_String_" data-uid="Gio.MenuItem.Native.get_link(System.IntPtr,System.String)">get_link(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Queries the named @link on @menu_item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr get_link(IntPtr menu_item, string link)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu_item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">link</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_MenuItem_Native_get_type_" data-uid="Gio.MenuItem.Native.get_type*"></a>
+  <h4 id="Gio_MenuItem_Native_get_type" data-uid="Gio.MenuItem.Native.get_type">get_type()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong get_type()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_MenuItem_Native_new_" data-uid="Gio.MenuItem.Native.new*"></a>
+  <h4 id="Gio_MenuItem_Native_new_System_String_System_String_" data-uid="Gio.MenuItem.Native.new(System.String,System.String)">new(String, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a new #GMenuItem.</p>
+<p>If @label is non-%NULL it is used to set the &quot;label&quot; attribute of the
+new item.</p>
+<p>If @detailed_action is non-%NULL it is used to set the &quot;action&quot; and
+possibly the &quot;target&quot; attribute of the new item.  See
+g_menu_item_set_detailed_action() for more information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr new(string label, string detailed_action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">detailed_action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_MenuItem_Native_new_from_model_" data-uid="Gio.MenuItem.Native.new_from_model*"></a>
+  <h4 id="Gio_MenuItem_Native_new_from_model_System_IntPtr_System_Int32_" data-uid="Gio.MenuItem.Native.new_from_model(System.IntPtr,System.Int32)">new_from_model(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates a #GMenuItem as an exact copy of an existing menu item in a
+#GMenuModel.</p>
+<p>@item_index must be valid (ie: be sure to call
+g_menu_model_get_n_items() first).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr new_from_model(IntPtr model, int item_index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">item_index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_MenuItem_Native_new_section_" data-uid="Gio.MenuItem.Native.new_section*"></a>
+  <h4 id="Gio_MenuItem_Native_new_section_System_String_System_IntPtr_" data-uid="Gio.MenuItem.Native.new_section(System.String,System.IntPtr)">new_section(String, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Creates a new #GMenuItem representing a section.</p>
+<p>This is a convenience API around g_menu_item_new() and
+g_menu_item_set_section().</p>
+<p>The effect of having one menu appear as a section of another is
+exactly as it sounds: the items from @section become a direct part of
+the menu that @menu_item is added to.</p>
+<p>Visual separation is typically displayed between two non-empty
+sections.  If @label is non-%NULL then it will be encorporated into
+this visual indication.  This allows for labeled subsections of a
+menu.</p>
+<p>As a simple example, consider a typical &quot;Edit&quot; menu from a simple
+program.  It probably contains an &quot;Undo&quot; and &quot;Redo&quot; item, followed by
+a separator, followed by &quot;Cut&quot;, &quot;Copy&quot; and &quot;Paste&quot;.</p>
+<p>This would be accomplished by creating three #GMenu instances.  The
+first would be populated with the &quot;Undo&quot; and &quot;Redo&quot; items, and the
+second with the &quot;Cut&quot;, &quot;Copy&quot; and &quot;Paste&quot; items.  The first and
+second menus would then be added as submenus of the third.  In XML
+format, this would look something like the following:
+|[</p>
+<menu id="edit-menu">
+<section>
+<item label="Undo"></item>
+<item label="Redo"></item>
+</section>
+<section>
+<item label="Cut"></item>
+<item label="Copy"></item>
+<item label="Paste"></item>
+</section>
+</menu>
+]|
+<p>The following example is exactly equivalent.  It is more illustrative
+of the exact relationship between the menus and items (keeping in
+mind that the 'link' element defines a new menu that is linked to the
+containing one).  The style of the second example is more verbose and
+difficult to read (and therefore not recommended except for the
+purpose of understanding what is really going on).
+|[</p>
+<menu id="edit-menu">
+<item>
+<link name="section">
+<item label="Undo"></item>
+<item label="Redo"></item>
+
+</item>
+<item>
+<link name="section">
+<item label="Cut"></item>
+<item label="Copy"></item>
+<item label="Paste"></item>
+
+</item>
+</menu>
+]|
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr new_section(string label, IntPtr section)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">section</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_MenuItem_Native_new_submenu_" data-uid="Gio.MenuItem.Native.new_submenu*"></a>
+  <h4 id="Gio_MenuItem_Native_new_submenu_System_String_System_IntPtr_" data-uid="Gio.MenuItem.Native.new_submenu(System.String,System.IntPtr)">new_submenu(String, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Creates a new #GMenuItem representing a submenu.</p>
+<p>This is a convenience API around g_menu_item_new() and
+g_menu_item_set_submenu().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr new_submenu(string label, IntPtr submenu)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">submenu</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_MenuItem_Native_set_action_and_target_value_" data-uid="Gio.MenuItem.Native.set_action_and_target_value*"></a>
+  <h4 id="Gio_MenuItem_Native_set_action_and_target_value_System_IntPtr_System_String_System_IntPtr_" data-uid="Gio.MenuItem.Native.set_action_and_target_value(System.IntPtr,System.String,System.IntPtr)">set_action_and_target_value(IntPtr, String, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets or unsets the &quot;action&quot; and &quot;target&quot; attributes of @menu_item.</p>
+<p>If @action is %NULL then both the &quot;action&quot; and &quot;target&quot; attributes
+are unset (and @target_value is ignored).</p>
+<p>If @action is non-%NULL then the &quot;action&quot; attribute is set.  The
+&quot;target&quot; attribute is then set to the value of @target_value if it is
+non-%NULL or unset otherwise.</p>
+<p>Normal menu items (ie: not submenu, section or other custom item
+types) are expected to have the &quot;action&quot; attribute set to identify
+the action that they are associated with.  The state type of the
+action help to determine the disposition of the menu item.  See
+#GAction and #GActionGroup for an overview of actions.</p>
+<p>In general, clicking on the menu item will result in activation of
+the named action with the &quot;target&quot; attribute given as the parameter
+to the action invocation.  If the &quot;target&quot; attribute is not set then
+the action is invoked with no parameter.</p>
+<p>If the action has no state then the menu item is usually drawn as a
+plain menu item (ie: with no additional decoration).</p>
+<p>If the action has a boolean state then the menu item is usually drawn
+as a toggle menu item (ie: with a checkmark or equivalent
+indication).  The item should be marked as 'toggled' or 'checked'
+when the boolean state is %TRUE.</p>
+<p>If the action has a string state then the menu item is usually drawn
+as a radio menu item (ie: with a radio bullet or equivalent
+indication).  The item should be marked as 'selected' when the string
+state is equal to the value of the @target property.</p>
+<p>See g_menu_item_set_action_and_target() or
+g_menu_item_set_detailed_action() for two equivalent calls that are
+probably more convenient for most uses.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_action_and_target_value(IntPtr menu_item, string action, IntPtr target_value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu_item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">target_value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_MenuItem_Native_set_attribute_value_" data-uid="Gio.MenuItem.Native.set_attribute_value*"></a>
+  <h4 id="Gio_MenuItem_Native_set_attribute_value_System_IntPtr_System_String_System_IntPtr_" data-uid="Gio.MenuItem.Native.set_attribute_value(System.IntPtr,System.String,System.IntPtr)">set_attribute_value(IntPtr, String, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets or unsets an attribute on @menu_item.</p>
+<p>The attribute to set or unset is specified by @attribute. This
+can be one of the standard attribute names %G_MENU_ATTRIBUTE_LABEL,
+%G_MENU_ATTRIBUTE_ACTION, %G_MENU_ATTRIBUTE_TARGET, or a custom
+attribute name.
+Attribute names are restricted to lowercase characters, numbers
+and '-'. Furthermore, the names must begin with a lowercase character,
+must not end with a '-', and must not contain consecutive dashes.</p>
+<p>must consist only of lowercase
+ASCII characters, digits and '-'.</p>
+<p>If @value is non-%NULL then it is used as the new value for the
+attribute.  If @value is %NULL then the attribute is unset. If
+the @value #GVariant is floating, it is consumed.</p>
+<p>See also g_menu_item_set_attribute() for a more convenient way to do
+the same.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_attribute_value(IntPtr menu_item, string attribute, IntPtr value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu_item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_MenuItem_Native_set_detailed_action_" data-uid="Gio.MenuItem.Native.set_detailed_action*"></a>
+  <h4 id="Gio_MenuItem_Native_set_detailed_action_System_IntPtr_System_String_" data-uid="Gio.MenuItem.Native.set_detailed_action(System.IntPtr,System.String)">set_detailed_action(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Sets the &quot;action&quot; and possibly the &quot;target&quot; attribute of @menu_item.</p>
+<p>The format of @detailed_action is the same format parsed by
+g_action_parse_detailed_name().</p>
+<p>See g_menu_item_set_action_and_target() or
+g_menu_item_set_action_and_target_value() for more flexible (but
+slightly less convenient) alternatives.</p>
+<p>See also g_menu_item_set_action_and_target_value() for a description of
+the semantics of the action and target attributes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_detailed_action(IntPtr menu_item, string detailed_action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu_item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">detailed_action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_MenuItem_Native_set_icon_" data-uid="Gio.MenuItem.Native.set_icon*"></a>
+  <h4 id="Gio_MenuItem_Native_set_icon_System_IntPtr_System_IntPtr_" data-uid="Gio.MenuItem.Native.set_icon(System.IntPtr,System.IntPtr)">set_icon(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets (or unsets) the icon on @menu_item.</p>
+<p>This call is the same as calling g_icon_serialize() and using the
+result as the value to g_menu_item_set_attribute_value() for
+%G_MENU_ATTRIBUTE_ICON.</p>
+<p>This API is only intended for use with &quot;noun&quot; menu items; things like
+bookmarks or applications in an &quot;Open With&quot; menu.  Don't use it on
+menu items corresponding to verbs (eg: stock icons for 'Save' or
+'Quit').</p>
+<p>If @icon is %NULL then the icon is unset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_icon(IntPtr menu_item, IntPtr icon)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu_item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">icon</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_MenuItem_Native_set_label_" data-uid="Gio.MenuItem.Native.set_label*"></a>
+  <h4 id="Gio_MenuItem_Native_set_label_System_IntPtr_System_String_" data-uid="Gio.MenuItem.Native.set_label(System.IntPtr,System.String)">set_label(IntPtr, String)</h4>
+  <div class="markdown level1 summary"><p>Sets or unsets the &quot;label&quot; attribute of @menu_item.</p>
+<p>If @label is non-%NULL it is used as the label for the menu item.  If
+it is %NULL then the label attribute is unset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_label(IntPtr menu_item, string label)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu_item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_MenuItem_Native_set_link_" data-uid="Gio.MenuItem.Native.set_link*"></a>
+  <h4 id="Gio_MenuItem_Native_set_link_System_IntPtr_System_String_System_IntPtr_" data-uid="Gio.MenuItem.Native.set_link(System.IntPtr,System.String,System.IntPtr)">set_link(IntPtr, String, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Creates a link from @menu_item to @model if non-%NULL, or unsets it.</p>
+<p>Links are used to establish a relationship between a particular menu
+item and another menu.  For example, %G_MENU_LINK_SUBMENU is used to
+associate a submenu with a particular menu item, and %G_MENU_LINK_SECTION
+is used to create a section. Other types of link can be used, but there
+is no guarantee that clients will be able to make sense of them.
+Link types are restricted to lowercase characters, numbers
+and '-'. Furthermore, the names must begin with a lowercase character,
+must not end with a '-', and must not contain consecutive dashes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_link(IntPtr menu_item, string link, IntPtr model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu_item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">link</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_MenuItem_Native_set_section_" data-uid="Gio.MenuItem.Native.set_section*"></a>
+  <h4 id="Gio_MenuItem_Native_set_section_System_IntPtr_System_IntPtr_" data-uid="Gio.MenuItem.Native.set_section(System.IntPtr,System.IntPtr)">set_section(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets or unsets the &quot;section&quot; link of @menu_item to @section.</p>
+<p>The effect of having one menu appear as a section of another is
+exactly as it sounds: the items from @section become a direct part of
+the menu that @menu_item is added to.  See g_menu_item_new_section()
+for more information about what it means for a menu item to be a
+section.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_section(IntPtr menu_item, IntPtr section)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu_item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">section</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_MenuItem_Native_set_submenu_" data-uid="Gio.MenuItem.Native.set_submenu*"></a>
+  <h4 id="Gio_MenuItem_Native_set_submenu_System_IntPtr_System_IntPtr_" data-uid="Gio.MenuItem.Native.set_submenu(System.IntPtr,System.IntPtr)">set_submenu(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets or unsets the &quot;submenu&quot; link of @menu_item to @submenu.</p>
+<p>If @submenu is non-%NULL, it is linked to.  If it is %NULL then the
+link is unset.</p>
+<p>The effect of having one menu appear as a submenu of another is
+exactly as it sounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_submenu(IntPtr menu_item, IntPtr submenu)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">menu_item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">submenu</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_MenuItem_Native.md&amp;value=---%0Auid%3A%20Gio.MenuItem.Native%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Classes/MenuItem.Generated.cs/#L32" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

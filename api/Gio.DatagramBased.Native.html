@@ -1,0 +1,603 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DatagramBased.Native
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DatagramBased.Native
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gio.DatagramBased.Native">
+  
+  
+  <h1 id="Gio_DatagramBased_Native" data-uid="Gio.DatagramBased.Native" class="text-break">Class DatagramBased.Native
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DatagramBased.Native</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gio.html">Gio</a></h6>
+  <h6><strong>Assembly</strong>: Gio.dll</h6>
+  <h5 id="Gio_DatagramBased_Native_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static class Native</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Gio_DatagramBased_Native_condition_check_" data-uid="Gio.DatagramBased.Native.condition_check*"></a>
+  <h4 id="Gio_DatagramBased_Native_condition_check_System_IntPtr_GLib_IOCondition_" data-uid="Gio.DatagramBased.Native.condition_check(System.IntPtr,GLib.IOCondition)">condition_check(IntPtr, IOCondition)</h4>
+  <div class="markdown level1 summary"><p>Checks on the readiness of @datagram_based to perform operations. The
+operations specified in @condition are checked for and masked against the
+currently-satisfied conditions on @datagram_based. The result is returned.</p>
+<p>%G_IO_IN will be set in the return value if data is available to read with
+g_datagram_based_receive_messages(), or if the connection is closed remotely
+(EOS); and if the datagram_based has not been closed locally using some
+implementation-specific method (such as g_socket_close() or
+g_socket_shutdown() with @shutdown_read set, if it’s a #GSocket).</p>
+<p>If the connection is shut down or closed (by calling g_socket_close() or
+g_socket_shutdown() with @shutdown_read set, if it’s a #GSocket, for
+example), all calls to this function will return %G_IO_ERROR_CLOSED.</p>
+<p>%G_IO_OUT will be set if it is expected that at least one byte can be sent
+using g_datagram_based_send_messages() without blocking. It will not be set
+if the datagram_based has been closed locally.</p>
+<p>%G_IO_HUP will be set if the connection has been closed locally.</p>
+<p>%G_IO_ERR will be set if there was an asynchronous error in transmitting data
+previously enqueued using g_datagram_based_send_messages().</p>
+<p>Note that on Windows, it is possible for an operation to return
+%G_IO_ERROR_WOULD_BLOCK even immediately after
+g_datagram_based_condition_check() has claimed that the #GDatagramBased is
+ready for writing. Rather than calling g_datagram_based_condition_check() and
+then writing to the #GDatagramBased if it succeeds, it is generally better to
+simply try writing right away, and try again later if the initial attempt
+returns %G_IO_ERROR_WOULD_BLOCK.</p>
+<p>It is meaningless to specify %G_IO_ERR or %G_IO_HUP in @condition; these
+conditions will always be set in the output if they are true. Apart from
+these flags, the output is guaranteed to be masked by @condition.</p>
+<p>This call never blocks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IOCondition condition_check(IntPtr datagram_based, IOCondition condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">datagram_based</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.IOCondition.html">IOCondition</a></td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GLib.IOCondition.html">IOCondition</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_DatagramBased_Native_condition_wait_" data-uid="Gio.DatagramBased.Native.condition_wait*"></a>
+  <h4 id="Gio_DatagramBased_Native_condition_wait_System_IntPtr_GLib_IOCondition_System_Int64_System_IntPtr_System_IntPtr__" data-uid="Gio.DatagramBased.Native.condition_wait(System.IntPtr,GLib.IOCondition,System.Int64,System.IntPtr,System.IntPtr@)">condition_wait(IntPtr, IOCondition, Int64, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Waits for up to @timeout microseconds for condition to become true on
+@datagram_based. If the condition is met, %TRUE is returned.</p>
+<p>If @cancellable is cancelled before the condition is met, or if @timeout is
+reached before the condition is met, then %FALSE is returned and @error is
+set appropriately (%G_IO_ERROR_CANCELLED or %G_IO_ERROR_TIMED_OUT).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool condition_wait(IntPtr datagram_based, IOCondition condition, long timeout, IntPtr cancellable, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">datagram_based</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.IOCondition.html">IOCondition</a></td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_DatagramBased_Native_create_source_" data-uid="Gio.DatagramBased.Native.create_source*"></a>
+  <h4 id="Gio_DatagramBased_Native_create_source_System_IntPtr_GLib_IOCondition_System_IntPtr_" data-uid="Gio.DatagramBased.Native.create_source(System.IntPtr,GLib.IOCondition,System.IntPtr)">create_source(IntPtr, IOCondition, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Creates a #GSource that can be attached to a #GMainContext to monitor for
+the availability of the specified @condition on the #GDatagramBased. The
+#GSource keeps a reference to the @datagram_based.</p>
+<p>The callback on the source is of the #GDatagramBasedSourceFunc type.</p>
+<p>It is meaningless to specify %G_IO_ERR or %G_IO_HUP in @condition; these
+conditions will always be reported in the callback if they are true.</p>
+<p>If non-%NULL, @cancellable can be used to cancel the source, which will
+cause the source to trigger, reporting the current condition (which is
+likely 0 unless cancellation happened at the same time as a condition
+change). You can check for this in the callback using
+g_cancellable_is_cancelled().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr create_source(IntPtr datagram_based, IOCondition condition, IntPtr cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">datagram_based</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.IOCondition.html">IOCondition</a></td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_DatagramBased_Native_get_type_" data-uid="Gio.DatagramBased.Native.get_type*"></a>
+  <h4 id="Gio_DatagramBased_Native_get_type" data-uid="Gio.DatagramBased.Native.get_type">get_type()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong get_type()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_DatagramBased_Native_receive_messages_" data-uid="Gio.DatagramBased.Native.receive_messages*"></a>
+  <h4 id="Gio_DatagramBased_Native_receive_messages_System_IntPtr_System_IntPtr___System_UInt32_System_Int32_System_Int64_System_IntPtr_System_IntPtr__" data-uid="Gio.DatagramBased.Native.receive_messages(System.IntPtr,System.IntPtr[],System.UInt32,System.Int32,System.Int64,System.IntPtr,System.IntPtr@)">receive_messages(IntPtr, IntPtr[], UInt32, Int32, Int64, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Receive one or more data messages from @datagram_based in one go.</p>
+<p>@messages must point to an array of #GInputMessage structs and
+@num_messages must be the length of this array. Each #GInputMessage
+contains a pointer to an array of #GInputVector structs describing the
+buffers that the data received in each message will be written to.</p>
+<p>@flags modify how all messages are received. The commonly available
+arguments for this are available in the #GSocketMsgFlags enum, but the
+values there are the same as the system values, and the flags
+are passed in as-is, so you can pass in system-specific flags too. These
+flags affect the overall receive operation. Flags affecting individual
+messages are returned in #GInputMessage.flags.</p>
+<p>The other members of #GInputMessage are treated as described in its
+documentation.</p>
+<p>If @timeout is negative the call will block until @num_messages have been
+received, the connection is closed remotely (EOS), @cancellable is cancelled,
+or an error occurs.</p>
+<p>If @timeout is 0 the call will return up to @num_messages without blocking,
+or %G_IO_ERROR_WOULD_BLOCK if no messages are queued in the operating system
+to be received.</p>
+<p>If @timeout is positive the call will block on the same conditions as if
+@timeout were negative. If the timeout is reached
+before any messages are received, %G_IO_ERROR_TIMED_OUT is returned,
+otherwise it will return the number of messages received before timing out.
+(Note: This is effectively the behaviour of <code>MSG_WAITFORONE</code> with
+recvmmsg().)</p>
+<p>To be notified when messages are available, wait for the %G_IO_IN condition.
+Note though that you may still receive %G_IO_ERROR_WOULD_BLOCK from
+g_datagram_based_receive_messages() even if you were previously notified of a
+%G_IO_IN condition.</p>
+<p>If the remote peer closes the connection, any messages queued in the
+underlying receive buffer will be returned, and subsequent calls to
+g_datagram_based_receive_messages() will return 0 (with no error set).</p>
+<p>If the connection is shut down or closed (by calling g_socket_close() or
+g_socket_shutdown() with @shutdown_read set, if it’s a #GSocket, for
+example), all calls to this function will return %G_IO_ERROR_CLOSED.</p>
+<p>On error -1 is returned and @error is set accordingly. An error will only
+be returned if zero messages could be received; otherwise the number of
+messages successfully received before the error will be returned. If
+@cancellable is cancelled, %G_IO_ERROR_CANCELLED is returned as with any
+other error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int receive_messages(IntPtr datagram_based, IntPtr[] messages, uint num_messages, int flags, long timeout, IntPtr cancellable, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">datagram_based</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span>[]</td>
+        <td><span class="parametername">messages</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">num_messages</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gio_DatagramBased_Native_send_messages_" data-uid="Gio.DatagramBased.Native.send_messages*"></a>
+  <h4 id="Gio_DatagramBased_Native_send_messages_System_IntPtr_System_IntPtr___System_UInt32_System_Int32_System_Int64_System_IntPtr_System_IntPtr__" data-uid="Gio.DatagramBased.Native.send_messages(System.IntPtr,System.IntPtr[],System.UInt32,System.Int32,System.Int64,System.IntPtr,System.IntPtr@)">send_messages(IntPtr, IntPtr[], UInt32, Int32, Int64, IntPtr, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Send one or more data messages from @datagram_based in one go.</p>
+<p>@messages must point to an array of #GOutputMessage structs and
+@num_messages must be the length of this array. Each #GOutputMessage
+contains an address to send the data to, and a pointer to an array of
+#GOutputVector structs to describe the buffers that the data to be sent
+for each message will be gathered from.</p>
+<p>@flags modify how the message is sent. The commonly available arguments
+for this are available in the #GSocketMsgFlags enum, but the
+values there are the same as the system values, and the flags
+are passed in as-is, so you can pass in system-specific flags too.</p>
+<p>The other members of #GOutputMessage are treated as described in its
+documentation.</p>
+<p>If @timeout is negative the call will block until @num_messages have been
+sent, @cancellable is cancelled, or an error occurs.</p>
+<p>If @timeout is 0 the call will send up to @num_messages without blocking,
+or will return %G_IO_ERROR_WOULD_BLOCK if there is no space to send messages.</p>
+<p>If @timeout is positive the call will block on the same conditions as if
+@timeout were negative. If the timeout is reached before any messages are
+sent, %G_IO_ERROR_TIMED_OUT is returned, otherwise it will return the number
+of messages sent before timing out.</p>
+<p>To be notified when messages can be sent, wait for the %G_IO_OUT condition.
+Note though that you may still receive %G_IO_ERROR_WOULD_BLOCK from
+g_datagram_based_send_messages() even if you were previously notified of a
+%G_IO_OUT condition. (On Windows in particular, this is very common due to
+the way the underlying APIs work.)</p>
+<p>If the connection is shut down or closed (by calling g_socket_close() or
+g_socket_shutdown() with @shutdown_write set, if it’s a #GSocket, for
+example), all calls to this function will return %G_IO_ERROR_CLOSED.</p>
+<p>On error -1 is returned and @error is set accordingly. An error will only
+be returned if zero messages could be sent; otherwise the number of messages
+successfully sent before the error will be returned. If @cancellable is
+cancelled, %G_IO_ERROR_CANCELLED is returned as with any other error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int send_messages(IntPtr datagram_based, IntPtr[] messages, uint num_messages, int flags, long timeout, IntPtr cancellable, out IntPtr error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">datagram_based</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span>[]</td>
+        <td><span class="parametername">messages</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">num_messages</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=Gio_DatagramBased_Native.md&amp;value=---%0Auid%3A%20Gio.DatagramBased.Native%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/Gio/Interfaces/DatagramBased.Generated.cs/#L27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

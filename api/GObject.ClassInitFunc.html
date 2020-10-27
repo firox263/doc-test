@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Delegate ClassInitFunc
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Delegate ClassInitFunc
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GObject.ClassInitFunc">
+  
+  
+  <h1 id="GObject_ClassInitFunc" data-uid="GObject.ClassInitFunc" class="text-break">Delegate ClassInitFunc
+  </h1>
+  <div class="markdown level0 summary"><p>A callback function used by the type system to initialize the class
+of a specific type. This function should initialize all static class
+members.</p>
+<p>The initialization process of a class involves:</p>
+<ul>
+<li>Copying common members from the parent class over to the
+derived class structure.</li>
+<li>Zero initialization of the remaining members not copied
+over from the parent class.</li>
+<li>Invocation of the GBaseInitFunc() initializers of all parent
+types and the class' type.</li>
+<li>Invocation of the class' GClassInitFunc() initializer.</li>
+</ul>
+<p>Since derived classes are partially initialized through a memory copy
+of the parent class, the general rule is that GBaseInitFunc() and
+GBaseFinalizeFunc() should take care of necessary reinitialization
+and release of those class members that were introduced by the type
+that specified these GBaseInitFunc()/GBaseFinalizeFunc().
+GClassInitFunc() should only care about initializing static
+class members, while dynamic class members (such as allocated strings
+or reference counted resources) are better handled by a GBaseInitFunc()
+for this type, so proper initialization of the dynamic class members
+is performed for class initialization of derived types as well.</p>
+<p>An example may help to correspond the intend of the different class
+initializers:</p>
+<p>|[<!-- language="C" -->
+typedef struct {
+GObjectClass parent_class;
+gint         static_integer;
+gchar       *dynamic_string;
+} TypeAClass;
+static void
+type_a_base_class_init (TypeAClass *class)
+{
+class-&gt;dynamic_string = g_strdup (&quot;some string&quot;);
+}
+static void
+type_a_base_class_finalize (TypeAClass *class)
+{
+g_free (class-&gt;dynamic_string);
+}
+static void
+type_a_class_init (TypeAClass *class)
+{
+class-&gt;static_integer = 42;
+}</p>
+<p>typedef struct {
+TypeAClass   parent_class;
+gfloat       static_float;
+GString     *dynamic_gstring;
+} TypeBClass;
+static void
+type_b_base_class_init (TypeBClass *class)
+{
+class-&gt;dynamic_gstring = g_string_new (&quot;some other string&quot;);
+}
+static void
+type_b_base_class_finalize (TypeBClass *class)
+{
+g_string_free (class-&gt;dynamic_gstring);
+}
+static void
+type_b_class_init (TypeBClass *class)
+{
+class-&gt;static_float = 3.14159265358979323846;
+}
+]|
+Initialization of TypeBClass will first cause initialization of
+TypeAClass (derived classes reference their parent classes, see
+g_type_class_ref() on this).</p>
+<p>Initialization of TypeAClass roughly involves zero-initializing its fields,
+then calling its GBaseInitFunc() type_a_base_class_init() to allocate
+its dynamic members (dynamic_string), and finally calling its GClassInitFunc()
+type_a_class_init() to initialize its static members (static_integer).
+The first step in the initialization process of TypeBClass is then
+a plain memory copy of the contents of TypeAClass into TypeBClass and
+zero-initialization of the remaining fields in TypeBClass.
+The dynamic members of TypeAClass within TypeBClass now need
+reinitialization which is performed by calling type_a_base_class_init()
+with an argument of TypeBClass.</p>
+<p>After that, the GBaseInitFunc() of TypeBClass, type_b_base_class_init()
+is called to allocate the dynamic members of TypeBClass (dynamic_gstring),
+and finally the GClassInitFunc() of TypeBClass, type_b_class_init(),
+is called to complete the initialization process with the static members
+(static_float).</p>
+<p>Corresponding finalization counter parts to the GBaseInitFunc() functions
+have to be provided to release allocated resources at class finalization
+time.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GObject.html">GObject</a></h6>
+  <h6><strong>Assembly</strong>: GObject.dll</h6>
+  <h5 id="GObject_ClassInitFunc_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public delegate void ClassInitFunc(IntPtr g_class, IntPtr class_data);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">g_class</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">class_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GObject_ClassInitFunc.md&amp;value=---%0Auid%3A%20GObject.ClassInitFunc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GObject/Delegates/ClassInitFunc.Generated.cs/#L103" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

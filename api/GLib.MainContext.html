@@ -1,0 +1,1290 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MainContext
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MainContext
+   ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GLib.MainContext">
+  
+  
+  <h1 id="GLib_MainContext" data-uid="GLib.MainContext" class="text-break">Class MainContext
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MainContext</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GLib.html">GLib</a></h6>
+  <h6><strong>Assembly</strong>: GLib.dll</h6>
+  <h5 id="GLib_MainContext_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MainContext</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="GLib_MainContext_acquire_" data-uid="GLib.MainContext.acquire*"></a>
+  <h4 id="GLib_MainContext_acquire_System_IntPtr_" data-uid="GLib.MainContext.acquire(System.IntPtr)">acquire(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Tries to become the owner of the specified context.
+If some other thread is the owner of the context,
+returns %FALSE immediately. Ownership is properly
+recursive: the owner can require ownership again
+and will release ownership when g_main_context_release()
+is called as many times as g_main_context_acquire().</p>
+<p>You must be the owner of a context before you
+can call g_main_context_prepare(), g_main_context_query(),
+g_main_context_check(), g_main_context_dispatch().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool acquire(IntPtr context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MainContext_add_poll_" data-uid="GLib.MainContext.add_poll*"></a>
+  <h4 id="GLib_MainContext_add_poll_System_IntPtr_System_IntPtr_System_Int32_" data-uid="GLib.MainContext.add_poll(System.IntPtr,System.IntPtr,System.Int32)">add_poll(IntPtr, IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Adds a file descriptor to the set of file descriptors polled for
+this context. This will very seldom be used directly. Instead
+a typical event source will use g_source_add_unix_fd() instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void add_poll(IntPtr context, IntPtr fd, int priority)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">fd</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">priority</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MainContext_check_" data-uid="GLib.MainContext.check*"></a>
+  <h4 id="GLib_MainContext_check_System_IntPtr_System_Int32_System_IntPtr___System_Int32_" data-uid="GLib.MainContext.check(System.IntPtr,System.Int32,System.IntPtr[],System.Int32)">check(IntPtr, Int32, IntPtr[], Int32)</h4>
+  <div class="markdown level1 summary"><p>Passes the results of polling back to the main loop.</p>
+<p>You must have successfully acquired the context with
+g_main_context_acquire() before you may call this function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool check(IntPtr context, int max_priority, IntPtr[] fds, int n_fds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">max_priority</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span>[]</td>
+        <td><span class="parametername">fds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n_fds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MainContext_dispatch_" data-uid="GLib.MainContext.dispatch*"></a>
+  <h4 id="GLib_MainContext_dispatch_System_IntPtr_" data-uid="GLib.MainContext.dispatch(System.IntPtr)">dispatch(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Dispatches all pending sources.</p>
+<p>You must have successfully acquired the context with
+g_main_context_acquire() before you may call this function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void dispatch(IntPtr context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MainContext_find_source_by_funcs_user_data_" data-uid="GLib.MainContext.find_source_by_funcs_user_data*"></a>
+  <h4 id="GLib_MainContext_find_source_by_funcs_user_data_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="GLib.MainContext.find_source_by_funcs_user_data(System.IntPtr,System.IntPtr,System.IntPtr)">find_source_by_funcs_user_data(IntPtr, IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Finds a source with the given source functions and user data.  If
+multiple sources exist with the same source function and user data,
+the first one found will be returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr find_source_by_funcs_user_data(IntPtr context, IntPtr funcs, IntPtr user_data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">funcs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MainContext_find_source_by_id_" data-uid="GLib.MainContext.find_source_by_id*"></a>
+  <h4 id="GLib_MainContext_find_source_by_id_System_IntPtr_System_UInt32_" data-uid="GLib.MainContext.find_source_by_id(System.IntPtr,System.UInt32)">find_source_by_id(IntPtr, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Finds a #GSource given a pair of context and ID.</p>
+<p>It is a programmer error to attempt to look up a non-existent source.</p>
+<p>More specifically: source IDs can be reissued after a source has been
+destroyed and therefore it is never valid to use this function with a
+source ID which may have already been removed.  An example is when
+scheduling an idle to run in another thread with g_idle_add(): the
+idle may already have run and been removed by the time this function
+is called on its (now invalid) source ID.  This source ID may have
+been reissued, leading to the operation being performed against the
+wrong source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr find_source_by_id(IntPtr context, uint source_id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">source_id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MainContext_find_source_by_user_data_" data-uid="GLib.MainContext.find_source_by_user_data*"></a>
+  <h4 id="GLib_MainContext_find_source_by_user_data_System_IntPtr_System_IntPtr_" data-uid="GLib.MainContext.find_source_by_user_data(System.IntPtr,System.IntPtr)">find_source_by_user_data(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Finds a source with the given user data for the callback.  If
+multiple sources exist with the same user data, the first
+one found will be returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr find_source_by_user_data(IntPtr context, IntPtr user_data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">user_data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MainContext_get_poll_func_" data-uid="GLib.MainContext.get_poll_func*"></a>
+  <h4 id="GLib_MainContext_get_poll_func_System_IntPtr_" data-uid="GLib.MainContext.get_poll_func(System.IntPtr)">get_poll_func(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Gets the poll function set by g_main_context_set_poll_func().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PollFunc get_poll_func(IntPtr context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GLib.PollFunc.html">PollFunc</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MainContext_invoke_" data-uid="GLib.MainContext.invoke*"></a>
+  <h4 id="GLib_MainContext_invoke_System_IntPtr_GLib_SourceFunc_System_IntPtr_" data-uid="GLib.MainContext.invoke(System.IntPtr,GLib.SourceFunc,System.IntPtr)">invoke(IntPtr, SourceFunc, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Invokes a function in such a way that @context is owned during the
+invocation of @function.</p>
+<p>If @context is %NULL then the global default main context — as
+returned by g_main_context_default() — is used.</p>
+<p>If @context is owned by the current thread, @function is called
+directly.  Otherwise, if @context is the thread-default main context
+of the current thread and g_main_context_acquire() succeeds, then
+@function is called and g_main_context_release() is called
+afterwards.</p>
+<p>In any other case, an idle source is created to call @function and
+that source is attached to @context (presumably to be run in another
+thread).  The idle source is attached with #G_PRIORITY_DEFAULT
+priority.  If you want a different priority, use
+g_main_context_invoke_full().</p>
+<p>Note that, as with normal idle functions, @function should probably
+return %FALSE.  If it returns %TRUE, it will be continuously run in a
+loop (and may prevent this call from returning).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void invoke(IntPtr context, SourceFunc function, IntPtr data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.SourceFunc.html">SourceFunc</a></td>
+        <td><span class="parametername">function</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MainContext_invoke_full_" data-uid="GLib.MainContext.invoke_full*"></a>
+  <h4 id="GLib_MainContext_invoke_full_System_IntPtr_System_Int32_GLib_SourceFunc_System_IntPtr_GLib_DestroyNotify_" data-uid="GLib.MainContext.invoke_full(System.IntPtr,System.Int32,GLib.SourceFunc,System.IntPtr,GLib.DestroyNotify)">invoke_full(IntPtr, Int32, SourceFunc, IntPtr, DestroyNotify)</h4>
+  <div class="markdown level1 summary"><p>Invokes a function in such a way that @context is owned during the
+invocation of @function.</p>
+<p>This function is the same as g_main_context_invoke() except that it
+lets you specify the priority in case @function ends up being
+scheduled as an idle and also lets you give a #GDestroyNotify for @data.</p>
+<p>@notify should not assume that it is called from any particular
+thread or with any particular context acquired.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void invoke_full(IntPtr context, int priority, SourceFunc function, IntPtr data, DestroyNotify notify)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">priority</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.SourceFunc.html">SourceFunc</a></td>
+        <td><span class="parametername">function</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.DestroyNotify.html">DestroyNotify</a></td>
+        <td><span class="parametername">notify</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MainContext_is_owner_" data-uid="GLib.MainContext.is_owner*"></a>
+  <h4 id="GLib_MainContext_is_owner_System_IntPtr_" data-uid="GLib.MainContext.is_owner(System.IntPtr)">is_owner(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Determines whether this thread holds the (recursive)
+ownership of this #GMainContext. This is useful to
+know before waiting on another thread that may be
+blocking to get ownership of @context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool is_owner(IntPtr context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MainContext_iteration_" data-uid="GLib.MainContext.iteration*"></a>
+  <h4 id="GLib_MainContext_iteration_System_IntPtr_System_Boolean_" data-uid="GLib.MainContext.iteration(System.IntPtr,System.Boolean)">iteration(IntPtr, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Runs a single iteration for the given main loop. This involves
+checking to see if any event sources are ready to be processed,
+then if no events sources are ready and @may_block is %TRUE, waiting
+for a source to become ready, then dispatching the highest priority
+events sources that are ready. Otherwise, if @may_block is %FALSE
+sources are not waited to become ready, only those highest priority
+events sources will be dispatched (if any), that are ready at this
+given moment without further waiting.</p>
+<p>Note that even when @may_block is %TRUE, it is still possible for
+g_main_context_iteration() to return %FALSE, since the wait may
+be interrupted for other reasons than an event source becoming ready.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool iteration(IntPtr context, bool may_block)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">may_block</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MainContext_new_" data-uid="GLib.MainContext.new*"></a>
+  <h4 id="GLib_MainContext_new" data-uid="GLib.MainContext.new">new()</h4>
+  <div class="markdown level1 summary"><p>Creates a new #GMainContext structure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr new()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MainContext_pending_" data-uid="GLib.MainContext.pending*"></a>
+  <h4 id="GLib_MainContext_pending_System_IntPtr_" data-uid="GLib.MainContext.pending(System.IntPtr)">pending(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Checks if any sources have pending events for the given context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool pending(IntPtr context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MainContext_pop_thread_default_" data-uid="GLib.MainContext.pop_thread_default*"></a>
+  <h4 id="GLib_MainContext_pop_thread_default_System_IntPtr_" data-uid="GLib.MainContext.pop_thread_default(System.IntPtr)">pop_thread_default(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Pops @context off the thread-default context stack (verifying that
+it was on the top of the stack).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void pop_thread_default(IntPtr context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MainContext_prepare_" data-uid="GLib.MainContext.prepare*"></a>
+  <h4 id="GLib_MainContext_prepare_System_IntPtr_System_Int32__" data-uid="GLib.MainContext.prepare(System.IntPtr,System.Int32@)">prepare(IntPtr, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Prepares to poll sources within a main loop. The resulting information
+for polling is determined by calling g_main_context_query ().</p>
+<p>You must have successfully acquired the context with
+g_main_context_acquire() before you may call this function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool prepare(IntPtr context, ref int priority)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">priority</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MainContext_push_thread_default_" data-uid="GLib.MainContext.push_thread_default*"></a>
+  <h4 id="GLib_MainContext_push_thread_default_System_IntPtr_" data-uid="GLib.MainContext.push_thread_default(System.IntPtr)">push_thread_default(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Acquires @context and sets it as the thread-default context for the
+current thread. This will cause certain asynchronous operations
+(such as most [gio][gio]-based I/O) which are
+started in this thread to run under @context and deliver their
+results to its main loop, rather than running under the global
+default context in the main thread. Note that calling this function
+changes the context returned by g_main_context_get_thread_default(),
+not the one returned by g_main_context_default(), so it does not affect
+the context used by functions like g_idle_add().</p>
+<p>Normally you would call this function shortly after creating a new
+thread, passing it a #GMainContext which will be run by a
+#GMainLoop in that thread, to set a new default context for all
+async operations in that thread. In this case you may not need to
+ever call g_main_context_pop_thread_default(), assuming you want the
+new #GMainContext to be the default for the whole lifecycle of the
+thread.</p>
+<p>If you don't have control over how the new thread was created (e.g.
+in the new thread isn't newly created, or if the thread life
+cycle is managed by a #GThreadPool), it is always suggested to wrap
+the logic that needs to use the new #GMainContext inside a
+g_main_context_push_thread_default() / g_main_context_pop_thread_default()
+pair, otherwise threads that are re-used will end up never explicitly
+releasing the #GMainContext reference they hold.</p>
+<p>In some cases you may want to schedule a single operation in a
+non-default context, or temporarily use a non-default context in
+the main thread. In that case, you can wrap the call to the
+asynchronous operation inside a
+g_main_context_push_thread_default() /
+g_main_context_pop_thread_default() pair, but it is up to you to
+ensure that no other asynchronous operations accidentally get
+started while the non-default context is active.</p>
+<p>Beware that libraries that predate this function may not correctly
+handle being used from a thread with a thread-default context. Eg,
+see g_file_supports_thread_contexts().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void push_thread_default(IntPtr context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MainContext_query_" data-uid="GLib.MainContext.query*"></a>
+  <h4 id="GLib_MainContext_query_System_IntPtr_System_Int32_System_Int32__System_IntPtr___System_Int32_" data-uid="GLib.MainContext.query(System.IntPtr,System.Int32,System.Int32@,System.IntPtr[],System.Int32)">query(IntPtr, Int32, ref Int32, IntPtr[], Int32)</h4>
+  <div class="markdown level1 summary"><p>Determines information necessary to poll this main loop.</p>
+<p>You must have successfully acquired the context with
+g_main_context_acquire() before you may call this function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int query(IntPtr context, int max_priority, ref int timeout_, IntPtr[] fds, int n_fds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">max_priority</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">timeout_</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span>[]</td>
+        <td><span class="parametername">fds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n_fds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MainContext_ref_" data-uid="GLib.MainContext.ref*"></a>
+  <h4 id="GLib_MainContext_ref_System_IntPtr_" data-uid="GLib.MainContext.ref(System.IntPtr)">ref(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Increases the reference count on a #GMainContext object by one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr ref(IntPtr context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MainContext_release_" data-uid="GLib.MainContext.release*"></a>
+  <h4 id="GLib_MainContext_release_System_IntPtr_" data-uid="GLib.MainContext.release(System.IntPtr)">release(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Releases ownership of a context previously acquired by this thread
+with g_main_context_acquire(). If the context was acquired multiple
+times, the ownership will be released only when g_main_context_release()
+is called as many times as it was acquired.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void release(IntPtr context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MainContext_remove_poll_" data-uid="GLib.MainContext.remove_poll*"></a>
+  <h4 id="GLib_MainContext_remove_poll_System_IntPtr_System_IntPtr_" data-uid="GLib.MainContext.remove_poll(System.IntPtr,System.IntPtr)">remove_poll(IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Removes file descriptor from the set of file descriptors to be
+polled for a particular context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void remove_poll(IntPtr context, IntPtr fd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">fd</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MainContext_set_poll_func_" data-uid="GLib.MainContext.set_poll_func*"></a>
+  <h4 id="GLib_MainContext_set_poll_func_System_IntPtr_GLib_PollFunc_" data-uid="GLib.MainContext.set_poll_func(System.IntPtr,GLib.PollFunc)">set_poll_func(IntPtr, PollFunc)</h4>
+  <div class="markdown level1 summary"><p>Sets the function to use to handle polling of file descriptors. It
+will be used instead of the poll() system call
+(or GLib's replacement function, which is used where
+poll() isn't available).</p>
+<p>This function could possibly be used to integrate the GLib event
+loop with an external event loop.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void set_poll_func(IntPtr context, PollFunc func)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.PollFunc.html">PollFunc</a></td>
+        <td><span class="parametername">func</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MainContext_unref_" data-uid="GLib.MainContext.unref*"></a>
+  <h4 id="GLib_MainContext_unref_System_IntPtr_" data-uid="GLib.MainContext.unref(System.IntPtr)">unref(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Decreases the reference count on a #GMainContext object by one. If
+the result is zero, free the context and free all associated memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void unref(IntPtr context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MainContext_wait_" data-uid="GLib.MainContext.wait*"></a>
+  <h4 id="GLib_MainContext_wait_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="GLib.MainContext.wait(System.IntPtr,System.IntPtr,System.IntPtr)">wait(IntPtr, IntPtr, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Tries to become the owner of the specified context,
+as with g_main_context_acquire(). But if another thread
+is the owner, atomically drop @mutex and wait on @cond until
+that owner releases ownership or until @cond is signaled, then
+try again (once) to become the owner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use g_main_context_is_owner() and separate locking instead.&quot;)]
+public static bool wait(IntPtr context, IntPtr cond, IntPtr mutex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">cond</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">mutex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="GLib_MainContext_wakeup_" data-uid="GLib.MainContext.wakeup*"></a>
+  <h4 id="GLib_MainContext_wakeup_System_IntPtr_" data-uid="GLib.MainContext.wakeup(System.IntPtr)">wakeup(IntPtr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void wakeup(IntPtr context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/Docs/apiSpec/new?filename=GLib_MainContext.md&amp;value=---%0Auid%3A%20GLib.MainContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/Docs/Libs/GLib/Classes/MainContext.Generated.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
