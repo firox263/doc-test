@@ -5,3 +5,5 @@ source is (currently) too large.
 
 There are several problems with this approach which need to be
 ironed out first.
+
+**See [this comment](https://github.com/gircore/gir.core/issues/55#issuecomment-716928637).**
